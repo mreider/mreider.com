@@ -9,7 +9,6 @@ require 'date'
 
 # Directories
 MARKDOWN_DIR = "markdown"
-PUBLISHED_DIR = "published"
 CSS_DIR = "css"
 IMAGES_DIR = "images"
 
@@ -36,9 +35,12 @@ def ensure_index_md
   end
 end
 
-# Clean the published folder
-def clean_published_folder
-  FileUtils.rm_rf(Dir.glob("#{PUBLISHED_DIR}/*"))
+# Clean the root directory (exclude essential folders)
+def clean_root_directory
+  files_to_keep = [MARKDOWN_DIR, CSS_DIR, IMAGES_DIR, "krems.rb", "defaults.toml"]
+  Dir.glob("*").each do |item|
+    FileUtils.rm_rf(item) unless files_to_keep.include?(item)
+  end
 end
 
 # Load defaults from defaults.toml if it exists
@@ -67,7 +69,6 @@ def parse_front_matter(content, defaults)
 end
 
 # Converts Markdown links from `.md` to `.html`
-# Converts Markdown links from `.md` to `.html`
 def convert_links_to_html(content)
   content.gsub(/href="(\/?[a-zA-Z0-9\-_\/\.]+)\.md"/) do
     link = $1
@@ -78,7 +79,6 @@ def convert_links_to_html(content)
     end
   end
 end
-
 
 # Converts Markdown image links to absolute references
 def update_image_links(content)
@@ -118,6 +118,7 @@ def generate_menu(front_matter)
   "<table><tr>#{menu_with_bullets}</tr></table>"
 end
 
+# Generates static asset links in the <head> section
 def generate_static_asset_links
   <<~HTML
     <link rel="stylesheet" href="/css/styles.css">
@@ -142,7 +143,7 @@ def generate_post_list(folder_name)
 
     year = Date.parse(front_matter["date"]).year
     display_name = File.basename(file, ".md").tr("_-", " ").capitalize
-    link_path = "/#{folder_name}/#{File.basename(file, '.md')}.html"
+    link_path = "#{folder_name}/#{File.basename(file, '.md')}.html"
     years[year] << { name: display_name, link: link_path }
   end
 
@@ -178,15 +179,6 @@ end
 
 # Processes Markdown files to HTML
 def convert_markdown_to_html
-  FileUtils.mkdir_p(PUBLISHED_DIR)
-
-  # Copy static assets (CSS and images)
-  FileUtils.mkdir_p(File.join(PUBLISHED_DIR, "css"))
-  FileUtils.cp_r(Dir.glob(File.join(CSS_DIR, "*")), File.join(PUBLISHED_DIR, "css"))
-
-  FileUtils.mkdir_p(File.join(PUBLISHED_DIR, "images"))
-  FileUtils.cp_r(Dir.glob(File.join(IMAGES_DIR, "*")), File.join(PUBLISHED_DIR, "images"))
-
   # Load defaults
   defaults = load_defaults
 
@@ -201,7 +193,7 @@ def convert_markdown_to_html
   # Walk through Markdown files
   Dir.glob(File.join(MARKDOWN_DIR, "**/*.md")).each do |file|
     relative_path = Pathname.new(file).relative_path_from(Pathname.new(MARKDOWN_DIR)).to_s
-    output_file = File.join(PUBLISHED_DIR, relative_path.sub(/\.md$/, ".html"))
+    output_file = relative_path.sub(/\.md$/, ".html")
     FileUtils.mkdir_p(File.dirname(output_file))
 
     # Read and parse Markdown file
@@ -250,22 +242,22 @@ end
 # Ensure default index.md exists
 ensure_index_md
 
-# Clean published folder and run conversion
-clean_published_folder
+# Clean root directory and run conversion
+clean_root_directory
 convert_markdown_to_html
 
 # Watch for changes in markdown folder
 listener = Listen.to(MARKDOWN_DIR) do |_modified, _added, _removed|
-  clean_published_folder
+  clean_root_directory
   convert_markdown_to_html
 end
 listener.start
 
 # Serve the static site with Sinatra
-set :public_folder, PUBLISHED_DIR
+set :public_folder, "./"
 
 get '/' do
-  send_file File.join(settings.public_folder, "index.html")
+  send_file "index.html"
 end
 
 # Keep the Sinatra server running
