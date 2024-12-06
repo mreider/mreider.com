@@ -12,3 +12,12 @@ I have two teenagers at the Vienna International School, and a lovely wife who l
 I've worked in software for almost 30 years. These days I focus on Kubernetes and OpenTelemetry and work for Dynatrace here in Vienna.
 
 I try to stay active. Enhoy hiking, walking, etc. I listen to late 90's Beastie Boys-type things, Radiohead-type things, and Yacht Rock from the 70's. I watch Louis C.K., Chris Rock, and Dave Chapelle-sorts of things. I've re-watched The Matrix at least twenty times, and enjoy any movie starring Tom Hanks.
+
+If you'd like to get in touch you can email me at <a href="mailto:mreider@gmail.com">mreider@gmail.com</a>
+
+I'm also here:
+
+- [Linkedin](https://linkedin.com/in/mreider)
+- [Mastodon](https://fosstodon.org/@mdr)
+- [BlueSky](https://bsky.app/profile/mreider.com)
+- [Github](https://github.com/mreider)
