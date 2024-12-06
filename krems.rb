@@ -1,10 +1,8 @@
 require 'sinatra'
-require 'sinatra/reloader' if development?
 require 'fileutils'
 require 'redcarpet'
 require 'pathname'
 require 'toml-rb'
-require 'listen'
 require 'date'
 
 # Directories
@@ -32,14 +30,6 @@ def ensure_index_md
   unless File.exist?(index_file)
     FileUtils.mkdir_p(MARKDOWN_DIR)
     File.write(index_file, DEFAULT_INDEX_CONTENT)
-  end
-end
-
-# Clean the root directory (exclude essential folders)
-def clean_root_directory
-  files_to_keep = [MARKDOWN_DIR, CSS_DIR, IMAGES_DIR, "krems.rb", "defaults.toml"]
-  Dir.glob("*").each do |item|
-    FileUtils.rm_rf(item) unless files_to_keep.include?(item)
   end
 end
 
@@ -97,18 +87,13 @@ def generate_meta_tags(front_matter)
   tags.join("\n")
 end
 
-# Converts PascalCase to "Pascal Case"
-def format_pascal_case(name)
-  name.gsub(/([a-z])([A-Z])/, '\1 \2')
-end
-
 # Generates an unstyled menu from front matter
 def generate_menu(front_matter)
   return "" unless front_matter["menu"]
 
   menu_items = front_matter["menu"].map do |entry|
     formatted_path = entry["path"].gsub(/^\//, "").sub(/\.md$/, ".html")
-    display_name = format_pascal_case(entry["name"])
+    display_name = entry["name"].gsub(/([a-z])([A-Z])/, '\1 \2') # PascalCase formatting
     "<td><h4><a href=\"/#{formatted_path}\">#{display_name}</a></h4></td>"
   end
 
@@ -129,7 +114,6 @@ def generate_static_asset_links
   HTML
 end
 
-# Generates a list of posts in the specified folder
 # Generates a list of posts in the specified folder
 def generate_post_list(folder_name)
   folder_path = File.join(MARKDOWN_DIR, folder_name)
@@ -156,7 +140,6 @@ def generate_post_list(folder_name)
     HTML
   end.join("\n")
 end
-
 
 # Replaces custom handlebars in content
 def replace_custom_handlebars(content)
@@ -242,20 +225,11 @@ def convert_markdown_to_html
   end
 end
 
-
 # Ensure default index.md exists
 ensure_index_md
 
 # Clean root directory and run conversion
-clean_root_directory
 convert_markdown_to_html
-
-# Watch for changes in markdown folder
-listener = Listen.to(MARKDOWN_DIR) do |_modified, _added, _removed|
-  clean_root_directory
-  convert_markdown_to_html
-end
-listener.start
 
 # Serve the static site with Sinatra
 set :public_folder, "./"
