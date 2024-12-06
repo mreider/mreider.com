@@ -69,14 +69,12 @@ def parse_front_matter(content, defaults)
 end
 
 # Converts Markdown links from `.md` to `.html`
-def convert_links_to_html(content)
+def convert_links_to_html(content, _current_folder = "")
   content.gsub(/href="(\/?[a-zA-Z0-9\-_\/\.]+)\.md"/) do
     link = $1
-    if link.start_with?("/") # Absolute path
-      "href=\"#{link}.html\""
-    else # Relative path
-      "href=\"#{link}.html\""
-    end
+    # Force absolute paths
+    absolute_path = link.start_with?("/") ? link : "/#{link}"
+    "href=\"#{absolute_path}.html\""
   end
 end
 
@@ -132,6 +130,7 @@ def generate_static_asset_links
 end
 
 # Generates a list of posts in the specified folder
+# Generates a list of posts in the specified folder
 def generate_post_list(folder_name)
   folder_path = File.join(MARKDOWN_DIR, folder_name)
   return "" unless Dir.exist?(folder_path)
@@ -143,7 +142,7 @@ def generate_post_list(folder_name)
 
     year = Date.parse(front_matter["date"]).year
     display_name = File.basename(file, ".md").tr("_-", " ").capitalize
-    link_path = "#{folder_name}/#{File.basename(file, '.md')}.html"
+    link_path = "/#{folder_name}/#{File.basename(file, '.md')}.html" # Force absolute paths
     years[year] << { name: display_name, link: link_path }
   end
 
@@ -157,6 +156,7 @@ def generate_post_list(folder_name)
     HTML
   end.join("\n")
 end
+
 
 # Replaces custom handlebars in content
 def replace_custom_handlebars(content)
@@ -193,6 +193,7 @@ def convert_markdown_to_html
   # Walk through Markdown files
   Dir.glob(File.join(MARKDOWN_DIR, "**/*.md")).each do |file|
     relative_path = Pathname.new(file).relative_path_from(Pathname.new(MARKDOWN_DIR)).to_s
+    current_folder = File.dirname(relative_path) # Get the folder for relative links
     output_file = relative_path.sub(/\.md$/, ".html")
     FileUtils.mkdir_p(File.dirname(output_file))
 
@@ -206,7 +207,7 @@ def convert_markdown_to_html
     # Convert Markdown to HTML
     html_body = markdown.render(body_content)
     html_body = update_image_links(html_body)
-    html_body = convert_links_to_html(html_body)
+    html_body = convert_links_to_html(html_body, current_folder) # Pass folder context
 
     # Add meta tags and menu
     meta_tags = generate_meta_tags(front_matter)
@@ -235,9 +236,12 @@ def convert_markdown_to_html
         #{header_content}
         #{html_body}
         #{generate_footer}
+      </body>
+      </html>
     HTML
   end
 end
+
 
 # Ensure default index.md exists
 ensure_index_md
