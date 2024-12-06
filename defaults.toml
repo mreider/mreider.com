@@ -1,7 +1,7 @@
 menu = [
   { name = "Home", path = "index.md" },
-  { name = "TechWriting", path = "tech/index.md" },
-  { name = "WritingForFun", path = "fun/index.md" },
-  { name = "FamilyStuff", path = "family/index.md" },
-  { name = "AboutMe", path = "about.md" }
+  { name = "Tech", path = "tech/index.md" },
+  { name = "Fun", path = "fun/index.md" },
+  { name = "Family", path = "family/index.md" },
+  { name = "Me", path = "about.md" }
 ]
