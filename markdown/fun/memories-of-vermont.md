@@ -2,10 +2,8 @@
 title = "Memories of Vermont"
 date = "2019-09-19"
 author = "Matt Reider"
-categories = ["writing for fun"]
+image = "/images/matt/1_QxVEUex8kOodcO_9FjODLg.jpeg"
 +++
-
-![Google Maps](/images/matt/1_QxVEUex8kOodcO_9FjODLg.jpeg)
 
 I am on a work trip this week. Four of us. Visiting a satellite office in Klagenfurt so I can meet the team and join some planning sessions. We took a train here, which lasted five hours and went through the alps — but it was mostly dark and foggy. When the fog lifted, which happened a few times, I compared the countryside to places in America. The mountains look like the rockies — big peaks and spires. But the trees and grass are perfectly green like Vermont. There are little family farms everywhere too.
 

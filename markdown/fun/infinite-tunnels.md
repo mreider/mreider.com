@@ -2,7 +2,6 @@
 title = "Infinite tunnels"
 date = "2019-10-20"
 author = "Matt Reider"
-categories = ["writing for fun"]
 +++
 
 We bought Max and Zoe smart phones in June. This was a huge deal for us. We were going to wait until Max was in high school. We relented. An obvious bribe. Compensation for the chaos of what followed.

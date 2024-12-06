@@ -2,7 +2,6 @@
 title = "Ode to Kine Fahrrad"
 date = "2020-06-25"
 author = "Matt Reider"
-categories = ["writing for fun"]
 +++
 
 The word “Fahrrad” reminds me of King Fahd, of Saudi Arabia. But no. It’s not about that. Ein Fahrrad just means “a bicycle.” And this long overdue blog post is about my bicycle, and what it’s like to use it around town. Woah. Calm down. You’re too excited.

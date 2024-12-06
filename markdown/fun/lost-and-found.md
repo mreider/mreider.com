@@ -2,7 +2,6 @@
 title = "Lost and Found"
 date = "2024-05-31"
 author = "Matt Reider"
-categories = ["writing for fun"]
 +++
 
 Don't you hate it when you do something stupid? 

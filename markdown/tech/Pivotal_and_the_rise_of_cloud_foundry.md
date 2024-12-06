@@ -3,8 +3,7 @@ title = "VMware, Pivotal and the rise of Kubernetes"
 date = "2024-11-28"
 summary = "Building a successful platform, spinning out into something new, and facing big shifts in the industry"
 author = "Matt Reider"
-categories = ["tech writing"]
-images = ["/images/matt/Tidal_Wave.jpg"]
+image = "/images/matt/Tidal_Wave.jpg"
 +++
 
 When I left Engine Yard ([see my first post from October](https://aligned.at/posts/engine-yard-and-the-cost-of-venture-capital/)), I joined VMware to work on the Cloud Foundry team. The idea was ambitious: create a PaaS (Platform as a Service) that let developers write and deploy applications without worrying about infrastructure. It wasn’t groundbreaking—Heroku and Engine Yard had similar goals—but it was something enterprises hadn’t seen before.

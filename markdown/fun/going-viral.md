@@ -2,10 +2,10 @@
 title = "Going Viral"
 date = "2022-08-24"
 author = "Matt Reider"
-categories = ["writing for fun"]
+image = "/images/matt/champlain.png"
 +++
 
-![champlain](/images/matt/champlain.png)
+![champlain]()
 
 Summer vacation was a three-part trip. First was Long Island to celebrate Marty's 80th birthday. Second was Vermont to join Rosie and Zach's wedding. Then Portugal, with #friends4life Schwartzberg clan.
 

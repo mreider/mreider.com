@@ -1,7 +1,6 @@
 +++
 title = "Rolling in my Benzo"
 date = "2019-09-06"
-categories = ["writing for fun"]
 author = "Matt Reider"
 +++
 

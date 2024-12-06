@@ -1,11 +1,9 @@
 +++
 title = "Teamwork in Corfu"
 date = "2020-09-06"
-categories = ["writing for fun"]
 author = "Matt Reider"
+image = "/images/matt/1_l2i7EqauON04D-pjr9b1gQ-1.jpeg"
 +++
-
-![Teamwork](/images/matt/1_l2i7EqauON04D-pjr9b1gQ-1.jpeg)
 
 I learned some important things during our vacation in Corfu. Wasps don’t like smoke. Google maps can tell you to drive in circles. Jacques Cousteau invented scuba diving.
 

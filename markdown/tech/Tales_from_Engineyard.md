@@ -2,9 +2,8 @@
 title = "Engine Yard and the Cost of Venture Capital"
 date = "2024-10-19"
 summary = "Sharing my experiences at Engine Yard and how venture funding shaped its future"
-categories = ["tech writing"]
 author = "Matt Reider"
-images = ["/images/matt/old-train.jpg"]
+image = "/images/matt/old-train.jpg"
 +++
 
 

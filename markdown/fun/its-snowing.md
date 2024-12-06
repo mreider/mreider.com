@@ -2,10 +2,8 @@
 title = "It's snowing"
 date = "2019-12-02"
 author = "Matt Reider"
-categories = ["tech writing"]
+image = "/images/matt/1_YHQ75Z7fSQ8Sq2cBYUZ_Qw.png"
 +++
-
-![Snowing](/images/matt/1_YHQ75Z7fSQ8Sq2cBYUZ_Qw.png)
 
 Snow is falling in Linz today. This makes the kids very happy. I put on some ski gear and rode my bike to work along with dozens of other folks.
 

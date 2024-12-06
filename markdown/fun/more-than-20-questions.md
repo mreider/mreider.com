@@ -2,10 +2,8 @@
 title = "More than 20 Questions"
 date = "2022-04-18"
 author = "Matt Reider"
-categories = ["writing for fun"]
+image = "/images/matt/praguish.jpeg"
 +++
-
-![Praguish](/images/matt/praguish.jpeg)
 
 Last week we took an American style road trip (🚙) through the Czech Republic. Originally we were thinking about Holland. Also Norway. But we procrastinated and airfares went up. So we decided to drive North.
 

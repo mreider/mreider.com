@@ -2,7 +2,6 @@
 title = "Österreich"
 date = "2019-08-26"
 author = "Matt Reider"
-categories = ["writing for fun"]
 +++
 
 Warning. These posts are never proofread. They will have plenty of misspellings and grammatical errors. Verklagen Sie mich (sue me)!

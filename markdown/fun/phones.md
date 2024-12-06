@@ -2,7 +2,6 @@
 title = "Phones"
 date = "2019-08-27"
 author = "Matt Reider"
-categories = ["writing for fun"]
 +++
 
 We put new SIM cards in our phones. The carrier is Hofer Telecom. It’s a grocery store and a cell phone company. The plan is $10 a month for 15 gigs of data and unlimited calls. I am not sure which I enjoyed more — firing AT&T or Comcast. Cable Internet is $39 a month for 100 gigabits, by the way.

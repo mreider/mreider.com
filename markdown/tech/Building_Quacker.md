@@ -3,9 +3,7 @@ title = "Building Quacker: A Weekend Project with ChatGPT"
 date = "2024-11-26"
 author = "Matt Reider"
 summary = "Building an app with AI is both impressive and frustrating."
-categories = ["tech writing"]
-tags = ["ChatGPT","AI","Agile"]
-images = ["/images/matt/duck.jpg"]
+image = "/images/matt/duck.jpg"
 +++
 
 Last weekend, I built [Quacker](https://github.com/mreider/quacker), a Python app that lets static blogs send newsletters. Static blogs are simple, reliable, and fast—but they’re missing some essentials, like email subscriptions or notifications for new posts. I could’ve switched to something like Ghost, which would’ve been quicker and easier, but instead, I chose to spend my weekend reinventing the wheel. Maybe not my smartest decision.  

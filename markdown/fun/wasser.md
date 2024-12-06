@@ -1,11 +1,9 @@
 +++
 title = "Wasser, Acqua, Voda"
 date = "2020-09-06"
-categories = ["writing for fun"]
 author = "Matt Reider"
+image = "/images/matt/1_p5W-O_HqQHBXIqS10N-Fsw@2x.jpeg"
 +++
-
-![Danube](/images/matt/1_p5W-O_HqQHBXIqS10N-Fsw@2x.jpeg)
 
 The Danube flows less than a mile from our house. Once, on a hot day, I peddled to it, took off my shirt, and jumped in. The current was strong. Off I went Eastward towards Vienna. I made it back home in time for dinner.
 

@@ -1,7 +1,6 @@
 +++
 title = "Week 2"
 date = "2019-08-29"
-categories = ["writing for fun"]
 author = "Matt Reider"
 +++
 

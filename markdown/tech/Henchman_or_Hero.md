@@ -1,10 +1,9 @@
 +++
-title = "Why Founders Don’t Need a Strategist for Their First PM"
+title = "Founders Don’t need a strategist as the first PM"
 date = "2024-11-26"
 author = "Matt Reider"
 summary = "It’s usually about execution, not vision—at least for now"
-categories = ["tech writing"]
-images = ["/images/matt/Henchman_Street_W12_sign.jpg"]
+image = "/images/matt/Henchman_Street_W12_sign.jpg"
 +++
 
 I recently had a conversation with the CEO of a scrappy, small, and profitable startup. Let’s call him Mike.

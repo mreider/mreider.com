@@ -3,8 +3,7 @@ title = "Certainty, Ambivalence and Product Leadership"
 date = "2024-12-02"
 author = "Matt Reider"
 summary = "Ambivalence is a leadership weakness but a strength in Product Management"
-categories = ["tech writing"]
-images = ["/images/matt/bull.jpg"]
+image = "/images/matt/bull.jpg"
 +++
 
 Every night at 9:00 PM, I walk my dog, Leo, while listening to podcasts like **Hidden Brain** with Shankar Vedantam. In a [recent episode](https://hiddenbrain.org/podcast/the-benefits-of-mixed-emotions/), Naomi Rothman discussed how society favors leaders who project certainty over ambivalence—often preferring confident leadership even when it’s based on incomplete or inaccurate information. She cited a study where CEOs admitting uncertainty during earnings calls were judged more harshly and seen as less competent, despite their honesty.

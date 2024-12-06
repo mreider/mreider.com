@@ -1,7 +1,6 @@
 +++
 title = "Trader Joe's Bros"
 date = "2019-10-20"
-categories = ["writing for fun"]
 author = "Matt Reider"
 +++
 

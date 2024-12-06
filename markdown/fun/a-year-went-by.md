@@ -3,13 +3,6 @@ title = "A Year Went By"
 author = "Matt Reider"
 date = "2022-03-10"
 image = "images/matt/94797BC5-3A6A-4043-87CC-280B876F7D93_1_105_c.jpeg"
-menu = [
-  { name = "Home", path = "index.md" },
-  { name = "TechWriting", path = "tech/index.md" },
-  { name = "WritingForFun", path = "fun/index.md" },
-  { name = "FamilyStuff", path = "family/index.md" },
-  { name = "AboutMe", path = "about.md" }
-]
 +++
 
 I stopped writing over a year ago. Not sure why. Wasn't feeling it.

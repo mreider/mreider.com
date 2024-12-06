@@ -1,10 +1,9 @@
 +++
-title = "Making It writing for fun"
+title = "Doing it for yourself"
 date = "2024-11-29"
 author = "Matt Reider"
 summary = "Individualist Thinking and Product Success"
-categories = ["tech writing"]
-images = ["/images/matt/king_john.jpg"]
+image = "/images/matt/king_john.jpg"
 +++
 
 This might come off as a bit of “get off my lawn” grumbling, but it’s been on my mind lately. I had a conversation with a product manager from another company and it left me thinking. Every time he referred to an initiative, he called it “mine,” almost like shouting, “Me!” Deadlines and priorities were framed as “important for me” — not the team, not the user, but himself.

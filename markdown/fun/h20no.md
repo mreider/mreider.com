@@ -2,7 +2,6 @@
 title = "H₂Oh No"
 date = "2024-03-02"
 author = "Matt Reider"
-categories = ["writing for fun"]
 +++
 
 ****
