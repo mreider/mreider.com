@@ -8,7 +8,7 @@ image = "/images/matt/king_john.jpg"
 
 This might come off as a bit of “get off my lawn” grumbling, but it’s been on my mind lately. I had a conversation with a product manager from another company and it left me thinking. Every time he referred to an initiative, he called it “mine,” almost like shouting, “Me!” Deadlines and priorities were framed as “important for me” — not the team, not the user, but himself.
 
-On one level, this is just human nature — we all bring some degree of self-interest to the work we do. But when a product manager frames things this way, it stops sounding like a team effort and starts to feel like a writing for fun project tied to their ego.
+On one level, this is just human nature — we all bring some degree of self-interest to the work we do. But when a product manager frames things this way, it stops sounding like a team effort and starts to feel like a personal project tied to their ego.
 
 There are two larger problems here.
 
