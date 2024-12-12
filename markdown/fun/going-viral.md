@@ -5,8 +5,6 @@ author = "Matt Reider"
 image = "/images/matt/champlain.png"
 +++
 
-![champlain]()
-
 Summer vacation was a three-part trip. First was Long Island to celebrate Marty's 80th birthday. Second was Vermont to join Rosie and Zach's wedding. Then Portugal, with #friends4life Schwartzberg clan.
 
 ![world map](/images/matt/map.png)
