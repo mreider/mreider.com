@@ -1694,3 +1694,8 @@ ul, ol {
   left: 0; /* Align bullet */
   color: #333; /* Bullet color */
 }
+
+p img, .page-image{
+  max-width: 550px;
+  height: auto;
+}

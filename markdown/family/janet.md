@@ -6,5 +6,5 @@ Digital has replaced film. The Hasselblad snoozes on a closet shelf. I am more a
 
 There's a lot more information about my work at [janetreider.com](https://janetreider.com).
 
-![Janet](/images/janet/janet.jpg)
+![Janet](/images/janet/janet.png)
 

@@ -2,11 +2,10 @@
 title = "H₂Oh No"
 date = "2024-03-02"
 author = "Matt Reider"
+image = "/images/matt/wasser555.png"
 +++
 
-Another year slipped by like a [Northern Pike](https://youtu.be/uWMSpt7CLkU?si=HhGcMCj-H416Ddiw) headed down the danube. A lot of things happened. Too many to review.
-
-Today I'll write, again, about water
+Today I'll write, again, about water.
 
 Vienna's water supply is world famously clean. It comes straight from the Alps and doesn't need any treatment at all. No chlorine, no filtration. 
 

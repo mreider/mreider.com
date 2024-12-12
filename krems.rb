@@ -360,6 +360,7 @@ end
 
 def generate_footer(base_url)
   "<footer class=\"footer px3 py2 border-box\">" \
+  "<a href='/'>Home</a> | <a href='#header'>Top</a> " \
   "&copy; #{Time.now.year} Matt Reider | Created with <a href='https://github.com/mreider/krems'>Krems</a>" \
   "</footer>"
 end
