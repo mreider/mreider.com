@@ -1514,11 +1514,6 @@ ul {
   margin-left: 0;
   padding-left: 0
 }
-.post-list li {
-  list-style-type: none;
-  position: relative;
-  padding-left: 1.2rem
-}
 
 .page-image,
 p img {
