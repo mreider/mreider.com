@@ -1,6 +1,7 @@
 +++
 menu = []
-title = "Matt's little corner of the Internet"
+title = "My little corner of the Internet"
+author = ""
 +++
 
 - [Tech / Product Writing](tech/index.md)
