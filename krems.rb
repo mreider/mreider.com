@@ -162,7 +162,6 @@ end
 
 def generate_static_asset_links(base_url)
   <<~HTML
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="#{absolute_path(base_url, 'css/styles.css')}">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="#{absolute_path(base_url, 'images/favicon.ico')}">
@@ -288,7 +287,22 @@ def generate_post_list(folder_name, base_url)
   end.join("\n")
 end
 
+def make_images_responsive(content, base_url)
+  content.gsub(/<img([^>]+)src="([^"]+)"([^>]*)>/) do
+    img_tag = $&
+    src = $2
 
+    # Prepend base_url if the src is a relative path
+    if src.start_with?('/')
+      absolute_src = absolute_path(base_url, src)
+      img_tag.gsub(/src="([^"]+)"/, "src=\"#{absolute_src}\"")
+    else
+      img_tag
+    end
+    .gsub(/class="([^"]*)"/, 'class="\1 img-fluid"') # Add img-fluid to existing classes
+    .gsub(/<img(?!.*class=)/, '<img class="img-fluid"') # Add img-fluid if class is missing
+  end
+end
 
 def replace_custom_handlebars(content, base_url)
   content.gsub(/\{\{\s*list_posts\(([^)]+)\)\s*\}\}/) { generate_post_list($1.strip, base_url) }
@@ -333,6 +347,9 @@ def convert_markdown_to_html(base_url)
     rendered_body_content = markdown.render(raw_body_content)
     rendered_body_content = convert_links_to_html(rendered_body_content, base_url)
     rendered_body_content = replace_custom_handlebars(rendered_body_content, base_url)
+    rendered_body_content = make_images_responsive(rendered_body_content, base_url)
+
+
 
     # Post-specific meta details
     post_title = front_matter['title'] || ''
