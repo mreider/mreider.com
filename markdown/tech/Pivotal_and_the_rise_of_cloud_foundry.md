@@ -6,7 +6,7 @@ summary = "Building a platform, spinning out into something new, and navigating 
 image = "/images/matt/Tidal_Wave.jpg"
 +++
 
-When I left Engine Yard ([see my earlier post](https://mreider.com/tech/Tales_from_Engineyard.md/)), I joined VMware to work on the Cloud Foundry team. The idea was ambitious: create a PaaS (Platform as a Service) that allowed developers to write and deploy applications without worrying about infrastructure. It wasn’t revolutionary—Heroku and Engine Yard had similar goals—but it offered something enterprises hadn’t seen before.
+When I left Engine Yard ([see my earlier post](https://mreider.com/tech/Tales_from_Engineyard.html)), I joined VMware to work on the Cloud Foundry team. The idea was ambitious: create a PaaS (Platform as a Service) that allowed developers to write and deploy applications without worrying about infrastructure. It wasn’t revolutionary—Heroku and Engine Yard had similar goals—but it offered something enterprises hadn’t seen before.
 
 The secret weapon was BOSH, a powerful orchestration tool that deployed Cloud Foundry on private or public clouds in a declarative, repeatable way. BOSH had a small but passionate following, with its precision and reliability appealing to those managing complex software deployments. Still, Cloud Foundry itself struggled to balance the needs of developers with the expectations of enterprises. For VMware, it was a critical play to stay relevant as Amazon reshaped the industry.
 
