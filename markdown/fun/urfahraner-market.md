@@ -5,22 +5,35 @@ author = "Matt Reider"
 image = "/images/matt/1_8T0IaO9W5cPuWayUxhvOag.jpeg"
 +++
 
-We visited the Urfahraner market on Saturday. A market it isn’t. More like a county fair. We were joined by new friends. Thank God Alison is good at making them. Without her we’d be very bored. And thank goodness these befriended friends are fun. Incriminating evidence to follow.
+We visited the Urfahraner Market on Saturday. A market it isn’t—more like a county fair. We were joined by new friends (thank God Alison is good at making them). Without her, we’d be very bored. And thank goodness these befriended friends are fun. Incriminating evidence to follow.
 
-The befriended friends come with kid-friends too. Fun to be had by the lot of us. Grown-up bunny-ear fun, and kid fun on the Autodrom (bumper cars). No ordinary Autodrom — replicas of the American bumper car of 1974 — before litigation, liability, height restrictions, seatbelts, or neck injuries. Lethal. Fast. Fun as hell.
+These friends came with kid-friends too. Fun was had by all—grown-up bunny-ear fun and kid fun on the *Autodrom* (bumper cars). But this wasn’t your ordinary *Autodrom*. These were replicas of the American bumper cars of 1974, from an era before litigation, liability, height restrictions, seatbelts, or neck injuries. Lethal. Fast. Fun as hell.
 
 ![Bumper Cars](/images/matt/image-6.png)
 
-Urfahraner market is like a mini-Oktoberfest. Amusement rides adjacent to beer tents with folks in lederhosen or dirndls. It’s been this way since the early 1900’s. Before that, dating back to 1817, it was more market, and less carnival. Its’ duration, nine days, was decreed by Francis the First, and it remains the same length today. Twice a year. Fall and Spring.
+---
 
-Rides, food, beer. Like the Sacramento County Fair. But not nearly as scary. The rides are on the extreme side — but they seem very safe — like every rivet has been checked in triplicate. American carnival rides like these have body counts. What? I sure done check’d on them hydraulics — orange cheeto savior as my witness!
+## History and Atmosphere
 
-![Bumper Cars](/images/matt/1_wpn6zvLfcEoZgWGmposcIA.gif)
+The Urfahraner Market is like a mini-Oktoberfest, with amusement rides next to beer tents filled with folks in lederhosen and dirndls. It’s been this way since the early 1900s. Before that—dating back to 1817—it was more market, less carnival. Its nine-day duration was decreed by Francis I, and it remains the same length today, held twice a year in fall and spring.
 
-So the rides were better than Sacramento. I’d say just about everything else was better too. Objectively higher quality than what you see at the fair grounds. No plastic cups — beer served in thick glass mugs — as it should be. Baked goods are fresh and local. Not one choco-taco in the joint.
+---
 
-Zoe, who often belies her age group, asked for “something healthier” and went right for the fruit kababs. Covered in chocolate — but healthy and fresh underneath. Without celebration too — no need for the false pride of a certified organic sticker — it’s just baked in.
+## Better Than the County Fair
 
-![Bumper Cars](/images/matt/1_21xBknt6mR5opIlK3nG2hQ.jpeg)
+The rides, the food, the beer—everything about the Urfahraner Market was better than any American county fair I’ve been to. The rides are on the extreme side but feel very safe, like every rivet has been checked in triplicate. Compare that to American carnival rides, which too often come with body counts:  
+*"What? I sure done check’d on them hydraulics—orange Cheeto savior as my witness!"*
 
-We left the market at 9:00 PM — in the clear minority as most of the city was arriving. We grinned the whole way home. Definitely our best day in Linz so far — much needed too — as there have certainly been challenging ones— despite the smiling faces you see on Facebook.
+![Carnival Ride GIF](/images/matt/1_wpn6zvLfcEoZgWGmposcIA.gif)
+
+The differences didn’t stop at the rides. The beer was served in thick glass mugs, as it should be—not in plastic cups. The baked goods were fresh and local, and not a single choco-taco was in sight.
+
+Zoe, often wise beyond her years, asked for “something healthier” and went straight for the fruit kabobs. Yes, they were covered in chocolate, but they were fresh and healthy underneath. No need for the false pride of an “organic certified” sticker—it’s just baked in here.
+
+![Fruit Kabobs](/images/matt/1_21xBknt6mR5opIlK3nG2hQ.jpeg)
+
+---
+
+## A Perfect Day
+
+We left the market at 9:00 PM—among the few leaving, as most of the city was just arriving. We grinned the whole way home. It was easily our best day in Linz so far. Much needed, too, as there have certainly been challenging ones—despite the smiling faces you might see on Facebook.

@@ -5,27 +5,33 @@ author = "Matt Reider"
 image = "/images/matt/1_QxVEUex8kOodcO_9FjODLg.jpeg"
 +++
 
-I am on a work trip this week. Four of us. Visiting a satellite office in Klagenfurt so I can meet the team and join some planning sessions. We took a train here, which lasted five hours and went through the alps — but it was mostly dark and foggy. When the fog lifted, which happened a few times, I compared the countryside to places in America. The mountains look like the rockies — big peaks and spires. But the trees and grass are perfectly green like Vermont. There are little family farms everywhere too.
+I’m on a work trip this week. Four of us are visiting a satellite office in Klagenfurt to meet the team and join some planning sessions. We took a five-hour train ride through the Alps. It was mostly dark and foggy, but whenever the fog lifted, I found myself comparing the countryside to places in America. The mountains look like the Rockies—big peaks and spires—but the grass and trees are a vivid, perfect green, just like Vermont. Little family farms dot the landscape everywhere.
 
-We sat in the first class section and drank beer the whole way down. Wheat beer. I learned a bit more about my team-mates, what parts of Europe they are from, what they like to do, and things like that. I also learned that you clink your glasses from the bottom when you drink wheat beer. No reason. Just tradition.
+We sat in the first-class section and drank wheat beer the whole way down. I got to know my teammates better—where they’re from, what they like to do, that kind of thing. I also learned that when you drink wheat beer, you clink glasses from the bottom. No real reason, just tradition.
 
-We arrived in Klagenfurt at 10:15 PM. I was full of beer. We grabbed a taxi, checked in at the hotel and had more beer. Beer, beer, beer. Time for a beer.
+We arrived in Klagenfurt at 10:15 PM. Full of beer, we grabbed a taxi, checked into the hotel, and promptly had more beer. Beer, beer, beer. Time for another beer.
 
-The next day was productive and social. Breakfast, a few meetings, a nice lunch, more meetings, and then dinner. I ordered a Bavarian dumpling dish made out of pretzels. It had an egg on top. We had Austrian wheat beer, and then a couple pints of Spaten Oktoberfest, which are German — and are clinked from the top of your mug — not the bottom.
+### The Next Day
 
-Dinner was over around 9:30 PM. I joked that it was time for tooth brushing, urination, and schlafen (sleep). Wishful thinking. A dark smokey place named Monkey Bar awaited our attendance. And there we sat. Beer, beer, beer. We had some more beer. At 12:30 AM I had enough. I am ten years older than you guys and I can’t do this anymore. We have to work tomorrow.
+The following day was productive and social: breakfast, a few meetings, a nice lunch, more meetings, and then dinner. For dinner, I ordered a Bavarian dumpling dish made out of pretzels, topped with a fried egg. Naturally, we had Austrian wheat beer, followed by a couple of pints of Spaten Oktoberfest—a German beer. Interestingly, German beers are clinked from the top of the mug, not the bottom.
 
-Of course — I lost that argument. And so we stayed for more. I got back to the hotel at 2:00 AM. Everyone was up at 7:30 AM to eat breakfast as if nothing happened. One of them even went running an hour earlier.
+Dinner wrapped up around 9:30 PM, and I joked that it was time for tooth brushing, urination, and *schlafen* (sleep). Wishful thinking. A smoky, dimly lit place called Monkey Bar awaited us instead. And there we sat. Beer, beer, beer. We had some more beer. By 12:30 AM, I’d had enough. 
 
-So this place is like Vermont in a few ways. The grass is green, the beer is flowing, and there’s always time for one more. My college years in Burlington could be summed up thusly.
+“I’m ten years older than you guys,” I said. “I can’t do this anymore. We have to work tomorrow.”
 
-UPDATE.
+Of course, I lost that argument. We stayed for more drinks. I finally stumbled back to the hotel at 2:00 AM. Everyone was up at 7:30 AM for breakfast as if nothing had happened. One of my coworkers even went for a run an hour earlier.
 
-Thursday afternoon. We are headed back to Linz. Got some sandwiches at the market. And of course:
+### Like Vermont, but Not
+
+In some ways, this place reminds me of Vermont. The grass is green, the beer is endless, and there’s always time for one more. My college years in Burlington could be summed up in much the same way.
+
+### Update
+
+Thursday afternoon. We’re headed back to Linz. I picked up some sandwiches at the market for the journey. And of course:
 
 ![Google Maps](/images/matt/image-13.png)
 
-Much sunnier for my ride home. Amazing scenery.
+This time, the ride home is much sunnier. The scenery is breathtaking.
 
-![Lake](/images/matt/1__KycoyWqDgjw0bpHOSO2gA@2x.jpeg)
+![Lake](/images/matt/1__KycoyWqDgjw0bpHOSO2gA@2x.jpeg)  
 ![Meadows](/images/matt/1_JHXAJ-yG_O8vYV2ZV8UbEg@2x.jpeg)

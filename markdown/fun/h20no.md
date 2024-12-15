@@ -5,20 +5,20 @@ author = "Matt Reider"
 image = "/images/matt/wasser555.png"
 +++
 
-Today I'll write, again, about water.
+Today, I’m writing—again—about water.
 
-Vienna's water supply is world famously clean. It comes straight from the Alps and doesn't need any treatment at all. No chlorine, no filtration. 
+Vienna’s water supply is famously clean. It comes straight from the Alps, requiring no treatment whatsoever. No chlorine, no filtration.
 
-Yes, I read municipal water reports. Don't judge.
+Yes, I read municipal water reports. Don’t judge.
 
-Sadly, our house isn’t linked to the local water system. Instead, we rely on a well. The reason remains a mystery - it’s just part of the “charm” of our rental. This well water is suitable for cooking and brushing teeth, but not for drinking. Too much calcium. So we get our water from a dispenser. A truck delivers five jugs per month.
+Unfortunately, our house isn’t connected to the local water system. Instead, we rely on a well. Why? It’s a mystery—just one of the “charms” of our rental. The well water is fine for cooking and brushing teeth, but not for drinking. Too much calcium. So, we get our drinking water from a dispenser. A truck delivers five jugs each month.
 
-Anyhow - our water dispenser has no cooling unit. So we fill some bottles and refrigerate them. The cycle is simple: fill a bottle, use it, empty it, refill it. Or you'd think it's simple. It's really not.
+Here’s the catch: our dispenser doesn’t have a cooling unit. To keep the water cold, we fill bottles and refrigerate them. Simple, right? Not so much.
 
-First problem is my ADD. I am completely unable to ignore bottles that aren't full. If there's a half-empty bottle on the counter, no matter what else is happening, I drop everything to fill it. This drives everyone a little crazy.
+The first problem is my ADD. I cannot ignore bottles that aren’t full. If I see a half-empty bottle on the counter, I’ll drop everything to fill it. This drives everyone slightly insane.
 
-Second problem is the kids. Way too lazy about refilling bottles. They're crafty too - leaving each one at a level that is arguably not-yet-empty, and thus not-yet-necessary to refill. By Sunday the fridge contains five separate bottles with tiny gulps in each.
+The second problem is the kids. They’re way too lazy when it comes to refilling bottles. They’re also sneaky—leaving bottles at a level that’s technically not empty, so they can argue it’s “not their turn” to refill. By Sunday, the fridge is full of bottles with just a sip left in each.
 
-There's also a Long Island bred wife wandering around, expressing, very directly, that these, and other problems, should be resolved ASAP.
+And then there’s my Long Island-bred wife, who has no problem expressing (very directly) that these, and other issues, should be resolved immediately.
 
-Let's turn to the upside then. The dispenser is 10 meters from the fridge. A 20-meter round trip. That’s 40 meters daily, 280 meters weekly, and about 14 km per year. So there's a benefit of exercise in keeping these folks hydrated.
+But let’s look on the bright side. The dispenser is 10 meters from the fridge. That’s a 20-meter round trip. Multiply that by a few daily refills, and it adds up to about 280 meters a week—or roughly 14 kilometers per year. So, at least we’re getting some exercise while keeping hydrated.

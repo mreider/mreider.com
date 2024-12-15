@@ -1,38 +1,44 @@
 +++
-title = "VMware, Pivotal and the rise of Kubernetes"
+title = "VMware, Pivotal, and the Rise of Kubernetes"
 date = "2024-11-28"
-summary = "Building a successful platform, spinning out into something new, and facing big shifts in the industry"
 author = "Matt Reider"
+summary = "Building a platform, spinning out into something new, and navigating big shifts in the industry."
 image = "/images/matt/Tidal_Wave.jpg"
 +++
 
-When I left Engine Yard ([see my first post from October](https://aligned.at/posts/engine-yard-and-the-cost-of-venture-capital/)), I joined VMware to work on the Cloud Foundry team. The idea was ambitious: create a PaaS (Platform as a Service) that let developers write and deploy applications without worrying about infrastructure. It wasn’t groundbreaking—Heroku and Engine Yard had similar goals—but it was something enterprises hadn’t seen before.
+When I left Engine Yard ([see my earlier post](https://mreider.com/tech/Tales_from_Engineyard.md/)), I joined VMware to work on the Cloud Foundry team. The idea was ambitious: create a PaaS (Platform as a Service) that allowed developers to write and deploy applications without worrying about infrastructure. It wasn’t revolutionary—Heroku and Engine Yard had similar goals—but it offered something enterprises hadn’t seen before.
 
-The secret weapon was BOSH, a powerful orchestration system designed to deploy Cloud Foundry on private or public clouds in a declarative, repeatable manner. BOSH’s approach resonated with a small but passionate audience who valued its ability to manage the complexity of software deployments with precision and reliability. However, Cloud Foundry itself faced challenges as it tried to balance the needs of developers with the expectations of enterprises. VMware viewed it as a critical play to remain relevant in an industry being transformed by Amazon’s dominance.
+The secret weapon was BOSH, a powerful orchestration tool that deployed Cloud Foundry on private or public clouds in a declarative, repeatable way. BOSH had a small but passionate following, with its precision and reliability appealing to those managing complex software deployments. Still, Cloud Foundry itself struggled to balance the needs of developers with the expectations of enterprises. For VMware, it was a critical play to stay relevant as Amazon reshaped the industry.
 
-The Cloud Foundry crew was stacked with talent: Derek Collison (creator of NATS), Peter Noordhuis (a Redis contributor), and Dale Olds (an LDAP pioneer). Despite the star power, the platform struggled to find its footing. The vision—balancing a hosted PaaS and a self-managed enterprise platform—was overly ambitious, and the execution reflected that.
+The Cloud Foundry team was stacked with talent, including Derek Collison (creator of NATS), Peter Noordhuis (a Redis contributor), and Dale Olds (an LDAP pioneer). But even with this star power, the platform had trouble finding its footing. Balancing a hosted PaaS with a self-managed enterprise platform proved overly ambitious, and execution suffered.
 
-The marketing team, believed the self-managed model—“Google in a box”—was a better fit for VMware’s enterprise audience. But the hosted PaaS consumed most of our resources. The tension was palpable, and the misalignment created frustration, disagreements, and eventual resignations. The result? A slow pivot toward what should have been the focus all along: the enterprise-ready, self-managed platform.
+VMware eventually leaned toward the self-managed “Google in a box” model, which aligned better with their enterprise audience. But resources were consumed by the hosted PaaS vision, creating frustration, disagreements, and turnover. The slow pivot to focus on enterprise customers was a step in the right direction but came too late to avoid growing pains.
 
-## The Big Spin-Out  
+---
 
-That pivot coincided with VMware’s realization that Cloud Foundry didn’t belong inside the company. VMware’s culture didn’t align with the open-source ethos that Cloud Foundry needed to thrive. Building developer-first tools required a level of transparency, collaboration, and community engagement that was difficult to achieve within a traditional enterprise. So Cloud Foundry, along with Spring and RabbitMQ, was spun out into Pivotal, a standalone company backed by EMC.
+## Spinning Out  
 
-The spin-out came with its own challenges, particularly for the original Cloud Foundry team. Pivotal’s headquarters in San Francisco created a tough commute for those who had been based in the Valley at VMware. Pair programming, a cornerstone of Pivotal’s culture, required engineers to be physically present, and while some made the move, others weren’t willing or able to make that adjustment. There was also resistance to the idea of pairing itself—many believed it didn’t make a significant difference. Looking back, it seems this rigid in-person pairing requirement may have been an intentional wedge, ensuring cultural alignment during Pivotal’s formative years. As the company matured, flexibility around pairing increased, but early on, it contributed to departures as some opted for less demanding setups.
+The pivot coincided with VMware’s realization that Cloud Foundry didn’t belong inside the company. VMware’s enterprise culture clashed with the open-source ethos Cloud Foundry needed to thrive. Building developer-first tools required transparency, collaboration, and community engagement—values that didn’t align with VMware’s traditional approach.  
 
-Internally, Pivotal’s culture was both impressive and inspiring. The agile practices championed by Pivotal Labs were embraced with diligence and consistency, creating an environment of collaboration and respect. The staff’s loyalty to Rob Mee, the company’s co-founder and CEO, reflected genuine admiration for his leadership and vision. Practices like pair programming and test-driven development were not just policies—they were integrated into the company’s operations. For me, tech writingly, it was a rewarding time to be part of a team that operated with such focus and shared purpose, a welcome contrast to the challenges of Cloud Foundry’s earlier days. 
+So, Cloud Foundry, along with Spring and RabbitMQ, was spun out into Pivotal, a standalone company backed by EMC.  
 
-## Facing the Unstoppable Shift  
+The transition wasn’t easy, especially for the original Cloud Foundry team. Pivotal’s headquarters in San Francisco made for a difficult commute for VMware-based employees. Pair programming, a cornerstone of Pivotal’s culture, required engineers to work in person, creating tension for those unable or unwilling to adapt. For some, the pairing requirement became a wedge, ensuring early cultural alignment but leading others to leave.  
 
-For a few years, things at Pivotal felt great. The agile practices, collaboration, and strong leadership created a sense of momentum and purpose. Big-name clients were adopting Cloud Foundry, and Pivotal seemed to be thriving as the go-to partner for enterprises embracing digital transformation.
+Despite the challenges, Pivotal’s culture was inspiring. Agile practices were applied rigorously, creating a collaborative and respectful environment. Pair programming and test-driven development weren’t just buzzwords—they were baked into the company’s DNA. It was rewarding to work in a team that operated with such shared purpose, a stark contrast to the earlier Cloud Foundry struggles.
 
-By 2015, the rise of Kubernetes couldn’t be ignored. A lot of our leadership, including James Watters, saw the writing on the wall. They recognized Kubernetes’s momentum, fueled by its strong backing from major cloud providers. However, Pivotal was fundamentally an engineering-driven company, and that ultimately shaped our path. We debated replacing Cloud Foundry’s scheduler, Diego, with Kubernetes. It never came to be.
+---
 
-Pivotal’s portfolio wasn’t just a handful of customers—it included some of the largest and most influential companies in their respective sectors. These “elephants” were deeply invested in Cloud Foundry, and their adoption was a testament to its enterprise capabilities. However, growth outside of these key accounts was slow, leaving the company increasingly reliant on its existing base as the market evolved.
+## The Kubernetes Wave  
 
-OpenShift, which initially wasn’t seen as a competitor, transformed dramatically by switching from its “cartridge” model to a Kubernetes-based architecture. This pivot turned OpenShift into a serious rival, offering the simplicity of a PaaS with a user-friendly CLI for deploying applications, backed by Kubernetes’s power and flexibility. Some cloud providers even offered OpenShift as a managed service, creating a strong mix of ease of use and cloud-native capabilities. The competition intensified, leaving Cloud Foundry struggling to stay relevant in a Kubernetes-dominated ecosystem.
+For a while, Pivotal thrived. Agile collaboration and strong leadership created momentum, and big-name clients adopted Cloud Foundry as part of their digital transformations.  
 
-Eventually, VMware reacquired Pivotal, folding Cloud Foundry into its Tanzu product line—a move that leaned heavily on Kubernetes. The irony of the shift wasn’t lost: Cloud Foundry, once seen as the enterprise answer to a platform dilemma, was now part of a Kubernetes-focused strategy that had redefined the market it aimed to lead.
+But by 2015, Kubernetes was gaining traction. Backed by major cloud providers, Kubernetes had momentum Pivotal couldn’t match. Leadership debated replacing Cloud Foundry’s scheduler, Diego, with Kubernetes, but it never materialized.  
+
+Pivotal’s customer base included some of the largest companies in the world, deeply invested in Cloud Foundry. But outside these key accounts, growth was slow. The rise of Kubernetes-based solutions like OpenShift created intense competition. OpenShift, once dismissed, pivoted from its “cartridge” model to Kubernetes, combining the simplicity of a PaaS with the flexibility of a cloud-native platform. Managed services from cloud providers only strengthened its appeal, leaving Cloud Foundry struggling to stay relevant.  
+
+Eventually, VMware reacquired Pivotal, integrating Cloud Foundry into its Tanzu product line—a strategy heavily reliant on Kubernetes. The irony wasn’t lost: Cloud Foundry, once positioned as the enterprise solution to platform challenges, was now part of a Kubernetes-first strategy that had redefined the very market it aimed to lead.
+
+---
 
 > *The image of the tidal wave ride is licensed under the Creative Commons Attribution-Share Alike 2.0 Generic license.  
-> The image, originally posted to Flickr, was reviewed on 12 March 2009 by the Wikimedia administrator or reviewer Yarnalgo, who confirmed that it was available on Flickr under the stated license on that date.
+> Original photo reviewed by Wikimedia administrator Yarnalgo on 12 March 2009, confirming availability under the stated license.*

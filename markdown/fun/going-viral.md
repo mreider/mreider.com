@@ -5,38 +5,38 @@ author = "Matt Reider"
 image = "/images/matt/champlain.png"
 +++
 
-Summer vacation was a three-part trip. First was Long Island to celebrate Marty's 80th birthday. Second was Vermont to join Rosie and Zach's wedding. Then Portugal, with #friends4life Schwartzberg clan.
+Our summer vacation was a three-part trip. First, we celebrated Marty’s 80th birthday on Long Island. Then we headed to Vermont for Rosie and Zach’s wedding. Finally, we wrapped things up in Portugal with the #friends4life Schwartzberg clan.
 
 ![world map](/images/matt/map.png)
 
-Coronavirus made it bumpy. The guest list for Marty's birthday was shorter than planned. A particularly important guest, Alison, tested positive and spent the week feeling crappy, at the [Stony Brook holiday Inn Express](https://www.tripadvisor.com/Hotel_Review-g48692-d325697-Reviews-Holiday_Inn_Express_Stony_Brook_Long_Island_an_IHG_Hotel-Stony_Brook_Long_Island_New_Yor.html). It was a great party but not the same without her.
+Coronavirus made things tricky. The guest list for Marty’s birthday ended up shorter than planned. Alison, an especially important guest, tested positive and spent the week feeling lousy at the [Stony Brook Holiday Inn Express](https://www.tripadvisor.com/Hotel_Review-g48692-d325697-Reviews-Holiday_Inn_Express_Stony_Brook_Long_Island_an_IHG_Hotel-Stony_Brook_Long_Island_New_Yor.html). It was a great party, but it wasn’t the same without her.
 
-Marty's big bash was located at the historic [Setuaket Neighborhood House](http://www.setauketneighborhoodhouse.com/about-2) on a beautiful, rather humid, summer day.
+Marty’s big bash was held at the historic [Setauket Neighborhood House](http://www.setauketneighborhoodhouse.com/about-2) on a beautiful, albeit humid, summer day.
 
 ![marty's party](/images/matt/party.png)
 
-At least we had Alison for a bit at her parent's place before the symptoms appeared.
+We were lucky to have a little time with Alison at her parents’ house before the symptoms hit.
 
-![marty's party](/images/matt/outside.png)
+![outside party](/images/matt/outside.png)
 
 # Vermont
 
-Quarantine continued in Vermont at the [Waybury Inn](https://www.wayburyinn.com/) but Alison, with some other infected guests, joined the wedding from a safe distance outside. The wedding was lovely. Max was part of the groom's party, and made friends with some boys his age. We saw our cousins, aunt / uncle, and friends we haven't seen for a long time.
+Quarantine continued in Vermont at the [Waybury Inn](https://www.wayburyinn.com/). Alison, along with a few other infected guests, joined the wedding from a safe distance outside. The wedding itself was lovely. Max was part of the groom’s party and made some friends his age. We also caught up with cousins, aunts, uncles, and friends we hadn’t seen in years.
 
 ![Wedding](/images/matt/wedding.png)
 
-Things went back to normal, virus-wise, in time for a family boating trip on Lake Champlain. Thirty years ago, when I lived in Burlington, I never spent time on the lake. It's huge. 200 km long, 20 km wide, with almost 1,000 km of shoreline that span New York, Vermont, and Quebec.
+Things settled down, virus-wise, just in time for a family boating trip on Lake Champlain. Thirty years ago, when I lived in Burlington, I never spent much time on the lake. It’s enormous—200 km long, 20 km wide, with nearly 1,000 km of shoreline stretching across New York, Vermont, and Quebec.
 
 ![Champlain again](/images/matt/champlain2.png)
 
 # Portugal
 
-In Portugal the virus returned. This time Jeremy and his daughter, Maya, suffered the fever and headaches. Then, later, Hena came down with it. We had a great time anyhow. We celebrated Alison's 36th birthday in Porto, sailing on the Duoro river.
+In Portugal, the virus struck again. This time, Jeremy and his daughter, Maya, came down with fever and headaches. Later, Hena caught it too. Despite all this, we had a fantastic time. We celebrated Alison’s 36th birthday in Porto, sailing along the Duoro River.
 
 ![portugal](/images/matt/portugal.png)
 
-# The year begins again
+# The Year Begins Again
 
-So that's it. Summer is over. So far so good. The kids back at school, Alison and I on Zoom calls, the dog barking at deliveries, while the cats paw at him and hiss.
+And just like that, summer came to an end. So far, so good. The kids are back at school, Alison and I are on Zoom calls, the dog is barking at deliveries, and the cats are pawing at him and hissing.
 
 ![The year begins again](/images/matt/portugal.png)

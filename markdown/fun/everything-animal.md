@@ -5,23 +5,22 @@ author = "Matt Reider"
 image = "/images/matt/0_cvAPXYQPV4j3iuon.jpeg"
 +++
 
-We are ahead of ourselves. We want to be here in April 2020, not September. In April 2020 the kids will take the tram by themselves. They will have strong friendships. Alison and I will understand the healthcare system, and know enough German to order a sandwich without having to point.
+We’re ahead of ourselves. We want it to be April 2020, not September 2019. By April, the kids will take the tram on their own. They’ll have strong friendships. Alison and I will understand the healthcare system and know enough German to order a sandwich without having to point.
 
-But it’s September, not April. We’ll have to wait for the sun and moon to come and go a hundred and fifty times.
+But it’s still September. We have to wait for the sun and moon to come and go 150 times.
 
-I wish there was a magical way to do this. Like when Trinity, in the Matrix, calls back to the ship and says “I need a program for a V-212 helicopter…Hurry!” Her eyelids bounce around and presto — her brain instantly learns how to fly the helicopter.
+I wish there were a magical way to fast-forward. Like in *The Matrix*, when Trinity calls back to the ship and says, “I need a program for a V-212 helicopter… Hurry!” Her eyelids flicker, and—presto—she instantly knows how to fly the helicopter.
 
-Or like a screenplay [1]. Those screenwriters don’t waste time on the learning part. Kung Fu Panda turns into a martial arts wizard in like 5 minutes. Every Marvel movie too. Christian Bates (Batman Begins), Benedict Cumberbatch (Dr. Strange), Robert Downey Jr. (Iron Man) — they all figure out new super-powers faster than it takes me to get a bucket of popcorn and milk duds.
+Or like in movies. Screenwriters never waste time on the learning part. Kung Fu Panda becomes a martial arts master in five minutes. It’s the same with Marvel movies. Christian Bale (*Batman Begins*), Benedict Cumberbatch (*Doctor Strange*), Robert Downey Jr. (*Iron Man*)—they all figure out their new superpowers faster than it takes me to grab a bucket of popcorn and Milk Duds.
 
-At work today — the cleaning lady, who speaks poorly (she’s Croatian) asked if we had dirty dishes to give her. She said “schmutzig,” (dirty) which is just like the Yiddish word “shmutz.” I asked someone to interpret for me. So one of my workmates wrote it on a whiteboard [2]. Next, someone else wrote the word for “squirrel tail.” I had heard this word before, in a lunch conversation. It’s a popular word in Austria — used to test if you speak Austrian German. If you are from Munich, you have no idea what the word means. I added the words I learned at the train station today (train, railway), and the word for wheat beer, which I learned at a bar.
+Today at work, the cleaning lady (she’s Croatian and doesn’t speak German well) asked if we had dirty dishes. She said “schmutzig” (dirty), which is like the Yiddish word “shmutz.” I wasn’t sure what she meant, so I asked someone to interpret. One of my coworkers wrote it on a whiteboard [2]. Then someone else added the word for “squirrel tail,” a word I’d heard before in a lunch conversation. It’s a popular Austrian word used to test if someone speaks Austrian German. People from Munich don’t even know what it means. I added a few more words I learned today—like “train” and “railway” from the train station, and “wheat beer” from a bar.
 
-The final word on the whiteboard is a long word for “anything animal” ) — loosely translated to “Wunder Wuzzi” — which lacks both the word “anything” and “animal” — but I digress. An anything animal is an animal that does anything. It makes milk, it grows wool, it lays eggs, and it tastes like bacon. The word for this Wunder Wuzzi animal is EierLegendeWollMichSow (“egg laying wool milk pig”) [3]. Along with squirrel tail — this vocabulary is useless — besides a few laughs.
+The final word on the whiteboard was a long one that loosely translates to “anything animal.” It’s called a *Wunder Wuzzi* in Austrian German, though that doesn’t actually mean “anything” or “animal.” A *Wunder Wuzzi* is an animal that does everything: it gives milk, grows wool, lays eggs, and tastes like bacon. The German word for this mythical beast is *Eierlegende Wollmilchsau* (“egg-laying wool milk pig”) [3]. Like “squirrel tail,” it’s mostly useless vocabulary—except for a good laugh.
 
-The everything animal was referenced later today in a slide presentation. It’s a common saying here— there is no everything animal. In English we say there is no silver bullet. No easy way. No shortcuts. We have to go through the learning part, the hard stuff.
+The “everything animal” even came up later in a slide presentation. It’s a common saying here: there is no everything animal. In English, we’d say, “There’s no silver bullet.” No easy solutions. No shortcuts. We have to go through the learning phase—the hard stuff.
 
-1. Not to be a downer — but this is one of the things I dislike about super hero movies. That learning bit is the thing I am most interested in — even if I feel too lazy sometimes to go after it myself. I dislike plenty else about super hero movies — or should I say movie — since most are basically a variation of the same film.
+1. Not to be a downer, but this is one of the things I dislike about superhero movies. The learning part is the most interesting to me, even if I sometimes feel too lazy to pursue it myself. I dislike plenty of other things about superhero movies—or should I say *movie*, since most are just variations of the same story.
 
-2.  This week’s words für Matt:
+2. This week’s words für Matt:
 
 ![world map](/images/matt/1_U4q_5NZiTofQT-F2zEJB8Q.png)
-

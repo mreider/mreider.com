@@ -1,21 +1,35 @@
 +++
-title = "Doing it for yourself"
+title = "Doing It for Yourself"
 date = "2024-11-29"
 author = "Matt Reider"
 summary = "Individualist Thinking and Product Success"
 image = "/images/matt/king_john.jpg"
 +++
 
-This might come off as a bit of “get off my lawn” grumbling, but it’s been on my mind lately. I had a conversation with a product manager from another company and it left me thinking. Every time he referred to an initiative, he called it “mine,” almost like shouting, “Me!” Deadlines and priorities were framed as “important for me” — not the team, not the user, but himself.
+This might sound a bit like “get off my lawn” grumbling, but it’s been on my mind lately. I recently had a conversation with a product manager from another company that left me thinking. Every time he referred to an initiative, he called it “mine,” as if shouting, “Me!” Deadlines and priorities were framed as “important for me”—not for the team, not for the users, but for himself.
 
-On one level, this is just human nature — we all bring some degree of self-interest to the work we do. But when a product manager frames things this way, it stops sounding like a team effort and starts to feel like a personal project tied to their ego.
+On one level, this is human nature. We all bring some degree of self-interest to the work we do. But when a product manager frames everything this way, it stops feeling like a team effort and starts looking like a personal project tied to their ego.
 
-There are two larger problems here.
+---
 
-First, decision-making suffers. When the drive to stand out takes over, it often leads to prioritizing features that feel bold but don’t align with user needs. Even in cutting-edge fields like fintech or AI, where innovation grabs headlines, the basics remain essential: concise documentation, predictable login flows, straightforward payments, logical API paths. These aren’t places where stars are born. It's a collaborative grind. When individualism takes the wheel, the product’s value often suffers.
+## Why It’s a Problem
 
-Second, it exacerbates silos. Treating a product as a writing for fun extension makes an already challenging problem worse. It's no fun collaborating with the self-interested. People care less about how an egocentric person's work fits into the big picture. So the walls of the silo thicken, and the uninspired turn inward.
+There are two bigger issues with this kind of thinking.
 
-As [George Carlin reminds us](https://www.youtube.com/watch?v=-OnWnwwxNPA), quoting the Bible, "Pride goeth before the fall."
+### 1. Decision-Making Suffers  
+When the drive to stand out takes over, priorities often shift toward features that seem bold but don’t align with user needs. Even in flashy fields like fintech or AI, where innovation gets the headlines, the basics matter most: clear documentation, predictable login flows, simple payments, logical API paths. These aren’t the glamorous parts of the job. They’re the collaborative grind. But when individualism takes the wheel, the product’s overall value often takes a hit.
 
-> * Dulwich Picture Gallery. (n.d.). King John. Retrieved November 29, 2024, from https://www.dulwichpicturegallery.org.uk/explore-the-collection/501-550/king-john/
+### 2. Silos Get Worse  
+Treating a product like a personal extension makes silos harder to break down. It’s no fun collaborating with someone who’s self-interested. People care less about how egocentric work fits into the bigger picture. The walls of the silo thicken, and the uninspired turn inward.
+
+---
+
+## A Timeless Reminder  
+
+As [George Carlin pointed out](https://www.youtube.com/watch?v=-OnWnwwxNPA), quoting the Bible: *“Pride goeth before the fall.”* 
+
+When we prioritize personal pride over collaboration, we don’t just risk missing deadlines or losing user trust—we risk losing the opportunity to create something meaningful together.
+
+---
+
+> *Image credit: Dulwich Picture Gallery. King John. Retrieved November 29, 2024, from [Dulwich Picture Gallery](https://www.dulwichpicturegallery.org.uk/explore-the-collection/501-550/king-john/).*

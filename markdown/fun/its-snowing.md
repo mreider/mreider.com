@@ -1,52 +1,64 @@
 +++
-title = "It's snowing"
+title = "It's Snowing"
 date = "2019-12-02"
 author = "Matt Reider"
 image = "/images/matt/1_YHQ75Z7fSQ8Sq2cBYUZ_Qw.png"
 +++
 
-Snow is falling in Linz today. This makes the kids very happy. I put on some ski gear and rode my bike to work along with dozens of other folks.
+Snow is falling in Linz today, which makes the kids very happy. I put on some ski gear and rode my bike to work—alongside dozens of other people doing the same.
 
-Snow fits the scenery. Linz is all in for Christmas. Lights are strung above the streets. Clear lights, globes, stars, and multi-colored spirals.
+The snow fits the scenery perfectly. Linz is fully decked out for Christmas. Lights are strung above the streets—clear lights, globes, stars, and multi-colored spirals.
 
-Linz has three different Christmas markets within a half mile radius. Main square’s market has tasty Glühwein. Volksgarten has classical music, animatronic elves, and a ferris wheel. Pfarrplatz has a petting zoo.
+Linz boasts three different Christmas markets within a half-mile radius. The market at Main Square has tasty Glühwein. Volksgarten features classical music, animatronic elves, and a Ferris wheel. Pfarrplatz even has a petting zoo.
 
-We went to a Christmas gospel thing at the cathedral last weekend. The lead singer spoke fluent German, which the audience loved. He must have some link to Austria — he’s been doing this every year for over a decade.
+Last weekend, we went to a Christmas gospel concert at the cathedral. The lead singer spoke fluent German, which the audience loved. He must have a connection to Austria—he’s been performing here every year for over a decade.
 
 ![cathedral](/images/matt/image-7.png)
 
-The next day we went to a little party hosted at our friends’ house. They’re also from the Bay Area. I tried to speak some German with their neighbors, but it’s not happening. We stuck with English.
+The next day, we attended a small party hosted by friends who are also from the Bay Area. I tried speaking a little German with their neighbors, but it wasn’t happening. We stuck to English.
 
-Let’s talk more about that.
+### On Learning German
 
-I expected Max and Zoe to learn German faster than we would, but we’re progressing at the same pace. Every store, restaurant, movie theater, or office in Linz has some English, and it doesn’t seem crucial to spend the money, or time, on intensive language training.
+I expected Max and Zoe to pick up German faster than Alison and I would, but we’re all progressing at about the same pace. Almost every store, restaurant, movie theater, or office in Linz has some English, so intensive language training doesn’t feel essential.
 
-Alison and I practice German at home using an app called Duolingo. I also listen to a German podcast, produced by an Irish guy who learns along with you. Once a week there is a class at my work, and we are both taking an extracurricular class too. Mine starts on Friday.
+At home, Alison and I practice German using an app called Duolingo. I also listen to a German podcast produced by an Irish guy who learns along with his listeners. Once a week, there’s a German class at my work, and Alison and I are both taking extracurricular classes. Mine starts Friday.
 
-We can use numbers pretty well, but it’s hard to calculate things since the first number is the digit, not the ten. In German you say “two and twenty” — instead of “twenty-two,” and that split second of confusion makes it hard to take in whatever is said next.
+We’ve gotten comfortable with numbers, but calculating in German is tricky because the structure is reversed. Instead of saying “twenty-two,” you say “two and twenty.” That split second of translating in my head often causes me to miss whatever comes next.
 
-The time is also flipped around. 8:30 is “Half nine,” rather than “half past eight.”
+Telling time is flipped too. 8:30 is “half nine,” not “half past eight.”
 
-Now for the articles. What a mess.
+And then there are the articles. What a mess.
 
-“The” is an article. French, Italian and Spanish have genders — so the articles change. Spanish has “el” and “la.” El niño. The boy. Masculine. La niña. The girl. Feminine.
+“The” is an article. French, Italian, and Spanish use gendered articles, so the form changes with the gender of the noun. For example, in Spanish: *el niño* (the boy, masculine) and *la niña* (the girl, feminine).
 
-Like Spanish, German has masculine and feminine, but there’s also neutral. Der and die for masculine / feminine. Das for neutral.
+Like Spanish, German has masculine and feminine articles, but it also has a neutral article. *Der* (masculine), *die* (feminine), and *das* (neutral).
 
-Der Junge. The boy. Masculine. Das Mädchen. The girl. Feminine right? No. It’s Neutral. Jokes on you. Apparently neutral things are often diminutive, meaning little and cute. Like a cute little kitty cat. Die kleine Katze. Oh, wait, that’s feminine. Kill me.
+For instance:
+- *Der Junge* (the boy, masculine). 
+- *Das Mädchen* (the girl, neutral). 
 
-Notice the ending too. Der Junge ends in “e” — so you might think, oh, things that end in “e” are masculine. Nope. The cute kitty Katze ends in “e” also. So you have to memorize the article, and the gender, with every word.
+Wait—neutral? Yes, apparently neutral nouns often refer to diminutives, meaning small or cute things. But that rule isn’t consistent. For example, *die kleine Katze* (the little cat) is feminine. Why? No one knows. Kill me.
 
-To make it even worse — the articles change when the noun is not the subject of the sentence. Dog is masculine. Der Hunde. But if he’s the direct object (after the verb)— he’s den Hunde. There are more articles to learn soon. Possessive articles. If something is yours or mine. Great.
+To make things even more confusing, the ending of a noun doesn’t always help. *Der Junge* ends in “e,” so you might think all nouns ending in “e” are masculine. Nope. *Die Katze* (feminine) ends in “e” too. You just have to memorize the article for each word.
 
-Sentence structure is also difficult. Verb placement. This one makes me crazy. You call me on the phone and invite us to dinner. “I would like you and your wife to join us for dinner next week.” This translates to “I want you and your wife next week dinner with us join.” The second verb always comes last. It’s like watching Rachel Maddow. A slow reveal. You want my wife and I to do something dinner related. I wonder what. Eat dinner? Buy dinner? Regurgitate dinner? Oh! Join! You want us to JOIN you at dinner! Sorry. We can’t.
+And it gets worse. Articles change based on the noun’s role in the sentence. For example:
+- *Der Hund* (the dog, masculine) when it’s the subject.
+- *Den Hund* (the dog, masculine) when it’s the direct object.  
 
-The slow reveal isn’t hard for us yet — because our vocabulary is so limited that we don’t understand most of what people are saying to begin with. But as our vocab improves, I am thinking it might be like the flipped numbers. A split second pause to think and whatever follows is lost.
+Possessive articles are another layer of fun. Can’t wait to tackle those.
 
-The word for “repeat” is wiederholen.
+Then there’s sentence structure. German loves to put the second verb at the very end of the sentence. For example:
+- “I would like you and your wife to join us for dinner next week” translates to:  
+  “I want you and your wife next week dinner with us join.”
 
-To summarize. Christmas is here. German is hard. :)
+It’s like a slow reveal. You know it’s about dinner, but the action isn’t clear until the very last word. Eat dinner? Cook dinner? Regurgitate dinner? Oh—join! You want us to *join* you for dinner. Sorry, we can’t. 
 
-Time to sign off and earn my daily Duolingo points before bed time.
+For now, the slow reveal isn’t too overwhelming because our vocabulary is still limited. But as we learn more words, I imagine it’ll feel like the flipped numbers—a brief pause to figure things out, and the rest of the sentence is lost.
 
-Gute Nacht!
+The word for “repeat” is *wiederholen*. It feels appropriate.
+
+To summarize: Christmas is here. German is hard. :)
+
+Time to sign off and earn my daily Duolingo points before bed.
+
+*Gute Nacht!*

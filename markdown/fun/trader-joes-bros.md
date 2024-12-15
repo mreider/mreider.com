@@ -4,20 +4,33 @@ date = "2019-10-20"
 author = "Matt Reider"
 +++
 
-There are three supermarkets within a five minute bike ride of our flat. Two are in the local shopping center — Merkur Markt, and Hofer. The third is Billa — next to Rudolphstraße station.
+There are three supermarkets within a five-minute bike ride of our flat: Merkur Markt, Hofer, and Billa.  
 
-Merkur Markt has the most variety. You can find veggie dogs, sushi rolls, and lots of fresh produce. There are also giant home-made gummy bears. Big fan.
+---
 
-The Billa isn’t as nice as Merkur, but it works. The one near my office sells tuna sandwiches for €2.40. I like their budget cole slaw too, which is tastier than the Safeway drippy version back home.
+### Merkur Markt  
+Merkur Markt has the most variety. You can find veggie dogs, sushi rolls, and lots of fresh produce. They even have giant homemade gummy bears, which I’m a big fan of.  
 
-And then there is Hofer. It’s the opposite of Merkur — no variety. Inexpensive and limited.
+### Billa  
+Billa isn’t as nice as Merkur, but it does the job. The location near my office sells tuna sandwiches for €2.40, and their budget coleslaw is surprisingly good—much better than the drippy Safeway version back home.  
 
-Everyone bags their own groceries in Austria — and the cashiers expect you to move quickly. At Merkur or Billa this can be a bit stressful. At Hofer it is an all out crisis. There’s no way to keep up. Someone else’s groceries get thrown down the chute before yours are out of the way. The stress is worth it when you get the bill.
+### Hofer  
+And then there’s Hofer. It’s the opposite of Merkur: inexpensive, but with very limited variety.  
 
-Hofer is owned by Aldi, the same company behind Trader Joe’s. Things are pretty bare bones at both stores. There is only one brand of milk, butter, and eggs.
+Everyone bags their own groceries in Austria, and the cashiers expect you to move quickly. At Merkur or Billa, it can be a bit stressful. At Hofer, it’s an all-out crisis. There’s no way to keep up. Before you can finish bagging your groceries, someone else’s items are already being thrown down the chute. Still, the stress is worth it when you see the bill.
 
-One thing Hofer (and Aldi) have that Trader Joe’s doesn’t is the middle aisle. In the UK People call it “treasure aisle-land” and “the wonder aisle.” It’s a random pile of discounted things in no particular order. A pair of boots next to a wall clock alongside some boxing gloves.
+---
 
-Aldi was founded by two German brothers who had a grocery store in Essen. Later they got into a fight and split the company in half. Hofer and Trader Joe’s are owned by Aldi South. Marché, in france, is owned by Aldi North. No idea if there’s a middle aisle in that one.
+## Hofer and Aldi  
+Hofer is owned by Aldi, the same company behind Trader Joe’s. Both stores are pretty bare-bones, offering only one brand of staples like milk, butter, and eggs.
 
-Our friend Scott works for Adidas — founded by another pair German brothers in the 1920's. They broke the company in half too. Adidas North on one side. Adidas South, otherwise known as Puma, on the other. It’d be awesome to see either brand in treasure-aisle-land someday.
+One unique thing Hofer (and Aldi) has that Trader Joe’s doesn’t is the middle aisle. In the UK, it’s nicknamed “Treasure Aisle-land” or “The Wonder Aisle.” It’s a random assortment of discounted items in no particular order: a pair of boots next to a wall clock, alongside some boxing gloves.  
+
+---
+
+## A Tale of Two Brothers  
+Aldi was founded by two German brothers who ran a grocery store in Essen. Later, they had a falling out and split the company in half. Hofer and Trader Joe’s are owned by Aldi South, while Aldi North owns Marché in France. No idea if Aldi North stores have a middle aisle, but it’d be fun to find out.
+
+Interestingly, our friend Scott works for Adidas, which was also founded by two German brothers in the 1920s. Like Aldi, they split the company after a fight. Adidas North became the Adidas we know, while Adidas South turned into Puma.  
+
+It’d be amazing to see Adidas or Puma gear pop up in Treasure Aisle-land someday.

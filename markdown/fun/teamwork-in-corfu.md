@@ -5,32 +5,36 @@ author = "Matt Reider"
 image = "/images/matt/1_l2i7EqauON04D-pjr9b1gQ-1.jpeg"
 +++
 
-I learned some important things during our vacation in Corfu. Wasps don’t like smoke. Google maps can tell you to drive in circles. Jacques Cousteau invented scuba diving.
+I learned some important things during our vacation in Corfu: wasps don’t like smoke, Google Maps can make you drive in circles, and Jacques Cousteau invented scuba diving.
 
-The scuba diving bit was learned on this boat in the town of Nisaki, on Corfu’s northeast side. If you look closely you’ll see Chris, the owner of Apollo dive, sitting with my wife and kids.
+The scuba diving bit came up on this boat in the town of Nisaki, on Corfu’s northeast side. If you look closely, you’ll see Chris, the owner of Apollo Dive, sitting with my wife and kids.
 
 ![Apollo Dive](/images/matt/1_lGhi5dVVjNsilKEfcjNu9A.jpeg)
 
-Chris and his wife Maria led us on five dives in total. The kids took a written test to pass their certification. Now we can dive as a family anywhere in the world.
+Chris and his wife Maria led us on five dives in total. The kids even passed a written test to earn their diving certification. Now, we can dive as a family anywhere in the world.
 
-There were differences in the kids’ behavior during this diving thing. At night, when they were studying for the test, there were no complaints.
+---
 
-Not one “this is boring!”
+## A Lesson in Teamwork
 
-Nor a single “do I have to?”
+There were some surprising differences in the kids’ behavior during the diving experience. When they were studying for the certification test at night, there were no complaints.  
+Not one “This is boring!”  
+Not a single “Do I have to?”
 
-“Why no complaints?” we wondered out loud.
+“Why no complaints?” Alison and I wondered aloud.  
 
-“Because we care about this stuff,” was the response.
+“Because we care about this stuff,” they said.  
 
-Predictable. But also brilliant. Reminding me of an expensive and questionable masters degree in Ed I earned a million years ago. Most schoolwork has little relevance in student’s lives. This stuff was relevant, interesting, and important.
+Predictable. But also brilliant. It reminded me of a long-ago, expensive, and somewhat questionable master’s degree in education. Most schoolwork lacks relevance in students’ lives. But this? This was relevant, interesting, and important.
 
-Another difference in their behavior. Teamwork. Sure, they work together at home — but it’s fleeting. Within a few minutes there’s often raised voices, impatience, and selfishness.
+Another big difference was their teamwork. Sure, they work together at home, but it’s usually fleeting—quickly devolving into raised voices, impatience, and selfishness.
 
-Their relationship was different during the dive. They had to do buddy checks. To look over one another’s equipment. To stay close to one another under the water. To take care of one another. Chris explained, strongly, how important this stuff is to their survival, and the kids lived up to it.
+But during the dives, it was different. They had to do buddy checks—inspecting each other’s equipment, staying close underwater, and looking out for one another. Chris emphasized, strongly, how critical these habits are for survival. The kids lived up to the responsibility.
 
-Walking onto the beach was exhausting. Wet suits, tanks, and regulators on our backs. The rocks were painful under bare feet. I looked up and saw my kids helping each-other. They were holding hands, finding their sandals on the shore.
+Walking onto the beach after a dive was exhausting. Wet suits, tanks, and regulators weighed heavily on our backs. The sharp rocks were painful under bare feet. But then I looked up and saw my kids helping each other. They were holding hands, finding their sandals on the shore.
 
-Memories change into snapshots. Sometimes you see something and know the snapshot is being captured right then and there. This was one of those times.
+Memories often turn into snapshots. Sometimes, you see a moment unfold and know it’s becoming a snapshot right then and there. This was one of those times.
+
+---
 
 It was an unforgettable vacation.

@@ -5,19 +5,19 @@ date = "2022-03-10"
 image = "images/matt/94797BC5-3A6A-4043-87CC-280B876F7D93_1_105_c.jpeg"
 +++
 
-I stopped writing over a year ago. Not sure why. Wasn't feeling it.
+I stopped writing over a year ago. I'm not sure why—maybe I just wasn't feeling it.
 
-But today I'll give you a short update.
+But today, I'll give you a quick update.
 
-We've experienced some new things. We went skiing on a couple of glaciers. We bought a hyperactive dog named Leo. We visited friends and family in America and then went scuba diving in Costa Rica. In autumn we saw Belgium, then climbed up the Eiffel Tower. Then it was winter again.  We went to Florence with my niece, sister, mom+husband. Then we kicked off 2022 with schnapps and skiing in East Tirol.
+We've had some new experiences. We went skiing on a couple of glaciers. We got a hyperactive dog named Leo. We visited friends and family in America, then went scuba diving in Costa Rica. In the autumn, we explored Belgium and climbed the Eiffel Tower. Winter came, and we traveled to Florence with my niece, sister, mom, and her husband. We kicked off 2022 with schnapps and skiing in East Tirol.
 
-You're  mostly caught up.
+Now you're mostly caught up.
 
-Some big news. We moved from Linz to Vienna in August. Now we have more choices for art, culture, and food. We also have a real airport with flights around the world. The move was really about the kids though - they go to a great international school and have lots of new friends.
+Some big news: we moved from Linz to Vienna in August. The city gives us more options for art, culture, and food, not to mention a proper international airport with flights to anywhere. But the move was really about the kids—they now attend a fantastic international school and have made lots of new friends.
 
-And now it's March. And sadly, most of our attention is on Ukraine, which is a six hour drive from Vienna through Slovakia. Many of our workmates are from Ukraine, and it's hard to imagine what they're going through.  The whole thing is horrible. And while I've always been full of opinions, and enjoy discussing politics or history, I don't have much more to say on this one.
+And now it's March. Unfortunately, most of our attention is on Ukraine, which is just a six-hour drive from Vienna through Slovakia. Many of our coworkers are from Ukraine, and it’s unimaginable what they’re going through. The whole situation is awful. While I’ve always enjoyed discussing politics and history, I don’t have much more to say about this one.
 
-Here are some pictures of stuff we've done in the last year - most recent pics first.
+Here are some pictures of what we’ve been up to over the past year, with the most recent ones first.
 
 ## Skiing in East Tirol (GroßGlockner)
 
@@ -70,4 +70,3 @@ Here are some pictures of stuff we've done in the last year - most recent pics f
 ## A walk up to Linz Tower
 
 ![A walk up to Linz Tower](/images/matt/69F87CA9-D5DE-48AD-8431-0B6F518DB307_1_105_c.jpeg)
-
