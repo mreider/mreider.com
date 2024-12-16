@@ -28,7 +28,7 @@ This focus on the AT Protocol gives BlueSky a way to market itself as a distribu
 
 ## How Will They Monetize?  
 
-Last week, a mockup of a leaked BlueSky membership page popped up. Who knows if it’s real. Even if it is, charging fees might cover a few weeks of cloud costs, but it won’t be enough to fund a growing platform long-term.
+Last week, a mockup of a leaked BlueSky membership page popped up. Who knows if it’s in the works. Even if it is, charging fees might cover a few weeks of cloud costs, but it won’t be enough to fund a growing platform long-term.
 
 ![mockup](/images/matt/bluesky-mockup.png)
 
