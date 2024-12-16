@@ -6,6 +6,7 @@ require 'date'
 require 'titleize'
 require 'listen'
 require 'optparse'
+require 'rss'
 
 MARKDOWN_DIR = "markdown"
 CSS_DIR = "css"
@@ -162,6 +163,7 @@ end
 
 def generate_static_asset_links(base_url)
   <<~HTML
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="#{absolute_path(base_url, 'css/styles.css')}">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="#{absolute_path(base_url, 'images/favicon.ico')}">
@@ -287,21 +289,56 @@ def generate_post_list(folder_name, base_url)
   end.join("\n")
 end
 
-def make_images_responsive(content, base_url)
-  content.gsub(/<img([^>]+)src="([^"]+)"([^>]*)>/) do
-    img_tag = $&
-    src = $2
+def generate_rss_feed(base_url)
+  rss_file = File.join(PUBLISHED_DIR, "rss.xml")
+  defaults = load_defaults
+  all_posts = []
 
-    # Prepend base_url if the src is a relative path
-    if src.start_with?('/')
-      absolute_src = absolute_path(base_url, src)
-      img_tag.gsub(/src="([^"]+)"/, "src=\"#{absolute_src}\"")
-    else
-      img_tag
-    end
-    .gsub(/class="([^"]*)"/, 'class="\1 img-fluid"') # Add img-fluid to existing classes
-    .gsub(/<img(?!.*class=)/, '<img class="img-fluid"') # Add img-fluid if class is missing
+  # Collect posts from all directories
+  Dir.glob(File.join(MARKDOWN_DIR, "**/*.md")).each do |file|
+    content = File.read(file)
+    front_matter, _ = parse_front_matter(content, defaults)
+    next unless front_matter['date'] && front_matter['title']
+
+    post_date = Date.parse(front_matter['date'])
+    post_title = front_matter['title']
+    post_summary = front_matter['summary'] || ''
+    relative_path = Pathname.new(file).relative_path_from(Pathname.new(MARKDOWN_DIR)).to_s
+    post_link = absolute_path(base_url, relative_path.sub(/\.md$/, '.html'))
+
+    all_posts << {
+      title: post_title,
+      date: post_date,
+      summary: post_summary,
+      link: post_link
+    }
   end
+
+  # Sort posts by date (newest first)
+  all_posts.sort_by! { |post| -post[:date].to_time.to_i }
+
+  # Generate RSS feed
+  rss = RSS::Maker.make("atom") do |maker|
+    maker.channel.author = defaults['author'] || "Krems"
+    maker.channel.updated = all_posts.first[:date].to_time if all_posts.any?
+    maker.channel.about = absolute_path(base_url, "rss.xml")
+    maker.channel.title = defaults['title'] || "RSS Feed"
+    maker.channel.link = base_url
+    maker.channel.description = defaults['summary'] || "Latest posts"
+
+    all_posts.each do |post|
+      maker.items.new_item do |item|
+        item.link = post[:link]
+        item.title = post[:title]
+        item.summary = post[:summary]
+        item.updated = post[:date].to_time
+      end
+    end
+  end
+
+  # Write RSS feed to file
+  File.write(rss_file, rss.to_s)
+  puts "Generated RSS feed at #{rss_file}"
 end
 
 def replace_custom_handlebars(content, base_url)
@@ -312,7 +349,7 @@ def generate_footer(base_url)
   <<~HTML
     <footer class="bg-light py-4 mt-auto">
       <div class="container text-center">
-        <p class="mb-2">&copy; #{Time.now.year} | Created with <a href="https://github.com/mreider/krems/">Krems</a></p>
+        <p class="mb-2">&copy; #{Time.now.year} | Created with <span class="text-primary">Krems</span></p>
         <p class="mb-0">
           <a href="#top" class="text-decoration-none text-primary">Back to top</a>
         </p>
@@ -347,9 +384,6 @@ def convert_markdown_to_html(base_url)
     rendered_body_content = markdown.render(raw_body_content)
     rendered_body_content = convert_links_to_html(rendered_body_content, base_url)
     rendered_body_content = replace_custom_handlebars(rendered_body_content, base_url)
-    rendered_body_content = make_images_responsive(rendered_body_content, base_url)
-
-
 
     # Post-specific meta details
     post_title = front_matter['title'] || ''
@@ -421,6 +455,7 @@ def generate_site(local)
   end
   convert_markdown_to_html(base_url)
   copy_static_assets
+  generate_rss_feed(base_url)
 end
 
 options = { mode: 'build' }
