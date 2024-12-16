@@ -6,7 +6,7 @@ summary = "Early Twitter vibes and uncertain prospects"
 image = "/images/matt/cloudy_sky.jpg"
 +++
 
-BlueSky is going ok so far. I don’t have many followers yet, and I’m still figuring out who to follow, but it’s the closest thing we’ve had in years to *2012 Twitter*—the good Twitter. The one where tech folks could have fun, feel connected, and not drown in nonsense.
+BlueSky is going ok so far. I don’t have many followers yet, and I’m still figuring out who to follow, but it’s the closest thing we’ve had in years to 2012 Twitter—the good Twitter. The one where tech folks could have fun, feel connected, and not drown in nonsense.
 
 Back then we wondered how Twitter would make money. BlueSky is in the same place. But unlike Twitter, which grew organically from a quirky SMS tool, BlueSky isn’t organic. It has a clearer sense of what it wants to be—or maybe it doesn’t.
 
@@ -18,7 +18,7 @@ BlueSky is proudly algorithm-free. Your timeline is chronological, showing posts
 
 This is what early Twitter was - not because it *wanted* to stay that way — more because the Zuckerberg model of monetizing eyeballs hadn’t been realized.
 
-But not wanting to be something isn’t the same as knowing what you *do* want to be. That’s where things get murky. The AT Protocol supposedly has advantages over Mastodon’s ActivityPub, but so what? I think this focus on protocols is irrelevant, and comes from BlueSky’s roots. Its owners have have connections to the protocol-hyped crypto world. Here's co-owner Mike Masnick's words from this article on protocls over platforms:
+Not wanting to be something isn’t the same as knowing what you do want to be, and that’s where things get murky. Much of BlueSky’s identity seems tied to the AT Protocol, reminiscent of the crypto industry’s obsession with protocols. This likely stems from BlueSky’s roots, as many of its owners have connections to the protocol-driven crypto world. Co-owner Mike Masnick captures this idea in an article he wrote on [protocols vs platforms](https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech):
 
 > *In the last few years, with the development of cryptocurrencies and tokens, it has become theoretically possible to build a protocol that uses a cryptocurrency or a token that has some value attached to it, with the value of those items growing in conjunction with usage. A simple way of looking at this is that a token-based cryptocurrency is the equivalent of equity in a company—but rather than the value being tied to the financial success of the company, the value of a crypto token is tied to the value of the overall network.*
 
@@ -34,7 +34,7 @@ Last week, a mockup of a leaked BlueSky membership page popped up. Who knows if 
 
 So, what happens next? How do they monetize this thing? My guess is they don’t—at least not yet. They’ll keep growing bluesky.social, putting off the monetization question until it can’t be avoided anymore.
 
-This leaves two likely options:  
+At some point this leaves two likely options:  
 
 1. **Advertising:** Eventually, they might introduce ads—maybe just on *bluesky.social*—while claiming users could move to other AT Protocol servers if they don’t like it. IMHO no viable alternatives would exist.
 
