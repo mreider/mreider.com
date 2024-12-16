@@ -12,7 +12,7 @@ Back then we wondered how Twitter would make money. Bluesky is in the same place
 
 ---
 
-## What Bluesky *Wants* to Be  
+## Where is Bluesky going?
 
 Bluesky is proudly algorithm-free. Your timeline is chronological, showing posts in order rather than prioritizing engagement. There’s no advertising. For now, you’re not the product. 
 
