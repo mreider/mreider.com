@@ -16,9 +16,9 @@ Back then we wondered how Twitter would make money. Bluesky is in the same place
 
 Bluesky is proudly algorithm-free. Your timeline is chronological, showing posts in order rather than prioritizing engagement. There’s no advertising. For now, you’re not the product. 
 
-This is what early Twitter was - not because it *wanted* to stay that way — more because the Zuckerberg model of monetizing eyeballs hadn’t been realized.
+This is what early Twitter was. It hadn't yet followed the Zuckerberg model of monetizing eyeballs via algorithmic engagement.
 
-Not wanting to be something isn’t the same as knowing what you do want to be, and that’s where things get murky. Much of Bluesky's identity seems tied to the AT Protocol, reminiscent of the crypto industry’s obsession with protocols. This likely stems from Bluesky's roots, as many of its owners have connections to the protocol-driven crypto world. Co-owner Mike Masnick captures this idea in an article he wrote on [protocols vs platforms](https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech):
+Bluesky's identity is tied to the AT Protocol, reminiscent of the crypto industry’s obsession with protocols. This likely stems from Bluesky's roots, as many of its owners have connections to the protocol-driven crypto world. Co-owner Mike Masnick captures this idea in an article he wrote on [protocols vs platforms](https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech):
 
 > *In the last few years, with the development of cryptocurrencies and tokens, it has become theoretically possible to build a protocol that uses a cryptocurrency or a token that has some value attached to it, with the value of those items growing in conjunction with usage. A simple way of looking at this is that a token-based cryptocurrency is the equivalent of equity in a company—but rather than the value being tied to the financial success of the company, the value of a crypto token is tied to the value of the overall network.*
 
