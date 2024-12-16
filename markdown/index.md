@@ -1,6 +1,6 @@
 +++
 menu = []
-title = "My little corner of the Internet"
+title = ""
 author = ""
 +++
 
