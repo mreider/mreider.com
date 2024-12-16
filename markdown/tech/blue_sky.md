@@ -37,6 +37,8 @@ So, what happens next? How do they monetize this thing? My guess is they don’t
 
 Last week, a mockup of a leaked BlueSky membership page popped up. Who knows if it’s real. Even if it is, charging fees might cover a few weeks of cloud costs, but it won’t be enough to fund a growing platform long-term.
 
+![mockup](/images/matt/bluesky-mockup.png)
+
 This leaves two likely options:  
 
 1. **Advertising:** Eventually, they might introduce ads—maybe just on *bluesky.social*—while claiming users could move to other AT Protocol servers if they don’t like it. IMHO no viable alternatives would exist.
