@@ -22,7 +22,7 @@ Not wanting to be something isn’t the same as knowing what you do want to be, 
 
 > *In the last few years, with the development of cryptocurrencies and tokens, it has become theoretically possible to build a protocol that uses a cryptocurrency or a token that has some value attached to it, with the value of those items growing in conjunction with usage. A simple way of looking at this is that a token-based cryptocurrency is the equivalent of equity in a company—but rather than the value being tied to the financial success of the company, the value of a crypto token is tied to the value of the overall network.*
 
-To put it bluntly, the AT Protocol lets BlueSky market itself as a distributed network, but that’s not what’s actually happening. Everyone is on bluesky.social, and its growth has nothing to do with decentralization or the protocol. In practice, it’s just a platform.
+This focus on the AT Protocol gives BlueSky a way to market itself as a distributed network, much like the ideals Masnick outlines in his article on protocols over platforms. But in reality, that’s not what’s happening. Everyone is on bluesky.social, and its growth has nothing to do with decentralization or the protocol. In practice, it functions like any other centralized platform.
 
 ---
 
