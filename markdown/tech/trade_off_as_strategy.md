@@ -31,3 +31,5 @@ One thing I appreciated during the discussion was Mike's humility. I asked why h
 Sometimes, the best conversations aren't about giving advice but simply being there to listen, confirm, and reflect.
 
 Happy New Year.
+
+> *The image of the trading post is licensed under Creative Commons Attribution - Share Alike 2.0 Generic license. Attribution: [Myotus](https://commons.wikimedia.org/wiki/User:Myotus)
