@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <author>
+    <name>Krems</name>
+  </author>
+  <id>http://127.0.0.1:4567/rss.xml</id>
+  <link href="http://127.0.0.1:4567/"/>
+  <subtitle>Latest posts</subtitle>
+  <title>RSS Feed</title>
+  <updated>2025-01-01T00:00:00+01:00</updated>
+  <entry>
+    <id>http://127.0.0.1:4567/tech/trade_off_as_strategy.html</id>
+    <link href="http://127.0.0.1:4567/tech/trade_off_as_strategy.html"/>
+    <summary>Chasing weaker opportunities exhausts your team</summary>
+    <title>Great Strategies Start with Sacrifice</title>
+    <updated>2025-01-01T00:00:00+01:00</updated>
+    <dc:date>2025-01-01T00:00:00+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/tech/blue_sky.html</id>
+    <link href="http://127.0.0.1:4567/tech/blue_sky.html"/>
+    <summary>Early Twitter vibes and uncertain prospects</summary>
+    <title>Bluesky is almost like 2012 Twitter</title>
+    <updated>2024-12-16T00:00:00+01:00</updated>
+    <dc:date>2024-12-16T00:00:00+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/tech/On_ambivalence.html</id>
+    <link href="http://127.0.0.1:4567/tech/On_ambivalence.html"/>
+    <summary>Ambivalence can be a leadership weakness, but in Product Management, it’s a strength.</summary>
+    <title>Certainty, Ambivalence, and Product Leadership</title>
+    <updated>2024-12-02T00:00:00+01:00</updated>
+    <dc:date>2024-12-02T00:00:00+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/tech/Doing_it_for_yourself.html</id>
+    <link href="http://127.0.0.1:4567/tech/Doing_it_for_yourself.html"/>
+    <summary>Individualist Thinking and Product Success</summary>
+    <title>Doing It for Yourself</title>
+    <updated>2024-11-29T00:00:00+01:00</updated>
+    <dc:date>2024-11-29T00:00:00+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/tech/Pivotal_and_the_rise_of_cloud_foundry.html</id>
+    <link href="http://127.0.0.1:4567/tech/Pivotal_and_the_rise_of_cloud_foundry.html"/>
+    <summary>Building a platform, spinning out into something new, and navigating big shifts in the industry.</summary>
+    <title>VMware, Pivotal, and the Rise of Kubernetes</title>
+    <updated>2024-11-28T00:00:00+01:00</updated>
+    <dc:date>2024-11-28T00:00:00+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/tech/Building_Quacker.html</id>
+    <link href="http://127.0.0.1:4567/tech/Building_Quacker.html"/>
+    <summary>Building an app with AI is both impressive and frustrating.</summary>
+    <title>Building Quacker: A Weekend Project with ChatGPT</title>
+    <updated>2024-11-26T00:00:00+01:00</updated>
+    <dc:date>2024-11-26T00:00:00+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/tech/Henchman_or_Hero.html</id>
+    <link href="http://127.0.0.1:4567/tech/Henchman_or_Hero.html"/>
+    <summary>At an early stage, it’s usually about execution, not vision.</summary>
+    <title>Founders Don’t Need a Strategist as the First PM</title>
+    <updated>2024-11-26T00:00:00+01:00</updated>
+    <dc:date>2024-11-26T00:00:00+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/tech/Tales_from_Engineyard.html</id>
+    <link href="http://127.0.0.1:4567/tech/Tales_from_Engineyard.html"/>
+    <summary>My experience at Engine Yard and how venture funding shaped its fate.</summary>
+    <title>Engine Yard and the Cost of Venture Capital</title>
+    <updated>2024-10-19T00:00:00+02:00</updated>
+    <dc:date>2024-10-19T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/lost-and-found.html</id>
+    <link href="http://127.0.0.1:4567/fun/lost-and-found.html"/>
+    <summary></summary>
+    <title>Lost and Found</title>
+    <updated>2024-05-31T00:00:00+02:00</updated>
+    <dc:date>2024-05-31T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/h20no.html</id>
+    <link href="http://127.0.0.1:4567/fun/h20no.html"/>
+    <summary></summary>
+    <title>H₂Oh No</title>
+    <updated>2024-03-02T00:00:00+01:00</updated>
+    <dc:date>2024-03-02T00:00:00+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/going-viral.html</id>
+    <link href="http://127.0.0.1:4567/fun/going-viral.html"/>
+    <summary></summary>
+    <title>Going Viral</title>
+    <updated>2022-08-24T00:00:00+02:00</updated>
+    <dc:date>2022-08-24T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/more-than-20-questions.html</id>
+    <link href="http://127.0.0.1:4567/fun/more-than-20-questions.html"/>
+    <summary></summary>
+    <title>More than 20 Questions</title>
+    <updated>2022-04-18T00:00:00+02:00</updated>
+    <dc:date>2022-04-18T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/a-year-went-by.html</id>
+    <link href="http://127.0.0.1:4567/fun/a-year-went-by.html"/>
+    <summary></summary>
+    <title>A Year Went By</title>
+    <updated>2022-03-10T00:00:00+01:00</updated>
+    <dc:date>2022-03-10T00:00:00+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/wasser.html</id>
+    <link href="http://127.0.0.1:4567/fun/wasser.html"/>
+    <summary></summary>
+    <title>Wasser, Acqua, Voda</title>
+    <updated>2020-09-06T00:00:00+02:00</updated>
+    <dc:date>2020-09-06T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/teamwork-in-corfu.html</id>
+    <link href="http://127.0.0.1:4567/fun/teamwork-in-corfu.html"/>
+    <summary></summary>
+    <title>Teamwork in Corfu</title>
+    <updated>2020-09-06T00:00:00+02:00</updated>
+    <dc:date>2020-09-06T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/ode-to-king-fahrrad.html</id>
+    <link href="http://127.0.0.1:4567/fun/ode-to-king-fahrrad.html"/>
+    <summary></summary>
+    <title>Ode to Kine Fahrrad</title>
+    <updated>2020-06-25T00:00:00+02:00</updated>
+    <dc:date>2020-06-25T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/its-snowing.html</id>
+    <link href="http://127.0.0.1:4567/fun/its-snowing.html"/>
+    <summary></summary>
+    <title>It&#39;s Snowing</title>
+    <updated>2019-12-02T00:00:00+01:00</updated>
+    <dc:date>2019-12-02T00:00:00+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/infinite-tunnels.html</id>
+    <link href="http://127.0.0.1:4567/fun/infinite-tunnels.html"/>
+    <summary></summary>
+    <title>Infinite Tunnels</title>
+    <updated>2019-10-20T00:00:00+02:00</updated>
+    <dc:date>2019-10-20T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/trader-joes-bros.html</id>
+    <link href="http://127.0.0.1:4567/fun/trader-joes-bros.html"/>
+    <summary></summary>
+    <title>Trader Joe&#39;s Bros</title>
+    <updated>2019-10-20T00:00:00+02:00</updated>
+    <dc:date>2019-10-20T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/urfahraner-market.html</id>
+    <link href="http://127.0.0.1:4567/fun/urfahraner-market.html"/>
+    <summary></summary>
+    <title>Urfahraner Market</title>
+    <updated>2019-10-07T00:00:00+02:00</updated>
+    <dc:date>2019-10-07T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/memories-of-vermont.html</id>
+    <link href="http://127.0.0.1:4567/fun/memories-of-vermont.html"/>
+    <summary></summary>
+    <title>Memories of Vermont</title>
+    <updated>2019-09-19T00:00:00+02:00</updated>
+    <dc:date>2019-09-19T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/everything-animal.html</id>
+    <link href="http://127.0.0.1:4567/fun/everything-animal.html"/>
+    <summary></summary>
+    <title>The Everything Animal</title>
+    <updated>2019-09-12T00:00:00+02:00</updated>
+    <dc:date>2019-09-12T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/rolling-benzo.html</id>
+    <link href="http://127.0.0.1:4567/fun/rolling-benzo.html"/>
+    <summary></summary>
+    <title>Rolling in my Benzo</title>
+    <updated>2019-09-06T00:00:00+02:00</updated>
+    <dc:date>2019-09-06T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/no-comprendo.html</id>
+    <link href="http://127.0.0.1:4567/fun/no-comprendo.html"/>
+    <summary></summary>
+    <title>No Comprendo</title>
+    <updated>2019-08-31T00:00:00+02:00</updated>
+    <dc:date>2019-08-31T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/week-2.html</id>
+    <link href="http://127.0.0.1:4567/fun/week-2.html"/>
+    <summary></summary>
+    <title>Week 2</title>
+    <updated>2019-08-29T00:00:00+02:00</updated>
+    <dc:date>2019-08-29T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/phones.html</id>
+    <link href="http://127.0.0.1:4567/fun/phones.html"/>
+    <summary></summary>
+    <title>Phones</title>
+    <updated>2019-08-27T00:00:00+02:00</updated>
+    <dc:date>2019-08-27T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/fun/osterreich.html</id>
+    <link href="http://127.0.0.1:4567/fun/osterreich.html"/>
+    <summary></summary>
+    <title>Österreich</title>
+    <updated>2019-08-26T00:00:00+02:00</updated>
+    <dc:date>2019-08-26T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/dad/time-warp.html</id>
+    <link href="http://127.0.0.1:4567/dad/time-warp.html"/>
+    <summary></summary>
+    <title>Time Warp</title>
+    <updated>2013-03-02T00:00:00+01:00</updated>
+    <dc:date>2013-03-02T00:00:00+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/dad/am-i-blue.html</id>
+    <link href="http://127.0.0.1:4567/dad/am-i-blue.html"/>
+    <summary></summary>
+    <title>Am I Blue</title>
+    <updated>2012-02-07T00:00:00+01:00</updated>
+    <dc:date>2012-02-07T00:00:00+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/dad/one-hundred-and-four.html</id>
+    <link href="http://127.0.0.1:4567/dad/one-hundred-and-four.html"/>
+    <summary></summary>
+    <title>One Hundred and Four</title>
+    <updated>2011-07-12T00:00:00+02:00</updated>
+    <dc:date>2011-07-12T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/dad/an-afternoon-at-the-healthclub.html</id>
+    <link href="http://127.0.0.1:4567/dad/an-afternoon-at-the-healthclub.html"/>
+    <summary></summary>
+    <title>An Afternoon at the Health Club</title>
+    <updated>2011-04-28T00:00:00+02:00</updated>
+    <dc:date>2011-04-28T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/dad/basketball-in-the-catskills.html</id>
+    <link href="http://127.0.0.1:4567/dad/basketball-in-the-catskills.html"/>
+    <summary></summary>
+    <title>Basketball in the Catskills</title>
+    <updated>2010-08-06T00:00:00+02:00</updated>
+    <dc:date>2010-08-06T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/dad/max-and-zoe.html</id>
+    <link href="http://127.0.0.1:4567/dad/max-and-zoe.html"/>
+    <summary></summary>
+    <title>Max and Zoe</title>
+    <updated>2010-03-12T00:00:00+01:00</updated>
+    <dc:date>2010-03-12T00:00:00+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/dad/an-exodus.html</id>
+    <link href="http://127.0.0.1:4567/dad/an-exodus.html"/>
+    <summary></summary>
+    <title>An Exodus</title>
+    <updated>2007-11-08T00:00:00+01:00</updated>
+    <dc:date>2007-11-08T00:00:00+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/dad/personals.html</id>
+    <link href="http://127.0.0.1:4567/dad/personals.html"/>
+    <summary></summary>
+    <title>Personals</title>
+    <updated>2007-05-11T00:00:00+02:00</updated>
+    <dc:date>2007-05-11T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/dad/aunt-ethel.html</id>
+    <link href="http://127.0.0.1:4567/dad/aunt-ethel.html"/>
+    <summary></summary>
+    <title>Aunt Ethel</title>
+    <updated>2005-12-02T00:00:00+01:00</updated>
+    <dc:date>2005-12-02T00:00:00+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/dad/kitchen-virus.html</id>
+    <link href="http://127.0.0.1:4567/dad/kitchen-virus.html"/>
+    <summary></summary>
+    <title>The Kitchen Virus</title>
+    <updated>2005-07-23T00:00:00+02:00</updated>
+    <dc:date>2005-07-23T00:00:00+02:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/dad/nightingales.html</id>
+    <link href="http://127.0.0.1:4567/dad/nightingales.html"/>
+    <summary></summary>
+    <title>Nightingales</title>
+    <updated>1998-11-01T00:00:00+01:00</updated>
+    <dc:date>1998-11-01T00:00:00+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://127.0.0.1:4567/dad/grandmother.html</id>
+    <link href="http://127.0.0.1:4567/dad/grandmother.html"/>
+    <summary></summary>
+    <title>Grandmother</title>
+    <updated>1998-08-18T00:00:00+02:00</updated>
+    <dc:date>1998-08-18T00:00:00+02:00</dc:date>
+  </entry>
+  <dc:date>2025-01-01T00:00:00+01:00</dc:date>
+</feed>
