@@ -22,12 +22,12 @@ A few minutes into the Zoom call, it was clear that he had decided on a broader 
 
 Mike's decision came from watching and learning from customers that were not in his sweet spot. These customers would buy, initially, but they were hard to hold on to. Mike explained that these were not "beachhead" customers, and quoted Geoffrey Moore's (dated) book *Crossing the Chasm*. (Moore called these customers "beachheads" as a reference to the D-Day landing spot, which proved to be a perfect place for the US Military to join the land war in Europe during World War II). 
 
-Sacrifices are another word for trade-offs, but I prefer "sacrifice" because it conveys the pain involved in gaining something by giving something else up. I also like the term "beachhead," even though it's a military term. Marty Cagan or Eric Ries might use "target customer" or "early adopter," but these don't capture the full picture. Non-beachhead customers can validate your product. They can look and feel like the right target, and confirm the wrong decisions by handing over their money, making it hard to pass one up for another.
+Sacrifices are another word for trade-offs, but I prefer "sacrifice" because it conveys the pain involved in gaining something by giving something else up. I also like the term "beachhead," even though it's a military term. Eric Ries or Marty Cagan might use "[target customer](https://leanstartup.co/resources/articles/a-playbook-for-achieving-product-market-fit/)" or "[reference customers](https://www.svpg.com/the-power-of-reference-customers/)," but these don't capture the full picture. Non-beachhead customers can validate your decisions, appreciate your product, and hand over their money. But you might need to pass them by to focus on a specific niche, at least early on.
 
-Moore's famous example of finding the right beachhead is Documentum, a document management company that went public in the 1990s. While they could have sold to Aerospace, Finance, and Banking sectors, they chose to focus exclusively on Pharmaceuticals, as they were experiencing the highest regulatory pain. 
+Moore's famous (dated) example of finding the right beachhead is Documentum, a document management company from the 1990s. While they could have sold to Aerospace, Finance, and Banking sectors, they chose to focus exclusively on Pharmaceuticals, as they were experiencing the highest regulatory pain.
 
-One thing I appreciated during the discussion was Mike's humility. I asked why he wanted my opinion—since his plan seemed well thought-out. I was completely removed from the context and the problems he was experiencing. “I just need the confidence to get the team behind it," he said. 
+One thing I appreciated during the discussion was Mike's humility. I asked why he wanted my opinion — since his plan seemed well thought-out and I was totally removed the situation. “I just need the confidence to get the team behind it," he said. 
 
-Sometimes, the best conversations aren't about giving advice but simply being there to listen and reflect ideas back.
+Sometimes, the best conversations aren't about giving advice but simply being there to listen, confirm, and reflect.
 
 Happy New Year.
