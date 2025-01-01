@@ -18,7 +18,7 @@ Nobody knows this more than “Mike” (from my earlier post [Founders Don’t N
 
 Mike reached out again a few weeks ago and gave me an update. I was excited to hear how things were going.
 
-A few minutes into the Zoom call, it was clear that he had decided on a broader sacrifice than feature trade-offs. It was time to for the company to say “no” to certain customers, and reject sales opportunities that lacked specific qualifications. Mike wanted to resist complete revenue streams to build a more focused product.
+A few minutes into the Zoom call, it was clear that he had decided on a broader sacrifice than feature trade-offs. It was time for the company to say “no” to certain customers, and reject sales opportunities that lacked specific qualifications. Mike wanted to resist complete revenue streams to build a more focused product.
 
 Mike's decision came from watching and learning from customers that were not in his sweet spot. These customers would buy, initially, but they were hard to hold on to. Mike explained that these were not "beachhead" customers, and quoted Geoffrey Moore's (dated) book *Crossing the Chasm*. (Moore called these customers "beachheads" as a reference to the D-Day landing spot, which proved to be a perfect place for the US Military to join the land war in Europe during World War II). 
 
