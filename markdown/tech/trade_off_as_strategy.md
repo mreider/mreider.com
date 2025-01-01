@@ -1,5 +1,5 @@
 +++
-title = "Great Strategies Start with Sacrifice"
+title = "Great Strategy Starts with Sacrifice"
 date = "2025-01-01"
 author = "Matt Reider"
 summary = "Chasing weaker opportunities exhausts your team"
