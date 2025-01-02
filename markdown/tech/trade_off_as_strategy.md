@@ -6,7 +6,7 @@ summary = "Chasing weaker opportunities exhausts your team"
 image = "/images/matt/trading-post.jpg"
 +++
 
-Before I get started, I want to explain why I’m blogging. A few months ago, I began offering pro-bono product advice, hoping it might resonate enough for people to pay me a few hundred dollars per chat. While I had some success, balancing this with a full-time job, family, and personal interests didn't work out very well. What did work out was writing about other people’s challenges. I like it. And, it's freeing since the problems aren’t tied to my workplace.
+Before I get started, I want to explain why I’m blogging. A few months ago, I began offering pro-bono product advice, hoping it might resonate enough to charge them a fee. While I had some success, balancing this with a full-time job, family, and personal interests didn't work out very well. What did work out was writing about other people’s challenges. I like it. And, it's freeing since the problems aren’t tied to my workplace.
 
 Today I'll talk about the importance of sacrifice in product strategy.
 
