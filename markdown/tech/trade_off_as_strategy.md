@@ -2,34 +2,36 @@
 title = "Great Strategy Starts with Sacrifice"
 date = "2025-01-01"
 author = "Matt Reider"
-summary = "Chasing weaker opportunities exhausts your team"
+summary = ""
 image = "/images/matt/trading-post.jpg"
 +++
 
-Before I get started, I want to explain why I’m blogging. A few months ago, I began offering pro-bono product advice, hoping it might resonate enough to charge them a fee. While I had some success, balancing this with a full-time job, family, and personal interests didn't work out very well. What did work out was writing about other people’s challenges. I like it. And, it's freeing since the problems aren’t tied to my workplace.
+Before I get started, I'll explain why I’m blogging. I began offering pro-bono product advice, hoping to charge a fee someday. While I had some success, balancing a full-time job, family, and personal interests didn't work out well. What did work out was writing about other people’s challenges. I like it. And, it's freeing since the problems aren’t tied to my workplace.
 
-Today I'll talk about the importance of sacrifice in product strategy.
+Today I'm thinking about the importance of sacrifice in product strategy.
 
-In 2017, a young CEO I worked for explained how certain features would attract a specific market segment. Afterwards, and with a little too much pride, he said, “See, that’s how strategy works.” But this "strategy" lacked something for me. There were no sacrifices to it. To me, it didn't seem like a strategy at all. It was just wishful thinking.
+In 2017, a young CEO I worked for explained that certain features would open up a new market segment. With a little too much pride, he said, “See, that’s how strategy works.” But his "strategy" lacked something. Sacrifice. Pain. To me, it didn't seem like a strategy at all. It was just wishful thinking.
 
-In my opinion, a good product strategy is impossible without the pain of sacrifice.
+Good product strategy is impossible without hard sacrifices.
 
-Nobody knows this more than “Mike” (from my earlier post [Founders Don’t Need a Strategist as the First PM](Henchman_or_Hero.md)). Last time we spoke, he described the sacrifice of investing in one area at the expense of another: fewer features that benefitted practitioners, and more features that benefitted buyers.
+Nobody knows that lesson more than “Mike” (from my earlier post [Founders Don’t Need a Strategist as the First PM](Henchman_or_Hero.md)). He spoke about the sacrifice of investing in one area at the expense of another: fewer features that benefitted practitioners, and more features that benefitted buyers.
 
-Mike reached out again a few weeks ago and gave me an update. I was excited to hear how things were going.
+Mike reached out again a few weeks ago to tell me how things were going.
 
-A few minutes into the Zoom call, it was clear that he had decided on a broader sacrifice than feature trade-offs. It was time for the company to say “no” to certain customers, and reject sales opportunities that lacked specific qualifications. Mike wanted to resist complete revenue streams to build a more focused product.
+Mike has moved into a broader sacrifice than feature trade-offs. It's the company says “no” to sales opportunities without the right profile. Mike is going to resist complete revenue streams in order to build a more focused product.
 
-Mike's decision came from watching and learning from customers that were not in his sweet spot. These customers would buy, initially, but they were hard to hold on to. Mike explained that these were not "beachhead" customers, and quoted Geoffrey Moore's (dated) book *Crossing the Chasm*. (Moore called these customers "beachheads" as a reference to the D-Day landing spot, which proved to be a perfect place for the US Military to join the land war in Europe during World War II). 
+He came to this decision from watching and learning from customers that were not in his sweet spot. These customers would buy, initially, but they were hard to hold on to. He says they are not "beachhead" customers, quoting Geoffrey Moore's (dated) book *Crossing the Chasm*. (Moore calls sweet-spot customers "beachheads" as a reference to the D-Day landing spot). 
 
-Sacrifices are another word for trade-offs, but I prefer "sacrifice" because it conveys the pain involved in gaining something by giving something else up. I also like the term "beachhead," even though it's a military term. Eric Ries or Marty Cagan might use "[target customer](https://leanstartup.co/resources/articles/a-playbook-for-achieving-product-market-fit/)" or "[reference customers](https://www.svpg.com/the-power-of-reference-customers/)," but these don't capture the full picture. Non-beachhead customers can validate your decisions, appreciate your product, and hand over their money. But you might need to pass them by to focus on a specific niche, at least early on.
+I guess sacrifices are just another word for trade-offs. But I prefer "sacrifice" - it conveys pain. I also like term "beachhead," even though it's dated. Eric Ries or Marty Cagan might use "[target customer](https://leanstartup.co/resources/articles/a-playbook-for-achieving-product-market-fit/)" or "[reference customers](https://www.svpg.com/the-power-of-reference-customers/)," but these don't capture Geoffrey Moore's point - which was more about the sales sacrifice than the product side. 
 
-Moore's famous (dated) example of finding the right beachhead is Documentum, a document management company from the 1990s. While they could have sold to Aerospace, Finance, and Banking sectors, they chose to focus exclusively on Pharmaceuticals, as they were experiencing the highest regulatory pain.
+Moore's famous example of finding the right beachhead was Documentum, a company from the 1990s. Their product sold reasonably well into Aerospace, Finance, and Banking sectors, but they chose to let these go, initially, to focus exclusively on Pharmaceuticals. This was painful, financially, and temporarily, but in the end it led to an amazing product and complete domination in a specific niche.
 
-One thing I appreciated during the discussion was Mike's humility. I asked why he wanted my opinion — since his plan seemed well thought-out and I was totally removed the situation. “I just need the confidence to get the team behind it," he said. 
+And from that niche, they expanded back, outwards, to the other industry segments, anchored by the beachhead they'd won.
 
-Sometimes, the best conversations aren't about giving advice but simply being there to listen, confirm, and reflect.
+One thing I appreciate during these discussions with Mike is his humility. His ideas are well thought-out and I am a bit mystified why he wants my opinion. I am totally removed. 
 
-Happy New Year.
+"I want the confidence to get the team behind this," he said. In other words, he isn't so much looking for my opinions, nor my advice, he's looking for the criticism that his team will eventually throw at him. And since I am a harsh critic, with a sensitive bullshit meter, I guess I'm a reasonable dress rehearsal for the real thing.
+
+With that. Happy New Year!
 
 > *The image of the trading post is licensed under Creative Commons Attribution - Share Alike 2.0 Generic license. Attribution: [Myotus](https://commons.wikimedia.org/wiki/User:Myotus)
