@@ -26,4 +26,4 @@ When I pushed the tool to its limits, generating entire chapters from scratch, t
 
 Few people ever reach the point of completing a book, and there’s a deep satisfaction in simply bringing an idea to life. We’re a species of storytellers, and judging by the conversations on Sudowrite's discord channel, the joy of telling a story, regardless of its quality, seems to be worth the monthly subscription fee.
 
-While I like the tool, and found it helpful, the subscrptiom was not worth it to me. General or not, I already pay for ChatGPT, and since I'm trying to stay true to my own voice, the small edits and grammar advice are good enough for me.
+While I like the tool, and found it helpful, the subscrption was not worth it to me. General or not, I already pay for ChatGPT, and since I'm trying to stay true to my own voice, the small edits and grammar advice are good enough for me.
