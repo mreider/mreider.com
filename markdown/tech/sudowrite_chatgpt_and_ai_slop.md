@@ -3,7 +3,7 @@ title = "Sudowrite, ChatGPT, and AI Slop"
 date = "2025-01-06"
 author = "Matt Reider"
 summary = ""
-image = "/images/matt/Instant_600_Film_Camera.jpg"
+image = "/images/matt/Instant_600_Film_Camera.jpeg"
 +++
 
 Like a million other people - I'm trying to write a novel. The story is pretty good. A character-driven thriller. We'll see how far I get.
