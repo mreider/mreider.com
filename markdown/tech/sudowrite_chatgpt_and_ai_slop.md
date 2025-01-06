@@ -6,7 +6,7 @@ summary = ""
 image = "/images/matt/Instant_600_Film_Camera.jpeg"
 +++
 
-Like a million other people - I'm trying to write a novel. The story is pretty good. A character-driven thriller. We'll see how far I get.
+Like a million other people - I'm trying to write a novel. A character-driven thriller. We'll see how far I get.
 
 Of course - I  use ChatGPT here and there. I don't rely on it too heavily, but it’s a real time-saver for quick edits and bits of advice.
 
