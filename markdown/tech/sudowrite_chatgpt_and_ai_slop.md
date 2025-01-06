@@ -14,7 +14,7 @@ But ChatGPT is too general-purpose. It's not built specifically for writers, and
 
 Sudowrite blends AI with structured writing tools, and an interface similar to Scrivener. It can help with different forms of writing, from short stories to full-length novels, and understands the difference between various genres. 
 
-What makes it stand out from ChatGPT is its guided process. Instead of relying on open-ended prompts, Sudowrite helps shape a story by asking for the synopsis, tone, characters, and setting. It calls all of this the story "bible," and once you're done, it can help generate prosea that is aligned with your vision.
+What makes it stand out from ChatGPT is its guided process. Instead of relying on open-ended prompts, Sudowrite helps shape a story by asking for the synopsis, tone, characters, and setting. It calls all of this the story "bible," and once you're done, it can help generate prose that fits.
 
 The user experience is intuitive, with tools to help organize a story's different elements. Even without the AI features, the software is valuable for writers. It’s clear the creators understand the writing process. They also sponsor and promote workshops and other resources to help writers improve their craft.
 
