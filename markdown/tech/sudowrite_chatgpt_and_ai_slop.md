@@ -10,7 +10,7 @@ Like a million other people - I'm trying to write a novel. The story is pretty g
 
 Of course - I  use ChatGPT here and there. I don't rely on it too heavily, but it’s a real time-saver for quick edits and bits of advice.
 
-But ChatGPT is too general-purpose. It's not built specifically for writers, nor writing, and it takes a lot of prompting and arguing to get what you want. This led me to Sudowrite, which is built on language models like GPT, but is specifically designed for authors.
+But ChatGPT is too general-purpose. It's not built specifically for writers, and often I find its tone and content to be the familiarly exhausting brand bullshit known as "corporate-speak." It also takes a lot of prompting and arguing to get what you want. This led me to Sudowrite, which is built on language models like GPT, but devoted and designed for authors.
 
 Sudowrite blends AI with structured writing tools, and an interface similar to Scrivener. It can help with different forms of writing, from short stories to full-length novels, and understands the difference between various genres. 
 
