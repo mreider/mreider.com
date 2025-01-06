@@ -24,4 +24,4 @@ As I [previously blogged about](Building_Quacker.md), complex tasks aren’t GPT
 
 When I pushed the tool to its limits, generating entire chapters from scratch, the result is what I’d call “trashy novel” quality. Readable but uninteresting. There’s always been a market for trashy novels, and now tools like Sudowrite make it possible to produce them endlessly.
 
-Few people ever reach the point of completing a book, and there’s a deep satisfaction in simply bringing an idea to life. We’re a species of storytellers, and judging by the conversations on Sudowrite's discord channel, the joy of telling a story, regardless of its quality, seems to be worth the price.
+Few people ever reach the point of completing a book, and there’s a deep satisfaction in simply bringing an idea to life. We’re a species of storytellers, and judging by the conversations on Sudowrite's discord channel, the joy of telling a story, regardless of its quality, seems to be worth the monthly subscription fee.
