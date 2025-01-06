@@ -18,7 +18,7 @@ What makes it stand out from ChatGPT is its guided process. Instead of relying o
 
 The user experience is intuitive, with tools to help organize a story's different elements. Even without the AI features, the software is valuable for writers. It’s clear the creators understand the writing process. They also sponsor and promote workshops and other resources to help writers improve their craft.
 
-Like ChatGPT, Sudowrite’s quality suffers the further it strays from original text input. But its starting point, compared to ChatGPT, is definitely more polished. I tested both tools with a prompt describing my childhood home. Sudowrite’s version was reasonably well-written, while ChatGPT’s was verbose and filled with irrelevant details. Both required refinement, but Sudowrite’s initial output was closer to what you might download to your Kindle.
+Like ChatGPT, Sudowrite’s quality suffers the further it strays from original text input. But its starting point, compared to ChatGPT, is definitely closer to what you might download to your Kindle.
 
 As I [previously blogged about](Building_Quacker.md), complex tasks aren’t GPT's strong suit. It works best in simple increments. Sudowrite is built with this in mind, offering small, digestible “cards” of suggestions or edits rather than attempting to tackle an entire project at once. However, in Sudowrite’s Discord community, many users seem to lean heavily on the tool, generating tens of thousands of words at a time. This seems ideal for Sudowrite’s business model, as it likely encourages high usage and premium subscriptions.
 
