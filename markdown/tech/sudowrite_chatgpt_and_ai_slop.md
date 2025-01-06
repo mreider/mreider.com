@@ -20,7 +20,7 @@ The user experience is intuitive, with tools to help organize a story's differen
 
 Like ChatGPT, Sudowrite’s quality suffers the further it strays from original text input. But its starting point, compared to ChatGPT, is definitely closer to what you might download to your Kindle.
 
-As I [previously blogged about](Building_Quacker.md), complex tasks aren’t GPT's strong suit. It works best in simple increments. Sudowrite is built with this in mind, offering small, digestible “cards” of suggestions or edits rather than attempting to tackle an entire project at once. However, in Sudowrite’s Discord community, many users seem to lean heavily on the tool, generating tens of thousands of words at a time. This seems ideal for Sudowrite’s business model, as it likely encourages high usage and premium subscriptions.
+As I [previously blogged about](Building_Quacker.md), complex tasks aren’t GPT's strong suit. It works best in simple increments. Sudowrite is built with this in mind, offering small, digestible “cards” of suggestions or edits rather than attempting to tackle an entire project at once. However, in Sudowrite’s Discord community, many users seem to be generating tens of thousands of words at a time. This seems ideal for Sudowrite’s business model, as it likely encourages high usage and premium subscriptions.
 
 When I pushed the tool to its limits, generating entire chapters from scratch, the result is what I’d call “trashy novel” quality. Readable but uninteresting. There’s always been a market for trashy novels, and now tools like Sudowrite make it possible to produce them endlessly.
 
