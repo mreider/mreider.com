@@ -34,4 +34,4 @@ But yes. I do see the allure. Few people ever reach the point of completing a bo
 
 If you use the tool's cards, and modify, versus generate, it is pretty helpful. But not helpful enough for me to join as a customer. I already pay for ChatGPT, and while it's a pain to wrestle with, it can fix my grammar, and smooth a rough edge just fine.
 
-This excercise has layers, though, as AI is a big piece of my (early) novel's storyline. And compared to the apocolyptic scenarios in my head, flooding the market with poorly written novels, for profit, is a relatively harmless outcome for this AI revolution.
+This excercise has layers, though, as AI is a big piece of my (early) novel's storyline. And compared to the apocolyptic scenarios in my head, flooding the market with poorly crafted writing, music, and video, for profit, is a relatively harmless outcome. Still, I've got mixed feelings about the slop this new tech sector is encouraging.
