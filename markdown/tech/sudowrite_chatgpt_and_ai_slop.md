@@ -24,7 +24,7 @@ Unfortunately, much like ChatGPT, Sudowrite’s quality suffers the further you 
 
 As I [previously blogged about](Building_Quacker.md), complex tasks aren’t GPT's strong suit. It works best in simple increments. Sudowrite is built with this in mind, offering small, digestible “cards” of suggestions or edits rather than attempting to tackle an entire project at once. 
 
-And yet, this seems to be how many people use it. Generating thousands of words at a clip. In Sudowrite’s Discord community, many users seem to be generating complete chapters rather than modifying their own work. 
+And yet, this "all at once" approach seems to be a popular way of using Sudowrite. In Sudowrite’s Discord community, users seem almost proud to be generating complete chapters rather than modifying their own work. 
 
 This seems ideal for Sudowrite’s business model, as it likely encourages high usage and premium subscriptions.
 
