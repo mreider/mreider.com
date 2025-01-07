@@ -18,7 +18,7 @@ I didn't click the "buy" button, which I'll explain in a moment, but I was impre
 
 Unlike ChatGPT its a guided process. Sudowrite asks you to brainstorm, write a short synopsis, describe the tone, characters, and setting. It calls all of this the story "bible," and once you're done, it can help modify, or even generate, your prose.
 
-Aside from the AI features, the software organizes the elements of a story quite well. Again, I would compare it to an early version of Scrivener. They company also sponsors and promotes workshops and other resources to help writers improve their craft.
+Aside from the AI features, the software organizes the elements of a story quite well. Again, I would compare it to an early version of Scrivener. The company also sponsors and promotes workshops and resources to help writers improve their craft.
 
 Unfortunately, much like ChatGPT, Sudowrite’s quality suffers the further you push it away from your original text. But its starting point, compared to ChatGPT, is definitely closer to something you might download on your Kindle.
 
