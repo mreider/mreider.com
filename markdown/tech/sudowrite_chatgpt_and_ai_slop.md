@@ -8,22 +8,38 @@ image = "/images/matt/Instant_600_Film_Camera.jpeg"
 
 Like a million other people - I'm trying to write a novel. A character-driven thriller. We'll see how far I get.
 
-Of course - I use ChatGPT here and there. I don't rely on it too heavily, but it’s a real time-saver for quick edits and bits of advice.
+Yes. I use ChatGPT here and there. I don't rely on it too heavily, but it’s a time-saver for quick edits and bits of advice.
 
-But ChatGPT is too general-purpose. It's not built specifically for writers, and often I find its tone and content to be the familiarly exhausting brand of bullshit known as "corporate-speak." This led me to try [Sudowrite](https://sudowrite.com), which is built on language models like GPT, but devoted to and designed for authors.
+But ChatGPT is too general-purpose for writers, and often I find its tone and content to be the familiarly exhausting brand of bullshit known as "corporate-speak." This led me to try [Sudowrite](https://sudowrite.com), which is built on language models like GPT, but devoted to and designed for authors.
 
-Sudowrite blends AI with structured writing tools, and an interface similar to Scrivener. It can help with different forms of writing, from short stories to full-length novels, and understands the difference between various genres. 
+Sudowrite blends AI with structured writing tools, and an interface similar to Scrivener. It understands different forms of writing, from short stories to full-length novels, and a handful of different genres.
 
-What makes it stand out from ChatGPT is its guided process. Instead of relying on open-ended prompts, Sudowrite helps shape a story by asking for the synopsis, tone, characters, and setting. It calls all of this the story "bible," and once you're done, it can help generate prose that fits.
+I didn't click the "buy" button, which I'll explain in a moment, but I was impressed nonetheless.
 
-The user experience is intuitive, with tools to help organize a story's different elements. Even without the AI features, the software is valuable for writers. It’s clear the creators understand the writing process. They also sponsor and promote workshops and other resources to help writers improve their craft.
+Unlike ChatGPT its a guided process. Sudowrite asks you to brainstorm, write a short synopsis, describe the tone, characters, and setting. It calls all of this the story "bible," and once you're done, it can help modify, or even generate, your prose.
 
-Like ChatGPT, Sudowrite’s quality suffers the further it strays from original text input. But its starting point, compared to ChatGPT, is definitely closer to what you might download to your Kindle.
+Aside from the AI features, the software organizes the elements of a story quite well. Again, I would compare it to an early version of Scrivener. They company also sponsors and promotes workshops and other resources to help writers improve their craft.
 
-As I [previously blogged about](Building_Quacker.md), complex tasks aren’t GPT's strong suit. It works best in simple increments. Sudowrite is built with this in mind, offering small, digestible “cards” of suggestions or edits rather than attempting to tackle an entire project at once. However, in Sudowrite’s Discord community, many users seem to be generating tens of thousands of words at a time. This seems ideal for Sudowrite’s business model, as it likely encourages high usage and premium subscriptions.
+Unfortunately, much like ChatGPT, Sudowrite’s quality suffers the further you push it away from your original text. But its starting point, compared to ChatGPT, is definitely closer to something you might download on your Kindle.
 
-When I pushed the tool to its limits, generating entire chapters from scratch, the result is what I’d call “trashy novel” quality. Readable but uninteresting. There’s always been a market for trashy novels, and now tools like Sudowrite make it possible to produce them endlessly.
+As I [previously blogged about](Building_Quacker.md), complex tasks aren’t GPT's strong suit. It works best in simple increments. Sudowrite is built with this in mind, offering small, digestible “cards” of suggestions or edits rather than attempting to tackle an entire project at once. 
 
-Few people ever reach the point of completing a book, and there’s a deep satisfaction in simply bringing an idea to life. We’re a species of storytellers, and judging by the conversations on Sudowrite's discord channel, the joy of telling a story, regardless of its quality, seems to be worth the monthly subscription fee.
+And yet, this seems to be how many people use it. Generating thousands of words at a clip. In Sudowrite’s Discord community, many users seem to be generating complete chapters rather than modifying their own work. 
 
-While I like the tool, and found it helpful, the subscrption was not worth it to me. General or not, I already pay for ChatGPT, and since I'm trying to stay true to my own voice, the small edits and grammar advice are good enough for me.
+This seems ideal for Sudowrite’s business model, as it likely encourages high usage and premium subscriptions.
+
+When you choose to generate text, rather than modify your own,the result is “trash novel" quality. Readable but uninteresting. 
+
+For better or worse (let's agree it's worse) tools like Sudowrite are very good at producing AI slop, in passable book-like form, almost endlessly. 
+
+The supply side of this market will be flooded with shit. It's a big stretch to say that AI will bring armageddon, but it certainly won't help separate signal from noise (in this case artistically).
+
+But yes. I do see the allure. Few people ever reach the point of completing a book, and there’s a deep satisfaction in bringing an idea to life, even with massive shortcuts that sabotage its quality.
+
+Thinking again of the conversations on Sudowrite's discord (I stalked), the joy of generating thousands of words that resemble your original idea is worth a monthly subscription fee. 
+
+I imagine that writers feel the same way about this stuff as professional photographers felt about the introduction of polaroid cameras. Maybe.
+
+If you use the tool's cards, and modify your text (versus generate whole stanzas) it is pretty helpful, but the subscription was not worth it to me. I already pay for ChatGPT, and while it's a bit of a pain to wrestle with, it does what I need, when I need it.
+
+As I said - my novel will be a character-driven thriller? What I didn't mention is the plot. Influencing elections in liberal democracies via... AI. Compared to that (likely) scenario, flooding the market with mediocre fantasy novels sounds just ducky.
