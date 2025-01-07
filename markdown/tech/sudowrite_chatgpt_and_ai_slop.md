@@ -28,7 +28,7 @@ This seems ideal for Sudowrite’s business model, as it likely encourages high 
 
 Generating text, rather than modifying your own, results in the low-grade trash novel you'd expect. Readable but boring. Compared to a good book it's pure cardboard.
 
-For better or worse (let's agree it's worse) the supply side of the book market is about to be flooded with shit. It's a big stretch to say that AI will bring armageddon, but it certainly won't help separate signal from noise (in this case artistically).
+For better or worse (let's agree it's worse) the supply side of the book market is going to be flooded with mediocre writing. It's a big stretch to say that AI will bring armageddon, but it certainly won't help separate signal from noise (in this case artistically).
 
 But yes. I do see the allure. Few people ever reach the point of completing a book, and there’s satisfaction in bringing an idea to life, even with shortcuts, and cardboard.
 
