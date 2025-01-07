@@ -28,18 +28,10 @@ And yet, this "all at once" approach seems to be a popular way of using Sudowrit
 
 This seems ideal for Sudowrite’s business model, as it likely encourages high usage and premium subscriptions.
 
-When you choose to generate text, rather than modify your own,the result is “trash novel" quality. Readable but uninteresting. 
+Generating text, rather than modifying your own, results in the low-grade trash novel you'd expect. Readable but boring. Compared to a good book it's pure cardboard.
 
-For better or worse (let's agree it's worse) tools like Sudowrite are very good at producing AI slop, in passable book-like form, almost endlessly. 
+For better or worse (let's agree it's worse) the supply side of the book market is about to be flooded with shit. It's a big stretch to say that AI will bring armageddon, but it certainly won't help separate signal from noise (in this case artistically).
 
-The supply side of this market will be flooded with shit. It's a big stretch to say that AI will bring armageddon, but it certainly won't help separate signal from noise (in this case artistically).
+But yes. I do see the allure. Few people ever reach the point of completing a book, and there’s satisfaction in bringing an idea to life, even with shortcuts, and cardboard.
 
-But yes. I do see the allure. Few people ever reach the point of completing a book, and there’s a deep satisfaction in bringing an idea to life, even with massive shortcuts that sabotage its quality.
-
-Thinking again of the conversations on Sudowrite's discord (I stalked), the joy of generating thousands of words that resemble your original idea is worth a monthly subscription fee. 
-
-I imagine that writers feel the same way about this stuff as professional photographers felt about the introduction of polaroid cameras. Maybe.
-
-If you use the tool's cards, and modify your text (versus generate whole stanzas) it is pretty helpful, but the subscription was not worth it to me. I already pay for ChatGPT, and while it's a bit of a pain to wrestle with, it does what I need, when I need it.
-
-As I said - my novel will be a character-driven thriller? What I didn't mention is the plot. Influencing elections in liberal democracies via... AI. Compared to that (likely) scenario, flooding the market with mediocre fantasy novels sounds just ducky.
+If you use the tool's cards, and modify, versus generate, it is pretty helpful. But not helpful enough for me to join as a customer. I already pay for ChatGPT, and while it's a pain to wrestle with, it can fix my grammar, and smooth a rough edge just fine.
