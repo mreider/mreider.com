@@ -16,7 +16,7 @@ I didn't click the "buy" button, which I'll explain in a moment, but I was impre
 
 Sudowrite offers more of a guided process. It asks you to brainstorm, write a synopsis, describe the tone, characters, and setting. These elements are referred to as the story "bible," and once you're done with it, you can modify, or even generate, your prose.
 
-Aside from the AI features, the Sudowrite helps authors organize their story elements. Again, I'd compare it to an early version of Scrivener, from a little British company called Lierature and Latte, a loyal ally of authors and screenwriters. Like Literature and Latte, Sudowrite also sponsors and promotes workshops and resources to help writers improve their craft.
+Aside from the AI features, Sudowrite helps authors organize their story elements. Again, I'd compare it to an early version of Scrivener, from a little British company called Lierature and Latte, a loyal ally of authors and screenwriters. Like Literature and Latte, Sudowrite also sponsors and promotes workshops and resources to help writers improve their craft.
 
 Unfortunately, much like ChatGPT, Sudowrite’s quality suffers the further you push it away from your original text. But its starting point, compared to ChatGPT, is definitely closer to something you might download on your Kindle.
 
