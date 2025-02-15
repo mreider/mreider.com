@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Founders Don’t Need a Strategist as the First PM - mreider.com</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta property="og:image" content="images/matt/Henchman_Street_W12_sign.jpg">
+  <meta name="twitter:image" content="images/matt/Henchman_Street_W12_sign.jpg">
+  
+  <meta property="og:site_name" content="mreider.com">
+  <link rel="icon" href="/images/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <style>
+  body{background: #FBF9F1;}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#E5E1DA; margin-bottom:20px;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="/images/favicon.png" alt="" width="30" height="30" class="d-inline-block align-text-top me-1">
+      mreider.com
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kremsNavbar" aria-controls="kremsNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="kremsNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/tech/">Tech</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/fun/">Fun</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/family/">Family</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/about-me/">Me</a>
+        </li>
+        
+      </ul>
+	  
+		<form id="subscribe-form" action="https://quacker.eu/subscribe" method="POST" class="d-flex ms-3">
+			<input type="hidden" name="owner" value="mreider">
+			<input type="hidden" name="domain" value="mreider.com">
+			<div class="d-flex align-items-center gap-2" id="form-content">
+				<input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="email" required>
+				<button type="submit" class="btn btn-secondary btn-sm">Subscribe</button>
+			</div>
+		</form>
+		<div id="subscribe-message" class="mt-3"></div>
+
+		<script>
+		document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+			
+			var form = document.getElementById('subscribe-form');
+			var messageDiv = document.getElementById('subscribe-message');
+
+			
+			form.classList.add('d-none');
+
+			
+			messageDiv.innerHTML = '';
+
+			var formData = new FormData(form);
+			fetch(form.action, {
+				method: 'POST',
+				body: formData
+			})
+			.then(response => {
+				if (response.ok) {
+					return response.text();
+				}
+				throw new Error('Subscription failed');
+			})
+			.then(message => {
+				messageDiv.innerHTML = '<div class="alert alert-success">' + message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+					form.reset();
+				}, 3000);
+			})
+			.catch(error => {
+				messageDiv.innerHTML = '<div class="alert alert-danger">' + error.message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+				}, 3000);
+			});
+		});
+		</script>
+
+		
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5 mb-5">
+
+  
+  <img src="/images/matt/Henchman_Street_W12_sign.jpg" style="max-width:400px;width:100%;height:auto;" class="img-fluid mb-3 rounded" alt="featured image">
+
+
+<h3 class="display-6 mb-4">Founders Don’t Need a Strategist as the First PM</h3>
+
+
+
+  <div class="mb-5">
+    <p>I recently spoke with the CEO of a small, scrappy, and profitable startup. Let’s call him Mike. His company pulls in a few million dollars a year with a lean team. They’ve made it past the survival stage, but now they’re grappling with the next big question: how to grow.</p>
+
+<p>Mike’s team is stuck on a familiar startup dilemma: which user to prioritize. Mike wants to focus on buyers, adding features like loyalty programs, promotions, and customer acquisition tools. His team, on the other hand, is more focused on the practitioners—users who interact with the product daily. They’re pushing to reduce pain points, automate workflows, and fix bugs. Classic short-term vs. long-term thinking, but also a split in who the team believes matters most.</p>
+
+<p>Startups rarely have the resources to chase both paths at once. My sense—though I can’t say for sure—was that Mike already had a preference but hesitated to articulate it. When he asked me whether a product management course might help his team with prioritization, I wasn’t sure if he was looking for clarity or just hoping for validation.</p>
+
+<hr>
+
+<h2 id="vision-vs-execution">Vision vs. Execution</h2>
+
+<p>This tension isn’t unique to Mike’s company. It’s common in startups led by founders who were deeply involved in the product’s creation. Early on, founders often act as de facto product managers, shaping every detail. But as their responsibilities grow, they spend less time in the trenches. Eventually, they look up and find the team working on things that feel misaligned with their vision.</p>
+
+<p>Mike spends most of his time pitching to buyers and closing deals, while his team hears daily from practitioners about bugs and feature requests. It’s no wonder their priorities diverge. Mike can’t—or shouldn’t—micromanage every decision, but the team’s lack of alignment is a problem.</p>
+
+<hr>
+
+<h2 id="reflecting-on-my-own-experience">Reflecting on My Own Experience</h2>
+
+<p>Mike’s situation reminds me of my time as a PM at a Y-Combinator startup. At Checkr, I was the second PM, working under a talented but relatively inexperienced director. One of our biggest jobs was translating the founder’s vision into an actionable roadmap.</p>
+
+<p>This wasn’t about big-picture strategy—it was about alignment. Our challenge wasn’t just deciding what to build; it was keeping the team connected to the bigger picture, especially when the work felt reactive or tedious.</p>
+
+<hr>
+
+<h2 id="what-mike-needs-in-a-first-pm">What Mike Needs in a First PM</h2>
+
+<p>When Mike circled back, he said he was thinking about hiring a product manager instead of enrolling his team in a course. That’s probably the right move. But it got me thinking about what kind of PM a company like Mike’s actually needs.</p>
+
+<p>Broadly speaking, PMs fall into two camps: execution-focused and strategy-focused.</p>
+
+<ul>
+<li><strong>Execution PMs</strong> are great at taking high-level priorities and turning them into actionable plans. The risk is that they can sometimes feel like glorified project managers, moving tickets in Jira without influencing the product’s direction.<br>
+</li>
+<li><strong>Strategy PMs</strong> focus on the big picture: market trends, customer needs, and long-term vision. They’re essential for growth but less useful when a team is struggling with day-to-day alignment.</li>
+</ul>
+
+<p>For a company at Mike’s stage, the immediate need is clear: an execution-focused PM. Someone who can bridge the gap between Mike’s vision and the team’s work. Strategy will matter eventually, but right now, it’s about getting everyone on the same page and moving forward.</p>
+
+<hr>
+
+<blockquote>
+<p><em>The image of the street sign is licensed under the Creative Commons Attribution-Share Alike 2.0 Generic license.<br>
+Original photo by Loz Flowers. Source: <a href="https://flickr.com/photos/99245765@N00/5221006685">Flickr</a>.</em></p>
+</blockquote>
+
+  </div>
+
+
+<footer class="text-center">
+  Built using <a href="https://github.com/mreider/krems">Krems</a>
+</footer>
+</div>
+
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>

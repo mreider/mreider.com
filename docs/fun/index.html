@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Writing for fun - mreider.com</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta property="og:site_name" content="mreider.com">
+  <link rel="icon" href="/images/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <style>
+  body{background: #FBF9F1;}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#E5E1DA; margin-bottom:20px;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="/images/favicon.png" alt="" width="30" height="30" class="d-inline-block align-text-top me-1">
+      mreider.com
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kremsNavbar" aria-controls="kremsNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="kremsNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/tech/">Tech</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/fun/">Fun</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/family/">Family</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/about-me/">Me</a>
+        </li>
+        
+      </ul>
+	  
+		<form id="subscribe-form" action="https://quacker.eu/subscribe" method="POST" class="d-flex ms-3">
+			<input type="hidden" name="owner" value="mreider">
+			<input type="hidden" name="domain" value="mreider.com">
+			<div class="d-flex align-items-center gap-2" id="form-content">
+				<input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="email" required>
+				<button type="submit" class="btn btn-secondary btn-sm">Subscribe</button>
+			</div>
+		</form>
+		<div id="subscribe-message" class="mt-3"></div>
+
+		<script>
+		document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+			
+			var form = document.getElementById('subscribe-form');
+			var messageDiv = document.getElementById('subscribe-message');
+
+			
+			form.classList.add('d-none');
+
+			
+			messageDiv.innerHTML = '';
+
+			var formData = new FormData(form);
+			fetch(form.action, {
+				method: 'POST',
+				body: formData
+			})
+			.then(response => {
+				if (response.ok) {
+					return response.text();
+				}
+				throw new Error('Subscription failed');
+			})
+			.then(message => {
+				messageDiv.innerHTML = '<div class="alert alert-success">' + message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+					form.reset();
+				}, 3000);
+			})
+			.catch(error => {
+				messageDiv.innerHTML = '<div class="alert alert-danger">' + error.message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+				}, 3000);
+			});
+		});
+		</script>
+
+		
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5 mb-5">
+
+
+<h3 class="display-6 mb-4">Writing for fun</h3>
+
+
+
+  <div class="blog-list"><h3 class="mt-5 mb-3">2025</h3>
+<h5 class="mb-2">February</h5>
+<ul class="list-group mb-4">
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/a-test-3/">A test 3</a></li>
+</ul>
+<h3 class="mt-5 mb-3">2024</h3>
+<h5 class="mb-2">May</h5>
+<ul class="list-group mb-4">
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/lost-and-found/">Lost and Found</a></li>
+</ul>
+<h5 class="mb-2">March</h5>
+<ul class="list-group mb-4">
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/h2oh-no/">H₂Oh No</a></li>
+</ul>
+<h3 class="mt-5 mb-3">2022</h3>
+<h5 class="mb-2">August</h5>
+<ul class="list-group mb-4">
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/going-viral/">Going Viral</a></li>
+</ul>
+<h5 class="mb-2">April</h5>
+<ul class="list-group mb-4">
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/more-than-20-questions/">More than 20 Questions</a></li>
+</ul>
+<h5 class="mb-2">March</h5>
+<ul class="list-group mb-4">
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/a-year-went-by/">A Year Went By</a></li>
+</ul>
+<h3 class="mt-5 mb-3">2020</h3>
+<h5 class="mb-2">September</h5>
+<ul class="list-group mb-4">
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/wasser-acqua-voda/">Wasser, Acqua, Voda</a></li>
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/teamwork-in-corfu/">Teamwork in Corfu</a></li>
+</ul>
+<h5 class="mb-2">June</h5>
+<ul class="list-group mb-4">
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/ode-to-kine-fahrrad/">Ode to Kine Fahrrad</a></li>
+</ul>
+<h3 class="mt-5 mb-3">2019</h3>
+<h5 class="mb-2">December</h5>
+<ul class="list-group mb-4">
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/its-snowing/">It's Snowing</a></li>
+</ul>
+<h5 class="mb-2">October</h5>
+<ul class="list-group mb-4">
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/infinite-tunnels/">Infinite Tunnels</a></li>
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/trader-joes-bros/">Trader Joe's Bros</a></li>
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/urfahraner-market/">Urfahraner Market</a></li>
+</ul>
+<h5 class="mb-2">September</h5>
+<ul class="list-group mb-4">
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/memories-of-vermont/">Memories of Vermont</a></li>
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/the-everything-animal/">The Everything Animal</a></li>
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/rolling-in-my-benzo/">Rolling in my Benzo</a></li>
+</ul>
+<h5 class="mb-2">August</h5>
+<ul class="list-group mb-4">
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/no-comprendo/">No Comprendo</a></li>
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/week-2/">Week 2</a></li>
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/phones/">Phones</a></li>
+<li class="list-group-item"><a class="text-decoration-none" href="/fun/osterreich/">Österreich</a></li>
+</ul>
+</div>
+
+
+<footer class="text-center">
+  Built using <a href="https://github.com/mreider/krems">Krems</a>
+</footer>
+</div>
+
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>

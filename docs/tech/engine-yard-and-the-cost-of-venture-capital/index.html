@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Engine Yard and the Cost of Venture Capital - mreider.com</title>
+  <meta name="description" content="My experience at Engine Yard and how venture funding shaped its fate.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta property="og:image" content="images/matt/old-train.jpg">
+  <meta name="twitter:image" content="images/matt/old-train.jpg">
+  
+  <meta property="og:site_name" content="mreider.com">
+  <link rel="icon" href="/images/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <style>
+  body{background: #FBF9F1;}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#E5E1DA; margin-bottom:20px;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="/images/favicon.png" alt="" width="30" height="30" class="d-inline-block align-text-top me-1">
+      mreider.com
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kremsNavbar" aria-controls="kremsNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="kremsNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/tech/">Tech</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/fun/">Fun</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/family/">Family</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/about-me/">Me</a>
+        </li>
+        
+      </ul>
+	  
+		<form id="subscribe-form" action="https://quacker.eu/subscribe" method="POST" class="d-flex ms-3">
+			<input type="hidden" name="owner" value="mreider">
+			<input type="hidden" name="domain" value="mreider.com">
+			<div class="d-flex align-items-center gap-2" id="form-content">
+				<input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="email" required>
+				<button type="submit" class="btn btn-secondary btn-sm">Subscribe</button>
+			</div>
+		</form>
+		<div id="subscribe-message" class="mt-3"></div>
+
+		<script>
+		document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+			
+			var form = document.getElementById('subscribe-form');
+			var messageDiv = document.getElementById('subscribe-message');
+
+			
+			form.classList.add('d-none');
+
+			
+			messageDiv.innerHTML = '';
+
+			var formData = new FormData(form);
+			fetch(form.action, {
+				method: 'POST',
+				body: formData
+			})
+			.then(response => {
+				if (response.ok) {
+					return response.text();
+				}
+				throw new Error('Subscription failed');
+			})
+			.then(message => {
+				messageDiv.innerHTML = '<div class="alert alert-success">' + message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+					form.reset();
+				}, 3000);
+			})
+			.catch(error => {
+				messageDiv.innerHTML = '<div class="alert alert-danger">' + error.message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+				}, 3000);
+			});
+		});
+		</script>
+
+		
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5 mb-5">
+
+  
+  <img src="/images/matt/old-train.jpg" style="max-width:400px;width:100%;height:auto;" class="img-fluid mb-3 rounded" alt="featured image">
+
+
+<h3 class="display-6 mb-4">Engine Yard and the Cost of Venture Capital</h3>
+
+<p class="text-muted mb-4">My experience at Engine Yard and how venture funding shaped its fate.</p>
+
+
+
+  <div class="mb-5">
+    <p>Back in the early days of cloud computing, before &ldquo;cloud&rdquo; meant what it does today, we were one of the original cloud vendors. Our infrastructure ran on custom-patched Gentoo servers—nicknamed &ldquo;pizza boxes&rdquo;—housed in two data centers on opposite coasts. Scaling wasn’t automated. It was manual, requiring real humans to intervene. As our head of support jokingly put it, we were a &ldquo;meat cloud.&rdquo;</p>
+
+<p>Still, we were ahead of the curve, offering a platform as a service (PaaS) for Ruby on Rails apps, MongoDB, and MySQL databases. Developers could push their code, and it “just worked.”</p>
+
+<hr>
+
+<h2 id="building-a-community">Building a Community</h2>
+
+<p>Our co-founder, Ezra Zygmuntowicz, was a legend in the Ruby community. He authored Merb, which eventually merged with Rails. Other big names in Ruby worked at Engine Yard, too: Wayne Seguin (creator of RVM), Carl Lerche and Yehuda Katz (co-creators of Bundler), Evan Phoenix (Rubinius), and even the JRuby team.</p>
+
+<p>Engine Yard wasn’t just a hosting company—it was a sponsor for open-source talent. These folks didn’t work on Engine Yard’s product. They worked on Rails itself, advancing the ecosystem. They ate lunch with us, joked with us, and occasionally drank with us (though less so with me—I was 15 years older, with toddlers at home, a house in the suburbs, and zero tattoos).</p>
+
+<p>By the time I arrived, the product itself was in rough shape. Customers had slightly customized setups running on slightly different Gentoo configurations. Shared storage from CORAID, a budget vendor, was a frequent point of failure, causing blackouts or brownouts. Much of my job involved writing postmortems and negotiating with frustrated customers.</p>
+
+<p>Our customer base was impressive: GitHub, New Relic, and Groupon were all on our platform. Hosting GitHub for free gave us credibility in the Rails community—it was marketing gold. But years went by, and GitHub never paid us a dime. It became an inside joke: Engine Yard was &ldquo;selling dollars for 99 cents.&rdquo;</p>
+
+<p>When I read quotes from GitHub’s founders about &ldquo;never needing venture funding,&rdquo; it still stings. Of course, they didn’t—we paid their infrastructure bills.</p>
+
+<hr>
+
+<h2 id="the-new-guard">The New Guard</h2>
+
+<p>By 2009, when I joined, things were changing. Investors wanted profitability and a scalable product. The new leadership was tasked with cleaning up the platform, retiring the pizza boxes, and migrating customers to something sustainable.</p>
+
+<p>We gave customers three options:</p>
+
+<ol>
+<li>Migrate to Engine Yard on Terremark Cloud for a premium.<br>
+</li>
+<li>Refactor their apps into &ldquo;12-factor apps&rdquo; (the precursor to &ldquo;cloud-native&rdquo;) and move to Engine Yard on AWS.<br>
+</li>
+<li>Leave Engine Yard entirely.<br>
+</li>
+</ol>
+
+<p>Some migrated, but many left—including GitHub. For those who stayed, the process was messy but necessary. To celebrate the end of the migrations, we smashed an old pizza box with a sledgehammer in the parking lot of Tres Agaves, a nearby Mexican restaurant. It was more gimmicky than satisfying.</p>
+
+<hr>
+
+<h2 id="the-decline">The Decline</h2>
+
+<p>Even after the migrations, things didn’t go well. Heroku, our biggest competitor, had been acquired by Salesforce and was dominating the market. They’d gone cloud-native from the start and supported more than just Rails. Their platform was easier to use, and they had the resources to outpace us.</p>
+
+<p>There were also missed opportunities. VMware once offered to buy Engine Yard for $200 million. Our founders turned it down, thinking it wasn’t enough. Ezra told me about the offer—in the bathroom, of all places. He was crushed. He wanted the payout. Not long after, he left Engine Yard to work on Cloud Foundry at VMware. Tragically, a few years later, he took his own life, leaving behind a wife and a newborn son.</p>
+
+<p>In the end, Engine Yard couldn’t survive. The energy of the Rails community that once made us special wasn’t enough to keep us afloat. Like so many startups, our story ended with a worthless stock certificate and lessons learned the hard way.</p>
+
+<hr>
+
+<blockquote>
+<p>*The image of the train is licensed under the Creative Commons Attribution-Share Alike 2.0 Generic license.<br>
+Original photo by train_photos. Source: [Flickr](https://</p>
+</blockquote>
+
+  </div>
+
+
+<footer class="text-center">
+  Built using <a href="https://github.com/mreider/krems">Krems</a>
+</footer>
+</div>
+
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>

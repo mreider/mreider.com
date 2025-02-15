@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bluesky is almost like 2012 Twitter - mreider.com</title>
+  <meta name="description" content="Early Twitter vibes and uncertain prospects">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta property="og:image" content="images/matt/cloudy_sky.jpg">
+  <meta name="twitter:image" content="images/matt/cloudy_sky.jpg">
+  
+  <meta property="og:site_name" content="mreider.com">
+  <link rel="icon" href="/images/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <style>
+  body{background: #FBF9F1;}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#E5E1DA; margin-bottom:20px;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="/images/favicon.png" alt="" width="30" height="30" class="d-inline-block align-text-top me-1">
+      mreider.com
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kremsNavbar" aria-controls="kremsNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="kremsNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/tech/">Tech</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/fun/">Fun</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/family/">Family</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/about-me/">Me</a>
+        </li>
+        
+      </ul>
+	  
+		<form id="subscribe-form" action="https://quacker.eu/subscribe" method="POST" class="d-flex ms-3">
+			<input type="hidden" name="owner" value="mreider">
+			<input type="hidden" name="domain" value="mreider.com">
+			<div class="d-flex align-items-center gap-2" id="form-content">
+				<input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="email" required>
+				<button type="submit" class="btn btn-secondary btn-sm">Subscribe</button>
+			</div>
+		</form>
+		<div id="subscribe-message" class="mt-3"></div>
+
+		<script>
+		document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+			
+			var form = document.getElementById('subscribe-form');
+			var messageDiv = document.getElementById('subscribe-message');
+
+			
+			form.classList.add('d-none');
+
+			
+			messageDiv.innerHTML = '';
+
+			var formData = new FormData(form);
+			fetch(form.action, {
+				method: 'POST',
+				body: formData
+			})
+			.then(response => {
+				if (response.ok) {
+					return response.text();
+				}
+				throw new Error('Subscription failed');
+			})
+			.then(message => {
+				messageDiv.innerHTML = '<div class="alert alert-success">' + message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+					form.reset();
+				}, 3000);
+			})
+			.catch(error => {
+				messageDiv.innerHTML = '<div class="alert alert-danger">' + error.message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+				}, 3000);
+			});
+		});
+		</script>
+
+		
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5 mb-5">
+
+  
+  <img src="/images/matt/cloudy_sky.jpg" style="max-width:400px;width:100%;height:auto;" class="img-fluid mb-3 rounded" alt="featured image">
+
+
+<h3 class="display-6 mb-4">Bluesky is almost like 2012 Twitter</h3>
+
+<p class="text-muted mb-4">Early Twitter vibes and uncertain prospects</p>
+
+
+
+  <div class="mb-5">
+    <p>Bluesky is going ok so far. I don’t have many followers yet, and I’m still figuring out who to follow, but it’s the closest thing we’ve had in years to 2012 Twitter—the good Twitter. The one where tech folks could have fun, feel connected, and not drown in nonsense.</p>
+
+<p>Back then we wondered how Twitter would make money. Bluesky is in the same place. But unlike Twitter, which grew organically from a quirky SMS tool, Bluesky isn’t organic. It has a clearer sense of what it wants to be—or maybe it doesn’t.</p>
+
+<hr>
+
+<h2 id="where-is-bluesky-going">Where is Bluesky going?</h2>
+
+<p>Bluesky is proudly algorithm-free. Your timeline is chronological, showing posts in order rather than prioritizing engagement. There’s no advertising. For now, you’re not the product.</p>
+
+<p>This is what early Twitter was. It hadn&rsquo;t yet followed the Zuckerberg model of monetizing eyeballs via algorithmic engagement.</p>
+
+<p>Bluesky&rsquo;s identity is tied to the AT Protocol, reminiscent of the crypto industry’s obsession with protocols. This likely stems from Bluesky&rsquo;s roots, as many of its owners have connections to the protocol-driven crypto world. Co-owner Mike Masnick captures this idea in an article he wrote on <a href="https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech">protocols vs platforms</a>:</p>
+
+<blockquote>
+<p><em>In the last few years, with the development of cryptocurrencies and tokens, it has become theoretically possible to build a protocol that uses a cryptocurrency or a token that has some value attached to it, with the value of those items growing in conjunction with usage. A simple way of looking at this is that a token-based cryptocurrency is the equivalent of equity in a company—but rather than the value being tied to the financial success of the company, the value of a crypto token is tied to the value of the overall network.</em></p>
+</blockquote>
+
+<p>This focus on the AT Protocol gives Bluesky a way to market itself as a distributed network, much like the ideals Masnick outlines in his article on protocols over platforms. But in reality, that’s not what’s happening. Everyone is on bluesky.social, and its growth has nothing to do with decentralization or the protocol. In practice, it functions like any other centralized platform.</p>
+
+<hr>
+
+<h2 id="how-will-they-monetize">How Will They Monetize?</h2>
+
+<p>Last week, a mockup of a leaked Bluesky membership page popped up. Who knows if it’s in the works. Even if it is, charging fees might cover a few weeks of cloud costs, but it won’t be enough to fund a growing platform long-term.</p>
+
+<p><img src="/images/matt/bluesky-mockup.png" alt="mockup" style="max-width:400px;width:100%;height:auto;" class="mb-3 img-fluid"/></p>
+
+<p>So, what happens next? How do they monetize this thing? My guess is they don’t—at least not yet. They’ll keep growing bluesky.social, putting off the monetization question until it can’t be avoided anymore.</p>
+
+<p>At some point this leaves two likely options:</p>
+
+<ol>
+<li><p><strong>Advertising:</strong> Eventually, they might introduce ads—maybe just on bluesky.social — while claiming users could move to other AT Protocol servers if they don’t like it. IMHO no viable alternatives would exist.</p></li>
+
+<li><p><strong>Tokenization:</strong> Tokenization: Given Bluesky&rsquo;s crypto-heavy DNA (with the notable exception of Joe Beda, co-creator of Kubernetes—much respect), they might explore tokenizing the platform. Other companies have tried this—Reddit’s NFT experiment fizzled, and Meta’s &ldquo;Novi&rdquo; plans never got off the ground—but this is familiar territory for Bluesky’s founders and backers. Tokenizing could also offer incentives for users to create their own servers, with the value of the token increasing as the network grows—provided the token can be exchanged like other cryptocurrencies on platforms like Coinbase. Personally, this side of the tech industry is my least favorite, as it puts speculation over substance.</p></li>
+</ol>
+
+<p>For now, Bluesky feels fun, low-stakes, and like a real community for tech folks. It’s got the early Twitter vibe, complete with an uncertain future — and I’m sure there are spirited debates among its leadership about what it wants to be when it grows up.</p>
+
+<p>Hopefully it doesn’t grow up too fast.</p>
+
+<blockquote>
+<p><em>The image of the cloudy sky is licensed under Creative Commons Attribution-Share Alike 2.0 Generic license. Attribution: <a href="https://en.wikipedia.org/wiki/User:Ricstar">Ricstar</a> at the English-language Wikipedia.</em></p>
+</blockquote>
+
+  </div>
+
+
+<footer class="text-center">
+  Built using <a href="https://github.com/mreider/krems">Krems</a>
+</footer>
+</div>
+
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>
