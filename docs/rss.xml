@@ -6,11 +6,11 @@
   <description>RSS feed for mreider.com</description>
   
 <item>
-  <title>A test 4</title>
-  <link>https://mreider.com/fun/a-test-4/</link>
+  <title>Krems static blog generator</title>
+  <link>https://mreider.com/tech/krems-static-blog-generator/</link>
   <description></description>
   <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-  <enclosure url="https://mreider.com/images/matt/94797BC5-3A6A-4043-87CC-280B876F7D93_1_105_c.jpeg" type="image/png"/>
+  <enclosure url="https://mreider.com/images/matt/gh-krems.png" type="image/png"/>
 </item>
 
 
@@ -69,20 +69,20 @@
 
 
 <item>
-  <title>Founders Don’t Need a Strategist as the First PM</title>
-  <link>https://mreider.com/tech/founders-dont-need-a-strategist-as-the-first-pm/</link>
-  <description></description>
-  <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
-  <enclosure url="https://mreider.com/images/matt/Henchman_Street_W12_sign.jpg" type="image/png"/>
-</item>
-
-
-<item>
   <title>Building Quacker: A Weekend Project with ChatGPT</title>
   <link>https://mreider.com/tech/building-quacker-a-weekend-project-with-chatgpt/</link>
   <description>Building an app with AI is both impressive and frustrating</description>
   <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
   <enclosure url="https://mreider.com/images/matt/duck.jpg" type="image/png"/>
+</item>
+
+
+<item>
+  <title>Founders Don’t Need a Strategist as the First PM</title>
+  <link>https://mreider.com/tech/founders-dont-need-a-strategist-as-the-first-pm/</link>
+  <description></description>
+  <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
+  <enclosure url="https://mreider.com/images/matt/Henchman_Street_W12_sign.jpg" type="image/png"/>
 </item>
 
 
@@ -141,20 +141,20 @@
 
 
 <item>
-  <title>Wasser, Acqua, Voda</title>
-  <link>https://mreider.com/fun/wasser-acqua-voda/</link>
-  <description></description>
-  <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
-  <enclosure url="https://mreider.com/images/matt/1_p5W-O_HqQHBXIqS10N-Fsw@2x.jpeg" type="image/png"/>
-</item>
-
-
-<item>
   <title>Teamwork in Corfu</title>
   <link>https://mreider.com/fun/teamwork-in-corfu/</link>
   <description></description>
   <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
   <enclosure url="https://mreider.com/images/matt/1_l2i7EqauON04D-pjr9b1gQ-1.jpeg" type="image/png"/>
+</item>
+
+
+<item>
+  <title>Wasser, Acqua, Voda</title>
+  <link>https://mreider.com/fun/wasser-acqua-voda/</link>
+  <description></description>
+  <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
+  <enclosure url="https://mreider.com/images/matt/1_p5W-O_HqQHBXIqS10N-Fsw@2x.jpeg" type="image/png"/>
 </item>
 
 
@@ -177,8 +177,8 @@
 
 
 <item>
-  <title>Trader Joe&apos;s Bros</title>
-  <link>https://mreider.com/fun/trader-joes-bros/</link>
+  <title>Infinite Tunnels</title>
+  <link>https://mreider.com/fun/infinite-tunnels/</link>
   <description></description>
   <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
   
@@ -186,8 +186,8 @@
 
 
 <item>
-  <title>Infinite Tunnels</title>
-  <link>https://mreider.com/fun/infinite-tunnels/</link>
+  <title>Trader Joe&apos;s Bros</title>
+  <link>https://mreider.com/fun/trader-joes-bros/</link>
   <description></description>
   <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
   
