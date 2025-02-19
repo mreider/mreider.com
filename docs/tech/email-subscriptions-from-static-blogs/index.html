@@ -126,25 +126,25 @@
 
 
 	<div class="mb-5">
-		<p>In my <a href="/tech/krems-static-blog-generator/">last blog entry</a>, I introduced Krems, a project I built for generating static blogs. One challenge with static blogs is that they can&rsquo;t run server code or databases, making it impossible to store email addresses for blog subscriptions. There are paid services, like rssfeedpulse.com, that scrape your RSS feed and send new posts to email subscribers.</p>
+		<p>In my <a href="/tech/krems-static-blog-generator/">last blog entry</a>, I introduced Krems, a project I built for generating static blogs. One challenge with static blogs is that they can&rsquo;t run server code or databases, making it impossible to store email addresses for blog subscriptions. You can use a paid services, like rssfeedpulse.com, to scrape your RSS feed and send new posts to email subscribers, or you can recommend that your users subscribe using an RSS reader.</p>
 
-<p>A few months ago, I built my own version of this service using Python, with <a href="/tech/building-quacker-a-weekend-project-with-chatgpt/">some help from ChatGPT</a>. I called it Quacker. This week I rewrote the entire thing in Golang. It&rsquo;s been working quite well.</p>
+<p>A few months ago, I built an app like rssfeedpulse using Python, with <a href="/tech/building-quacker-a-weekend-project-with-chatgpt/">some help from ChatGPT</a>. This week I rewrote the entire thing in Golang. It&rsquo;s been working quite well. I called it Quacker and it&rsquo;s running at <a href="https://quacker.eu">quacker.eu</a>, but you can&rsquo;t login unless I add your github username to an approved list.</p>
 
-<p>Here’s the email I received via Quacker from the blog post I wrote last night:</p>
+<p>Quacker sent me an email after the blog post I wrote last night:</p>
 
 <p><img src="/images/matt/email-from-quacker.png" alt="screenshot of a quacker email" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
 
-<h1 id="how-quacker-works">How Quacker works</h1>
+<h1 id="how-it-works">How it works</h1>
 
-<p>Every few minutes, Quacker fetches the RSS feeds of every blog in its database and emails them to all subscribed users. To add a blog to the database, simply log in and create a new entry like this:</p>
+<p>Every few minutes, Quacker fetches the RSS feeds of every blog in its database and emails new posts to subscribed users. To add a blog to the database, simply log in and create a new entry like this:</p>
 
 <p><img src="/images/matt/quacker-add-site.png" alt="adding a site to quacker" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
 
-<p>Once the site is saved you each user will see it in their site list (here there&rsquo;s only one site listed for mreider).</p>
+<p>Once the site is saved it shows up in my site list (here there&rsquo;s only one site listed).</p>
 
 <p><img src="/images/matt/quacker-site-list.png" alt="mreider site list" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
 
-<p>From here you can click View HTML    and see the email subscription form to paste into your blog.</p>
+<p>From here you can click View HTML and see the email subscription form to paste into your blog.</p>
 
 <p><img src="/images/matt/quacker-html-form.png" alt="html form" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
 

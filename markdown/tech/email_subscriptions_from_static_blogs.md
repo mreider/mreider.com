@@ -5,25 +5,25 @@ date: "2025-02-17"
 image: "/images/matt/emails-everywhere.png"
 ---
 
-In my [last blog entry](krems_static_site_generator.md), I introduced Krems, a project I built for generating static blogs. One challenge with static blogs is that they can't run server code or databases, making it impossible to store email addresses for blog subscriptions. There are paid services, like rssfeedpulse.com, that scrape your RSS feed and send new posts to email subscribers.
+In my [last blog entry](krems_static_site_generator.md), I introduced Krems, a project I built for generating static blogs. One challenge with static blogs is that they can't run server code or databases, making it impossible to store email addresses for blog subscriptions. You can use a paid services, like rssfeedpulse.com, to scrape your RSS feed and send new posts to email subscribers, or you can recommend that your users subscribe using an RSS reader.
 
-A few months ago, I built my own version of this service using Python, with [some help from ChatGPT](Building_Quacker.md). I called it Quacker. This week I rewrote the entire thing in Golang. It's been working quite well.
+A few months ago, I built an app like rssfeedpulse using Python, with [some help from ChatGPT](Building_Quacker.md). This week I rewrote the entire thing in Golang. It's been working quite well. I called it Quacker and it's running at [quacker.eu](https://quacker.eu), but you can't login unless I add your github username to an approved list.
 
-Here’s the email I received via Quacker from the blog post I wrote last night:
+Quacker sent me an email after the blog post I wrote last night:
 
 ![screenshot of a quacker email](/images/matt/email-from-quacker.png)
 
-# How Quacker works
+# How it works
 
-Every few minutes, Quacker fetches the RSS feeds of every blog in its database and emails them to all subscribed users. To add a blog to the database, simply log in and create a new entry like this:
+Every few minutes, Quacker fetches the RSS feeds of every blog in its database and emails new posts to subscribed users. To add a blog to the database, simply log in and create a new entry like this:
 
 ![adding a site to quacker](/images/matt/quacker-add-site.png)
 
-Once the site is saved you each user will see it in their site list (here there's only one site listed for mreider).
+Once the site is saved it shows up in my site list (here there's only one site listed).
 
 ![mreider site list](/images/matt/quacker-site-list.png)
 
-From here you can click View HTML    and see the email subscription form to paste into your blog.
+From here you can click View HTML and see the email subscription form to paste into your blog.
 
 ![html form](/images/matt/quacker-html-form.png)
 
