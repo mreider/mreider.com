@@ -6,6 +6,15 @@
   <description>RSS feed for mreider.com</description>
   
 <item>
+  <title>Email Subscriptions from Static Blogs</title>
+  <link>https://mreider.com/tech/email-subscriptions-from-static-blogs/</link>
+  <description></description>
+  <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
+  <enclosure url="https://mreider.com/images/matt/emails-everywhere.png" type="image/png"/>
+</item>
+
+
+<item>
   <title>Krems static blog generator</title>
   <link>https://mreider.com/tech/krems-static-blog-generator/</link>
   <description></description>
@@ -177,8 +186,8 @@
 
 
 <item>
-  <title>Infinite Tunnels</title>
-  <link>https://mreider.com/fun/infinite-tunnels/</link>
+  <title>Trader Joe&apos;s Bros</title>
+  <link>https://mreider.com/fun/trader-joes-bros/</link>
   <description></description>
   <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
   
@@ -186,8 +195,8 @@
 
 
 <item>
-  <title>Trader Joe&apos;s Bros</title>
-  <link>https://mreider.com/fun/trader-joes-bros/</link>
+  <title>Infinite Tunnels</title>
+  <link>https://mreider.com/fun/infinite-tunnels/</link>
   <description></description>
   <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
   

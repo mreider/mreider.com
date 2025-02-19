@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Email Subscriptions from Static Blogs - mreider.com</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta property="og:image" content="images/matt/emails-everywhere.png">
+	<meta name="twitter:image" content="images/matt/emails-everywhere.png">
+	
+	<meta property="og:site_name" content="mreider.com">
+	<link rel="icon" href="/images/favicon.png" type="image/png">
+
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<style>
+	body{background: #FBF9F1;}
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#E5E1DA; margin-bottom:20px;">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="/">
+			<img src="/images/favicon.png" alt="" width="30" height="30" class="d-inline-block align-text-top me-1">
+			mreider.com
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kremsNavbar" aria-controls="kremsNavbar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="kremsNavbar">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/tech/">Tech</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/fun/">Fun</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/family/">Family</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/about-me/">Me</a>
+				</li>
+				
+			</ul>
+		
+		<form id="subscribe-form" action="https://quacker.eu/subscribe" method="POST" class="d-flex ms-3">
+			<input type="hidden" name="owner" value="mreider">
+			<input type="hidden" name="domain" value="mreider.com">
+			<div class="d-flex align-items-center gap-2" id="form-content">
+				<input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="email" required>
+				<button type="submit" class="btn btn-secondary btn-sm">Subscribe</button>
+			</div>
+		</form>
+		<div id="subscribe-message" class="mt-3"></div>
+
+		<script>
+		document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+			
+			var form = document.getElementById('subscribe-form');
+			var messageDiv = document.getElementById('subscribe-message');
+
+			
+			form.classList.add('d-none');
+
+			
+			messageDiv.innerHTML = '';
+
+			var formData = new FormData(form);
+			fetch(form.action, {
+				method: 'POST',
+				body: formData
+			})
+			.then(response => {
+				if (response.ok) {
+					return response.text();
+				}
+				throw new Error('Subscription failed');
+			})
+			.then(message => {
+				messageDiv.innerHTML = '<div class="alert alert-success">' + message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+					form.reset();
+				}, 3000);
+			})
+			.catch(error => {
+				messageDiv.innerHTML = '<div class="alert alert-danger">' + error.message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+				}, 3000);
+			});
+		});
+		</script>
+
+		
+		</div>
+	</div>
+</nav>
+
+<div class="container mt-5 mb-5">
+
+	
+	<img src="/images/matt/emails-everywhere.png" style="max-width:400px;width:100%;height:auto;" class="img-fluid mb-3 rounded" alt="featured image">
+
+
+
+<h3 class="display-6 mb-4">Email Subscriptions from Static Blogs</h3>
+
+
+
+
+	<div class="mb-5">
+		<p>In my last blog entry, I introduced Krems, a project I built for generating static blogs. One challenge with static blogs is that they can&rsquo;t run server code or databases, making it impossible to store email addresses for blog subscriptions. There are paid services, like rssfeedpulse.com, that scrape your RSS feed and send new posts to email subscribers.</p>
+
+<p>A few months ago, I built my own version of this service using Python, with <a href="/tech/building-quacker-a-weekend-project-with-chatgpt/">some help from ChatGPT</a>. I called it Quacker. This week I rewrote the entire thing in Golang. It&rsquo;s been working quite well.</p>
+
+<p>Here’s the email I received via Quacker from the blog post I wrote last night:</p>
+
+<p><img src="/images/matt/email-from-quacker.png" alt="screenshot of a quacker email" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
+
+<h1 id="how-quacker-works">How Quacker works</h1>
+
+<p>Every few minutes, Quacker fetches the RSS feeds of every blog in its database and emails them to all subscribed users. To add a blog to the database, simply log in and create a new entry like this:</p>
+
+<p><img src="/images/matt/quacker-add-site.png" alt="adding a site to quacker" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
+
+<p>Once the site is saved you each user will see it in their site list (here there&rsquo;s only one site listed for mreider).</p>
+
+<p><img src="/images/matt/quacker-site-list.png" alt="mreider site list" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
+
+<p>From here you can click View HTML    and see the email subscription form to paste into your blog.</p>
+
+<p><img src="/images/matt/quacker-html-form.png" alt="html form" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
+
+<h1 id="krems-auto-quacker-config">Krems auto-quacker config</h1>
+
+<p>As the creator of <a href="/tech/krems-static-blog-generator/">Krems</a>, which generated the blog you&rsquo;re currently looking at, I decided to streamline the process by integrating a Quacker config into Krems’ config parser. The email subscription form you&rsquo;re seeing here on mreider.com was generated using the following configuration:</p>
+
+<pre><code class="language-yaml">quacker:
+  domain: &quot;mreider.com&quot;
+  site_owner: &quot;mreider&quot;
+  target: &quot;quacker.eu&quot;
+</code></pre>
+
+<h1 id="open-to-sharing">Open to sharing</h1>
+
+<p>If you run a static blog using Hugo or Jekyll and want to try Quacker without hosting it yourself, I’d be open to adding you to the site owner list. Since Quacker uses GitHub login IDs, all I’d need is your GitHub username to set you up.</p>
+
+<h1 id="install-your-own-quacker">Install your own quacker</h1>
+
+<p>To install Quacker on your own server, follow the instructions in the <a href="https://github.com/mreider/quacker">Github repository</a>. If you run into any issues, have ideas, or want to give feedback, feel free to open a discussion on Quacker’s <a href="https://github.com/mreider/quacker/issues">Github issues</a>.</p>
+
+	</div>
+
+
+<footer class="text-center">
+	🏰 Generated with <a href="https://github.com/mreider/krems">Krems</a> 🏰
+</footer>
+</div>
+
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>
