@@ -5,7 +5,7 @@ date: "2025-02-17"
 image: "/images/matt/emails-everywhere.png"
 ---
 
-In my last blog entry, I introduced Krems, a project I built for generating static blogs. One challenge with static blogs is that they can't run server code or databases, making it impossible to store email addresses for blog subscriptions. There are paid services, like rssfeedpulse.com, that scrape your RSS feed and send new posts to email subscribers.
+In my [last blog entry](krems_static_site_generator.md), I introduced Krems, a project I built for generating static blogs. One challenge with static blogs is that they can't run server code or databases, making it impossible to store email addresses for blog subscriptions. There are paid services, like rssfeedpulse.com, that scrape your RSS feed and send new posts to email subscribers.
 
 A few months ago, I built my own version of this service using Python, with [some help from ChatGPT](Building_Quacker.md). I called it Quacker. This week I rewrote the entire thing in Golang. It's been working quite well.
 
