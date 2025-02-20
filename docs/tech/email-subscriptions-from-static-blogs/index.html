@@ -43,15 +43,11 @@
 				</li>
 				
 				<li class="nav-item">
-					<a class="nav-link" href="/fun/">Fun</a>
+					<a class="nav-link" href="/life/">Life</a>
 				</li>
 				
 				<li class="nav-item">
 					<a class="nav-link" href="/family/">Family</a>
-				</li>
-				
-				<li class="nav-item">
-					<a class="nav-link" href="/about-me/">Me</a>
 				</li>
 				
 			</ul>
@@ -126,11 +122,11 @@
 
 
 	<div class="mb-5">
-		<p>In my <a href="/tech/krems-static-blog-generator/">last blog entry</a>, I introduced Krems, a project I built for generating static blogs. One challenge with static blogs is that they can&rsquo;t run server code or databases, making it impossible to store email addresses for blog subscriptions. You can use a paid services, like rssfeedpulse.com, to scrape your RSS feed and send new posts to email subscribers, or you can recommend that your users subscribe using an RSS reader.</p>
+		<p>In my <a href="/tech/krems-static-blog-generator/">last blog entry</a>, I introduced Krems, a project I built for generating static blogs. One of the challenges with static blogs is their inability to run server-side code or databases, which makes storing email addresses for blog subscriptions impossible. To work around this, you can either use a paid service like <a href="https://rssfeedpulse.com">rssfeedpulse.com</a> to scrape your RSS feed and email new posts to subscribers, or you can encourage readers to follow your blog using an RSS reader.</p>
 
-<p>A few months ago, I built an app like rssfeedpulse using Python, with <a href="/tech/building-quacker-a-weekend-project-with-chatgpt/">some help from ChatGPT</a>. This week I rewrote the entire thing in Golang. It&rsquo;s been working quite well. I called it Quacker and it&rsquo;s running at <a href="https://quacker.eu">quacker.eu</a>, but you can&rsquo;t login unless I add your github username to an approved list.</p>
+<p>A few months ago, I decided to build my own alternative to RSSFeedPulse using Python with <a href="/tech/building-quacker-a-weekend-project-with-chatgpt/">some help from ChatGPT</a>.his week, I took it a step further and rewrote the entire application in Golang. So far, it&rsquo;s been running smoothly. I named it Quacker, and you can check it out at <a href="https://quacker.eu">quacker.eu</a>. However, access is restricted — you&rsquo;ll need me to add your GitHub username to the approved list before you can log in.</p>
 
-<p>Quacker sent me an email after the blog post I wrote last night:</p>
+<p>Last night, after publishing a new blog post, Quacker did exactly what it was designed to do — it sent me an email notification.</p>
 
 <p><img src="/images/matt/email-from-quacker.png" alt="screenshot of a quacker email" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
 
@@ -147,6 +143,10 @@
 <p>From here you can click View HTML and see the email subscription form to paste into your blog.</p>
 
 <p><img src="/images/matt/quacker-html-form.png" alt="html form" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
+
+<p>This HTML snipped creates a little form that will subscribe users to your blog posts.</p>
+
+<p><img src="/images/matt/quacker-form.png" alt="subscribe form" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
 
 <h1 id="krems-auto-quacker-config">Krems auto-quacker config</h1>
 

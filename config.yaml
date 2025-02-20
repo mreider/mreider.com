@@ -7,12 +7,10 @@ menu:
     path: "index.md"
   - title: "Tech"
     path: "tech/index.md"
-  - title: "Fun"
-    path: "fun/index.md"
+  - title: "Life"
+    path: "life/index.md"
   - title: "Family"
     path: "family/index.md"
-  - title: "Me"
-    path: "about.md"
 
 quacker:
   domain: "mreider.com"

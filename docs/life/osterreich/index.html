@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Österreich - mreider.com</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta property="og:site_name" content="mreider.com">
+	<link rel="icon" href="/images/favicon.png" type="image/png">
+
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<style>
+	body{background: #FBF9F1;}
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#E5E1DA; margin-bottom:20px;">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="/">
+			<img src="/images/favicon.png" alt="" width="30" height="30" class="d-inline-block align-text-top me-1">
+			mreider.com
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kremsNavbar" aria-controls="kremsNavbar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="kremsNavbar">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/tech/">Tech</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/life/">Life</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/family/">Family</a>
+				</li>
+				
+			</ul>
+		
+		<form id="subscribe-form" action="https://quacker.eu/subscribe" method="POST" class="d-flex ms-3">
+			<input type="hidden" name="owner" value="mreider">
+			<input type="hidden" name="domain" value="mreider.com">
+			<div class="d-flex align-items-center gap-2" id="form-content">
+				<input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="email" required>
+				<button type="submit" class="btn btn-secondary btn-sm">Subscribe</button>
+			</div>
+		</form>
+		<div id="subscribe-message" class="mt-3"></div>
+
+		<script>
+		document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+			
+			var form = document.getElementById('subscribe-form');
+			var messageDiv = document.getElementById('subscribe-message');
+
+			
+			form.classList.add('d-none');
+
+			
+			messageDiv.innerHTML = '';
+
+			var formData = new FormData(form);
+			fetch(form.action, {
+				method: 'POST',
+				body: formData
+			})
+			.then(response => {
+				if (response.ok) {
+					return response.text();
+				}
+				throw new Error('Subscription failed');
+			})
+			.then(message => {
+				messageDiv.innerHTML = '<div class="alert alert-success">' + message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+					form.reset();
+				}, 3000);
+			})
+			.catch(error => {
+				messageDiv.innerHTML = '<div class="alert alert-danger">' + error.message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+				}, 3000);
+			});
+		});
+		</script>
+
+		
+		</div>
+	</div>
+</nav>
+
+<div class="container mt-5 mb-5">
+
+
+
+<h3 class="display-6 mb-4">Österreich</h3>
+
+
+
+
+	<div class="mb-5">
+		<p><strong>Warning:</strong> These posts are never proofread. They will have plenty of misspellings and grammatical errors. <em>Verklagen Sie mich</em> (sue me)!</p>
+
+<hr>
+
+<p>Tomorrow marks one week since we arrived in Linz, Austria. We’re living in an apartment on Spazenhofstraße, a quiet street along the Postlingberg Tram line. The building has five ground-level apartments, each with two floors, and five balcony apartments on the top level. The balcony apartment above us is occupied by Herig and Inga, who looked down from their balcony and waved as we arrived.</p>
+
+<p>“We are your neighbors,” I said.</p>
+
+<p>“I know,” replied Herig, as if I’d just told him the sky is blue. <em>Of course, I can see that.</em> Welcome to Österreich! At least his wife, Inga, giggled a little when I mentioned we were from San Francisco.</p>
+
+<p>Other neighbors are friendlier. Andy—or Andreus, or Andrew (he let me choose)—has two kids: Max (8) and Hannah (13). They came over to pet our cats. I also met Tao and his daughter Gloria, who’s a little over a year old. She smiled, stumbled over to Zoe and me, and seemed genuinely thrilled to meet us.</p>
+
+<hr>
+
+<h2 id="school-and-repetition">School and Repetition</h2>
+
+<p>Today, the kids took an acceptance test for the international school. They got in—again. Apparently, they were already accepted a few months ago, so this is their second official admission. The test was followed by an interview where they were asked typical questions: what they’re good at, what they want to improve on, favorite subjects, and so on.</p>
+
+<p>Neither kid said anything groundbreaking, but they didn’t say anything embarrassing either—solidly middle of the road. The only standout moment was when Max was asked what kind of kids annoy him, and he said, “Those who repeat themselves all the time.” Later, on the way home, he asked me for the 600th time when we’re getting a TV. <em>Takes one to know one, Junior.</em></p>
+
+<hr>
+
+<h2 id="settling-in">Settling In</h2>
+
+<p>Alison has cooked two dinners so far, though not the one she planned. She makes an excellent bean stew and has all the ingredients, but we keep running out of time—coming home too late from trips to Ikea, the hardware store, and other shops. So far, we’ve managed to acquire kitchen supplies, mattresses, beds, and dressers.</p>
+
+<p>Currently, I’m eating dinner sitting on the stairs, as we don’t have any dining room or living room furniture yet. Not a single chair in the entire house.</p>
+
+<p>Right now, Alison is browsing the web for furniture from local stores like Ikea, Möbelfix, XXXLutz (<em>not</em> pornographic, despite the name), and Kika. We bought a bed from Kika today. When the salesperson told me he spoke no English, I was worried the transaction would be impossible, but we managed just fine. After charging my credit card, we bonded over pictures of San Francisco on his monitor.</p>
+
+<hr>
+
+<p>It’s a work in progress, but we’re getting there.</p>
+
+	</div>
+
+
+<footer class="text-center">
+	🏰 Generated with <a href="https://github.com/mreider/krems">Krems</a> 🏰
+</footer>
+</div>
+
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>

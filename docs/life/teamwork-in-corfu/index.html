@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Teamwork in Corfu - mreider.com</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta property="og:image" content="https://mreider.com/images/matt/1_l2i7EqauON04D-pjr9b1gQ-1.jpeg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://mreider.com/images/matt/1_l2i7EqauON04D-pjr9b1gQ-1.jpeg" />
+	
+	<meta property="og:site_name" content="mreider.com">
+	<link rel="icon" href="/images/favicon.png" type="image/png">
+
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<style>
+	body{background: #FBF9F1;}
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#E5E1DA; margin-bottom:20px;">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="/">
+			<img src="/images/favicon.png" alt="" width="30" height="30" class="d-inline-block align-text-top me-1">
+			mreider.com
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kremsNavbar" aria-controls="kremsNavbar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="kremsNavbar">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/tech/">Tech</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/life/">Life</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/family/">Family</a>
+				</li>
+				
+			</ul>
+		
+		<form id="subscribe-form" action="https://quacker.eu/subscribe" method="POST" class="d-flex ms-3">
+			<input type="hidden" name="owner" value="mreider">
+			<input type="hidden" name="domain" value="mreider.com">
+			<div class="d-flex align-items-center gap-2" id="form-content">
+				<input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="email" required>
+				<button type="submit" class="btn btn-secondary btn-sm">Subscribe</button>
+			</div>
+		</form>
+		<div id="subscribe-message" class="mt-3"></div>
+
+		<script>
+		document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+			
+			var form = document.getElementById('subscribe-form');
+			var messageDiv = document.getElementById('subscribe-message');
+
+			
+			form.classList.add('d-none');
+
+			
+			messageDiv.innerHTML = '';
+
+			var formData = new FormData(form);
+			fetch(form.action, {
+				method: 'POST',
+				body: formData
+			})
+			.then(response => {
+				if (response.ok) {
+					return response.text();
+				}
+				throw new Error('Subscription failed');
+			})
+			.then(message => {
+				messageDiv.innerHTML = '<div class="alert alert-success">' + message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+					form.reset();
+				}, 3000);
+			})
+			.catch(error => {
+				messageDiv.innerHTML = '<div class="alert alert-danger">' + error.message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+				}, 3000);
+			});
+		});
+		</script>
+
+		
+		</div>
+	</div>
+</nav>
+
+<div class="container mt-5 mb-5">
+
+	
+	<img src="/images/matt/1_l2i7EqauON04D-pjr9b1gQ-1.jpeg" style="max-width:400px;width:100%;height:auto;" class="img-fluid mb-3 rounded" alt="featured image">
+
+
+
+<h3 class="display-6 mb-4">Teamwork in Corfu</h3>
+
+
+
+
+	<div class="mb-5">
+		<p>I learned some important things during our vacation in Corfu: wasps don’t like smoke, Google Maps can make you drive in circles, and Jacques Cousteau invented scuba diving.</p>
+
+<p>The scuba diving bit came up on this boat in the town of Nisaki, on Corfu’s northeast side. If you look closely, you’ll see Chris, the owner of Apollo Dive, sitting with my wife and kids.</p>
+
+<p><img src="/images/matt/1_lGhi5dVVjNsilKEfcjNu9A.jpeg" alt="Apollo Dive" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
+
+<p>Chris and his wife Maria led us on five dives in total. The kids even passed a written test to earn their diving certification. Now, we can dive as a family anywhere in the world.</p>
+
+<hr>
+
+<h2 id="a-lesson-in-teamwork">A Lesson in Teamwork</h2>
+
+<p>There were some surprising differences in the kids’ behavior during the diving experience. When they were studying for the certification test at night, there were no complaints.<br>
+Not one “This is boring!”<br>
+Not a single “Do I have to?”</p>
+
+<p>“Why no complaints?” Alison and I wondered aloud.</p>
+
+<p>“Because we care about this stuff,” they said.</p>
+
+<p>Predictable. But also brilliant. It reminded me of a long-ago, expensive, and somewhat questionable master’s degree in education. Most schoolwork lacks relevance in students’ lives. But this? This was relevant, interesting, and important.</p>
+
+<p>Another big difference was their teamwork. Sure, they work together at home, but it’s usually fleeting—quickly devolving into raised voices, impatience, and selfishness.</p>
+
+<p>But during the dives, it was different. They had to do buddy checks—inspecting each other’s equipment, staying close underwater, and looking out for one another. Chris emphasized, strongly, how critical these habits are for survival. The kids lived up to the responsibility.</p>
+
+<p>Walking onto the beach after a dive was exhausting. Wet suits, tanks, and regulators weighed heavily on our backs. The sharp rocks were painful under bare feet. But then I looked up and saw my kids helping each other. They were holding hands, finding their sandals on the shore.</p>
+
+<p>Memories often turn into snapshots. Sometimes, you see a moment unfold and know it’s becoming a snapshot right then and there. This was one of those times.</p>
+
+<hr>
+
+<p>It was an unforgettable vacation.</p>
+
+	</div>
+
+
+<footer class="text-center">
+	🏰 Generated with <a href="https://github.com/mreider/krems">Krems</a> 🏰
+</footer>
+</div>
+
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Everything Animal - mreider.com</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta property="og:image" content="https://mreider.com/images/matt/0_cvAPXYQPV4j3iuon.jpeg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://mreider.com/images/matt/0_cvAPXYQPV4j3iuon.jpeg" />
+	
+	<meta property="og:site_name" content="mreider.com">
+	<link rel="icon" href="/images/favicon.png" type="image/png">
+
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<style>
+	body{background: #FBF9F1;}
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#E5E1DA; margin-bottom:20px;">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="/">
+			<img src="/images/favicon.png" alt="" width="30" height="30" class="d-inline-block align-text-top me-1">
+			mreider.com
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kremsNavbar" aria-controls="kremsNavbar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="kremsNavbar">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/tech/">Tech</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/life/">Life</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/family/">Family</a>
+				</li>
+				
+			</ul>
+		
+		<form id="subscribe-form" action="https://quacker.eu/subscribe" method="POST" class="d-flex ms-3">
+			<input type="hidden" name="owner" value="mreider">
+			<input type="hidden" name="domain" value="mreider.com">
+			<div class="d-flex align-items-center gap-2" id="form-content">
+				<input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="email" required>
+				<button type="submit" class="btn btn-secondary btn-sm">Subscribe</button>
+			</div>
+		</form>
+		<div id="subscribe-message" class="mt-3"></div>
+
+		<script>
+		document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+			
+			var form = document.getElementById('subscribe-form');
+			var messageDiv = document.getElementById('subscribe-message');
+
+			
+			form.classList.add('d-none');
+
+			
+			messageDiv.innerHTML = '';
+
+			var formData = new FormData(form);
+			fetch(form.action, {
+				method: 'POST',
+				body: formData
+			})
+			.then(response => {
+				if (response.ok) {
+					return response.text();
+				}
+				throw new Error('Subscription failed');
+			})
+			.then(message => {
+				messageDiv.innerHTML = '<div class="alert alert-success">' + message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+					form.reset();
+				}, 3000);
+			})
+			.catch(error => {
+				messageDiv.innerHTML = '<div class="alert alert-danger">' + error.message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+				}, 3000);
+			});
+		});
+		</script>
+
+		
+		</div>
+	</div>
+</nav>
+
+<div class="container mt-5 mb-5">
+
+	
+	<img src="/images/matt/0_cvAPXYQPV4j3iuon.jpeg" style="max-width:400px;width:100%;height:auto;" class="img-fluid mb-3 rounded" alt="featured image">
+
+
+
+<h3 class="display-6 mb-4">The Everything Animal</h3>
+
+
+
+
+	<div class="mb-5">
+		<p>We’re ahead of ourselves. We want it to be April 2020, not September 2019. By April, the kids will take the tram on their own. They’ll have strong friendships. Alison and I will understand the healthcare system and know enough German to order a sandwich without having to point.</p>
+
+<p>But it’s still September. We have to wait for the sun and moon to come and go 150 times.</p>
+
+<p>I wish there were a magical way to fast-forward. Like in <em>The Matrix</em>, when Trinity calls back to the ship and says, “I need a program for a V-212 helicopter… Hurry!” Her eyelids flicker, and—presto—she instantly knows how to fly the helicopter.</p>
+
+<p>Or like in movies. Screenwriters never waste time on the learning part. Kung Fu Panda becomes a martial arts master in five minutes. It’s the same with Marvel movies. Christian Bale (<em>Batman Begins</em>), Benedict Cumberbatch (<em>Doctor Strange</em>), Robert Downey Jr. (<em>Iron Man</em>)—they all figure out their new superpowers faster than it takes me to grab a bucket of popcorn and Milk Duds.</p>
+
+<p>Today at work, the cleaning lady (she’s Croatian and doesn’t speak German well) asked if we had dirty dishes. She said “schmutzig” (dirty), which is like the Yiddish word “shmutz.” I wasn’t sure what she meant, so I asked someone to interpret. One of my coworkers wrote it on a whiteboard [2]. Then someone else added the word for “squirrel tail,” a word I’d heard before in a lunch conversation. It’s a popular Austrian word used to test if someone speaks Austrian German. People from Munich don’t even know what it means. I added a few more words I learned today—like “train” and “railway” from the train station, and “wheat beer” from a bar.</p>
+
+<p>The final word on the whiteboard was a long one that loosely translates to “anything animal.” It’s called a <em>Wunder Wuzzi</em> in Austrian German, though that doesn’t actually mean “anything” or “animal.” A <em>Wunder Wuzzi</em> is an animal that does everything: it gives milk, grows wool, lays eggs, and tastes like bacon. The German word for this mythical beast is <em>Eierlegende Wollmilchsau</em> (“egg-laying wool milk pig”) [3]. Like “squirrel tail,” it’s mostly useless vocabulary—except for a good laugh.</p>
+
+<p>The “everything animal” even came up later in a slide presentation. It’s a common saying here: there is no everything animal. In English, we’d say, “There’s no silver bullet.” No easy solutions. No shortcuts. We have to go through the learning phase—the hard stuff.</p>
+
+<ol>
+<li><p>Not to be a downer, but this is one of the things I dislike about superhero movies. The learning part is the most interesting to me, even if I sometimes feel too lazy to pursue it myself. I dislike plenty of other things about superhero movies—or should I say <em>movie</em>, since most are just variations of the same story.</p></li>
+
+<li><p>This week’s words für Matt:</p></li>
+</ol>
+
+<p><img src="/images/matt/1_U4q_5NZiTofQT-F2zEJB8Q.png" alt="world map" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
+
+	</div>
+
+
+<footer class="text-center">
+	🏰 Generated with <a href="https://github.com/mreider/krems">Krems</a> 🏰
+</footer>
+</div>
+
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>

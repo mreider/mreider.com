@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rolling in my Benzo - mreider.com</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta property="og:site_name" content="mreider.com">
+	<link rel="icon" href="/images/favicon.png" type="image/png">
+
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<style>
+	body{background: #FBF9F1;}
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#E5E1DA; margin-bottom:20px;">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="/">
+			<img src="/images/favicon.png" alt="" width="30" height="30" class="d-inline-block align-text-top me-1">
+			mreider.com
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kremsNavbar" aria-controls="kremsNavbar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="kremsNavbar">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/tech/">Tech</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/life/">Life</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/family/">Family</a>
+				</li>
+				
+			</ul>
+		
+		<form id="subscribe-form" action="https://quacker.eu/subscribe" method="POST" class="d-flex ms-3">
+			<input type="hidden" name="owner" value="mreider">
+			<input type="hidden" name="domain" value="mreider.com">
+			<div class="d-flex align-items-center gap-2" id="form-content">
+				<input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="email" required>
+				<button type="submit" class="btn btn-secondary btn-sm">Subscribe</button>
+			</div>
+		</form>
+		<div id="subscribe-message" class="mt-3"></div>
+
+		<script>
+		document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+			
+			var form = document.getElementById('subscribe-form');
+			var messageDiv = document.getElementById('subscribe-message');
+
+			
+			form.classList.add('d-none');
+
+			
+			messageDiv.innerHTML = '';
+
+			var formData = new FormData(form);
+			fetch(form.action, {
+				method: 'POST',
+				body: formData
+			})
+			.then(response => {
+				if (response.ok) {
+					return response.text();
+				}
+				throw new Error('Subscription failed');
+			})
+			.then(message => {
+				messageDiv.innerHTML = '<div class="alert alert-success">' + message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+					form.reset();
+				}, 3000);
+			})
+			.catch(error => {
+				messageDiv.innerHTML = '<div class="alert alert-danger">' + error.message + '</div>';
+				setTimeout(() => {
+					messageDiv.innerHTML = '';  
+					form.classList.remove('d-none'); 
+				}, 3000);
+			});
+		});
+		</script>
+
+		
+		</div>
+	</div>
+</nav>
+
+<div class="container mt-5 mb-5">
+
+
+
+<h3 class="display-6 mb-4">Rolling in my Benzo</h3>
+
+
+
+
+	<div class="mb-5">
+		<p>Lots of rap lyrics mention benzos. Mercedes Benzos. Fancy cars. I just rented my second one from the Hertz in downtown Linz. It was a triple upgrade from a Ford Fiesta, but the rate stayed the same—just €32 a day. That’s how we roll. I rolled it all the way home.</p>
+
+<p>We rent cars for hauling stuff we can’t carry and for getting out of town. Driving around Austria is pretty easy. The road signs are different, of course, and there are no yellow lines—only white ones. But the real surprise is the radio. The stations are amazing.</p>
+
+<p>Last weekend, I stumbled across a German Bing Crosby-style song—a delightful call-and-response between a married couple (or so it sounded to me). There’s also plenty of classical music. But my favorite stations are the eclectic ones.</p>
+
+<hr>
+
+<h2 id="unique-radio-sequences">Unique Radio Sequences</h2>
+
+<p>Ever wonder if a series of songs has ever been played in the same order before? Like, say, in the fall of 1985, when Billy Wilkins, some kid in Cincinnati, played Led Zeppelin’s <em>Kashmir</em> followed by Rush’s <em>Tom Sawyer</em> in his bedroom. If you hear that combo today, it’s not unique. Billy did it first.</p>
+
+<p>But here in Linz, driving my benzo, I’m hearing truly unique sequences. The DJ is on another level. Just when you think yesterday’s lineup was the most eclectic ever, they blow your mind again.</p>
+
+<p>Here’s the sequence that played on 95.2 FM (<a href="https://tunein.com/radio/Radio-Obersterreich-952-s16660/">Radio Oberösterreich</a>) as I drove home:</p>
+
+<ol>
+<li><p><strong>Key Largo</strong> by Bertie Higgins (<a href="https://www.youtube.com/watch?v=Ru2tsT32pHA">link</a>)<br>
+Not to be confused with the Beach Boys’ <em>Kokomo</em>, this one features the lyric, “We had it all… just like Bogey and Bacall.” A great song.</p></li>
+
+<li><p><strong>The Ketchup Song</strong> by Las Ketchup (<a href="https://www.youtube.com/watch?v=AMT698ArSfQ">link</a>)<br>
+A Spanish track I’d never heard before. The riff sounds like <em>You’re the One That I Want</em> from <em>Grease</em> (<a href="https://www.youtube.com/watch?v=7oKPYe53h78">link</a>), so at first, I thought it was a remake. It’s not. Maybe it’s actually about ketchup?</p></li>
+
+<li><p><strong>A Nena Song (but not <em>99 Luftballons</em>)</strong><br>
+Yes, Nena made other songs. This wasn’t <em>99 Luftballons</em> (<a href="https://www.youtube.com/watch?v=La4Dcd1aUcE">link</a>), but it was catchy. I didn’t bother figuring out the title, but I hope Nena is alive and well, sporting the same haircut, somewhere romantic.</p></li>
+
+<li><p><strong>Cherish</strong> by Kool and the Gang (<a href="https://www.youtube.com/watch?v=YDA8g72ZCTY">link</a>)<br>
+This one’s been stuck in my head all morning. It’s the kind of song you’d sing with a friend, drunk, at karaoke. Everyone groans when it starts but ends up singing along.</p></li>
+
+<li><p><strong>Rocky Mountain Music</strong> by Eddie Rabbit (<a href="https://www.youtube.com/watch?v=Hut3MsZk93E">link</a>)<br>
+The final track sealed the deal. The most eclectic set of songs I’ve ever heard—at least for the next 24 hours. I noticed some similarities between Eddie and Nena’s haircuts, but that’s about it.</p></li>
+</ol>
+
+<hr>
+
+<h2 id="closing-thoughts">Closing Thoughts</h2>
+
+<p>Driving a benzo around Linz is fun. The roads are smooth, the signs are manageable, and the radio is unmatched. If you’re ever here, tune in to 95.2 FM and prepare to have your mind blown. And if you hear <em>The Ketchup Song</em>, let me know if it’s actually about ketchup.</p>
+
+	</div>
+
+
+<footer class="text-center">
+	🏰 Generated with <a href="https://github.com/mreider/krems">Krems</a> 🏰
+</footer>
+</div>
+
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>

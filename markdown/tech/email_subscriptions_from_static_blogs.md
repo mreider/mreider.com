@@ -5,11 +5,11 @@ date: "2025-02-17"
 image: "/images/matt/emails-everywhere.png"
 ---
 
-In my [last blog entry](krems_static_site_generator.md), I introduced Krems, a project I built for generating static blogs. One challenge with static blogs is that they can't run server code or databases, making it impossible to store email addresses for blog subscriptions. You can use a paid services, like rssfeedpulse.com, to scrape your RSS feed and send new posts to email subscribers, or you can recommend that your users subscribe using an RSS reader.
+In my [last blog entry](krems_static_site_generator.md), I introduced Krems, a project I built for generating static blogs. One of the challenges with static blogs is their inability to run server-side code or databases, which makes storing email addresses for blog subscriptions impossible. To work around this, you can either use a paid service like [rssfeedpulse.com](https://rssfeedpulse.com) to scrape your RSS feed and email new posts to subscribers, or you can encourage readers to follow your blog using an RSS reader.
 
-A few months ago, I built an app like rssfeedpulse using Python, with [some help from ChatGPT](Building_Quacker.md). This week I rewrote the entire thing in Golang. It's been working quite well. I called it Quacker and it's running at [quacker.eu](https://quacker.eu), but you can't login unless I add your github username to an approved list.
+A few months ago, I decided to build my own alternative to RSSFeedPulse using Python with [some help from ChatGPT](Building_Quacker.md).his week, I took it a step further and rewrote the entire application in Golang. So far, it's been running smoothly. I named it Quacker, and you can check it out at [quacker.eu](https://quacker.eu). However, access is restricted — you'll need me to add your GitHub username to the approved list before you can log in.
 
-Quacker sent me an email after the blog post I wrote last night:
+Last night, after publishing a new blog post, Quacker did exactly what it was designed to do — it sent me an email notification.
 
 ![screenshot of a quacker email](/images/matt/email-from-quacker.png)
 
@@ -26,6 +26,10 @@ Once the site is saved it shows up in my site list (here there's only one site l
 From here you can click View HTML and see the email subscription form to paste into your blog.
 
 ![html form](/images/matt/quacker-html-form.png)
+
+This HTML snipped creates a little form that will subscribe users to your blog posts.
+
+![subscribe form](/images/matt/quacker-form.png)
 
 # Krems auto-quacker config
 
