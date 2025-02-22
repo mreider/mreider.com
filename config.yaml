@@ -9,8 +9,6 @@ menu:
     path: "tech/index.md"
   - title: "Life"
     path: "life/index.md"
-  - title: "Family"
-    path: "family/index.md"
 
 quacker:
   domain: "mreider.com"
