@@ -1,4 +1,4 @@
 ---
-title:  "Writing for fun"
+title:  "Writing about Life"
 type: list
 ---
