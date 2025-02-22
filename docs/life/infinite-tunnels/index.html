@@ -1,118 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Infinite Tunnels - mreider.com</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<meta property="og:site_name" content="mreider.com">
-	<link rel="icon" href="/images/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <title>Infinite Tunnels - mreider.com</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:site_name" content="mreider.com">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
-	<style>
-	body{background: #FBF9F1;}
-	</style>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <style>
+         
+        @font-face {
+            font-family: 'Tiempos';
+            src: url('/css/tiempos.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+         
+        :root {
+            --bs-body-font-family: 'Tiempos', serif;
+        }
+
+         
+        body, nav {
+            background-color: white !important;
+        }
+
+         
+        body {
+            font-size: 1.1rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+         
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .navbar {
+            justify-content: space-between;
+        }
+
+         
+        .subscribe-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#E5E1DA; margin-bottom:20px;">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="/">
-			<img src="/images/favicon.png" alt="" width="30" height="30" class="d-inline-block align-text-top me-1">
-			mreider.com
-		</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kremsNavbar" aria-controls="kremsNavbar" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="kremsNavbar">
-			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-				
-				<li class="nav-item">
-					<a class="nav-link" href="/">Home</a>
-				</li>
-				
-				<li class="nav-item">
-					<a class="nav-link" href="/tech/">Tech</a>
-				</li>
-				
-				<li class="nav-item">
-					<a class="nav-link" href="/life/">Life</a>
-				</li>
-				
-				<li class="nav-item">
-					<a class="nav-link" href="/family/">Family</a>
-				</li>
-				
-			</ul>
-		
-		<form id="subscribe-form" action="https://quacker.eu/subscribe" method="POST" class="d-flex ms-3">
-			<input type="hidden" name="owner" value="mreider">
-			<input type="hidden" name="domain" value="mreider.com">
-			<div class="d-flex align-items-center gap-2" id="form-content">
-				<input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="email" required>
-				<button type="submit" class="btn btn-secondary btn-sm">Subscribe</button>
-			</div>
-		</form>
-		<div id="subscribe-message" class="mt-3"></div>
 
-		<script>
-		document.getElementById('subscribe-form').addEventListener('submit', function(event) {
-			event.preventDefault();
-			
-			var form = document.getElementById('subscribe-form');
-			var messageDiv = document.getElementById('subscribe-message');
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kremsNavbar" 
+                aria-controls="kremsNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-			
-			form.classList.add('d-none');
+        
+        <div class="collapse navbar-collapse" id="kremsNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/tech/">Tech</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/life/">Life</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/family/">Family</a>
+                </li>
+                
+            </ul>
+        </div>
 
-			
-			messageDiv.innerHTML = '';
-
-			var formData = new FormData(form);
-			fetch(form.action, {
-				method: 'POST',
-				body: formData
-			})
-			.then(response => {
-				if (response.ok) {
-					return response.text();
-				}
-				throw new Error('Subscription failed');
-			})
-			.then(message => {
-				messageDiv.innerHTML = '<div class="alert alert-success">' + message + '</div>';
-				setTimeout(() => {
-					messageDiv.innerHTML = '';  
-					form.classList.remove('d-none'); 
-					form.reset();
-				}, 3000);
-			})
-			.catch(error => {
-				messageDiv.innerHTML = '<div class="alert alert-danger">' + error.message + '</div>';
-				setTimeout(() => {
-					messageDiv.innerHTML = '';  
-					form.classList.remove('d-none'); 
-				}, 3000);
-			});
-		});
-		</script>
-
-		
-		</div>
-	</div>
+        
+        <a class="navbar-brand" href="/">
+            mreider.com
+        </a>
+    </div>
 </nav>
 
 <div class="container mt-5 mb-5">
+    
 
+    
+    <h3 class="display-6 mb-4">Infinite Tunnels</h3>
+    
+    
 
-
-<h3 class="display-6 mb-4">Infinite Tunnels</h3>
-
-
-
-
-	<div class="mb-5">
-		<p>We bought Max and Zoe smartphones in June. This was a big deal for us. The plan was to wait until Max started high school. But we caved. An obvious bribe—compensation for the chaos that followed.</p>
+    
+        <div class="mb-5">
+            <p>We bought Max and Zoe smartphones in June. This was a big deal for us. The plan was to wait until Max started high school. But we caved. An obvious bribe—compensation for the chaos that followed.</p>
 
 <p>Of course, the phones are incredibly useful—especially for translation and texting. Maps are a lifesaver too. I can see when they’re at school, at home, or on a tram.</p>
 
@@ -150,12 +142,65 @@
 
 <p><img src="/images/matt/image-12.png" alt="Swiss tunnel" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
 
-	</div>
+        </div>
+    
 
+    
+    <div class="subscribe-container">
+        <form id="subscribe-form" action="https://quacker.eu/subscribe" method="POST">
+            <input type="hidden" name="owner" value="mreider">
+            <input type="hidden" name="domain" value="mreider.com">
+            <div class="d-flex justify-content-center align-items-center gap-2">
+                <input type="email" class="form-control form-control-sm w-auto" id="email" name="email" placeholder="email" required>
+                <button type="submit" class="btn btn-secondary btn-sm">Subscribe</button>
+            </div>
+        </form>
+        <div id="subscribe-message" class="mt-3"></div>
+    </div>
 
-<footer class="text-center">
-	🏰 Generated with <a href="https://github.com/mreider/krems">Krems</a> 🏰
-</footer>
+    <script>
+    document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        var form = document.getElementById('subscribe-form');
+        var messageDiv = document.getElementById('subscribe-message');
+
+        form.classList.add('d-none');
+        messageDiv.innerHTML = '';
+
+        var formData = new FormData(form);
+        fetch(form.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.text();
+            }
+            throw new Error('Subscription failed');
+        })
+        .then(message => {
+            messageDiv.innerHTML = '<div class="alert alert-success">' + message + '</div>';
+            setTimeout(() => {
+                messageDiv.innerHTML = '';
+                form.classList.remove('d-none');
+                form.reset();
+            }, 3000);
+        })
+        .catch(error => {
+            messageDiv.innerHTML = '<div class="alert alert-danger">' + error.message + '</div>';
+            setTimeout(() => {
+                messageDiv.innerHTML = '';
+                form.classList.remove('d-none');
+            }, 3000);
+        });
+    });
+    </script>
+    
+
+    <footer class="text-center mt-5">
+        Generated with <a href="https://github.com/mreider/krems">Krems</a>
+    </footer>
 </div>
 
 <script src="/js/bootstrap.js"></script>
