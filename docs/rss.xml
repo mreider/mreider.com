@@ -6,6 +6,15 @@
   <description>RSS feed for MR</description>
   
 <item>
+  <title>LinkedIn, Geopolitics, and Silence</title>
+  <link>https://mreider.com/tech/linkedin-geopolitics-and-silence/</link>
+  <description></description>
+  <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
+  <enclosure url="https://mreider.com/images/matt/its_fine.png" type="image/png"/>
+</item>
+
+
+<item>
   <title>Email Subscriptions from Static Blogs</title>
   <link>https://mreider.com/tech/email-subscriptions-from-static-blogs/</link>
   <description></description>
@@ -78,20 +87,20 @@
 
 
 <item>
-  <title>Building Quacker: A Weekend Project with ChatGPT</title>
-  <link>https://mreider.com/tech/building-quacker-a-weekend-project-with-chatgpt/</link>
-  <description>Building an app with AI is both impressive and frustrating</description>
-  <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
-  <enclosure url="https://mreider.com/images/matt/duck.jpg" type="image/png"/>
-</item>
-
-
-<item>
   <title>Founders Don’t Need a Strategist as the First PM</title>
   <link>https://mreider.com/tech/founders-dont-need-a-strategist-as-the-first-pm/</link>
   <description></description>
   <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
   <enclosure url="https://mreider.com/images/matt/Henchman_Street_W12_sign.jpg" type="image/png"/>
+</item>
+
+
+<item>
+  <title>Building Quacker: A Weekend Project with ChatGPT</title>
+  <link>https://mreider.com/tech/building-quacker-a-weekend-project-with-chatgpt/</link>
+  <description>Building an app with AI is both impressive and frustrating</description>
+  <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
+  <enclosure url="https://mreider.com/images/matt/duck.jpg" type="image/png"/>
 </item>
 
 
@@ -186,8 +195,8 @@
 
 
 <item>
-  <title>Trader Joe&apos;s Bros</title>
-  <link>https://mreider.com/life/trader-joes-bros/</link>
+  <title>Infinite Tunnels</title>
+  <link>https://mreider.com/life/infinite-tunnels/</link>
   <description></description>
   <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
   
@@ -195,8 +204,8 @@
 
 
 <item>
-  <title>Infinite Tunnels</title>
-  <link>https://mreider.com/life/infinite-tunnels/</link>
+  <title>Trader Joe&apos;s Bros</title>
+  <link>https://mreider.com/life/trader-joes-bros/</link>
   <description></description>
   <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
   
