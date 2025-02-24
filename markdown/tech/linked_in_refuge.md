@@ -13,6 +13,6 @@ The moment of silence felt good on my first day back after a week-long family va
 
 The only app that felt safe from depressing news was LinkedIn, where my feed is limited to AI innovations (hmm), venture capital insights, and, of course, annoying self-promotion. For the most part, it's a refuge from geopolitical stuff. That's a good thing. But I have this lingering sense of unease about it too. 
 
-LinkedIn, heck corporate life in general, often seems so absurdly compartmentalized during times like these. It's like Godzilla is lurking at the edge of the city and we're just having dinner like nothing is wrong. I catch myself, all the time, tapping a response to someone on LinkedIn, about Kubernetes or some such thing, and wondering, “What the hell are we all talking about?”
+LinkedIn, and corporate life in general, seems so absurdly compartmentalized these days. It's like Godzilla is lurking at the edge of the city and we're just having dinner like nothing is wrong. I catch myself, all the time, tapping a response to someone on LinkedIn, about Kubernetes or some such thing, and wondering, “What the hell are we all talking about?”
 
 As George Orwell said, "In our age, there is no such thing as 'keeping out of politics.'" We're trying to draw a line between business and geopolitics here - and that's understandable, but I'm not sure if the boundaries will hold, or what the threshold might be before things start to blur.
