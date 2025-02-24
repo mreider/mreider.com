@@ -7,11 +7,11 @@ image: "/images/matt/its_fine.png"
 
 My office in the Dynatrace Vienna Tower shares space with various companies and organizations, including the embassies of Norway, Australia, and New Zealand. Today, these three embassies organized a brief moment of silence outside our building to honor those who have suffered and lost their lives as a result of the Russian war of aggression in Ukraine. I caught the elevator downstairs, stepped outside, and joined everyone in that quiet reflection.
 
-Not many of my colleagues joined, and that’s perfectly fine—folks had other priorities. It's not a tabu topic - most are open to discussing the geopolitics at work, though some become noticeably quieter when it comes up.
+Not many of my colleagues joined, and that’s perfectly fine—folks had other priorities. It's not a tabu topic - most are open to discussing geopolitics at work, though some become noticeably quieter when it comes up.
 
 The moment of silence felt good on my first day back after a week-long family vacation. During my break, I read too many depressing news updates late at night before falling asleep. Eventually, I turned to a good book. It's a recurring pattern for me — trying to balance staying informed with preserving my peace of mind.
 
-The only app I kept opening was LinkedIn, where the news is limited to AI innovations, venture capital insights, and, of course, annoying self-promotion. For the most part, it's a refuge from geopolitical stuff. That's a good thing. But I have this lingering sense of unease about it too. 
+The ony place safe from depressing news was LinkedIn, where my feed is limited to AI innovations, venture capital insights, and, of course, annoying self-promotion. For the most part, it's a refuge from geopolitical stuff. That's a good thing. But I have this lingering sense of unease about it too. 
 
 LinkedIn, heck corporate life in general, often seems so absurdly compartmentalized during times like these. It's like Godzilla is lurking at the edge of the city and we're just having dinner like nothing is wrong. I catch myself, all the time, tapping a response to someone on LinkedIn, about Kubernetes or some such thing, and wondering, “What the hell are we all talking about?”
 
