@@ -11,7 +11,7 @@ Not many of my colleagues joined, and that’s perfectly fine—folks had other 
 
 The moment of silence felt good on my first day back after a week-long family vacation. During my break, I read too many depressing news updates late at night before falling asleep. Eventually, I turned to a good book. It's a recurring pattern for me — trying to balance staying informed with preserving my peace of mind.
 
-The only app that felt safe from depressing news was LinkedIn, where my feed is limited to AI innovations (hmm), venture capital insights, and, of course, annoying self-promotion. For the most part, it's a refuge from geopolitical stuff. That's a good thing. But I have this lingering sense of unease about it too. 
+In moments of weakness, when I gave into my cell phone addiction, I would browse LinkedIn, where my feed is limited to things like AI innovations, venture capital insights, and updates  from former colleageues and such. For the most part, it's a refuge from geopolitical stuff. That's a good thing. But I have this lingering sense of unease about it too. 
 
 LinkedIn, and corporate life in general, seems so absurdly compartmentalized these days. It's like Godzilla is lurking at the edge of the city and we're just having dinner like nothing is wrong. I catch myself, all the time, tapping a response to someone on LinkedIn, about Kubernetes or some such thing, and wondering, “What the hell are we all talking about?”
 
