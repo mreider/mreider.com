@@ -6,6 +6,15 @@
   <description>RSS feed for MR</description>
   
 <item>
+  <title>More Zelinskiy</title>
+  <link>https://mreider.com/tech/more-zelinskiy/</link>
+  <description></description>
+  <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+  <enclosure url="https://mreider.com/images/matt/more-zelenskiy.png" type="image/png"/>
+</item>
+
+
+<item>
   <title>LinkedIn, Geopolitics, and Silence</title>
   <link>https://mreider.com/tech/linkedin-geopolitics-and-silence/</link>
   <description></description>
@@ -159,20 +168,20 @@
 
 
 <item>
-  <title>Teamwork in Corfu</title>
-  <link>https://mreider.com/life/teamwork-in-corfu/</link>
-  <description></description>
-  <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
-  <enclosure url="https://mreider.com/images/matt/1_l2i7EqauON04D-pjr9b1gQ-1.jpeg" type="image/png"/>
-</item>
-
-
-<item>
   <title>Wasser, Acqua, Voda</title>
   <link>https://mreider.com/life/wasser-acqua-voda/</link>
   <description></description>
   <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
   <enclosure url="https://mreider.com/images/matt/1_p5W-O_HqQHBXIqS10N-Fsw@2x.jpeg" type="image/png"/>
+</item>
+
+
+<item>
+  <title>Teamwork in Corfu</title>
+  <link>https://mreider.com/life/teamwork-in-corfu/</link>
+  <description></description>
+  <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
+  <enclosure url="https://mreider.com/images/matt/1_l2i7EqauON04D-pjr9b1gQ-1.jpeg" type="image/png"/>
 </item>
 
 
@@ -195,8 +204,8 @@
 
 
 <item>
-  <title>Infinite Tunnels</title>
-  <link>https://mreider.com/life/infinite-tunnels/</link>
+  <title>Trader Joe&apos;s Bros</title>
+  <link>https://mreider.com/life/trader-joes-bros/</link>
   <description></description>
   <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
   
@@ -204,8 +213,8 @@
 
 
 <item>
-  <title>Trader Joe&apos;s Bros</title>
-  <link>https://mreider.com/life/trader-joes-bros/</link>
+  <title>Infinite Tunnels</title>
+  <link>https://mreider.com/life/infinite-tunnels/</link>
   <description></description>
   <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
   
