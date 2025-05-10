@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Why AI won&#39;t take control - MR</title>
+    <meta name="description" content="Co-Pilot vs. Autopilot in high-stakes environments">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    
+    <meta property="og:image" content="https://mreider.com/images/matt/copilot.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://mreider.com/images/matt/copilot.jpg" />
+    
+    <meta property="og:site_name" content="MR">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <style>
+         
+        @font-face {
+            font-family: 'Tiempos';
+            src: url('/css/tiempos.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+         
+        :root {
+            --bs-body-font-family: 'Tiempos', serif;
+        }
+
+         
+        body, nav {
+            background-color: white !important;
+        }
+
+         
+        body {
+            font-size: 1.1rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+         
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+         
+        .navbar-nav {
+            width: auto;
+        }
+
+        .navbar {
+            justify-content: space-between;
+            width: 100%;
+        }
+
+         
+        .navbar .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 15px;  
+        }
+
+         
+        @media (max-width: 991.98px) {
+            .navbar-collapse .navbar-nav {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                margin-left: 0 !important;
+            }
+            
+            .navbar-collapse .navbar-nav .nav-item {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+            
+            .navbar-collapse .nav-link {
+                padding: 8px 0;
+            }
+        }
+
+         
+        @media (min-width: 992px) {
+            .navbar .navbar-nav {
+                flex-direction: row;
+                align-items: center;
+            }
+            
+            .navbar-collapse .navbar-nav {
+                margin-left: 10px;
+            }
+            
+            .navbar .navbar-nav .nav-item {
+                margin-right: 15px;
+            }
+        }
+
+         
+        ul {
+            padding-left: 20px;  
+            margin-left: 0;  
+        }
+
+         
+        .subscribe-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+         
+        .container-lg {
+            max-width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container"> 
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kremsNavbar" 
+                aria-controls="kremsNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="kremsNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/tech/">Tech</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/life/">Life</a>
+                </li>
+                
+            </ul>
+        </div>
+
+        
+        <a class="navbar-brand" href="/">
+            MR
+        </a>
+    </div>
+</nav>
+
+
+<div class="container-lg mt-5 mb-5">
+    
+    
+    <img src="/images/matt/copilot.jpg" style="max-width:400px;width:100%;height:auto;" class="img-fluid mb-3 rounded" alt="featured image">
+    
+
+    
+    <h3 class="display-6 mb-4">Why AI won&#39;t take control</h3>
+	by <a href="/authors/matt-reider/">Matt Reider</a>
+	
+    
+    
+    <p class="text-muted mb-4">Co-Pilot vs. Autopilot in high-stakes environments</p>
+    
+
+    
+        <div class="mb-5">
+            <p>AI went from a niche tech topic to a mainstream obsession in just the last 24 months. Unlike other hyped technologies that promised revolutions without delivering, AI is actually useful right away. During my nightly dog walks, I listen to tech podcasts to keep up with what&rsquo;s happening. The Cloudcast and NYT&rsquo;s Hard Fork have both pivoted heavily toward AI (from blockchain, which proved largely useless), now dedicating most episodes to AI tools and trends.</p>
+
+<p>These podcasts aren&rsquo;t just discussing what AI can do today. They&rsquo;re hyping what it might do tomorrow. Cloudcast (a technical podcast that <a href="https://www.thecloudcast.net/2025/04/the-intersection-of-ai-and-apis.html">recently focused on MCP servers and Agentic infrastructure</a> dives into systems that supposedly talk to each other to handle complex tasks. Hard Fork constantly discusses AGI (Artificial General Intelligence) as if it&rsquo;s inevitable. Cohost Kevin Roose <a href="https://bsky.app/profile/kevinroose.com/post/3lne4qlnylc2d">even announced this week he&rsquo;s writing a book about AGI</a>. <a href="https://www.nytimes.com/2023/11/20/podcasts/mayhem-at-openai-our-interview-with-sam-altman.html">They&rsquo;ve interviewed Sam Altman</a>, <a href="https://www.nytimes.com/2025/02/28/podcasts/hardfork-anthropic-dario-amodei.html">Dario Amodei</a> and other AI leaders as if human-level machine intelligence is a foregone conclusion. This hype gets amplified when figures like <a href="https://www.youtube.com/watch?v=quXuKnGnOMs">Microsoft&rsquo;s CEO, Satya Nadella, claim that &ldquo;Agentic AI&rdquo; is going to replace all of SaaS software</a>.</p>
+
+<p>I don&rsquo;t buy it 💩</p>
+
+<p>Last year I listened to <a href="https://www.youtube.com/watch?v=csY-PH0CEHk">an episode of #shifthappens where Martin Eekels</a> described what I found to be a more realistic future. In my view, he gets it right when he suggested that AI works best as &ldquo;a copilot to human capabilities rather than a replacement.&rdquo; What&rsquo;s important is that these limitations are NOT technical. They&rsquo;re completely about risk.</p>
+
+<p>Eekels is not saying autonomous AI won&rsquo;t be a reality. It definitely will be. He&rsquo;s just arguing that it will be limited to low-risk scenarios. Sure, we&rsquo;ll see LLMs doing more than just generating creative content or suggesting next steps. We&rsquo;ll see them both searching for vacation spots, reserving refundable tickets, cars, and hotel rooms. But the emphasis here is on refundable. When the stakes are low, letting AI take the wheel is no problem.</p>
+
+<p>For anything involving significant risk or consequence, the autopilot model breaks down in predictable ways. And the exciting picture of our future, described by podcasters, tech bloggers, CEOs, and venture capitalists breaks down with it.</p>
+
+<h2 id="the-automation-bargain">The Automation Bargain</h2>
+
+<p>I was thinking about these tradeoffs last week. It&rsquo;s what inspired me to write this post. I was building a tool that compares message brokers (SQS, RabbitMQ, Kafka) with different instrumentations across multiple cloud platforms. Using <a href="https://www.anthropic.com/claude/sonnet">Anthropic&rsquo;s Sonnet LLM</a>, I completed the whole thing in about a week despite not being an engineer. Without AI, it would have been a year-long side project.</p>
+
+<p>My project was strictly a prototype with zero real-world risk. No customer data was involved, no financial transactions processed, and no regulatory compliance required. It was a controlled experiment where failure had no consequences. I happily clicked the &ldquo;Automated Approval&rdquo; button in my VSCode plugin, <a href="https://cline.bot/">Cline</a>, and let Anthropic handle everything from building code to pushing it to my Kubernetes cluster.</p>
+
+<p>The prototype example shows exactly why AI excels in certain environments. But letting an AI bot make changes to production software carries far too many legal, financial, reputational, and human risks. This creates the co-pilot versus autopilot distinction: AI excels as a co-pilot, and is also good as an auto-pilot, but only in low-risk contexts. I simply can&rsquo;t imagine walking away from it and letting it commit to git, approve its own pull requests based on passing tests, and deploy to prod. No fucking way.</p>
+
+<h2 id="the-95-5-divide-a-real-world-example">The <sup>95</sup>&frasl;<sub>5</sub> Divide: A Real-World Example</h2>
+
+<p>At a previous startup, I was the PM for a team of engineers building an automated identity verification system. Our challenge was delivering instant results in an environment where mistakes could directly harm people&rsquo;s lives.</p>
+
+<p>Our engineering team built an AI neural network to evaluate probability matches between public records and user profiles. For 95% of cases, it performed adequately. Though not superior to humans, it was instantaneous, which met the business requirements for rapid turnaround and made our customers happy.</p>
+
+<p>For the remaining 5% of cases, the system failed. Despite two years of intense effort under an over-ambitious CEO, we never reduced that error rate below 5%. Years later, according to friends that still work there, they still can&rsquo;t.</p>
+
+<p>The <sup>95</sup>&frasl;<sub>5</sub> split wasn&rsquo;t a technical limitation. It was a risk management reality. The AI could make decisions autonomously if we let it. But the consequences of being wrong on that 5% were simply too severe to allow automation without human oversight. This is why &ldquo;agentic AI&rdquo; remains a pipe dream for any domain involving significant risk. The 5% barrier isn&rsquo;t about capability but about accountability.</p>
+
+<p>And now I&rsquo;m going to wade into political territory. Sorry. There&rsquo;s no avoiding it.</p>
+
+<p>Two scenarios eliminate the 5% verification risk. In a surveillance state with perfect data collection, AI verification would be flawless but unnecessary, as public records would already link directly to individual profiles. However, this would enable concerning AI applications in other areas, operating with minimal risk due to the absence of privacy protections.</p>
+
+<p>Similarly, in a monopolistic economy, verification risks disappear because customers cannot leave when software makes critical errors. Both scenarios likely exist under authoritarian regimes and unfortunately represent the ambitions of certain powerful individuals who, like Voldemort, I prefer not to mention by name.</p>
+
+<h2 id="back-to-business">Back to business</h2>
+
+<p>Returning to reality, in today&rsquo;s democratic societies, AI will remain a co-pilot rather than an autopilot for the foreseeable future.</p>
+
+<p>Perhaps AI autopilots and agentic AI will follow the same path as putting mortgages on the blockchain - something that never materializes despite countless blog posts, podcasts, books, and keynote presentations promising a future where we simply relax while technology handles everything.</p>
+
+        </div>
+    
+
+    
+    <div class="subscribe-container">
+        <form id="subscribe-form" action="https://quacker.eu/subscribe" method="POST">
+            <input type="hidden" name="owner" value="mreider">
+            <input type="hidden" name="domain" value="mreider.com">
+            <div class="d-flex justify-content-center align-items-center gap-2">
+                <input type="email" class="form-control form-control-sm w-auto" id="email" name="email" placeholder="email" required>
+                <button type="submit" class="btn btn-secondary btn-sm">Subscribe</button>
+            </div>
+        </form>
+        <div id="subscribe-message" class="mt-3"></div>
+    </div>
+
+    <script>
+    document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        var form = document.getElementById('subscribe-form');
+        var messageDiv = document.getElementById('subscribe-message');
+
+        form.classList.add('d-none');
+        messageDiv.innerHTML = '';
+
+        var formData = new FormData(form);
+        fetch(form.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.text();
+            }
+            throw new Error('Subscription failed');
+        })
+        .then(message => {
+            messageDiv.innerHTML = '<div class="alert alert-success">' + message + '</div>';
+            setTimeout(() => {
+                messageDiv.innerHTML = '';  
+                form.classList.remove('d-none');
+                form.reset();
+            }, 3000);
+        })
+        .catch(error => {
+            messageDiv.innerHTML = '<div class="alert alert-danger">' + error.message + '</div>';
+            setTimeout(() => {
+                messageDiv.innerHTML = '';  
+                form.classList.remove('d-none');
+            }, 3000);
+        });
+    });
+    </script>
+    
+
+    <footer class="text-center mt-5">
+        Generated with <a href="https://github.com/mreider/krems">Krems</a>
+    </footer>
+</div>
+
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>

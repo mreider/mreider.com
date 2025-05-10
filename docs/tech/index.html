@@ -61,9 +61,43 @@
         }
 
          
-        .navbar .navbar-nav {
-            flex-direction: row;
-            align-items: center;
+        @media (max-width: 991.98px) {
+            .navbar-collapse .navbar-nav {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                margin-left: 0 !important;
+            }
+            
+            .navbar-collapse .navbar-nav .nav-item {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+            
+            .navbar-collapse .nav-link {
+                padding: 8px 0;
+            }
+        }
+
+         
+        @media (min-width: 992px) {
+            .navbar .navbar-nav {
+                flex-direction: row;
+                align-items: center;
+            }
+            
+            .navbar-collapse .navbar-nav {
+                margin-left: 10px;
+            }
+            
+            .navbar .navbar-nav .nav-item {
+                margin-right: 15px;
+            }
+        }
+
+         
+        ul {
+            padding-left: 20px;  
+            margin-left: 0;  
         }
 
          
@@ -132,6 +166,10 @@
 
     
         <div class="blog-list"><h3 class="mt-5 mb-3">2025</h3>
+<h5 class="mb-2">May</h5>
+<ul class="list-group mb-4" style="padding-left: 20px; margin-left: 0;">
+<li><a class="text-decoration-none" href="/tech/why-ai-wont-take-control/">Why AI won't take control</a> <span class="text-muted small"> by <a href="/authors/matt-reider/">Matt Reider</a> </span></li>
+</ul>
 <h5 class="mb-2">March</h5>
 <ul class="list-group mb-4" style="padding-left: 20px; margin-left: 0;">
 <li><a class="text-decoration-none" href="/tech/more-zelinskiy/">More Zelinskiy</a> <span class="text-muted small"> by <a href="/authors/matt-reider/">Matt Reider</a> </span></li>
@@ -157,8 +195,8 @@
 <ul class="list-group mb-4" style="padding-left: 20px; margin-left: 0;">
 <li><a class="text-decoration-none" href="/tech/doing-it-for-yourself/">Doing It for Yourself</a> <span class="text-muted small"> by <a href="/authors/matt-reider/">Matt Reider</a> </span></li>
 <li><a class="text-decoration-none" href="/tech/vmware-pivotal-and-the-rise-of-kubernetes/">VMware, Pivotal, and the Rise of Kubernetes</a> <span class="text-muted small"> by <a href="/authors/matt-reider/">Matt Reider</a> </span></li>
-<li><a class="text-decoration-none" href="/tech/founders-dont-need-a-strategist-as-the-first-pm/">Founders Don't Need a Strategist as the First PM</a> <span class="text-muted small"> by <a href="/authors/matt-reider/">Matt Reider</a> </span></li>
 <li><a class="text-decoration-none" href="/tech/building-quacker-a-weekend-project-with-chatgpt/">Building Quacker: A Weekend Project with ChatGPT</a> <span class="text-muted small"> by <a href="/authors/matt-reider/">Matt Reider</a> </span></li>
+<li><a class="text-decoration-none" href="/tech/founders-dont-need-a-strategist-as-the-first-pm/">Founders Don’t Need a Strategist as the First PM</a> <span class="text-muted small"> by <a href="/authors/matt-reider/">Matt Reider</a> </span></li>
 </ul>
 <h5 class="mb-2">October</h5>
 <ul class="list-group mb-4" style="padding-left: 20px; margin-left: 0;">
