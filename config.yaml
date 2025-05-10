@@ -9,8 +9,3 @@ menu:
     path: "tech/index.md"
   - title: "Life"
     path: "life/index.md"
-
-quacker:
-  domain: "mreider.com"
-  site_owner: "mreider"
-  target: "quacker.eu"

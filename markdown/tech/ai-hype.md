@@ -48,6 +48,6 @@ Both these scenarios typically exist under authoritarian regimes and, unfortunat
 
 ## Back to reality
 
-AI will remain a co-pilot rather than an autopilot, at least in any moderately risky situations, for the foreseeable future. The real-world consequences of errors are simply too high for societies that have laws that protect their citizens (God help us there).
+AI will remain a co-pilot rather than an autopilot, at least in any moderately risky situation, for the foreseeable future. The real-world consequences of errors are simply too high for societies that have laws that protect their citizens (God help us there).
 
 The "agentic AI revolution" that tech leaders promise will likely follow the same path as "mortgages on the blockchain." Endless hype that never materializes. Despite all the promises of a future where we can sit back while AI handles everything, I suspect we'll find that when it comes to meaningful work, humans will stay in the driver's seat while AI rides shotgun.
