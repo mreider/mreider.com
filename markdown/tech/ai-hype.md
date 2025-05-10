@@ -32,7 +32,7 @@ At a previous startup, I was the PM for a team of engineers building an automate
 
 Our engineering team built an AI neural network to evaluate probability matches between public records and user profiles. For 95% of cases, it performed adequately. Though not superior to humans, it was instantaneous, which met the business requirements for rapid turnaround and made our customers happy.
 
-For the remaining 5% of cases, the system failed. Despite two years of intense effort under an over-ambitious CEO, we never reduced that error rate below 5%. Years later, according to friends that still work there, they still can't.
+For the remaining 5% of cases, the system failed, and a human was required. Despite two years of intense effort under an over-ambitious CEO, we never reduced that error rate below 5%. Years later, according to friends that still work there, they still can't.
 
 The 95/5 split wasn't a technical limitation. It was a risk management reality. The AI could make decisions autonomously if we let it. But the consequences of being wrong on that 5% were simply too severe to allow automation without human oversight. This is why "agentic AI" remains a pipe dream for any domain involving significant risk. The 5% barrier isn't about capability but about accountability.
 
