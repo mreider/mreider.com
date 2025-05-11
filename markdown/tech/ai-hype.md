@@ -10,11 +10,11 @@ AI went from a niche tech topic to a mainstream obsession in just the last 24 mo
 
 Let's clarify what we're discussing: Autonomous AI operates independently without human oversight. Agentic AI refers to multiple AI systems working together autonomously. AGI (Artificial General Intelligence) means human-level intelligence across all domains. While Autonomous and Agentic AI exist today but are overhyped for high-stakes situations, AGI doesn't exist at all - though many discuss it as inevitable without defining what it actually means.
 
-My focus is on Autonomous and Agentic AI. These technologies exist today in controlled environments, but will not be used for any moderate to high-risk situations despite all the hype.
+My focus is on Autonomous and Agentic AI. These technologies exist today in controlled environments, but I'm convinced they won't be used for any moderate to high-risk situations despite all the hype. The barriers aren't technical. They're practical and unavoidable.
 
 Back to those podcasts - a prime example of how make-believe gets legitimized. The Cloudcast recently focused on [MCP servers and Agentic infrastructure](https://www.thecloudcast.net/2025/04/the-intersection-of-ai-and-apis.html) as if companies are already using autonomous AIs that talk to each other. As I said, maybe some are, but for anything important, as I'll explain in a moment, that idea is dead on arrival. Hard Fork constantly discusses AGI as inevitable, with cohost Kevin Roose even [writing a book about it](https://bsky.app/profile/kevinroose.com/post/3lne4qlnylc2d). They interview AI leaders like [Sam Altman](https://www.nytimes.com/2023/11/20/podcasts/mayhem-at-openai-our-interview-with-sam-altman.html) and [Dario Amodei](https://www.nytimes.com/2025/02/28/podcasts/hardfork-anthropic-dario-amodei.html) who talk about human-level machine intelligence as a done deal. Microsoft's CEO Satya Nadella adds fuel by [claiming "Agentic AI" will replace all SaaS software](https://www.youtube.com/watch?v=quXuKnGnOMs).
 
-I don't buy it 💩
+Like I said. I don't buy it 💩
 
 Last year, I listened to [an episode of #shifthappens with Martin Eekels](https://www.youtube.com/watch?v=csY-PH0CEHk) who described what I think is a more realistic AI future. Eekels said that AI works best as "a copilot to human capabilities rather than a replacement." The key point is that AI's limitations aren't technical. They're about risk. 
 
