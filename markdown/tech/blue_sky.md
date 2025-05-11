@@ -2,7 +2,7 @@
 title: "Bluesky is almost like 2012 Twitter"
 description: "Early Twitter vibes and uncertain prospects"
 author: "Matt Reider"
-date: "2024-12-16"
+date: "2024-12-17"
 image: "/images/matt/cloudy_sky.jpg"
 ---
 
