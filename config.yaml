@@ -1,6 +1,8 @@
 website:
   url: "https://mreider.com"
   name: "MR"
+  basePath: "/"
+  devPath: "/"
 
 menu:
   - title: "Home"
