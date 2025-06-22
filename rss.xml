@@ -6,8 +6,17 @@
   <description>RSS feed for MR</description>
   
 <item>
+  <title>As Crypto Goes Legit, the Criminals Follow</title>
+  <link>https://mreider.com/tech/as-crypto-goes-legit-the-criminals-follow/</link>
+  <description></description>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate>
+  <enclosure url="https://mreider.com/images/matt/mr-robot.jpg" type="image/png"/>
+</item>
+
+
+<item>
   <title>Why AI won&apos;t take control</title>
-  <link>https://mreider.com/tech/why-ai-wont-take-control/</link>
+  <link>https://mreider.com/markdown/tech/why-ai-wont-take-control/</link>
   <description>Co-Pilot vs. Autopilot in high-stakes environments</description>
   <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
   <enclosure url="https://mreider.com/images/matt/copilot.jpg" type="image/png"/>
@@ -16,7 +25,7 @@
 
 <item>
   <title>Why AI won&apos;t take control</title>
-  <link>https://mreider.com/markdown/tech/why-ai-wont-take-control/</link>
+  <link>https://mreider.com/tech/why-ai-wont-take-control/</link>
   <description>Co-Pilot vs. Autopilot in high-stakes environments</description>
   <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
   <enclosure url="https://mreider.com/images/matt/copilot.jpg" type="image/png"/>
@@ -61,15 +70,6 @@
 
 <item>
   <title>Email Subscriptions from Static Blogs</title>
-  <link>https://mreider.com/tech/email-subscriptions-from-static-blogs/</link>
-  <description></description>
-  <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
-  <enclosure url="https://mreider.com/images/matt/emails-everywhere.png" type="image/png"/>
-</item>
-
-
-<item>
-  <title>Email Subscriptions from Static Blogs</title>
   <link>https://mreider.com/markdown/tech/email-subscriptions-from-static-blogs/</link>
   <description></description>
   <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
@@ -78,11 +78,11 @@
 
 
 <item>
-  <title>Krems static blog generator</title>
-  <link>https://mreider.com/tech/krems-static-blog-generator/</link>
+  <title>Email Subscriptions from Static Blogs</title>
+  <link>https://mreider.com/tech/email-subscriptions-from-static-blogs/</link>
   <description></description>
-  <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-  <enclosure url="https://mreider.com/images/matt/gh-krems.png" type="image/png"/>
+  <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
+  <enclosure url="https://mreider.com/images/matt/emails-everywhere.png" type="image/png"/>
 </item>
 
 
@@ -96,11 +96,11 @@
 
 
 <item>
-  <title>Sudowrite, ChatGPT, and AI Slop</title>
-  <link>https://mreider.com/tech/sudowrite-chatgpt-and-ai-slop/</link>
+  <title>Krems static blog generator</title>
+  <link>https://mreider.com/tech/krems-static-blog-generator/</link>
   <description></description>
-  <pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate>
-  <enclosure url="https://mreider.com/images/matt/Instant_600_Film_Camera.jpeg" type="image/png"/>
+  <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
+  <enclosure url="https://mreider.com/images/matt/gh-krems.png" type="image/png"/>
 </item>
 
 
@@ -114,11 +114,11 @@
 
 
 <item>
-  <title>Great Strategy Starts with Sacrifice</title>
-  <link>https://mreider.com/markdown/tech/great-strategy-starts-with-sacrifice/</link>
+  <title>Sudowrite, ChatGPT, and AI Slop</title>
+  <link>https://mreider.com/tech/sudowrite-chatgpt-and-ai-slop/</link>
   <description></description>
-  <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-  <enclosure url="https://mreider.com/images/matt/trading-post.jpg" type="image/png"/>
+  <pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate>
+  <enclosure url="https://mreider.com/images/matt/Instant_600_Film_Camera.jpeg" type="image/png"/>
 </item>
 
 
@@ -132,8 +132,17 @@
 
 
 <item>
+  <title>Great Strategy Starts with Sacrifice</title>
+  <link>https://mreider.com/markdown/tech/great-strategy-starts-with-sacrifice/</link>
+  <description></description>
+  <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+  <enclosure url="https://mreider.com/images/matt/trading-post.jpg" type="image/png"/>
+</item>
+
+
+<item>
   <title>Bluesky is almost like 2012 Twitter</title>
-  <link>https://mreider.com/tech/bluesky-is-almost-like-2012-twitter/</link>
+  <link>https://mreider.com/markdown/tech/bluesky-is-almost-like-2012-twitter/</link>
   <description>Early Twitter vibes and uncertain prospects</description>
   <pubDate>Tue, 17 Dec 2024 00:00:00 +0000</pubDate>
   <enclosure url="https://mreider.com/images/matt/cloudy_sky.jpg" type="image/png"/>
@@ -142,7 +151,7 @@
 
 <item>
   <title>Bluesky is almost like 2012 Twitter</title>
-  <link>https://mreider.com/markdown/tech/bluesky-is-almost-like-2012-twitter/</link>
+  <link>https://mreider.com/tech/bluesky-is-almost-like-2012-twitter/</link>
   <description>Early Twitter vibes and uncertain prospects</description>
   <pubDate>Tue, 17 Dec 2024 00:00:00 +0000</pubDate>
   <enclosure url="https://mreider.com/images/matt/cloudy_sky.jpg" type="image/png"/>
@@ -213,11 +222,11 @@
 
 
 <item>
-  <title>Founders Don’t Need a Strategist as the First PM</title>
-  <link>https://mreider.com/markdown/tech/founders-dont-need-a-strategist-as-the-first-pm/</link>
-  <description></description>
+  <title>Building Quacker: A Weekend Project with ChatGPT</title>
+  <link>https://mreider.com/markdown/tech/building-quacker-a-weekend-project-with-chatgpt/</link>
+  <description>Building an app with AI is both impressive and frustrating</description>
   <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
-  <enclosure url="https://mreider.com/images/matt/Henchman_Street_W12_sign.jpg" type="image/png"/>
+  <enclosure url="https://mreider.com/images/matt/duck.jpg" type="image/png"/>
 </item>
 
 
@@ -231,17 +240,17 @@
 
 
 <item>
-  <title>Building Quacker: A Weekend Project with ChatGPT</title>
-  <link>https://mreider.com/markdown/tech/building-quacker-a-weekend-project-with-chatgpt/</link>
-  <description>Building an app with AI is both impressive and frustrating</description>
+  <title>Founders Don’t Need a Strategist as the First PM</title>
+  <link>https://mreider.com/markdown/tech/founders-dont-need-a-strategist-as-the-first-pm/</link>
+  <description></description>
   <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
-  <enclosure url="https://mreider.com/images/matt/duck.jpg" type="image/png"/>
+  <enclosure url="https://mreider.com/images/matt/Henchman_Street_W12_sign.jpg" type="image/png"/>
 </item>
 
 
 <item>
   <title>Engine Yard and the Cost of Venture Capital</title>
-  <link>https://mreider.com/markdown/tech/engine-yard-and-the-cost-of-venture-capital/</link>
+  <link>https://mreider.com/tech/engine-yard-and-the-cost-of-venture-capital/</link>
   <description>My experience at Engine Yard and how venture funding shaped its fate.</description>
   <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
   <enclosure url="https://mreider.com/images/matt/old-train.jpg" type="image/png"/>
@@ -250,7 +259,7 @@
 
 <item>
   <title>Engine Yard and the Cost of Venture Capital</title>
-  <link>https://mreider.com/tech/engine-yard-and-the-cost-of-venture-capital/</link>
+  <link>https://mreider.com/markdown/tech/engine-yard-and-the-cost-of-venture-capital/</link>
   <description>My experience at Engine Yard and how venture funding shaped its fate.</description>
   <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
   <enclosure url="https://mreider.com/images/matt/old-train.jpg" type="image/png"/>
@@ -277,7 +286,7 @@
 
 <item>
   <title>H₂Oh No</title>
-  <link>https://mreider.com/life/h2oh-no/</link>
+  <link>https://mreider.com/markdown/life/h2oh-no/</link>
   <description></description>
   <pubDate>Sat, 02 Mar 2024 00:00:00 +0000</pubDate>
   <enclosure url="https://mreider.com/images/matt/wasser555.png" type="image/png"/>
@@ -286,7 +295,7 @@
 
 <item>
   <title>H₂Oh No</title>
-  <link>https://mreider.com/markdown/life/h2oh-no/</link>
+  <link>https://mreider.com/life/h2oh-no/</link>
   <description></description>
   <pubDate>Sat, 02 Mar 2024 00:00:00 +0000</pubDate>
   <enclosure url="https://mreider.com/images/matt/wasser555.png" type="image/png"/>
@@ -313,7 +322,7 @@
 
 <item>
   <title>More than 20 Questions</title>
-  <link>https://mreider.com/life/more-than-20-questions/</link>
+  <link>https://mreider.com/markdown/life/more-than-20-questions/</link>
   <description></description>
   <pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate>
   <enclosure url="https://mreider.com/images/matt/praguish.jpeg" type="image/png"/>
@@ -322,7 +331,7 @@
 
 <item>
   <title>More than 20 Questions</title>
-  <link>https://mreider.com/markdown/life/more-than-20-questions/</link>
+  <link>https://mreider.com/life/more-than-20-questions/</link>
   <description></description>
   <pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate>
   <enclosure url="https://mreider.com/images/matt/praguish.jpeg" type="image/png"/>
@@ -348,20 +357,20 @@
 
 
 <item>
-  <title>Wasser, Acqua, Voda</title>
-  <link>https://mreider.com/markdown/life/wasser-acqua-voda/</link>
-  <description></description>
-  <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
-  <enclosure url="https://mreider.com/images/matt/1_p5W-O_HqQHBXIqS10N-Fsw@2x.jpeg" type="image/png"/>
-</item>
-
-
-<item>
   <title>Teamwork in Corfu</title>
   <link>https://mreider.com/markdown/life/teamwork-in-corfu/</link>
   <description></description>
   <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
   <enclosure url="https://mreider.com/images/matt/1_l2i7EqauON04D-pjr9b1gQ-1.jpeg" type="image/png"/>
+</item>
+
+
+<item>
+  <title>Wasser, Acqua, Voda</title>
+  <link>https://mreider.com/markdown/life/wasser-acqua-voda/</link>
+  <description></description>
+  <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
+  <enclosure url="https://mreider.com/images/matt/1_p5W-O_HqQHBXIqS10N-Fsw@2x.jpeg" type="image/png"/>
 </item>
 
 
@@ -385,15 +394,6 @@
 
 <item>
   <title>Ode to Kine Fahrrad</title>
-  <link>https://mreider.com/markdown/life/ode-to-kine-fahrrad/</link>
-  <description></description>
-  <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
-  
-</item>
-
-
-<item>
-  <title>Ode to Kine Fahrrad</title>
   <link>https://mreider.com/life/ode-to-kine-fahrrad/</link>
   <description></description>
   <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
@@ -402,11 +402,11 @@
 
 
 <item>
-  <title>It&apos;s Snowing</title>
-  <link>https://mreider.com/life/its-snowing/</link>
+  <title>Ode to Kine Fahrrad</title>
+  <link>https://mreider.com/markdown/life/ode-to-kine-fahrrad/</link>
   <description></description>
-  <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
-  <enclosure url="https://mreider.com/images/matt/1_YHQ75Z7fSQ8Sq2cBYUZ_Qw.png" type="image/png"/>
+  <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+  
 </item>
 
 
@@ -420,8 +420,17 @@
 
 
 <item>
-  <title>Infinite Tunnels</title>
-  <link>https://mreider.com/life/infinite-tunnels/</link>
+  <title>It&apos;s Snowing</title>
+  <link>https://mreider.com/life/its-snowing/</link>
+  <description></description>
+  <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+  <enclosure url="https://mreider.com/images/matt/1_YHQ75Z7fSQ8Sq2cBYUZ_Qw.png" type="image/png"/>
+</item>
+
+
+<item>
+  <title>Trader Joe&apos;s Bros</title>
+  <link>https://mreider.com/life/trader-joes-bros/</link>
   <description></description>
   <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
   
@@ -447,8 +456,8 @@
 
 
 <item>
-  <title>Trader Joe&apos;s Bros</title>
-  <link>https://mreider.com/life/trader-joes-bros/</link>
+  <title>Infinite Tunnels</title>
+  <link>https://mreider.com/life/infinite-tunnels/</link>
   <description></description>
   <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
   
@@ -511,15 +520,6 @@
 
 <item>
   <title>Rolling in my Benzo</title>
-  <link>https://mreider.com/markdown/life/rolling-in-my-benzo/</link>
-  <description></description>
-  <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-  
-</item>
-
-
-<item>
-  <title>Rolling in my Benzo</title>
   <link>https://mreider.com/life/rolling-in-my-benzo/</link>
   <description></description>
   <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
@@ -528,8 +528,17 @@
 
 
 <item>
+  <title>Rolling in my Benzo</title>
+  <link>https://mreider.com/markdown/life/rolling-in-my-benzo/</link>
+  <description></description>
+  <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+  
+</item>
+
+
+<item>
   <title>No Comprendo</title>
-  <link>https://mreider.com/life/no-comprendo/</link>
+  <link>https://mreider.com/markdown/life/no-comprendo/</link>
   <description></description>
   <pubDate>Sat, 31 Aug 2019 00:00:00 +0000</pubDate>
   <enclosure url="https://mreider.com/images/matt/1_WbN2xQeq8ianZrJjuSXl-g@2x.jpeg" type="image/png"/>
@@ -538,7 +547,7 @@
 
 <item>
   <title>No Comprendo</title>
-  <link>https://mreider.com/markdown/life/no-comprendo/</link>
+  <link>https://mreider.com/life/no-comprendo/</link>
   <description></description>
   <pubDate>Sat, 31 Aug 2019 00:00:00 +0000</pubDate>
   <enclosure url="https://mreider.com/images/matt/1_WbN2xQeq8ianZrJjuSXl-g@2x.jpeg" type="image/png"/>
@@ -565,15 +574,6 @@
 
 <item>
   <title>Phones</title>
-  <link>https://mreider.com/markdown/life/phones/</link>
-  <description></description>
-  <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
-  
-</item>
-
-
-<item>
-  <title>Phones</title>
   <link>https://mreider.com/life/phones/</link>
   <description></description>
   <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
@@ -582,8 +582,17 @@
 
 
 <item>
+  <title>Phones</title>
+  <link>https://mreider.com/markdown/life/phones/</link>
+  <description></description>
+  <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
+  
+</item>
+
+
+<item>
   <title>Österreich</title>
-  <link>https://mreider.com/life/osterreich/</link>
+  <link>https://mreider.com/markdown/life/osterreich/</link>
   <description></description>
   <pubDate>Mon, 26 Aug 2019 00:00:00 +0000</pubDate>
   
@@ -592,7 +601,7 @@
 
 <item>
   <title>Österreich</title>
-  <link>https://mreider.com/markdown/life/osterreich/</link>
+  <link>https://mreider.com/life/osterreich/</link>
   <description></description>
   <pubDate>Mon, 26 Aug 2019 00:00:00 +0000</pubDate>
   
@@ -673,15 +682,6 @@
 
 <item>
   <title>Basketball in the Catskills</title>
-  <link>https://mreider.com/dad/basketball-in-the-catskills/</link>
-  <description></description>
-  <pubDate>Fri, 06 Aug 2010 00:00:00 +0000</pubDate>
-  
-</item>
-
-
-<item>
-  <title>Basketball in the Catskills</title>
   <link>https://mreider.com/markdown/dad/basketball-in-the-catskills/</link>
   <description></description>
   <pubDate>Fri, 06 Aug 2010 00:00:00 +0000</pubDate>
@@ -690,10 +690,10 @@
 
 
 <item>
-  <title>Max and Zoe</title>
-  <link>https://mreider.com/dad/max-and-zoe/</link>
+  <title>Basketball in the Catskills</title>
+  <link>https://mreider.com/dad/basketball-in-the-catskills/</link>
   <description></description>
-  <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
+  <pubDate>Fri, 06 Aug 2010 00:00:00 +0000</pubDate>
   
 </item>
 
@@ -708,10 +708,10 @@
 
 
 <item>
-  <title>An Exodus</title>
-  <link>https://mreider.com/dad/an-exodus/</link>
+  <title>Max and Zoe</title>
+  <link>https://mreider.com/dad/max-and-zoe/</link>
   <description></description>
-  <pubDate>Thu, 08 Nov 2007 00:00:00 +0000</pubDate>
+  <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
   
 </item>
 
@@ -726,8 +726,17 @@
 
 
 <item>
+  <title>An Exodus</title>
+  <link>https://mreider.com/dad/an-exodus/</link>
+  <description></description>
+  <pubDate>Thu, 08 Nov 2007 00:00:00 +0000</pubDate>
+  
+</item>
+
+
+<item>
   <title>Personals</title>
-  <link>https://mreider.com/markdown/dad/personals/</link>
+  <link>https://mreider.com/dad/personals/</link>
   <description></description>
   <pubDate>Fri, 11 May 2007 00:00:00 +0000</pubDate>
   
@@ -736,7 +745,7 @@
 
 <item>
   <title>Personals</title>
-  <link>https://mreider.com/dad/personals/</link>
+  <link>https://mreider.com/markdown/dad/personals/</link>
   <description></description>
   <pubDate>Fri, 11 May 2007 00:00:00 +0000</pubDate>
   
@@ -799,7 +808,7 @@
 
 <item>
   <title>Grandmother</title>
-  <link>https://mreider.com/dad/grandmother/</link>
+  <link>https://mreider.com/markdown/dad/grandmother/</link>
   <description></description>
   <pubDate>Tue, 18 Aug 1998 00:00:00 +0000</pubDate>
   
@@ -808,7 +817,7 @@
 
 <item>
   <title>Grandmother</title>
-  <link>https://mreider.com/markdown/dad/grandmother/</link>
+  <link>https://mreider.com/dad/grandmother/</link>
   <description></description>
   <pubDate>Tue, 18 Aug 1998 00:00:00 +0000</pubDate>
   
