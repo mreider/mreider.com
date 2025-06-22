@@ -15,7 +15,7 @@ My friend [Rishi Dean](https://rishidean.com/2025/04/19/tough-love-letter-to-the
 
 When crypto was underground, the violence stayed theoretical. Now that it's gone mainstream, with institutions buying in and [Trump hawking memecoins](https://www.theguardian.com/us-news/2025/may/25/trump-crypto-corruption-ethics), the kidnappings are very real. French crypto executive [David Balland had his finger severed](https://www.reuters.com/world/europe/kidnapped-co-founder-french-crypto-firm-ledger-had-his-hand-mutilated-2025-01-24/) by kidnappers. Influencers who bragged about holdings online [are having their fathers kidnapped(https://www.lemonde.fr/en/france/article/2025/05/04/abducted-dad-of-crypto-firm-boss-freed-in-french-police-raid_6740891_7.html). That [Coinbase data breach](https://www.reuters.com/sustainability/boards-policy-regulation/coinbase-breach-linked-customer-data-leak-india-sources-say-2025-06-02/) exposing customer balances and addresses? Shopping list for criminals. 
 
-As crypto gets cozy with institutions, it creates bigger targets for criminals. But beyond the wrench attacks, there's the bigger irony. Crypto ended up embracing the exact corruption it claimed to solve. Trump's crypto empire is a [tangled mess of LLCs](https://www.citationneeded.news/issue-85/) that would embarrass a money launderer.
+As crypto gets cozy with institutions, it creates bigger targets for criminals. But beyond the wrench attacks, there's the bigger irony. Crypto ended up embracing the exact corruption it claimed to solve. Trump's crypto empire is a [tangled mess of LLCs that would embarrass a money launderer, as Molly White has documented](https://www.citationneeded.news/issue-85/).
 
 ![tangled mess](/images/matt/trump-family-crypto-projects.png)
 
@@ -25,6 +25,6 @@ We're watching the creation of a whole new category of government-endorsed finan
 
 The mainstream adoption is complete. Open Revolut or N26. Crypto trading sits right there on the home screen, positioned as just another investment option. No mention that unlike stocks / bonds, their only purpose is laundering and speculation.
 
-The system combines the worst of both worlds: decentralized enough to dodge oversight, but captured by political money. Your wealth gets leaked in data breaches while regulations get written by whoever pays most. No protection from traditional finance, no freedom from government capture. [Molly White has been documenting this whole mess](https://www.citationneeded.news/issue-85/), from the Trump connection diagrams to everything else.
+The system combines the worst of both worlds: decentralized enough to dodge oversight, but captured by political money. Your wealth gets leaked in data breaches while regulations get written by whoever pays most. No protection from traditional finance, no freedom from government capture.
 
-The original idea was probably impossible anyway. But this government-backed gambling with criminal side effects? Way worse.
+The original idea was probably impossible anyway. But this government-backed gambling with criminal side effects is way worse.
