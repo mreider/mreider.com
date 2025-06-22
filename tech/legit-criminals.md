@@ -9,7 +9,7 @@ There was this attack early Tuesday morning in Paris. Three guys in black masks 
 
 ![wrench attach](/images/matt/xkcd-sec.png)
 
-I've always been skeptical of crypto. Same way I approach any technology promising to "change everything." I went to one of the most privileged private schools in Boston, in a country where that already puts you near the top globally. But I hung out with the scholarship kids from rough neighborhoods who were there to make the school look diverse or play sports. Watching how the powerful create narratives for everyone else to follow, for their own benefit, taught me to be suspicious when everyone agrees something will "revolutionize" everything.
+I've always been skeptical of crypto, same way I approach any technology promising to "change everything." Going to a privileged private school but hanging out with the scholarship kids taught me how the powerful use people for good optics while treating them poorly behind the scenes. So when everyone suddenly agrees something will "revolutionize" everything, I get suspicious.
 
 My friend [Rishi Dean](https://rishidean.com/2025/04/19/tough-love-letter-to-the-crypto-industry/), who was my PM mentor at Visible Measures during my first product role, went on to Google Ventures and then Coinbase before eventually leaving crypto to work with my sister at Lyft, nailed it: "We mistook rhetoric for reality.
 
