@@ -5,7 +5,7 @@ date: "2025-06-22"
 image: "/images/matt/mr-robot.jpg"
 ---
 
-There was this attack early Tuesday morning in Paris. Three guys in black masks jumped from a white van, pepper-sprayed a family, and tried to drag a woman into their truck. Her crime? Her dad runs a crypto exchange. That [XKCD comic](https://xkcd.com/538/) about hitting someone with a $5 wrench until they give up their password? Not so funny anymore.
+There was this attack early Tuesday morning in Paris. Three guys in black masks jumped from a white van, pepper-sprayed a family, and tried to drag a woman into their truck. Her crime was that her dad runs a crypto exchange. That [XKCD comic](https://xkcd.com/538/) about hitting someone with a $5 wrench until they give up their password is not so funny anymore.
 
 ![wrench attach](/images/matt/xkcd-sec.png)
 
