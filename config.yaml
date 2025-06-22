@@ -3,6 +3,10 @@ website:
   name: "MR"
   basePath: "/"
   devPath: "/"
+  # Alternative cowboy assets for western styling
+  # alternativeCSSDir: "assets"
+  # alternativeJSDir: "assets"
+  # alternativeFavicon: "assets/cowboy-favicon.ico"
 
 menu:
   - title: "Home"

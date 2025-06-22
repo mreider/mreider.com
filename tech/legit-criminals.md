@@ -17,7 +17,7 @@ When crypto was underground, the violence stayed theoretical. Now that it's gone
 
 As crypto gets cozy with institutions, it creates bigger targets for criminals. But beyond the wrench attacks, there's the bigger irony. Crypto ended up embracing the exact corruption it claimed to solve. Trump's crypto empire is a [tangled mess of LLCs](https://www.citationneeded.news/issue-85/) that would embarrass a money launderer.
 
-![tangled mess](trump-family-crypto-projects.png)
+![tangled mess](/images/matt/trump-family-crypto-projects.png)
 
 Circle, co-founded by Jeremy Allaire (who started the Allaire company where I worked in the 90s, which led to General Catalyst funding both Rishi's company and mine), IPO'd in June and the stock is up over 650% from its offering price. They [shut out the crypto funds](https://www.ar.ca/blog/circle-ipo-is-the-antithesis-of-crypto-ethos) that supported them for years and gave fat allocations to Wall Street firms who probably don't even have crypto wallets. So much for rewarding your community.
 
