@@ -1,4 +1,4 @@
 ---
-title:  "Writing about Life"
+title:  "Other little posts"
 type: list
 ---
