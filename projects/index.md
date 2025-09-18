@@ -2,20 +2,65 @@
 title: "Projects"
 ---
 
-A few open source projects I've built and maintain.
+Open source projects I've built and maintained.
 
 ## Krems
 
-Krems is a static site generator written in Go. It lets you publish Markdown websites to GitHub Pages more easily than Hugo or Jekyll.
+**Active**
 
-mreider.com is built with Krems.
+A static site generator written in Go for publishing websites to GitHub more easily than Hugo or Jekyll.
 
-[Read about Krems on GitHub →](https://github.com/mreider/krems)
+[Github Repository](https://github.com/mreider/krems)
 
 ## Mattato
 
-Mattato is a macOS menu bar Pomodoro timer that keeps track of your work sessions. It lives in your menu bar and lets you start 25-minute focused work periods with breaks in between.
+**Active**
 
-It's built with Swift and designed to be lightweight and unobtrusive.
+A macOS menu bar Pomodoro timer that keeps track of your work sessions.
 
-[Read about Mattato on GitHub →](https://github.com/mreider/mattato)
+[Download](https://mreider.github.io/mattato/)
+[Documentation](https://mreider.github.io/mattato/help/)
+[Github Repository](https://github.com/mreider/mattato)
+
+## PM415
+
+_Inactive_
+
+A backlog management tool for product managers.
+
+[Documentation](https://pm415.gitbook.io/project/)
+[Github Repostiory](https://github.com/mreider/pm415)
+
+## Agile Markdown
+
+_Inactive_
+
+Backlog management in markdown via a CLI.
+
+[Documentation](https://mreider.github.io/agilemarkdown/)
+[Github Repository](https://github.com/mreider/agilemarkdown)
+
+## Fritter ##
+
+_Inactive_
+
+Prioritize product backlogs via poker chip scarcity
+
+[Github Repository](https://github.com/mreider/fritter)
+
+## Petebot ##
+
+_Inactive_
+
+Get Slack announcements when your followers do things on Strava
+
+[Github Repository](https://github.com/mreider/petebot)
+
+## OrderUp ##
+
+_Inactive_
+
+A to-do list embedded into Slack
+
+[Github Repository](https://github.com/mreider/orderup)
+
