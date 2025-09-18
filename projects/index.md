@@ -19,7 +19,9 @@ A static site generator written in Go for publishing websites to GitHub more eas
 A macOS menu bar Pomodoro timer that keeps track of your work sessions.
 
 [Download](https://mreider.github.io/mattato/)
+
 [Documentation](https://mreider.github.io/mattato/help/)
+
 [Github Repository](https://github.com/mreider/mattato)
 
 ---
@@ -29,6 +31,7 @@ A macOS menu bar Pomodoro timer that keeps track of your work sessions.
 A backlog management tool for product managers.
 
 [Documentation](https://pm415.gitbook.io/project/)
+
 [Github Repostiory](https://github.com/mreider/pm415)
 
 ---
@@ -38,6 +41,7 @@ A backlog management tool for product managers.
 Backlog management in markdown via a CLI.
 
 [Documentation](https://mreider.github.io/agilemarkdown/)
+
 [Github Repository](https://github.com/mreider/agilemarkdown)
 
 ---
