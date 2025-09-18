@@ -15,3 +15,5 @@ menu:
     path: "tech/index.md"
   - title: "Life"
     path: "life/index.md"
+  - title: "Projects"
+    path: "projects/index.md"
