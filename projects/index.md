@@ -4,7 +4,7 @@ title: "Projects"
 
 ## Krems
 
-**Active**
+<span class="tag-badge-simple">Active</span>
 
 A static site generator written in Go for publishing websites to GitHub more easily than Hugo or Jekyll.
 
@@ -14,7 +14,7 @@ A static site generator written in Go for publishing websites to GitHub more eas
 
 ## Mattato
 
-**Active**
+<span class="tag-badge-simple">Active</span>
 
 A macOS menu bar Pomodoro timer that keeps track of your work sessions.
 
@@ -26,8 +26,6 @@ A macOS menu bar Pomodoro timer that keeps track of your work sessions.
 
 ## PM415
 
-_Inactive_
-
 A backlog management tool for product managers.
 
 [Documentation](https://pm415.gitbook.io/project/)
@@ -36,8 +34,6 @@ A backlog management tool for product managers.
 ---
 
 ## Agile Markdown
-
-_Inactive_
 
 Backlog management in markdown via a CLI.
 
@@ -48,8 +44,6 @@ Backlog management in markdown via a CLI.
 
 ## Fritter ##
 
-_Inactive_
-
 Prioritize product backlogs via poker chip scarcity
 
 [Github Repository](https://github.com/mreider/fritter)
@@ -58,8 +52,6 @@ Prioritize product backlogs via poker chip scarcity
 
 ## Petebot ##
 
-_Inactive_
-
 Get Slack announcements when your followers do things on Strava
 
 [Github Repository](https://github.com/mreider/petebot)
@@ -67,8 +59,6 @@ Get Slack announcements when your followers do things on Strava
 ---
 
 ## OrderUp ##
-
-_Inactive_
 
 A to-do list embedded into Slack
 
