@@ -2,6 +2,7 @@
 title:
 created: 2025-06-04T16:25
 updated: 2025-06-04T16:27
+image: "/images/matt/matt-ali-maine.png"
 ---
 
 - [Tech & Product Writing](tech/index.md)
