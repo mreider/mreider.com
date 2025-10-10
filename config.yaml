@@ -17,3 +17,7 @@ menu:
     path: "life/index.md"
   - title: "Projects"
     path: "projects/index.md"
+  - title: "Dad's Writing"
+    path: "family/pete.md"
+  - title: "Family Stuff"
+    path: "family/index.md"
