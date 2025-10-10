@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(textutil:*)",
+      "Read(//tmp/**)",
+      "Bash(find:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

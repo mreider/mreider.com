@@ -2,7 +2,7 @@
 title:  "Lost and Found"
 author: "Matt Reider"
 date: "2024-05-31"
-image: "/images/matt/1_YHQ75Z7fSQ8Sq2cBYUZ_Qw.png"
+image: "/images/matt/lost.jpg"
 ---
 
 Don’t you hate it when you do something stupid?

@@ -6,7 +6,7 @@ Pete was my Dad.
 
 ![Pete Reider](/images/dad/dad-and-joyce.png)
 
-He died on August 13, 2015. Pete's obituary is [here](https://www.legacy.com/us/obituaries/sfgate/name/arthur-reider-obituary?id=16690573)
+He died on August 13, 2015. Pete's obituary is [here](../dad/obituary.md)
 
 He self-published a little book called Stepping Stones a few years before his death. Here's what he wrote on the back cover.
 

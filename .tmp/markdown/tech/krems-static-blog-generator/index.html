@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Krems static blog generator - MR</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    
+    <meta property="og:image" content="https://mreider.com/images/matt/gh-krems.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://mreider.com/images/matt/gh-krems.png" />
+    
+    <meta property="og:site_name" content="MR">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    
+</head>
+<body>
+
+
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>MR</p>
+  </div>
+  <nav class="sidebar-nav">
+    
+    <a class="sidebar-nav-item" href="/">Home</a>
+    
+    <a class="sidebar-nav-item" href="/tech/">Tech</a>
+    
+    <a class="sidebar-nav-item" href="/life/">Life</a>
+    
+    <a class="sidebar-nav-item" href="/projects/">Projects</a>
+    
+    <a class="sidebar-nav-item" href="/family/pete-reider/">Dad&#39;s Writing</a>
+    
+    <a class="sidebar-nav-item" href="/family/">Family Stuff</a>
+    
+  </nav>
+</div>
+
+
+<div class="wrap">
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  
+  <div class="masthead">
+    <div class="container">
+      <h3 class="masthead-title">
+        <a href="/" title="Home">MR</a>
+        <small></small>
+      </h3>
+    </div>
+  </div>
+
+
+<div class="container-lg mt-5 mb-5">
+    
+    
+    <img src="/images/matt/gh-krems.png" style="max-width:400px;width:100%;height:auto;" class="img-fluid mb-3 rounded" alt="featured image">
+    
+
+	
+    <h3 class="display-6 mb-4">Krems static blog generator</h3>
+	by <a href="/authors/matt-reider/">Matt Reider</a>
+	<div class="text-muted mb-2">Feb 16, 2025</div>
+	
+    
+    
+
+    
+        <div class="mb-5">
+            <p>A couple of months ago we visited a little town named Krems about an hour West of Vienna. In that little town is a University where my son would apply, though now that he’s been accepted to a few schools in Scotland he likely won’t attend. After we returned to Vienna I thought about writing a short blog about our visit there, but to my horror my blog was nolonger loading properly.</p>
+
+<p>Instead of adjusting my hugo templates for the 1,000th time, I decided to write my own static blog generator for Github Pages. I named it Krems after the cute little town we visited.</p>
+
+<p>Unlike Hugo, or Jekyll, Krems has almost no customability. It’s dead simple, has only one theme, and does exactly what it does, with nothing more.</p>
+
+<ol>
+<li>Runs as a simple executable on most operating systems</li>
+<li>Generates HTML pages from Markdown</li>
+<li>Creates slug links instead of pages with “.html” file extensions</li>
+<li>Generates index pages of blog entries based on the contents of a folder</li>
+<li>Creates simple responsive menus</li>
+<li>Runs an http server locally for testing purposes</li>
+</ol>
+
+<p>Here’s how you use it:</p>
+
+<h1 id="install-krems">Install Krems</h1>
+
+<p>Download the latest binary for your operating system at <a href="https://github.com/mreider/krems/releases">Releases · mreider/krems</a>. On my mac I give it executable privileges and put it in my path.</p>
+
+<pre><code class="language-bash">curl -L https://github.com/mreider/krems/releases/download/v0.1.9/krems-darwin-amd64 -o krems
+chmod +x krems
+mv krems /usr/local/bin/
+</code></pre>
+
+<h1 id="create-a-sample-site">Create a sample site</h1>
+
+<p>To create a sample site with folders, pages, and configurations, run:</p>
+
+<pre><code class="language-bash">mkdir test
+cd test
+krems --init
+</code></pre>
+
+<p>This will generate the following structure:</p>
+
+<pre><code>markdown/images/ &lt;-- images saved here
+markdown/ &lt;-- markdown saved here
+markdown/css/bootstrap.min.css
+markdown/js/bootstrap.js
+config.yaml
+</code></pre>
+
+<p>Next, build the site by running:</p>
+
+<pre><code class="language-bash">krems --build
+</code></pre>
+
+<p>This creates a docs folder and generates HTML from the Markdown files while copying necessary assets like CSS, JS, and images. The resulting folder structure looks like this:</p>
+
+<pre><code class="language-bash">docs/ &lt;-- html pages generated from markdown here
+docs/CNAME &lt;-- creates a domain from config.yaml
+docs/rss.xml
+docs/404.html
+docs/images
+docs/css
+docs/js
+</code></pre>
+
+<p>Finally, you can run the website locally by running <code>krems —run</code>.</p>
+
+<h1 id="exploring-the-demo-site">Exploring the demo site</h1>
+
+<p>The demo site starts with an index page that lists subpages in the same directory:</p>
+
+<p><img src="/images/matt/krems-test.png" alt="krems demo index" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
+
+<p>Clicking the first links takes us to the Krems City Info page:</p>
+
+<p><img src="/images/matt/krems-test2.png" alt="krems info page" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
+
+<p>You can also go to menu and see info about the universities in Krems:</p>
+
+<p><img src="/images/matt/krems-test3.png" alt="krems uni page" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
+
+<h1 id="understanding-the-structure">Understanding the structure</h1>
+
+<p>Now that you’ve explored the demo site, let&rsquo;s look at its structure. Open the index page <code>markdown/index.md</code> in a text editor. You&rsquo;ll see:</p>
+
+<pre><code class="language-yaml">---
+title: &quot;Krems Home Page&quot;
+type: list
+---
+</code></pre>
+
+<p>This is a list page. It has no content—only front matter. List pages automatically generate a list of links to HTML pages in the same directory. In this case, there are two other pages.</p>
+
+<p>Since Krems is designed for blogs, not traditional websites, a list page only includes links to pages that have dates in their front matter. If you don’t want a file to appear in the list, simply omit the date.</p>
+
+<p>Other pages use the default &ldquo;normal&rdquo; type, meaning there&rsquo;s no need to specify it explicitly. Here’s an example of the Krems City Info page:</p>
+
+<pre><code class="language-yaml">---
+title: &quot;Krems City Info&quot;
+date: &quot;2024-11-26&quot;
+image: &quot;/images/krems1.png&quot;
+---
+Krems is a beautiful city in Austria known for its rich history, stunning architecture, and vibrant culture.
+
+Explore its winding streets, local markets, and historical landmarks.
+</code></pre>
+
+<p>This page includes an image in the front matter. When converted to HTML, the image is automatically placed above the page title with a small border, a maximum width of 600px, and responsive resizing for different screen sizes. If you share the page on social media (e.g., LinkedIn), this image will appear as the preview.</p>
+
+<p>The last key component is the <code>config.yaml</code> file, which defines the site’s domain and menu structure:</p>
+
+<pre><code class="language-yaml">website:
+  url: &quot;http://localhost:8080&quot;
+  name: &quot;Krems Static Site&quot;
+
+menu:
+  - title: &quot;Home&quot;
+    path: &quot;index.md&quot;
+  - title: &quot;Universities&quot;
+    path: &quot;universities/index.md&quot;
+</code></pre>
+
+<p>This is pretty self-explanatory. Replace the url with your actual blog domain and modify the menu, pages, and images as needed.</p>
+
+<h1 id="publishing-to-github-pages">Publishing to Github Pages</h1>
+
+<p>Once you&rsquo;ve built your blog by running:</p>
+
+<pre><code class="language-bash">krems --build
+</code></pre>
+
+<p>all the generated HTML files will be in the docs folder—exactly where GitHub Pages expects them. A CNAME file will also be created in docs/, allowing you to set up a custom domain.</p>
+
+<p>Setting up Github Pages is pretty straightforward but Github&rsquo;s documentation is not great.</p>
+
+<ol>
+<li>Create a GitHub repository for your Krems site.</li>
+<li>Add everything to the repo, including the /markdown and /docs folders.</li>
+<li>In your repository, go to Settings → Pages and configure it like this:</li>
+</ol>
+
+<p><img src="/images/matt/gh-pages-build.png" alt="gh pages settings" style="max-width:800px;width:100%;height:auto;" class="mb-3 img-fluid border border-1 border-dark"/></p>
+
+<p>To use a custom domain follow Github&rsquo;s <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages">guide</a>.</p>
+
+<h1 id="final-thoughts">Final thoughts</h1>
+
+<p>If you run into issues with Krems or have feature suggestions, feel free to use the <a href="https://github.com/mreider/krems/issues">Issues section in the GitHub repo</a>.</p>
+
+<p>If you’d like to contribute—especially by improving the auto-generated CSS template (which currently just uses Bootstrap)—that would be a nice enhancement.</p>
+
+        </div>
+    
+
+    <footer class="text-center mt-5">
+        Generated with <a href="https://github.com/mreider/krems">Krems</a>
+    </footer>
+  </div>
+</div>
+
+
+<script src="/js/bootstrap.js"></script>
+
+</body>
+</html>
