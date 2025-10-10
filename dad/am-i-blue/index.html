@@ -17,43 +17,40 @@
 <body>
 
 
-<nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container"> 
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kremsNavbar" 
-                aria-controls="kremsNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
-        
-        <div class="collapse navbar-collapse" id="kremsNavbar">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="/tech/">Tech</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="/life/">Life</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="/projects/">Projects</a>
-                </li>
-                
-            </ul>
-        </div>
 
-        
-        <a class="navbar-brand" href="/">
-            MR
-        </a>
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>MR</p>
+  </div>
+  <nav class="sidebar-nav">
+    
+    <a class="sidebar-nav-item" href="/">Home</a>
+    
+    <a class="sidebar-nav-item" href="/tech/">Tech</a>
+    
+    <a class="sidebar-nav-item" href="/life/">Life</a>
+    
+    <a class="sidebar-nav-item" href="/projects/">Projects</a>
+    
+  </nav>
+</div>
+
+
+<div class="wrap">
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  
+  <div class="masthead">
+    <div class="container">
+      <h3 class="masthead-title">
+        <a href="/" title="Home">MR</a>
+        <small></small>
+      </h3>
     </div>
-</nav>
+  </div>
 
 
 <div class="container-lg mt-5 mb-5">
@@ -129,6 +126,7 @@
     <footer class="text-center mt-5">
         Generated with <a href="https://github.com/mreider/krems">Krems</a>
     </footer>
+  </div>
 </div>
 
 
