@@ -50,5 +50,5 @@ In the end, Engine Yard couldn’t survive. The energy of the Rails community th
 
 ---
 
-> *The image of the train is licensed under the Creative Commons Attribution-Share Alike 2.0 Generic license.  
-> Original photo by train_photos. Source: [Flickr](https://
+> *The image of the train is licensed under the Creative Commons Attribution-Share Alike 2.0 Generic license.
+> Original photo by train_photos.*

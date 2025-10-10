@@ -8,7 +8,7 @@ Just before the sign pointing to the beach I turned away from the tar topped roa
 
 I thought I was all alone but as I rounded the turn my grandmother, Rena, was running. It amazed me how her short squat body, her thin legs coming out from her ballooning black silken running shorts, could move so well, so tirelessly as her feet sunk into the bottom of the wet sandy estuary. I was running only slightly faster. I wanted to call out, but how would she recognize me. I last saw her forty-eight years ago.
 
-I waited until I came alongside and said, "What I've always wanted to know is were you kidding? Going to the mental hospital . . . your mysterious statements to me walking down the steps to your basement your in 1950 to get your carefully stored jars of jams and jellies with the thick layer of wax at the top. You said 'they' were doing this to you and 'they' were doing that. You were joking weren't you?" 
+I waited until I came alongside and said, "What I've always wanted to know is were you kidding? Going to the mental hospital . . . your mysterious statements to me walking down the steps to your basement in 1950 to get your carefully stored jars of jams and jellies with the thick layer of wax at the top. You said 'they' were doing this to you and 'they' were doing that. You were joking weren't you?" 
 
 She smiled as I came along her shoulder, hastening her pace. It was a broad, wonderful smile which caused a tingling sensation over my shoulders and down my arms. "Of course I was kidding, Pete." 
 

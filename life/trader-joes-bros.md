@@ -32,6 +32,6 @@ One unique thing Hofer (and Aldi) has that Trader Joe’s doesn’t is the middl
 ## A Tale of Two Brothers  
 Aldi was founded by two German brothers who ran a grocery store in Essen. Later, they had a falling out and split the company in half. Hofer and Trader Joe’s are owned by Aldi South, while Aldi North owns Marché in France. No idea if Aldi North stores have a middle aisle, but it’d be fun to find out.
 
-Interestingly, our friend Scott works for Adidas, which was also founded by two German brothers in the 1920s. Like Aldi, they split the company after a fight. Adidas North became the Adidas we know, while Adidas South turned into Puma.  
+Interestingly, our friend Scott works for Adidas, which was also founded by two German brothers in the 1920s. Like Aldi, they split the company after a fight. One brother founded Adidas, while the other founded Puma.  
 
 It’d be amazing to see Adidas or Puma gear pop up in Treasure Aisle-land someday.

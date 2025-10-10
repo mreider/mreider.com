@@ -1,5 +1,5 @@
 ---
-title:  "Ode to Kine Fahrrad"
+title:  "Ode to King Fahrrad"
 author: "Matt Reider"
 date: "2020-06-25"
 ---
@@ -69,7 +69,6 @@ The bike room is accessed with a key card.
 
 If you visit the *minus one* basement parking garage, you’ll see it’s nicely marked and color-coded: yellow for bikes, blue for cars.
 
-![Bike lane garage](/images/matt/image-5.png)
 
 Here’s the inside of the bike room. Spacious! Before COVID-19, it was tough to find a spot. Now it’s practically empty.
 

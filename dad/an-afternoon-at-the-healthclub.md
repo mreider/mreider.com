@@ -12,11 +12,11 @@ date: "2011-04-28"
 
 **MR. BOUSH** (BOOsh) 56, the owner and manager of the Puritan Health Club.
 
-**ELANA** 21, MR. BOUCH's assistant. 
+**ELANA** 21, MR. BOUSH's assistant. 
 
 **SCENE** 
 
-A garishly furnished office in downtown Boston. It is dominated by a huge desk behind which sits Mr. Boush smoking a large cigar. He is hefty and wears his dark hair slicked back. We can see his white and blue striped shirt and wide white tie above the desk. His weightlifter shoulders stretch the seams of his shirt. In front of the desk Dolores and Philip each stand next to overstuffed leather chairs that face one another. Dolores wears tight-fitting blue jeans and a white blouse unbuttoned to expose mammaries spilling over a black bra. Her blond hair is partially wet and appears hastily combed back accentuating her narrow face and long nose. Philip is short, bald and flabby. He is naked except for a towel around his middle. We hear Frank Sinatra singing, "It's quarter to three/There's no one in the place except you and me/So set 'em up Joell've got a little story you ought to know/Were drinkin' my friend, to the end of a brief episode/Make it one for my baby and one more for the road" as the lights go on. 
+A garishly furnished office in downtown Boston. It is dominated by a huge desk behind which sits Mr. Boush smoking a large cigar. He is hefty and wears his dark hair slicked back. We can see his white and blue striped shirt and wide white tie above the desk. His weightlifter shoulders stretch the seams of his shirt. In front of the desk Dolores and Philip each stand next to overstuffed leather chairs that face one another. Dolores wears tight-fitting blue jeans and a white blouse unbuttoned to expose mammaries spilling over a black bra. Her blond hair is partially wet and appears hastily combed back accentuating her narrow face and long nose. Philip is short, bald and flabby. He is naked except for a towel around his middle. We hear Frank Sinatra singing, "It's quarter to three/There's no one in the place except you and me/So set 'em up Joe/I've got a little story you ought to know/We're drinkin' my friend, to the end of a brief episode/Make it one for my baby and one more for the road" as the lights go on. 
 
 Sinatra fades and we hear Chris Montez sing, "The more I see you/The more I want you" which ends abruptly as the characters speak.
 
@@ -170,7 +170,7 @@ I'm totally against gun control. It's unconstitutional.
 
 **PHILIP**
 
-She's accusing me of an impropriety I didn't take. My head above water for a split second. I was vaguely aware of a female formed edge of the pool.
+She's accusing me of an impropriety I didn't commit. My head was above water for a split second. I was vaguely aware of a female form at the edge of the pool.
 
 **DOLORES**
 
@@ -210,7 +210,7 @@ I'm freezing. Could I at least have a robe?
 
 **DOLORES**
 
-(rises from her chair as if she had heard a call from above): Rodgers and Hammerstein, The waltz. Hear it? (She waltzes): One two three, one two three. Julie Andrews. (rurns to Philip): Wasn't she grand?
+(rises from her chair as if she had heard a call from above): Rodgers and Hammerstein, The waltz. Hear it? (She waltzes): One two three, one two three. Julie Andrews. (turns to Philip): Wasn't she grand?
 
 **PHILIP**
 

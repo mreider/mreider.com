@@ -17,7 +17,7 @@ Nobody knows that lesson more than “Mike” (from my earlier post [Founders Do
 
 Mike reached out again a few weeks ago to tell me how things were going.
 
-Mike has moved into a broader sacrifice than feature trade-offs. It's the company says “no” to sales opportunities without the right profile. Mike is going to resist complete revenue streams in order to build a more focused product.
+Mike has moved into a broader sacrifice than feature trade-offs. The company says "no" to sales opportunities without the right profile. Mike is going to resist complete revenue streams in order to build a more focused product.
 
 He came to this decision from watching and learning from customers that were not in his sweet spot. These customers would buy, initially, but they were hard to hold on to. He says they are not "beachhead" customers, quoting Geoffrey Moore's (dated) book *Crossing the Chasm*. (Moore calls sweet-spot customers "beachheads" as a reference to the D-Day landing spot). 
 

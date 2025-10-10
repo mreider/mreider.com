@@ -31,7 +31,7 @@ Things settled down, virus-wise, just in time for a family boating trip on Lake 
 
 # Portugal
 
-In Portugal, the virus struck again. This time, Jeremy and his daughter, Maya, came down with fever and headaches. Later, Hena caught it too. Despite all this, we had a fantastic time. We celebrated Alison’s 36th birthday in Porto, sailing along the Duoro River.
+In Portugal, the virus struck again. This time, Jeremy and his daughter, Maya, came down with fever and headaches. Later, Hena caught it too. Despite all this, we had a fantastic time. We celebrated Alison's 36th birthday in Porto, sailing along the Douro River.
 
 ![portugal](/images/matt/portugal.png)
 

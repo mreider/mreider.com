@@ -9,7 +9,7 @@ Day 1
 
 Today is Max's birthday. He's three. Max has a sister-Zoe. She's not so old. Zoe is about one and a half. They live on a steep hill with trees in Oakland, California. Max likes to do stuff on his own and in his own way. He doesn't like it when people pet his hair. His hair is light brown and arranges itself in a curve like a lovable sleeping kitten. He's polite but moves off when people fuss with it. Max says, "I'm going to be a big guy." 
 
-Grownups and big kids at the party try to show him what to do with his new airplane. They say, "See, it flies way up high like this. Whee!" Max says, "I'm going into my room now and take a rest." He comes out a few minutes later bringing with him the two train cars from his bed. They are named Gordon and Emily. Max's Mom and Dad Gordon say and Emily are there for him at bedtime instead of putting Binky in his Travis and Ta mouth. Binkies make teeth grow crooked, his parents explain. 
+Grownups and big kids at the party try to show him what to do with his new airplane. They say, "See, it flies way up high like this. Whee!" Max says, "I'm going into my room now and take a rest." He comes out a few minutes later bringing with him the two train cars from his bed. They are named Gordon and Emily. Max's Mom and Dad say Gordon and Emily are there for him at bedtime instead of putting a binky in his mouth. Binkies make teeth grow crooked, his parents explain. 
 
 Max drives Gordon and Emily together over the sharply sloping bridge. "Chug, chug, chug," says Gordon. Emily joins in singing, "I think I can I think I can." Percy, the train engine, waits his turn. 
 
@@ -27,7 +27,7 @@ It is Sunday. Max and Zoe are at the playground far downhill from their house. M
 
 "Max, it is Zoe's turn," sounds a voice over by the swings. That's Max's Dad. He sounds serious. Max gets out of the car. Zoe gets in. She can push the car with her feet too. But not as fast. 
 
-Max and a friend he has just met, Lorelai, are swinging high on a rubber tire attached by metal chains to the swing set. Max's Dad and Mom are taking turns pushing the tire in a circle. Lorelai's Dad tells Max's parents that Loralai is two and a half. She is wearing a dress and has blond hair with curls. She likes being with Max.
+Max and a friend he has just met, Lorelai, are swinging high on a rubber tire attached by metal chains to the swing set. Max's Dad and Mom are taking turns pushing the tire in a circle. Lorelai's Dad tells Max's parents that Lorelai is two and a half. She is wearing a dress and has blond hair with curls. She likes being with Max.
 
 Max sings. His song is a blend of bits and pieces he has heard many times. Some of what he sings is impossible to understand. Some of the words that made sense were: "And he called it a COW... you can play with my dishes... my country tis... go away... went up the water... goodnight... goodnight... wah wah, wah, wah... the hills are alive... ...a SHEEP.. who who... woo woo... comin' round the bend..." 
 

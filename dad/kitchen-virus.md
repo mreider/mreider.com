@@ -18,11 +18,11 @@ The next day I met Lefkowitz at the dry cleaners. We were talking about nothing 
 
 Softly, I said - hoping I was wrong, "No sex."
 
-"How'd know?" He didn't wait for an answer. "Yeah, no sex. I even cooked dinner myself complete with candlelight and expensive wine. No effect what-so-ever.
+"How'd you know?" He didn't wait for an answer. "Yeah, no sex. I even cooked dinner myself complete with candlelight and expensive wine. No effect whatsoever.
 
 The book club began ten years ago. There were six original members. So far I had talked to two. Surely it was a coincidence. It had to be coincidence. Popovsky would be a different story. Popovsky closed the door to his study. "There's something weird going on with the book club wives," he began. "Maybe it's modeled on that Greek play - you know where the wives hold out on sex to force their husbands to stop making war." So much for Popovsky.
 
-Yet there remained Slotkin and Saltonstall. Raoul and Myrna Slockin were known as the love birds, a model couple. They never argued in public. They accompanied each other to the dentist. They took turns making the bed. "Funny you should mention it," said Raoul after I had told him about the others. "I thought it might just be Myrna - an adjustment to all that construction turmoil - you know, plaster dust, hammering and so forth. I bought her underwear at Victoria's Secret hoping it would help. It didn't. But why is this happening? Is it only if you put in a new kitchen?"
+Yet there remained Slotkin and Saltonstall. Raoul and Myrna Slotkin were known as the love birds, a model couple. They never argued in public. They accompanied each other to the dentist. They took turns making the bed. "Funny you should mention it," said Raoul after I had told him about the others. "I thought it might just be Myrna - an adjustment to all that construction turmoil - you know, plaster dust, hammering and so forth. I bought her underwear at Victoria's Secret hoping it would help. It didn't. But why is this happening? Is it only if you put in a new kitchen?"
 
 I told him my findings - I had checked with friends having no work done on their house and discovered no changes in their marital life. "Call it the Kitchen Virus," I said. 
 
@@ -42,9 +42,9 @@ I took it that Gloria had insider knowledge of the psychology of the Kitchen vir
 
 I listened closely to her spontaneous remarks, hoping for a sign that might predict the future of our half century old relationship. Basically a modest soul she has maintained a somewhat exalted skepticism about membership in the gendered flock. For years she has confided to me that women are untrustworthy. Now she told me about a round robin of duplicity: Daphne visits Myrna's kitchen and compliments Myrna. Then Daphne tells Beth that the color Myrna's chosen is absolutely wrong. Beth nods sympathetically to Daphne but then tells Gloria she is disgusted by Daphne's countertops. The theme is a familiar one - that Gloria distinguishes herself from other females. This might mean that Gloria's feelings toward me would remain the same. Despite such reassuring possibilities a sense of impending disaster lurked backstage.
 
-I was an entomologist during my working years and have always felt on foreign shores when it came to matters of human social behavior. By contrast, Kurt, a writing for fun trainer at Evergreen Health Club had a wealth of experience listening to life stories from his clients in the old generation. I explained the situation - new kitchens and eleven out of twelve in the book club going the way of no flesh. I told him the big questions on which I was constantly dwelling: what is the role of sex in developing relationship of only fifty years? Is it of central importance? Do couples in their late sixties really need to do it? 
+I was an entomologist during my working years and have always felt on foreign shores when it came to matters of human social behavior. By contrast, Kurt, a fitness trainer at Evergreen Health Club had a wealth of experience listening to life stories from his clients of the older generation. I explained the situation - new kitchens and eleven out of twelve in the book club going the way of no flesh. I told him the big questions on which I was constantly dwelling: what is the role of sex in developing relationship of only fifty years? Is it of central importance? Do couples in their late sixties really need to do it? 
 
-Kurt, the writing for fun trainer, wasn't a bit flustered. Calmly he said he'd heard all this before. "You call it the Kitchen Virus. Yes, it strikes like a highly contagious virus and can spread like wildfire through community. Some - your wife is an example - are resistant but they too are vulnerable in their own particular way. It has to do with aesthetic, he said authoritatively. "You need a specialist, and I know just the person, a friend from Mexico. His name is Pico. He's a fantastic portrait painter His work is magic. He's a modern day Titian. He understands people and what they want - that's why he's so good."
+Kurt, the writing for fun trainer, wasn't a bit flustered. Calmly he said he'd heard all this before. "You call it the Kitchen Virus. Yes, it strikes like a highly contagious virus and can spread like wildfire through community. Some - your wife is an example - are resistant but they too are vulnerable in their own particular way. It has to do with aesthetics, he said authoritatively. "You need a specialist, and I know just the person, a friend from Mexico. His name is Pico. He's a fantastic portrait painter His work is magic. He's a modern day Titian. He understands people and what they want - that's why he's so good."
 
 I was skeptical, "How will he help?" 
 
@@ -52,7 +52,7 @@ I was skeptical, "How will he help?"
 
 At first when I told Gloria about Pico the Mexican Titian it only led to an argument. "It's not **Tee**shun, it's **Tish**un," she said petulantly. But when I explained I had in mind his doing her portrait she said she'd like to meet him.
 
-As an entomologist I earned not a great amount, but I could afford a portrait for my Gloria. It's the royalties from my works of fiction on which I count. Fortunately my books are a success, particularly, The Revenge of the Fire Ants, a morality tale cast in Texas in 2000. The ants, described in meticulous detail, swarm over the corrupt and sadistic leader of a fundamentalist cult, who dies a slow, helpless, death. I got a tidy sum for the movie rights - before it was deep-sixed because of its political overtones.
+As an entomologist I earned not a great amount, but I could afford a portrait for my Gloria. It's on the royalties from my works of fiction that I count. Fortunately my books are a success, particularly, The Revenge of the Fire Ants, a morality tale cast in Texas in 2000. The ants, described in meticulous detail, swarm over the corrupt and sadistic leader of a fundamentalist cult, who dies a slow, helpless, death. I got a tidy sum for the movie rights - before it was deep-sixed because of its political overtones.
 
 Gloria wanted to look like a Titian Venus. She posed on the chaise lounge in the bedroom. And voila, there she was naked with a flutist at her feet. Pico proves to be a genius. We have Gloria - Gloria with about twenty years, and twenty pounds in absentia, just painted away with those magic brush strokes. I could've kissed Pico, but I maintained composure. I could understand why an ancient king was so grateful for the beautiful rendition of his wife that he offered her to the artist - a sensitive portrait can make a woman so happy.
 
@@ -78,7 +78,7 @@ I said, "Well, it made you happy."
 
 "I want a deeper love and respect." I repeated, "You want a deeper love and respect?"
 
-"Yes." That know-nothing writing for fun trainer! I needed a DOCTOR. In desperation I saw a shrink, a friend of Pinsky's. I told him the whole story. I pleaded for answers. Is it viral? What do you think about the role of sex in a developing relationship? I went on and on. With pontifical poise he replied, "Freud asked, 'What do women want?'"
+"Yes." That know-nothing fitness trainer! I needed a DOCTOR. In desperation I saw a shrink, a friend of Pinsky's. I told him the whole story. I pleaded for answers. Is it viral? What do you think about the role of sex in a developing relationship? I went on and on. With pontifical poise he replied, "Freud asked, 'What do women want?'"
 
 "You're saying it's hopeless?"
 

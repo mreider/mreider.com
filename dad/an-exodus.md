@@ -32,7 +32,7 @@ The fellow turned around.
 
 "Well, then, you better pay for it - now." 
 
-He took out his wallet; it was thin and hadn't seen a pay day in a long tome. "I just don't have the money," he said matter-of-factly. "I was really hungry. I can't pay a dime. I have no money at all." 
+He took out his wallet; it was thin and hadn't seen a pay day in a long time. "I just don't have the money," he said matter-of-factly. "I was really hungry. I can't pay a dime. I have no money at all." 
 
 I could feel the blood rushing to my face. It was a mixed emotion. I was angry but felt sympathetic to his condition. "I don't have any money," he repeated unapologetically.
 

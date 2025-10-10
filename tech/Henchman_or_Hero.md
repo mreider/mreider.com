@@ -23,7 +23,7 @@ This is definitely the case for Mike. He now spends most of his time pitching to
 
 ## Reflecting on My Own Experience  
 
-This reminds me of my time as a PM at the Y-Combinator startup, Checkr, wgere I was the second PM, working under a talented but relatively inexperienced PM director. One of our biggest jobs was translating the founder’s vision into an actionable roadmap. Sure. we had our own thoughts and ideas, and eventually we'd influence things directly, but at the beggining our jobs were more about sailing towards the founder's compass point without challenging much of anything. 
+This reminds me of my time as a PM at the Y-Combinator startup, Checkr, where I was the second PM, working under a talented but relatively inexperienced PM director. One of our biggest jobs was translating the founder’s vision into an actionable roadmap. Sure. we had our own thoughts and ideas, and eventually we'd influence things directly, but at the beginning our jobs were more about sailing towards the founder's compass point without challenging much of anything. 
 
 This phase was not about big-picture strategy. It was simple alignment. Our jobs weren't about what to build; we were there to keep the team connected to the bigger picture, especially when the work felt reactive or tedious.
 

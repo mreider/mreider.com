@@ -6,7 +6,7 @@ Deborah is my Aunt. She lives in Seattle.
 
 ![deborah](/images/deb/deb.jpg)
 
-Deb wrote a One Boy about raising her son, Caleb (my cousin), after the passing of her husband and Caleb's father. This is the illustration on the front cover that Caleb created when he was a young boy.
+Deb wrote a book called "One Boy" about raising her son, Caleb (my cousin), after the passing of her husband and Caleb's father. This is the illustration on the front cover that Caleb created when he was a young boy.
 
 ![book cover](/images/deb/oneboy.png)
 

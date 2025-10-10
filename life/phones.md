@@ -4,7 +4,7 @@ author: "Matt Reider"
 date: "2019-08-27"
 ---
 
-We swapped our SIM cards for new ones from Hofer Telecom. Yes, Hofer is both a grocery store and a cell phone company. The plan costs $10 a month for 15 gigs of data and unlimited calls. I’m not sure which felt better—firing AT&T or Comcast. For reference, cable internet here is $39 a month for 100 gigabits.
+We swapped our SIM cards for new ones from Hofer Telecom. Yes, Hofer is both a grocery store and a cell phone company. The plan costs $10 a month for 15 gigs of data and unlimited calls. I’m not sure which felt better—firing AT&T or Comcast. For reference, cable internet here is $39 a month for 100 Mbps.
 
 Now we have these strange (to us) phone numbers that start with +43, the Austrian country code. To stay reachable, we also kept our U.S. numbers by porting them to Google Voice. It’s a cool system: you can transfer any AT&T, Verizon, or other carrier number to Google Voice, and it will ring through the Google Voice app on your phone. So technically, you can call us like we never left. Sort of.
 

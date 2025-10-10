@@ -5,7 +5,7 @@ date:  "2025-01-06"
 image: "/images/matt/Instant_600_Film_Camera.jpeg"
 ---
 
-Like a million other people, I’m trying to write a novel—a character-driven thriller. We’ll see how far I get. Admittedly, I use ChatGPT here and there, but I try to use it lightly. it’s a time-saver for small changes and touch-ups.
+Like a million other people, I’m trying to write a novel—a character-driven thriller. We’ll see how far I get. Admittedly, I use ChatGPT here and there, but I try to use it lightly. It's a time-saver for small changes and touch-ups.
 
 However, ChatGPT is too general-purpose for writers and often resorts to “corporate-speak,” even after you scold it. This led me to try [Sudowrite](https://sudowrite.com), which is built on language models like GPT but devoted to and designed for aspiring authors.
 

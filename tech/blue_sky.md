@@ -36,7 +36,7 @@ So, what happens next? How do they monetize this thing? My guess is they don’t
 
 At some point this leaves two likely options:  
 
-1. **Advertising:** Eventually, they might introduce ads—maybe just on bluesky.social — while claiming users could move to other AT Protocol servers if they don’t like it. IMHO no viable alternatives would exist.
+1. **Advertising:** Eventually, they might introduce ads—maybe just on bluesky.social — while claiming users could move to other AT Protocol servers if they don’t like it. IMHO, no viable alternatives would exist.
 
 2. **Tokenization:** Tokenization: Given Bluesky's crypto-heavy DNA (with the notable exception of Joe Beda, co-creator of Kubernetes—much respect), they might explore tokenizing the platform. Other companies have tried this—Reddit’s NFT experiment fizzled, and Meta’s "Novi" plans never got off the ground—but this is familiar territory for Bluesky’s founders and backers. Tokenizing could also offer incentives for users to create their own servers, with the value of the token increasing as the network grows—provided the token can be exchanged like other cryptocurrencies on platforms like Coinbase. Personally, this side of the tech industry is my least favorite, as it puts speculation over substance.
 

@@ -48,7 +48,7 @@ I'm devoted to the arts.
 
 ** He **
 
-I'm not being critical. You have a way-it's quite charming - of talking about yourself that some would find... indirect. I'm curious to know things. I mean, I know *some* things about you such as that you're an enormously attractive tech writing college graduate in midlife. From your ad I know that. And now that you're sitting right here across from me... I can see that. I can't actually see the tech writing college graduate part, but who would question?
+I'm not being critical. You have a way-it's quite charming - of talking about yourself that some would find... indirect. I'm curious to know things. I mean, I know *some* things about you such as that you're an enormously attractive, college-educated technical writer in midlife. From your ad I know that. And now that you're sitting right here across from me... I can see that. I can't actually see the college-educated technical writer part, but who would question?
 
 As you say, you look great. I can see why, as you said in your ad, you're often asked *Why don't you model?* I want to deepen the relationship. Not all the way, of course. A relationship takes time. *I* know that. But I need something to hang my hat on - in a manner of speaking. You're single?
 
@@ -150,7 +150,7 @@ I'm humbled but not entirely defeated, by the language of writing for personal a
 
 ** He **
 
-Gee. You wouldn't know it talking to you. You seem to have the language down pretty good. Pretty well. You express yourself most... elecutionarily.
+Gee. You wouldn't know it talking to you. You seem to have the language down pretty good. Pretty well. You express yourself most... eloquently.
 
 ** She **
 
@@ -194,11 +194,11 @@ And maybe this-us, actually doing something - might indirectly hurt her. She mig
 
 ** She **
 
-[interrupting] I'm sparking, bold, international. 
+[interrupting] I'm sparkling, bold, international. 
 
 ** He **
 
-You are; you are. Don't misunderstand. It's nothing about you. In not getting cold feet. You're terrific. Matter of fact, I'm turned on - could sweep you right off your feet - if you don't mind the phrase It's just that I've had a chance to *think.* And I'm thinking maybe I'm not mature enough for this. At least, not yet. For you. You being a widow, having grieved, and matured; I'm sure. 
+You are; you are. Don't misunderstand. It's nothing about you. I'm not getting cold feet. You're terrific. Matter of fact, I'm turned on - could sweep you right off your feet - if you don't mind the phrase It's just that I've had a chance to *think.* And I'm thinking maybe I'm not mature enough for this. At least, not yet. For you. You being a widow, having grieved, and matured; I'm sure. 
 
 ** She **
 
@@ -222,7 +222,7 @@ I like a man who admires me.
 
 ** He **
 
-Really! I'm a Stephen Hawkings think-alike, play jazz piano, have a high I.Q.
+Really! I'm a Stephen Hawking look-alike, play jazz piano, have a high I.Q.
 
 ** She **
 
@@ -230,7 +230,7 @@ I'm eager to get to know you.
 
 ** He **
 
-I'm seeking an adventurous and empathic, fit, SWF tech writing for companionship or commitment. 
+I'm seeking an adventurous and empathetic, fit, SWF for companionship or commitment. 
 
 ** She **
 

@@ -5,7 +5,7 @@ date: "2025-02-24"
 image: "/images/matt/rain.png"
 ---
 
-Note: I nolonger believe that LinkedIn should be a refuge from political news, as I said in the post the [following week](more_zelinskiy.md).
+Note: I no longer believe that LinkedIn should be a refuge from political news, as I said in the post the [following week](more_zelinskiy.md).
 
 My office in the Dynatrace Vienna Tower shares space with various companies and organizations, including the embassies of Norway, Australia, and New Zealand. Today, these three embassies organized a brief moment of silence outside our building to honor those who have suffered and lost their lives as a result of the Russian war of aggression in Ukraine. I took the elevator downstairs, stepped outside, and joined everyone in that quiet reflection.
 
