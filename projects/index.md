@@ -2,17 +2,15 @@
 title: "Projects"
 ---
 
-## Gschichtln
+## Plauderei
 
 <span class="tag-badge-simple">Active</span>
 
-Austrian German conversation practice
+German grammar practice
 
-[Download](https://mreider.github.io/Gschichtln/)
+[Website](https://p.mreider.com/)
 
-[Documentation](https://mreider.github.io/Gschichtln/help/)
-
-[Github Repository](https://github.com/mreider/Gschichtln/)
+[Github Repository](https://github.com/mreider/plauderei/)
 
 ---
 
