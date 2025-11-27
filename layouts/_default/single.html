@@ -1,0 +1,26 @@
+{{ define "main" }}
+    
+    {{ if .Params.image }}
+    <img src="{{ .Params.image }}" style="max-width:400px;width:100%;height:auto;" class="img-fluid mb-3 rounded" alt="featured image">
+    {{ end }}
+
+	
+    <h3 class="display-6 mb-4">{{ .Title }}</h3>
+	{{ if .Params.author }}
+	by <a href="/authors/{{ .Params.author | urlize }}/">{{ .Params.author }}</a>
+	{{ end }}
+	{{ if .Date }}
+	<div class="text-muted mb-2">{{ .Date.Format "January 2, 2006" }}</div>
+	{{ end }}
+    
+    {{ if .Description }}
+    <p class="text-muted mb-4">{{ .Description }}</p>
+    {{ end }}
+
+    
+        <div class="mb-5">
+            {{ .Content }}
+        </div>
+    
+
+{{ end }}

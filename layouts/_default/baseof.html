@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {{ if .Params.image }}
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ strings.TrimPrefix "/" .Params.image }}" />
+    {{ else }}
+    <meta property="og:image" content="{{ .Site.BaseURL }}images/matt/matt-ali-maine.png" />
+    {{ end }}
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    {{ if .Params.image }}
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ strings.TrimPrefix "/" .Params.image }}" />
+    {{ else }}
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}images/matt/matt-ali-maine.png" />
+    {{ end }}
+    
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    
+</head>
+<body>
+
+
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>{{ .Site.Title }}</p>
+  </div>
+  <nav class="sidebar-nav">
+    {{ range .Site.Menus.main }}
+    <a class="sidebar-nav-item" href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+  </nav>
+</div>
+
+
+<div class="wrap">
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  
+  <div class="masthead">
+    <div class="container">
+      <h3 class="masthead-title">
+        <a href="/" title="Home">{{ .Site.Title }}</a>
+        <small></small>
+      </h3>
+    </div>
+  </div>
+
+
+<div class="container-lg mt-5 mb-5">
+    {{ block "main" . }}{{ end }}
+
+    <footer class="text-center mt-5">
+        Generated with <a href="https://gohugo.io">Hugo</a>
+    </footer>
+  </div>
+</div>
+
+
+<script src="/js/bootstrap.js"></script>
+
+</body>
+</html>

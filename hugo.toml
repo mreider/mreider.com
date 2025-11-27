@@ -1,0 +1,34 @@
+baseURL = 'https://mreider.com/'
+languageCode = 'en-us'
+title = 'MR'
+theme = ''
+
+[params]
+  description = "Matthew Reider's personal website"
+  author = "Matt Reider"
+
+[taxonomies]
+  author = 'authors'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Tech"
+    url = "/tech/"
+    weight = 2
+  [[menu.main]]
+    name = "Life"
+    url = "/life/"
+    weight = 3
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 4
