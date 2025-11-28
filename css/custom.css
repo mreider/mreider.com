@@ -306,24 +306,7 @@ p {
 
 /* Lists */
 ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-ul li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.5rem;
-    line-height: 1.6;
-}
-
-ul li:before {
-    content: "▶";
-    position: absolute;
-    left: 0;
-    color: #841212;
-    font-weight: bold;
-    font-size: 0.9rem;
+    list-style: circle;
 }
 
 ul, ol {
