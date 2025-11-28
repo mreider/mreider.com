@@ -1,7 +1,6 @@
 baseURL = 'https://mreider.com/'
 languageCode = 'en-us'
 title = 'MR'
-theme = ''
 
 [params]
   description = "Matthew Reider's personal website"
