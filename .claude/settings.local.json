@@ -10,7 +10,8 @@
       "Bash(hugo server:*)",
       "Bash(curl:*)",
       "Bash(git pull:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
