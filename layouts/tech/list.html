@@ -1,0 +1,14 @@
+{{ define "main" }}
+    {{ if .Params.image }}
+    <img src="{{ .Params.image }}" style="max-width:400px;width:100%;height:auto;" class="img-fluid mb-3 rounded" alt="featured image">
+    {{ end }}
+
+    {{ if .Title }}
+    <h3 class="display-6 mb-4">{{ .Title }}</h3>
+    {{ end }}
+
+    <div class="mb-5">
+        {{ .Content }}
+    </div>
+
+{{ end }}

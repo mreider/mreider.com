@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Artists &amp; writers in my family on MR</title>
+    <title>Families on MR</title>
     <link>http://localhost:1313/family/</link>
-    <description>Recent content in Artists &amp; writers in my family on MR</description>
+    <description>Recent content in Families on MR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/family/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Charlotte Reider-Smith</title>
@@ -34,13 +35,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/family/jenny/</guid>
       <description>My focus is with wet plate collodion (tintypes), traditional black and white photography, and commissioned portraiture. She is a member of the Rolls and Tubes Collective and acting Board President of the East Bay Photo Collective.&#xA;There&amp;rsquo;s a lot more information about my work at jennysampson.com.</description>
-    </item>
-    <item>
-      <title>Pete Reider</title>
-      <link>http://localhost:1313/family/pete/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/pete/</guid>
-      <description>Pete was my Dad.&#xA;He died on August 13, 2015. Pete&amp;rsquo;s obituary is here&#xA;He self-published a little book called Stepping Stones a few years before his death. Here&amp;rsquo;s what he wrote on the back cover.&#xA;These writings. produced in the last fifteen years, reflect the journey from work as a psychiatrist to retirement. I retired in 2003. I then became a member of the Osher Foundation Lifelong Learning Institute at Brandeis University and the Fromm Institute at the University of San Francisco.</description>
     </item>
   </channel>
 </rss>

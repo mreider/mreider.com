@@ -3,9 +3,15 @@ title: ""
 image: "/images/matt/matt-ali-maine.png"
 ---
 
-- [Tech & Product Writing](/tech/)
-- [Writing about Life](/life/)
-- [My Github Projects](/projects/)
-- [My Dad's writing](/family/pete-reider/)
-- [Family Stuff](/family/)
-- [About Me](/about-me/)
+# Cultural Reflections & Other Thoughts
+
+This site focuses on my reflections about books, podcasts, films, and other media I'm consuming, along with occasional writing about tech and life.
+
+## Currently Listening/Reading
+- **[Serial: The Good Whale](/reflections/the-good-whale/)** - Following Keiko the orca's story
+
+## Quick Links
+- [All Reflections](/reflections/) - thoughts on media and culture
+- [Tech](/tech/) - technology and product thoughts
+- [Life](/life/) - personal observations and travel stories
+- [About](/about/) - projects, family, and more about me

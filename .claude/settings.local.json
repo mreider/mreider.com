@@ -3,7 +3,12 @@
     "allow": [
       "Bash(textutil:*)",
       "Read(//tmp/**)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(while read dir)",
+      "Bash(do echo \"Moving remaining content: $dir\")",
+      "Bash(done)",
+      "Bash(hugo server:*)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []
