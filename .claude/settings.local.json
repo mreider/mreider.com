@@ -8,7 +8,9 @@
       "Bash(do echo \"Moving remaining content: $dir\")",
       "Bash(done)",
       "Bash(hugo server:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(git pull:*)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []
