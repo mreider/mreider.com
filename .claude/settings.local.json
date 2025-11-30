@@ -11,7 +11,8 @@
       "Bash(curl:*)",
       "Bash(git pull:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(ssh-add:*)"
     ],
     "deny": [],
     "ask": []
