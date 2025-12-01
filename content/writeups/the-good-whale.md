@@ -8,7 +8,7 @@ image: "/images/writeups/goodwhale.png"
 
 Before you start reading this, know that I'm about to spoil the story. If you're interested in listening to the podcast, stop here.
 
-I just finished [Good Whale](https://www.nytimes.com/interactive/2024/podcasts/serial-good-whale.html), a Serial podcast about the whale that starred in Free Willy. After the movie wrapped, activists spent a decade trying to reintroduce Keiko to the wild. It's an emotional listen. You become attached to this killer whale along the way. Most people will. Some will also find themselves troubled by how humans interfere with the natural course of other species.
+I just finished [Good Whale](https://www.nytimes.com/interactive/2024/podcasts/serial-good-whale.html), a Serial podcast about the orca that starred in Free Willy. After the movie wrapped, activists spent a decade trying to reintroduce Keiko to the wild. It's an emotional listen. You become attached to this killer whale along the way.
 
 There are so many strange layers to this story. First, there's the obvious irony: Keiko was the star of Free Willy, but the exact traits that made him a great movie whale made him a terrible candidate for rewilding. He never fit in with the pods he eventually encountered in Iceland. He was always alone.
 
