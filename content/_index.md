@@ -14,4 +14,4 @@ This site focuses on my reflections about books, podcasts, films, and other medi
 - [All Reflections](/reflections/) - thoughts on media and culture
 - [Tech](/tech/) - technology and product thoughts
 - [Life](/life/) - personal observations and travel stories
-- [About](/about/) - projects, family, and more about me
+- [About](/about/) - about me, my family and some projects
