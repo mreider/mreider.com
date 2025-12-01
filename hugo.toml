@@ -20,8 +20,8 @@ title = 'MR'
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "Reflections"
-    url = "/reflections/"
+    name = "Writeups"
+    url = "/writeups/"
     weight = 2
   [[menu.main]]
     name = "Life"

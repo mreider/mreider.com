@@ -5,8 +5,8 @@ type: "page"
 
 All posts by Matt Reider:
 
-## Reflections
-- [The Good Whale](/reflections/the-good-whale/) - November 30, 2025
+## Writeups
+- [The Good Whale](/writeups/the-good-whale/) - November 30, 2025
 
 ## Life
 - [On Ambivalence](/life/on-ambivalence/) - December 2, 2024
