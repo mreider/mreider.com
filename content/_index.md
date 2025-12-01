@@ -3,7 +3,7 @@ title: ""
 image: "/images/matt/matt-ali-maine.png"
 ---
 
-Thoughts on books, podcasts, and films, plus tech and life.
+Writeups, tech, and life.
 
 ## Currently Reading
 - **[Leonard and Hungry Paul](/writeups/leonard-and-hungry-paul/)** - Coming soon
