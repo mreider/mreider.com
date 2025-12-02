@@ -93,16 +93,18 @@
 
 .fitness-table th {
  background-color: #f8f9fa;
- padding: 12px;
+ padding: 12px 8px;
  text-align: center;
  font-weight: 600;
  border: 1px solid #dee2e6;
+ font-size: 14px;
 }
 
 .fitness-table td {
- padding: 8px;
+ padding: 10px 8px;
  text-align: center;
  border: 1px solid #dee2e6;
+ vertical-align: middle;
 }
 
 .week-label {
@@ -110,29 +112,46 @@
  background-color: #f8f9fa;
 }
 
+.activity-icon {
+ font-size: 16px;
+ color: #6c757d;
+}
+
+.day-cell {
+ min-width: 60px;
+}
+
+.date-label {
+ font-size: 11px;
+ color: #6c757d;
+ margin-bottom: 6px;
+}
+
+.day-boxes {
+ display: flex;
+ gap: 4px;
+ justify-content: center;
+ align-items: center;
+}
+
 .day-box {
- width: 30px;
- height: 30px;
- border-radius: 4px;
+ width: 18px;
+ height: 18px;
+ border-radius: 3px;
  border: 2px solid #e9ecef;
- margin: 0 auto;
+ display: inline-block;
 }
 
 .day-box.active {
  background-color: #007bff;
  border-color: #007bff;
 }
-
-.date-label {
- font-size: 12px;
- color: #6c757d;
- margin-bottom: 4px;
-}
 &lt;/style&gt;
 &lt;table class="fitness-table"&gt;
  &lt;thead&gt;
  &lt;tr&gt;
- &lt;th&gt;Week&lt;/th&gt;
+ &lt;th style="width: 60px;"&gt;Week&lt;/th&gt;
+ &lt;th style="width: 40px;"&gt;&lt;/th&gt;
  &lt;th&gt;Sun&lt;/th&gt;
  &lt;th&gt;Mon&lt;/th&gt;
  &lt;th&gt;Tue&lt;/th&gt;
@@ -144,65 +163,199 @@
  &lt;/thead&gt;
  &lt;tbody&gt;
  &lt;tr&gt;
- &lt;td class="week-label"&gt;2&lt;/td&gt;
- &lt;td&gt;
+ &lt;td class="week-label" rowspan="2"&gt;2&lt;/td&gt;
+ &lt;td class="activity-icon"&gt;&lt;i class="fas fa-dumbbell"&gt;&lt;/i&gt;&lt;/td&gt;
+ &lt;td class="day-cell"&gt;
  &lt;div class="date-label"&gt;Dec 8&lt;/div&gt;
+ &lt;div class="day-boxes"&gt;
  &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  &lt;/td&gt;
- &lt;td&gt;
+ &lt;td class="day-cell"&gt;
  &lt;div class="date-label"&gt;Dec 9&lt;/div&gt;
+ &lt;div class="day-boxes"&gt;
  &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  &lt;/td&gt;
- &lt;td&gt;
+ &lt;td class="day-cell"&gt;
  &lt;div class="date-label"&gt;Dec 10&lt;/div&gt;
+ &lt;div class="day-boxes"&gt;
  &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  &lt;/td&gt;
- &lt;td&gt;
+ &lt;td class="day-cell"&gt;
  &lt;div class="date-label"&gt;Dec 11&lt;/div&gt;
+ &lt;div class="day-boxes"&gt;
  &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  &lt;/td&gt;
- &lt;td&gt;
+ &lt;td class="day-cell"&gt;
  &lt;div class="date-label"&gt;Dec 12&lt;/div&gt;
+ &lt;div class="day-boxes"&gt;
  &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  &lt;/td&gt;
- &lt;td&gt;
+ &lt;td class="day-cell"&gt;
  &lt;div class="date-label"&gt;Dec 13&lt;/div&gt;
+ &lt;div class="day-boxes"&gt;
  &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  &lt;/td&gt;
- &lt;td&gt;
+ &lt;td class="day-cell"&gt;
  &lt;div class="date-label"&gt;Dec 14&lt;/div&gt;
+ &lt;div class="day-boxes"&gt;
  &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  &lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
- &lt;td class="week-label"&gt;1&lt;/td&gt;
- &lt;td&gt;
+ &lt;td class="activity-icon"&gt;&lt;i class="fas fa-apple-alt"&gt;&lt;/i&gt;&lt;/td&gt;
+ &lt;td class="day-cell"&gt;
+ &lt;div class="day-boxes"&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td class="day-cell"&gt;
+ &lt;div class="day-boxes"&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td class="day-cell"&gt;
+ &lt;div class="day-boxes"&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td class="day-cell"&gt;
+ &lt;div class="day-boxes"&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td class="day-cell"&gt;
+ &lt;div class="day-boxes"&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td class="day-cell"&gt;
+ &lt;div class="day-boxes"&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td class="day-cell"&gt;
+ &lt;div class="day-boxes"&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td class="week-label" rowspan="2"&gt;1&lt;/td&gt;
+ &lt;td class="activity-icon"&gt;&lt;i class="fas fa-dumbbell"&gt;&lt;/i&gt;&lt;/td&gt;
+ &lt;td class="day-cell"&gt;
  &lt;div class="date-label"&gt;Dec 1&lt;/div&gt;
+ &lt;div class="day-boxes"&gt;
  &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  &lt;/td&gt;
- &lt;td&gt;
+ &lt;td class="day-cell"&gt;
  &lt;div class="date-label"&gt;Dec 2&lt;/div&gt;
+ &lt;div class="day-boxes"&gt;
  &lt;div class="day-box active"&gt;&lt;/div&gt;
+ &lt;div class="day-box active"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  &lt;/td&gt;
- &lt;td&gt;
+ &lt;td class="day-cell"&gt;
  &lt;div class="date-label"&gt;Dec 3&lt;/div&gt;
+ &lt;div class="day-boxes"&gt;
  &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  &lt;/td&gt;
- &lt;td&gt;
+ &lt;td class="day-cell"&gt;
  &lt;div class="date-label"&gt;Dec 4&lt;/div&gt;
+ &lt;div class="day-boxes"&gt;
  &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  &lt;/td&gt;
- &lt;td&gt;
+ &lt;td class="day-cell"&gt;
  &lt;div class="date-label"&gt;Dec 5&lt;/div&gt;
+ &lt;div class="day-boxes"&gt;
  &lt;div class="day-box active"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  &lt;/td&gt;
- &lt;td&gt;
+ &lt;td class="day-cell"&gt;
  &lt;div class="date-label"&gt;Dec 6&lt;/div&gt;
+ &lt;div class="day-boxes"&gt;
  &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  &lt;/td&gt;
- &lt;td&gt;
+ &lt;td class="day-cell"&gt;
  &lt;div class="date-label"&gt;Dec 7&lt;/div&gt;
+ &lt;div class="day-boxes"&gt;
  &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td class="activity-icon"&gt;&lt;i class="fas fa-apple-alt"&gt;&lt;/i&gt;&lt;/td&gt;
+ &lt;td class="day-cell"&gt;
+ &lt;div class="day-boxes"&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td class="day-cell"&gt;
+ &lt;div class="day-boxes"&gt;
+ &lt;div class="day-box active"&gt;&lt;/div&gt;
+ &lt;div class="day-box active"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td class="day-cell"&gt;
+ &lt;div class="day-boxes"&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td class="day-cell"&gt;
+ &lt;div class="day-boxes"&gt;
+ &lt;div class="day-box active"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td class="day-cell"&gt;
+ &lt;div class="day-boxes"&gt;
+ &lt;div class="day-box active"&gt;&lt;/div&gt;
+ &lt;div class="day-box active"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td class="day-cell"&gt;
+ &lt;div class="day-boxes"&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td class="day-cell"&gt;
+ &lt;div class="day-boxes"&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  &lt;/td&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
