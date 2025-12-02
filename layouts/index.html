@@ -7,15 +7,11 @@
             <p class="welcome-message">My little collection of writing</p>
         </div>
         {{ end }}
-
-        <div class="home-navigation">
-            {{ .Content }}
-        </div>
     </div>
 
     {{ $latestPost := first 1 (where (where site.RegularPages.ByDate.Reverse "Type" "in" (slice "writeups" "tech" "life")) "Params.status" "ne" "draft") }}
     {{ range $latestPost }}
-    <div class="latest-post-section mb-3">
+    <div class="latest-post-section mb-4">
         <h3 class="latest-post-title mb-3">Latest Post</h3>
         <div class="latest-post d-flex align-items-start">
             <div class="thumbnail-container me-3 flex-shrink-0">
@@ -43,5 +39,21 @@
         </div>
     </div>
     {{ end }}
+
+    <div class="home-navigation">
+        <style>
+        .home-navigation ul {
+            columns: 2;
+            column-gap: 2rem;
+            list-style: none;
+            padding: 0;
+        }
+        .home-navigation li {
+            break-inside: avoid;
+            margin-bottom: 0.5rem;
+        }
+        </style>
+        {{ .Content }}
+    </div>
 
 {{ end }}
