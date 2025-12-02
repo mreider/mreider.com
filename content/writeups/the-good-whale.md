@@ -1,12 +1,12 @@
 ---
 title: "The Good Whale"
-description: "Thoughts on Serial's podcast about Keiko the orca"
 author: "Matt Reider"
 date: "2025-11-30"
 image: "/images/writeups/goodwhale.png"
+status: "final"
 ---
 
-[Good Whale](https://www.nytimes.com/interactive/2024/podcasts/serial-good-whale.html) is an engaging and emotional Serial podcast series about the 10+ year effort to reintroduce Keiko, the killer whale that starred in Free Willy, into the open ocean.
+[The Good Whale](https://www.nytimes.com/interactive/2024/podcasts/serial-good-whale.html) is an engaging and emotional Serial podcast series about the 10+ year effort to reintroduce Keiko, the killer whale that starred in Free Willy, into the open ocean.
 
 There are no spoilers in this writeup.
 

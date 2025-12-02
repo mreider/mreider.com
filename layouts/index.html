@@ -13,7 +13,7 @@
         </div>
     </div>
 
-    {{ $latestPost := first 1 (where site.RegularPages.ByDate.Reverse "Type" "in" (slice "writeups" "tech" "life")) }}
+    {{ $latestPost := first 1 (where (where site.RegularPages.ByDate.Reverse "Type" "in" (slice "writeups" "tech" "life")) "Params.status" "ne" "draft") }}
     {{ range $latestPost }}
     <div class="latest-post-section mb-3">
         <h3 class="latest-post-title mb-3">Latest Post</h3>
