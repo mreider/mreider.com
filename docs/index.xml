@@ -83,7 +83,130 @@
 &lt;p&gt;Deb wrote a One Boy about raising her son, Caleb (my cousin), after the passing of her husband and Caleb&amp;rsquo;s father. This is the illustration on the front cover that Caleb created when he was a young boy.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://mreider.com/images/deb/oneboy.png" alt="book cover"&gt;&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s what she wrote on the back cover:&lt;/p&gt;
-&lt;p&gt;I consult about and edit early stages of books, as a developmental editor. I did this for faculty at the University of Washington Medical School, and other books, including Aaron Dixon&amp;rsquo;s account of his experience as a leader with the Black Panther Party, and a book by Jerry Mander of San Francisco.&lt;/p&gt;</description></item><item><title>Janet Reider</title><link>https://mreider.com/family/janet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mreider.com/family/janet/</guid><description>&lt;p&gt;Digital has replaced film. The Hasselblad snoozes on a closet shelf. I am more apt to capture aspects of people — young mothers in rapt conversation while their children argue over a plastic toy, the focused energy of men on a park bench talking politics and dedication of a sunbather on a bridge.&lt;/p&gt;
+&lt;p&gt;I consult about and edit early stages of books, as a developmental editor. I did this for faculty at the University of Washington Medical School, and other books, including Aaron Dixon&amp;rsquo;s account of his experience as a leader with the Black Panther Party, and a book by Jerry Mander of San Francisco.&lt;/p&gt;</description></item><item><title>Fitness</title><link>https://mreider.com/fitness/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mreider.com/fitness/</guid><description>&lt;style&gt;
+.fitness-table {
+ width: 100%;
+ border-collapse: collapse;
+ margin: 20px 0;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.fitness-table th {
+ background-color: #f8f9fa;
+ padding: 12px;
+ text-align: center;
+ font-weight: 600;
+ border: 1px solid #dee2e6;
+}
+
+.fitness-table td {
+ padding: 8px;
+ text-align: center;
+ border: 1px solid #dee2e6;
+}
+
+.week-label {
+ font-weight: 600;
+ background-color: #f8f9fa;
+}
+
+.day-box {
+ width: 30px;
+ height: 30px;
+ border-radius: 4px;
+ border: 2px solid #e9ecef;
+ margin: 0 auto;
+}
+
+.day-box.active {
+ background-color: #007bff;
+ border-color: #007bff;
+}
+
+.date-label {
+ font-size: 12px;
+ color: #6c757d;
+ margin-bottom: 4px;
+}
+&lt;/style&gt;
+&lt;table class="fitness-table"&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Week&lt;/th&gt;
+ &lt;th&gt;Sun&lt;/th&gt;
+ &lt;th&gt;Mon&lt;/th&gt;
+ &lt;th&gt;Tue&lt;/th&gt;
+ &lt;th&gt;Wed&lt;/th&gt;
+ &lt;th&gt;Thu&lt;/th&gt;
+ &lt;th&gt;Fri&lt;/th&gt;
+ &lt;th&gt;Sat&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td class="week-label"&gt;2&lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="date-label"&gt;Dec 8&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="date-label"&gt;Dec 9&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="date-label"&gt;Dec 10&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="date-label"&gt;Dec 11&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="date-label"&gt;Dec 12&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="date-label"&gt;Dec 13&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="date-label"&gt;Dec 14&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td class="week-label"&gt;1&lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="date-label"&gt;Dec 1&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="date-label"&gt;Dec 2&lt;/div&gt;
+ &lt;div class="day-box active"&gt;&lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="date-label"&gt;Dec 3&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="date-label"&gt;Dec 4&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="date-label"&gt;Dec 5&lt;/div&gt;
+ &lt;div class="day-box active"&gt;&lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="date-label"&gt;Dec 6&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="date-label"&gt;Dec 7&lt;/div&gt;
+ &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;</description></item><item><title>Janet Reider</title><link>https://mreider.com/family/janet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mreider.com/family/janet/</guid><description>&lt;p&gt;Digital has replaced film. The Hasselblad snoozes on a closet shelf. I am more apt to capture aspects of people — young mothers in rapt conversation while their children argue over a plastic toy, the focused energy of men on a park bench talking politics and dedication of a sunbather on a bridge.&lt;/p&gt;
 &lt;p&gt;There&amp;rsquo;s a lot more information about my work at &lt;a href="https://janetreider.com"&gt;janetreider.com&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://mreider.com/images/janet/janet.png" alt="Janet"&gt;&lt;/p&gt;</description></item><item><title>Jenny Sampson</title><link>https://mreider.com/family/jenny/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mreider.com/family/jenny/</guid><description>&lt;p&gt;My focus is with wet plate collodion (tintypes), traditional black and white photography, and commissioned portraiture. She is a member of the &lt;a href="https://www.instagram.com/rolls_and_tubes/"&gt;Rolls and Tubes Collective&lt;/a&gt; and acting Board President of the &lt;a href="https://www.ebpco.org/"&gt;East Bay Photo Collective&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;There&amp;rsquo;s a lot more information about my work at &lt;a href="https://jennysampson.com"&gt;jennysampson.com&lt;/a&gt;.&lt;/p&gt;
