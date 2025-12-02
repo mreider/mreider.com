@@ -6,14 +6,21 @@
     <description>Recent content on MR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Leonard and Hungry Paul</title>
+      <link>http://localhost:1313/writeups/leonard-and-hungry-paul/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writeups/leonard-and-hungry-paul/</guid>
+      <description>Coming soon - currently reading this book.</description>
+    </item>
+    <item>
       <title>The Good Whale</title>
-      <link>http://localhost:1313/reflections/the-good-whale/</link>
+      <link>http://localhost:1313/writeups/the-good-whale/</link>
       <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/reflections/the-good-whale/</guid>
-      <description>I&amp;rsquo;m currently listening to Serial&amp;rsquo;s The Good Whale, about Keiko the orca.&#xA;Reflections coming soon.</description>
+      <guid>http://localhost:1313/writeups/the-good-whale/</guid>
+      <description>Good Whale is an engaging and emotional Serial podcast series about the 10+ year effort to reintroduce Keiko, the killer whale that starred in Free Willy, into the open ocean.&#xA;There are no spoilers in this writeup.&#xA;Thoughts It reminded me of This American Life (no coincidence, as Ira Glass is one of the producers) in how it tells a story by interviewing the people involved and reflecting on their conflicting views to show that there isn&amp;rsquo;t one way of looking at the story.</description>
     </item>
     <item>
       <title>Why AI won&#39;t take control</title>
@@ -350,6 +357,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/family/deb/</guid>
       <description>Deborah is my Aunt. She lives in Seattle.&#xA;Deb wrote a One Boy about raising her son, Caleb (my cousin), after the passing of her husband and Caleb&amp;rsquo;s father. This is the illustration on the front cover that Caleb created when he was a young boy.&#xA;Here&amp;rsquo;s what she wrote on the back cover:&#xA;I consult about and edit early stages of books, as a developmental editor. I did this for faculty at the University of Washington Medical School, and other books, including Aaron Dixon&amp;rsquo;s account of his experience as a leader with the Black Panther Party, and a book by Jerry Mander of San Francisco.</description>
+    </item>
+    <item>
+      <title>Fitness</title>
+      <link>http://localhost:1313/fitness/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fitness/</guid>
+      <description> Week Sun Mon Tue Wed Thu Fri Sat 2 Dec 8 Dec 9 Dec 10 Dec 11 Dec 12 Dec 13 Dec 14 1 Dec 1 Dec 2 Dec 3 Dec 4 Dec 5 Dec 6 Dec 7 </description>
     </item>
     <item>
       <title>Janet Reider</title>

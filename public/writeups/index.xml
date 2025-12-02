@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writeups on MR</title>
+    <link>http://localhost:1313/writeups/</link>
+    <description>Recent content in Writeups on MR</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/writeups/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leonard and Hungry Paul</title>
+      <link>http://localhost:1313/writeups/leonard-and-hungry-paul/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writeups/leonard-and-hungry-paul/</guid>
+      <description>Coming soon - currently reading this book.</description>
+    </item>
+    <item>
+      <title>The Good Whale</title>
+      <link>http://localhost:1313/writeups/the-good-whale/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writeups/the-good-whale/</guid>
+      <description>Good Whale is an engaging and emotional Serial podcast series about the 10+ year effort to reintroduce Keiko, the killer whale that starred in Free Willy, into the open ocean.&#xA;There are no spoilers in this writeup.&#xA;Thoughts It reminded me of This American Life (no coincidence, as Ira Glass is one of the producers) in how it tells a story by interviewing the people involved and reflecting on their conflicting views to show that there isn&amp;rsquo;t one way of looking at the story.</description>
+    </item>
+  </channel>
+</rss>

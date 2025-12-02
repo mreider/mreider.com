@@ -1,16 +1,47 @@
 {{ define "main" }}
-    
-    {{ if .Params.image }}
-    <img src="{{ .Params.image }}" style="max-width:400px;width:100%;height:auto;" class="img-fluid mb-3 rounded" alt="featured image">
-    {{ end }}
 
-	
-    
+    <div class="home-hero mb-3">
+        {{ if .Params.image }}
+        <div class="text-center mb-3">
+            <img src="{{ .Params.image }}" class="hero-image rounded mb-3" alt="featured image">
+            <p class="welcome-message">My little collection of writing</p>
+        </div>
+        {{ end }}
 
-    
-        <div class="mb-5">
+        <div class="home-navigation">
             {{ .Content }}
         </div>
-    
+    </div>
+
+    {{ $latestPost := first 1 (where site.RegularPages.ByDate.Reverse "Type" "in" (slice "writeups" "tech" "life")) }}
+    {{ range $latestPost }}
+    <div class="latest-post-section mb-3">
+        <h3 class="latest-post-title mb-3">Latest Post</h3>
+        <div class="latest-post d-flex align-items-start">
+            <div class="thumbnail-container me-3 flex-shrink-0">
+                {{ if .Params.image }}
+                <div class="post-thumbnail" style="background-image: url('{{ .Params.image }}');"></div>
+                {{ else }}
+                <div class="post-thumbnail icon-thumbnail">
+                    <i class="fas fa-book"></i>
+                </div>
+                {{ end }}
+            </div>
+            <div class="flex-grow-1">
+                <h4 class="mb-2">
+                    <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
+                </h4>
+                <div class="text-muted mb-2 small">
+                    {{ .Date.Format "January 2, 2006" }} • {{ .Section | title }}
+                </div>
+                {{ if .Description }}
+                <p class="mb-0 text-muted">{{ .Description }}</p>
+                {{ else if .Summary }}
+                <p class="mb-0 text-muted">{{ .Summary | truncate 200 }}</p>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    {{ end }}
 
 {{ end }}

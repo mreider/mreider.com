@@ -11,4 +11,34 @@
         {{ .Content }}
     </div>
 
+    {{ if .Pages }}
+    <div class="mb-5">
+        {{ $icons := slice "fas fa-book" "fas fa-pen-nib" "fas fa-dove" "fas fa-feather" "fas fa-scroll" "fas fa-bookmark" "fas fa-leaf" "fas fa-heart" "fas fa-star" "fas fa-lightbulb" }}
+        {{ range $index, $page := .Pages.ByDate.Reverse }}
+        <div class="mb-4 d-flex align-items-start">
+            <div class="thumbnail-container me-3 flex-shrink-0">
+                {{ if $page.Params.image }}
+                <div class="post-thumbnail" style="background-image: url('{{ $page.Params.image }}');"></div>
+                {{ else }}
+                {{ $iconIndex := mod $index (len $icons) }}
+                {{ $icon := index $icons $iconIndex }}
+                <div class="post-thumbnail icon-thumbnail">
+                    <i class="{{ $icon }}"></i>
+                </div>
+                {{ end }}
+            </div>
+            <div class="flex-grow-1">
+                <h4 class="mb-2"><a href="{{ $page.RelPermalink }}" class="text-decoration-none">{{ $page.Title }}</a></h4>
+                {{ if $page.Date }}
+                <div class="text-muted mb-2 small">{{ $page.Date.Format "January 2, 2006" }}</div>
+                {{ end }}
+                {{ if $page.Description }}
+                <p class="mb-0 text-muted">{{ $page.Description }}</p>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+
 {{ end }}

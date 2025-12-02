@@ -26,6 +26,10 @@ I'm also here:
 
 [View all my GitHub projects](/projects/)
 
+## Fitness
+
+[Fitness tracker](/fitness/)
+
 ## Family Writing
 
 - [Pete Reider (my dad)](/family/pete-reider/) - A collection of my father's short stories and writing
