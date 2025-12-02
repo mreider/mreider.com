@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on MR</title>
-    <link>http://localhost:1313/authors/</link>
+    <link>https://mreider.com/authors/</link>
     <description>Recent content in Authors on MR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mreider.com/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Matt Reider</title>
-      <link>http://localhost:1313/authors/matt-reider/</link>
+      <link>https://mreider.com/authors/matt-reider/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/matt-reider/</guid>
+      <guid>https://mreider.com/authors/matt-reider/</guid>
       <description>All posts by Matt Reider:&#xA;Writeups The Good Whale - November 30, 2025 Life On Ambivalence - December 2, 2024 Doing It for Yourself - November 29, 2024 Henchman or Hero - November 26, 2024 Lost and Found - May 31, 2024 H2Oh No - March 2, 2024 Going Viral - August 24, 2022 More Than 20 Questions - April 18, 2022 A Year Went By - March 10, 2022 Teamwork in Corfu - September 6, 2020 Wasser - September 6, 2020 Ode to King Fahrrad - June 25, 2020 It&amp;rsquo;s Snowing - December 2, 2019 Infinite Tunnels - October 20, 2019 Trader Joe&amp;rsquo;s Bros - October 20, 2019 Memories of Vermont - September 19, 2019 The Everything Animal - September 12, 2019 Urfahraner Market - October 7, 2019 Rolling Benzo - September 6, 2019 No Comprendo - August 31, 2019 Week 2 - August 29, 2019 Phones - August 27, 2019 Österreich - August 26, 2019 Tech Why AI Won&amp;rsquo;t Take Control - May 10, 2025 More Zelenskiy - March 2, 2025 Email Subscriptions from Static Blogs - February 17, 2025 LinkedIn Refuge - February 24, 2025 Krems Static Site Generator - February 16, 2025 SudoWrite, ChatGPT and AI Slop - January 6, 2025 Trade-off as Strategy - January 1, 2025 BlueScope is Almost Like 2012 Twitter - December 17, 2024 VMware, Pivotal, and the Rise of Kubernetes - November 28, 2024 Building Quacker: A Weekend Project with ChatGPT - November 26, 2024 Tales from Engine Yard - October 19, 2024 </description>
     </item>
     <item>
       <title>Pete Reider</title>
-      <link>http://localhost:1313/authors/pete-reider/</link>
+      <link>https://mreider.com/authors/pete-reider/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/pete-reider/</guid>
+      <guid>https://mreider.com/authors/pete-reider/</guid>
       <description>Stories and writings by Pete Reider (1936-2015):&#xA;Grandmother - August 18, 1998 Nightingales - November 1, 1998 Aunt Ethel - December 2, 2005 Kitchen Virus - July 23, 2005 Personals - May 11, 2007 An Exodus - November 8, 2007 Basketball in the Catskills - August 6, 2010 Max and Zoe - March 12, 2010 An Afternoon at the Healthclub - April 28, 2011 One Hundred and Four - July 12, 2011 Am I Blue - February 7, 2012 Time Warp - March 2, 2013 Arthur Elliott (Pete) Reider - Obituary - August 17, 2015 </description>
     </item>
   </channel>
