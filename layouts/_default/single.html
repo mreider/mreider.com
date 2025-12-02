@@ -23,15 +23,15 @@
         </div>
     
     <nav class="mt-5 pt-4 border-top">
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between gap-3">
             <div>
                 {{ with .PrevInSection }}
-                <a href="{{ .Permalink }}" class="btn btn-outline-secondary">← Previous: {{ .Title }}</a>
+                <a href="{{ .Permalink }}" class="btn btn-sm btn-outline-secondary">← Previous: {{ .Title }}</a>
                 {{ end }}
             </div>
             <div>
                 {{ with .NextInSection }}
-                <a href="{{ .Permalink }}" class="btn btn-outline-secondary">Next: {{ .Title }} →</a>
+                <a href="{{ .Permalink }}" class="btn btn-sm btn-outline-secondary">Next: {{ .Title }} →</a>
                 {{ end }}
             </div>
         </div>

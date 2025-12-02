@@ -1,0 +1,40 @@
+name: Update Fitness Tracker
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Date (YYYY-MM-DD)'
+        required: true
+      workout:
+        description: 'Workout completed (true/false)'
+        required: true
+        default: 'false'
+      diet:
+        description: 'Healthy diet (true/false)'
+        required: true
+        default: 'false'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update fitness tracker
+        run: |
+          python3 .github/scripts/update_fitness.py "${{ github.event.inputs.date }}" "${{ github.event.inputs.workout }}" "${{ github.event.inputs.diet }}"
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add content/fitness.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update fitness tracker for ${{ github.event.inputs.date }}"
+            git push
+          fi
