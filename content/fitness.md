@@ -139,8 +139,8 @@ title: "Fitness"
       <td class="activity-icon"><i class="fas fa-apple-alt"></i></td>
       <td class="day-cell">
         <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
+          <div class="day-box active"></div>
+          <div class="day-box active"></div>
         </div>
       </td>
       <td class="day-cell">
