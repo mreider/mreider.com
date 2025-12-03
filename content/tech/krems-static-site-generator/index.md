@@ -68,7 +68,7 @@ docs/css
 docs/js
 ```
 
-Finally, you can run the website locally by running `krems —run`.
+Finally, you can run the website locally by running `krems  -run`.
 
 # Exploring the demo site
 
@@ -95,7 +95,7 @@ type: list
 ---
 ```
 
-This is a list page. It has no content—only front matter. List pages automatically generate a list of links to HTML pages in the same directory. In this case, there are two other pages.
+This is a list page. It has no content -only front matter. List pages automatically generate a list of links to HTML pages in the same directory. In this case, there are two other pages.
 
 Since Krems is designed for blogs, not traditional websites, a list page only includes links to pages that have dates in their front matter. If you don’t want a file to appear in the list, simply omit the date.
 
@@ -140,7 +140,7 @@ Once you've built your blog by running:
 krems --build
 ```
 
-all the generated HTML files will be in the docs folder—exactly where GitHub Pages expects them. A CNAME file will also be created in docs/, allowing you to set up a custom domain.
+all the generated HTML files will be in the docs folder -exactly where GitHub Pages expects them. A CNAME file will also be created in docs/, allowing you to set up a custom domain.
 
 Setting up Github Pages is pretty straightforward but Github's documentation is not great. 
 
@@ -156,6 +156,6 @@ To use a custom domain follow Github's [guide](https://docs.github.com/en/pages/
 
 If you run into issues with Krems or have feature suggestions, feel free to use the [Issues section in the GitHub repo](https://github.com/mreider/krems/issues).
 
-If you’d like to contribute—especially by improving the auto-generated CSS template (which currently just uses Bootstrap)—that would be a nice enhancement.
+If you’d like to contribute -especially by improving the auto-generated CSS template (which currently just uses Bootstrap) -that would be a nice enhancement.
 
 

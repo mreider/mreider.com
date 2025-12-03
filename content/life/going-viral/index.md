@@ -25,7 +25,7 @@ Quarantine continued in Vermont at the [Waybury Inn](https://www.wayburyinn.com/
 
 ![Wedding](/images/matt/wedding.png)
 
-Things settled down, virus-wise, just in time for a family boating trip on Lake Champlain. Thirty years ago, when I lived in Burlington, I never spent much time on the lake. It’s enormous—200 km long, 20 km wide, with nearly 1,000 km of shoreline stretching across New York, Vermont, and Quebec.
+Things settled down, virus-wise, just in time for a family boating trip on Lake Champlain. Thirty years ago, when I lived in Burlington, I never spent much time on the lake. It’s enormous -200 km long, 20 km wide, with nearly 1,000 km of shoreline stretching across New York, Vermont, and Quebec.
 
 ![Champlain again](/images/matt/champlain2.png)
 

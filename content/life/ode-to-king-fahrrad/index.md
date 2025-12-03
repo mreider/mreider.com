@@ -9,13 +9,13 @@ The word *“Fahrrad”* reminds me of King Fahd of Saudi Arabia. But no, it’s
 
 Last fall, I bought a used bicycle for €170 from [B7 Cycling Center](https://goo.gl/maps/ijv5ky1szcRvYkSu5), a shop that hires former inmates and trains them as mechanics. The brand name on my bike’s frame says *“Heavy Tool.”* Literal translations are hilarious, aren’t they?
 
-My friend Florian—one of a trillion Florians—taught me an alternative name for *Fahrrad*. The word is *“Drahtesel,”* which translates to “wire donkey.” That’s good stuff.
+My friend Florian -one of a trillion Florians -taught me an alternative name for *Fahrrad*. The word is *“Drahtesel,”* which translates to “wire donkey.” That’s good stuff.
 
 Here’s my donkey:
 
 ![My Bike](/images/matt/1_tXar3KaCPlH809fUO63_ZQ.jpeg)
 
-It’s not fancy, just a little commuter bike. But it does have a few tricks up its sleeve. The front light is powered by kinetic energy—a common feature in Europe, but something that disappeared in America decades ago.
+It’s not fancy, just a little commuter bike. But it does have a few tricks up its sleeve. The front light is powered by kinetic energy -a common feature in Europe, but something that disappeared in America decades ago.
 
 ![How it works](/images/matt/1_rnCPYtSKT0v_5dUNdaxP8w.png)
 
@@ -29,7 +29,7 @@ I commute on my *Fahrrad* a few times a week. It’s only a 15-minute ride, and 
 
 ![My Commute](/images/matt/commute.png)
 
-Austria takes bicycles seriously. Kids under 12 must pass a test to ride on the street—it’s like a driver’s license for bikes. Drunk biking is also taken seriously: if you’re caught, you lose your right to drive a car.
+Austria takes bicycles seriously. Kids under 12 must pass a test to ride on the street -it’s like a driver’s license for bikes. Drunk biking is also taken seriously: if you’re caught, you lose your right to drive a car.
 
 Bicycles aren’t allowed on sidewalks unless the sidewalk is marked for it. While I haven’t seen the *Polizei* enforce this rule, I’ve heard stories. Many sidewalks are split, with pedestrians on the right and bikes on the left.
 
@@ -51,7 +51,7 @@ And here’s a common sign marking a split sidewalk, along with lane indicators 
 
 ## Biking Culture in Austria
 
-Most stores have bike racks, and they’re heavily used. You see older folks biking around far more often than in America. Here’s a guy who looks like he’s in his 70s, loading groceries onto his trusty steed. *Er braucht nicht auto—verstehst?*
+Most stores have bike racks, and they’re heavily used. You see older folks biking around far more often than in America. Here’s a guy who looks like he’s in his 70s, loading groceries onto his trusty steed. *Er braucht nicht auto -verstehst?*
 
 ![Bikes at the store](/images/matt/1_3t3ZyRcXQpnY7rwNOLAXiA.jpeg)
 
@@ -79,4 +79,4 @@ Here’s the inside of the bike room. Spacious! Before COVID-19, it was tough to
 
 ## Thoughts on Bicycles and King Fahd
 
-So now you know all about bicycles—first-class Austrian transportation. It’s funny that the word *“Fahrrad”* reminds me of King Fahd, since Saudi Arabia is the world’s largest oil producer. Bikes are a solution to our oil addiction—something King Fahd probably wouldn’t have appreciated. Maybe my subconscious enjoys the irony.
+So now you know all about bicycles -first-class Austrian transportation. It’s funny that the word *“Fahrrad”* reminds me of King Fahd, since Saudi Arabia is the world’s largest oil producer. Bikes are a solution to our oil addiction -something King Fahd probably wouldn’t have appreciated. Maybe my subconscious enjoys the irony.

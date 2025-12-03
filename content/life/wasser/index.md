@@ -7,7 +7,7 @@ image:  "/images/matt/1_p5W-O_HqQHBXIqS10N-Fsw@2x.jpeg"
 
 The Danube flows less than a mile from our house. One hot day, I biked there, took off my shirt, and jumped in. The current was strong, pulling me eastward toward Vienna. Thankfully, I made it back home in time for dinner.
 
-A few weeks later, we drove to a bigger body of water—the Adriatic. Specifically, Venice, home to St. Mark’s corpse, Peggy Guggenheim’s dog cemetery, tagliatelle, and gondoliers. In Venice, it’s legal for a 14-year-old to operate a motorboat. “Can I have a boat, Daddy?” I must’ve heard that a dozen times.
+A few weeks later, we drove to a bigger body of water -the Adriatic. Specifically, Venice, home to St. Mark’s corpse, Peggy Guggenheim’s dog cemetery, tagliatelle, and gondoliers. In Venice, it’s legal for a 14-year-old to operate a motorboat. “Can I have a boat, Daddy?” I must’ve heard that a dozen times.
 
 ![Venice](/images/matt/1_A3mFJvAQIjgNq2HkjnBUAw@2x.jpeg)  
 ![Venice](/images/matt/1_zLzW46oPV1My6MpU0vNXDQ@2x.jpeg)

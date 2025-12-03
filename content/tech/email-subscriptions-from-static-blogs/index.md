@@ -7,9 +7,9 @@ image: "/images/matt/emails-everywhere.png"
 
 In my [last blog entry](krems_static_site_generator.md), I introduced Krems, a project I built for generating static blogs. One of the challenges with static blogs is their inability to run server-side code or databases, which makes storing email addresses for blog subscriptions impossible. To work around this, you can either use a paid service like [rssfeedpulse.com](https://rssfeedpulse.com) to scrape your RSS feed and email new posts to subscribers, or you can encourage readers to follow your blog using an RSS reader.
 
-A few months ago, I decided to build my own alternative to RSSFeedPulse using Python with [some help from ChatGPT](Building_Quacker.md).his week, I took it a step further and rewrote the entire application in Golang. So far, it's been running smoothly. I named it Quacker, and you can check it out at [quacker.eu](https://quacker.eu). However, access is restricted — you'll need me to add your GitHub username to the approved list before you can log in.
+A few months ago, I decided to build my own alternative to RSSFeedPulse using Python with [some help from ChatGPT](Building_Quacker.md).his week, I took it a step further and rewrote the entire application in Golang. So far, it's been running smoothly. I named it Quacker, and you can check it out at [quacker.eu](https://quacker.eu). However, access is restricted  - you'll need me to add your GitHub username to the approved list before you can log in.
 
-Last night, after publishing a new blog post, Quacker did exactly what it was designed to do — it sent me an email notification.
+Last night, after publishing a new blog post, Quacker did exactly what it was designed to do  - it sent me an email notification.
 
 ![screenshot of a quacker email](/images/matt/email-from-quacker.png)
 

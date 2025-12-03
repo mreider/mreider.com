@@ -13,7 +13,7 @@ There are three supermarkets within a five-minute bike ride of our flat: Merkur 
 Merkur Markt has the most variety. You can find veggie dogs, sushi rolls, and lots of fresh produce. They even have giant homemade gummy bears, which I’m a big fan of.  
 
 ### Billa  
-Billa isn’t as nice as Merkur, but it does the job. The location near my office sells tuna sandwiches for €2.40, and their budget coleslaw is surprisingly good—much better than the drippy Safeway version back home.  
+Billa isn’t as nice as Merkur, but it does the job. The location near my office sells tuna sandwiches for €2.40, and their budget coleslaw is surprisingly good -much better than the drippy Safeway version back home.  
 
 ### Hofer  
 And then there’s Hofer. It’s the opposite of Merkur: inexpensive, but with very limited variety.  

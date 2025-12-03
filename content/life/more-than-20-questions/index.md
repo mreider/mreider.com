@@ -11,13 +11,13 @@ Last week, we took an American-style road trip (🚙) through the Czech Republic
 
 ## On the Road
 
-As with other vacations, this one began by dropping Leo (🐶) at his second home—a beautiful [kennel ranch](https://www.hundepension-amico.at/index.php/hundepension) outside of Linz.
+As with other vacations, this one began by dropping Leo (🐶) at his second home -a beautiful [kennel ranch](https://www.hundepension-amico.at/index.php/hundepension) outside of Linz.
 
 ![Hunde Pension](/images/matt/hundepension.png)
 
 Nice place, right? Leo agrees. He waltzes in there with confidence, like the mayor of Dogville.
 
-After dropping off Leo, we crossed the Czech border. Just thirty minutes later, we reached Český Krumlov—a fairy-tale town surrounded by bridges, accessible only by foot (no 🚗's), and seemingly inhabited by elves.
+After dropping off Leo, we crossed the Czech border. Just thirty minutes later, we reached Český Krumlov -a fairy-tale town surrounded by bridges, accessible only by foot (no 🚗's), and seemingly inhabited by elves.
 
 ![Český Krumlov](/images/matt/czesky.jpeg)
 
@@ -39,13 +39,13 @@ The hotel was also a short walk from the [Astronomy Clock](https://en.wikipedia.
 
 ## Sitting and Talking
 
-Our friend Christie had recently visited Prague and recommended a restaurant called [Maitrea](https://www.restaurace-maitrea.cz/en/). It was a fun place—but dining with teens is always a challenge. Conversations can feel like trying to pick a lock: I have no clue how to do either one.
+Our friend Christie had recently visited Prague and recommended a restaurant called [Maitrea](https://www.restaurace-maitrea.cz/en/). It was a fun place -but dining with teens is always a challenge. Conversations can feel like trying to pick a lock: I have no clue how to do either one.
 
 ![head butt](/images/matt/zoe-ali-head-butt.jpeg)
 
-Over dinner, Alison and I played [Twenty Questions](https://en.wikipedia.org/wiki/Twenty_questions) with the kids. This wasn’t a new thing—we used to play it back in California. But here in Europe, where people are generally quieter, we stood out. Add the fact that we were the only ones speaking English, and we definitely drew attention. Still, bridging the teenage dinner gap was worth the stares.
+Over dinner, Alison and I played [Twenty Questions](https://en.wikipedia.org/wiki/Twenty_questions) with the kids. This wasn’t a new thing -we used to play it back in California. But here in Europe, where people are generally quieter, we stood out. Add the fact that we were the only ones speaking English, and we definitely drew attention. Still, bridging the teenage dinner gap was worth the stares.
 
-We played Twenty Questions a lot during this trip. It always started with some resistance—“Ugh, not this again”—but ended up being great fun.
+We played Twenty Questions a lot during this trip. It always started with some resistance -“Ugh, not this again” -but ended up being great fun.
 
 ---
 
@@ -75,7 +75,7 @@ Later, we visited the Jewish Quarter and its famous [Jewish Cemetery](https://en
 
 ![Cemetery](/images/matt/FAF1A56D-AAEE-4127-808F-49C1D8326053_1_105_c.jpeg)
 
-Next to the cemetery, we explored the [Old New Synagogue](https://en.wikipedia.org/wiki/Old_New_Synagogue), built in the 1200s. The synagogue is still in use. A kind woman showed us where circumcisions take place—done the same way as 800 years ago. She also explained that women must observe services from outside. Progress? Not so much. 🤬
+Next to the cemetery, we explored the [Old New Synagogue](https://en.wikipedia.org/wiki/Old_New_Synagogue), built in the 1200s. The synagogue is still in use. A kind woman showed us where circumcisions take place -done the same way as 800 years ago. She also explained that women must observe services from outside. Progress? Not so much. 🤬
 
 ![Old New Synagogue](/images/matt/oldnew.png)
 
@@ -83,7 +83,7 @@ Next to the cemetery, we explored the [Old New Synagogue](https://en.wikipedia.o
 
 ## The Edge of Bohemia
 
-After Prague, we headed north to [Bohemian Switzerland](https://en.wikipedia.org/wiki/Bohemian_Switzerland)—a national park near the German border. Despite the name, it has nothing to do with Switzerland.
+After Prague, we headed north to [Bohemian Switzerland](https://en.wikipedia.org/wiki/Bohemian_Switzerland) -a national park near the German border. Despite the name, it has nothing to do with Switzerland.
 
 The drive there wasn’t scenic. Google Maps routed us through [Děčín](https://en.wikipedia.org/wiki/D%C4%9B%C4%8D%C3%ADn), an industrial town. But 20 minutes later, we reached the Elbe River Valley and arrived at [Hotel Kortus](https://hotelkortus.cz/), a quiet spot overlooking the hills.
 
@@ -111,7 +111,7 @@ Our final destination was Karlovy Vary, a Czech spa town known for its mineral w
 
 ## Making It Work
 
-So, there you have it: an American-style road trip through the Czech Republic. It was a perfect mix of city adventures, natural beauty, and history—with a touch of metallic-tasting water.
+So, there you have it: an American-style road trip through the Czech Republic. It was a perfect mix of city adventures, natural beauty, and history -with a touch of metallic-tasting water.
 
 Big thanks to Google Maps for keeping us on track, and even bigger thanks to Twenty Questions for keeping family dinners fun.
 
@@ -136,7 +136,7 @@ Max’s answer led to an interesting chat in front of Karel Marx’s statue:
 
 ## Back to Reality
 
-Yesterday, we left Karlovy Vary and returned to Vienna via Linz (🐶). On Highway A14, just 30 minutes from home, we saw a convoy of emergency vehicles with French license plates heading east to Ukraine—a stark reminder of the ongoing suffering just beyond the Slovakian border.
+Yesterday, we left Karlovy Vary and returned to Vienna via Linz (🐶). On Highway A14, just 30 minutes from home, we saw a convoy of emergency vehicles with French license plates heading east to Ukraine -a stark reminder of the ongoing suffering just beyond the Slovakian border.
 
 ![French Convoy](/images/matt/Screen-Shot-2022-04-17-at-14.13.55.png)
 

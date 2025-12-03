@@ -5,13 +5,13 @@ date:  "2019-12-02"
 image: "/images/matt/1_YHQ75Z7fSQ8Sq2cBYUZ_Qw.png"
 ---
 
-Snow is falling in Linz today, which makes the kids very happy. I put on some ski gear and rode my bike to work—alongside dozens of other people doing the same.
+Snow is falling in Linz today, which makes the kids very happy. I put on some ski gear and rode my bike to work -alongside dozens of other people doing the same.
 
-The snow fits the scenery perfectly. Linz is fully decked out for Christmas. Lights are strung above the streets—clear lights, globes, stars, and multi-colored spirals.
+The snow fits the scenery perfectly. Linz is fully decked out for Christmas. Lights are strung above the streets -clear lights, globes, stars, and multi-colored spirals.
 
 Linz boasts three different Christmas markets within a half-mile radius. The market at Main Square has tasty Glühwein. Volksgarten features classical music, animatronic elves, and a Ferris wheel. Pfarrplatz even has a petting zoo.
 
-Last weekend, we went to a Christmas gospel concert at the cathedral. The lead singer spoke fluent German, which the audience loved. He must have a connection to Austria—he’s been performing here every year for over a decade.
+Last weekend, we went to a Christmas gospel concert at the cathedral. The lead singer spoke fluent German, which the audience loved. He must have a connection to Austria -he’s been performing here every year for over a decade.
 
 ![cathedral](/images/matt/image-7.png)
 
@@ -37,7 +37,7 @@ For instance:
 - *Der Junge* (the boy, masculine). 
 - *Das Mädchen* (the girl, neutral). 
 
-Wait—neutral? Yes, apparently neutral nouns often refer to diminutives, meaning small or cute things. But that rule isn’t consistent. For example, *die kleine Katze* (the little cat) is feminine. Why? No one knows. Kill me.
+Wait -neutral? Yes, apparently neutral nouns often refer to diminutives, meaning small or cute things. But that rule isn’t consistent. For example, *die kleine Katze* (the little cat) is feminine. Why? No one knows. Kill me.
 
 To make things even more confusing, the ending of a noun doesn’t always help. *Der Junge* ends in “e,” so you might think all nouns ending in “e” are masculine. Nope. *Die Katze* (feminine) ends in “e” too. You just have to memorize the article for each word.
 
@@ -51,9 +51,9 @@ Then there’s sentence structure. German loves to put the second verb at the ve
 - “I would like you and your wife to join us for dinner next week” translates to:  
   “I want you and your wife next week dinner with us join.”
 
-It’s like a slow reveal. You know it’s about dinner, but the action isn’t clear until the very last word. Eat dinner? Cook dinner? Regurgitate dinner? Oh—join! You want us to *join* you for dinner. Sorry, we can’t. 
+It’s like a slow reveal. You know it’s about dinner, but the action isn’t clear until the very last word. Eat dinner? Cook dinner? Regurgitate dinner? Oh -join! You want us to *join* you for dinner. Sorry, we can’t. 
 
-For now, the slow reveal isn’t too overwhelming because our vocabulary is still limited. But as we learn more words, I imagine it’ll feel like the flipped numbers—a brief pause to figure things out, and the rest of the sentence is lost.
+For now, the slow reveal isn’t too overwhelming because our vocabulary is still limited. But as we learn more words, I imagine it’ll feel like the flipped numbers -a brief pause to figure things out, and the rest of the sentence is lost.
 
 The word for “repeat” is *wiederholen*. It feels appropriate.
 
