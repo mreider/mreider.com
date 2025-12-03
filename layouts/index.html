@@ -22,7 +22,7 @@
         <h3 class="mb-3">Latest Post</h3>
         <div class="card shadow-sm">
             {{ if $latestPost.Params.image }}
-            <img src="{{ $latestPost.Params.image }}" class="card-img-top" alt="{{ $latestPost.Title }}" style="height: 300px; object-fit: cover;">
+            <img src="{{ $latestPost.Params.image }}" class="card-img-top" alt="{{ $latestPost.Title }}" style="height: 200px; object-fit: cover;">
             {{ end }}
             <div class="card-body">
                 <h4 class="card-title">
@@ -48,25 +48,30 @@
         {{ range $sections }}
         {{ $section := . }}
         {{ $sectionPosts := where (where site.RegularPages "Type" $section) "Params.status" "ne" "draft" }}
-        {{ $latestInSection := index (first 1 $sectionPosts.ByDate.Reverse) 0 }}
+        {{ $latestThree := first 3 $sectionPosts.ByDate.Reverse }}
         <div class="col-md-6">
             <div class="card h-100 shadow-sm">
                 <div class="card-body">
-                    <h5 class="card-title text-capitalize mb-3">
-                        <a href="/{{ $section }}/" class="text-decoration-none">{{ $section }}</a>
-                    </h5>
-                    {{ if $latestInSection }}
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="card-title text-capitalize mb-0">{{ $section }}</h5>
+                        <a href="/{{ $section }}/" class="btn btn-sm btn-outline-secondary">View all →</a>
+                    </div>
+                    {{ if $latestThree }}
                     <div class="latest-in-section">
-                        <h6 class="mb-2">
-                            <a href="{{ $latestInSection.RelPermalink }}" class="text-decoration-none">{{ $latestInSection.Title }}</a>
-                        </h6>
-                        <div class="text-muted small mb-2">
-                            {{ $latestInSection.Date.Format "January 2, 2006" }}
+                        {{ range $latestThree }}
+                        <div class="mb-3 pb-3 border-bottom">
+                            <h6 class="mb-1">
+                                <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
+                            </h6>
+                            <div class="text-muted small mb-1">
+                                {{ .Date.Format "January 2, 2006" }}
+                            </div>
+                            {{ if .Description }}
+                            <p class="text-muted small mb-0">{{ .Description | truncate 80 }}</p>
+                            {{ else if .Summary }}
+                            <p class="text-muted small mb-0">{{ .Summary | truncate 80 }}</p>
+                            {{ end }}
                         </div>
-                        {{ if $latestInSection.Description }}
-                        <p class="text-muted small mb-0">{{ $latestInSection.Description | truncate 100 }}</p>
-                        {{ else if $latestInSection.Summary }}
-                        <p class="text-muted small mb-0">{{ $latestInSection.Summary | truncate 100 }}</p>
                         {{ end }}
                     </div>
                     {{ else }}
