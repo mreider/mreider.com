@@ -46,19 +46,13 @@ title: "Fitness"
   margin-bottom: 6px;
 }
 
-.day-boxes {
-  display: flex;
-  gap: 4px;
-  justify-content: center;
-  align-items: center;
-}
-
 .day-box {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   border-radius: 3px;
   border: 2px solid #e9ecef;
   display: inline-block;
+  margin: 0 auto;
 }
 
 .day-box.active {
@@ -87,97 +81,55 @@ title: "Fitness"
       <td class="activity-icon"><i class="fas fa-dumbbell"></i></td>
       <td class="day-cell">
         <div class="date-label">Dec 8</div>
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
       <td class="day-cell">
         <div class="date-label">Dec 9</div>
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
       <td class="day-cell">
         <div class="date-label">Dec 10</div>
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
       <td class="day-cell">
         <div class="date-label">Dec 11</div>
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
       <td class="day-cell">
         <div class="date-label">Dec 12</div>
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
       <td class="day-cell">
         <div class="date-label">Dec 13</div>
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
       <td class="day-cell">
         <div class="date-label">Dec 14</div>
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
     </tr>
     <tr>
       <td class="activity-icon"><i class="fas fa-apple-alt"></i></td>
       <td class="day-cell">
-        <div class="day-boxes">
-          <div class="day-box active"></div>
-          <div class="day-box active"></div>
-        </div>
+        <div class="day-box active"></div>
       </td>
       <td class="day-cell">
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
       <td class="day-cell">
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
       <td class="day-cell">
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
       <td class="day-cell">
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
       <td class="day-cell">
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
       <td class="day-cell">
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
     </tr>
     <tr>
@@ -185,97 +137,55 @@ title: "Fitness"
       <td class="activity-icon"><i class="fas fa-dumbbell"></i></td>
       <td class="day-cell">
         <div class="date-label">Dec 1</div>
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
       <td class="day-cell">
         <div class="date-label">Dec 2</div>
-        <div class="day-boxes">
-          <div class="day-box active"></div>
-          <div class="day-box active"></div>
-        </div>
+        <div class="day-box active"></div>
       </td>
       <td class="day-cell">
         <div class="date-label">Dec 3</div>
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box active"></div>
       </td>
       <td class="day-cell">
         <div class="date-label">Dec 4</div>
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
       <td class="day-cell">
         <div class="date-label">Dec 5</div>
-        <div class="day-boxes">
-          <div class="day-box active"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
       <td class="day-cell">
         <div class="date-label">Dec 6</div>
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
       <td class="day-cell">
         <div class="date-label">Dec 7</div>
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
     </tr>
     <tr>
       <td class="activity-icon"><i class="fas fa-apple-alt"></i></td>
       <td class="day-cell">
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
       <td class="day-cell">
-        <div class="day-boxes">
-          <div class="day-box active"></div>
-          <div class="day-box active"></div>
-        </div>
+        <div class="day-box active"></div>
       </td>
       <td class="day-cell">
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box active"></div>
       </td>
       <td class="day-cell">
-        <div class="day-boxes">
-          <div class="day-box active"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
       <td class="day-cell">
-        <div class="day-boxes">
-          <div class="day-box active"></div>
-          <div class="day-box active"></div>
-        </div>
+        <div class="day-box active"></div>
       </td>
       <td class="day-cell">
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box active"></div>
       </td>
       <td class="day-cell">
-        <div class="day-boxes">
-          <div class="day-box"></div>
-          <div class="day-box"></div>
-        </div>
+        <div class="day-box"></div>
       </td>
     </tr>
   </tbody>

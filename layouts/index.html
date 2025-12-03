@@ -16,32 +16,63 @@
         </div>
     </div>
 
-    <div class="posts-list">
-        {{ $posts := where (where site.RegularPages "Type" "in" (slice "writeups" "tech" "life")) "Params.status" "ne" "draft" }}
-        {{ range $posts.ByDate.Reverse }}
-        <div class="post-item d-flex align-items-start mb-4 pb-4 border-bottom">
-            <div class="thumbnail-container me-3 flex-shrink-0">
-                {{ if .Params.image }}
-                <div class="post-thumbnail" style="background-image: url('{{ .Params.image }}');"></div>
-                {{ else }}
-                <div class="post-thumbnail icon-thumbnail">
-                    <i class="fas fa-book"></i>
+    {{ $latestPost := index (first 1 (where (where site.RegularPages "Type" "in" (slice "writeups" "tech" "life" "family")) "Params.status" "ne" "draft").ByDate.Reverse) 0 }}
+    {{ if $latestPost }}
+    <div class="featured-post mb-5">
+        <h3 class="mb-3">Latest Post</h3>
+        <div class="card shadow-sm">
+            {{ if $latestPost.Params.image }}
+            <img src="{{ $latestPost.Params.image }}" class="card-img-top" alt="{{ $latestPost.Title }}" style="height: 300px; object-fit: cover;">
+            {{ end }}
+            <div class="card-body">
+                <h4 class="card-title">
+                    <a href="{{ $latestPost.RelPermalink }}" class="text-decoration-none">{{ $latestPost.Title }}</a>
+                </h4>
+                <div class="text-muted mb-3 small">
+                    {{ $latestPost.Date.Format "January 2, 2006" }} • {{ $latestPost.Section | title }}
+                    {{ if $latestPost.Params.author }} • by {{ $latestPost.Params.author }}{{ end }}
                 </div>
+                {{ if $latestPost.Description }}
+                <p class="card-text text-muted">{{ $latestPost.Description }}</p>
+                {{ else if $latestPost.Summary }}
+                <p class="card-text text-muted">{{ $latestPost.Summary | truncate 200 }}</p>
                 {{ end }}
             </div>
-            <div class="flex-grow-1">
-                <h4 class="mb-2">
-                    <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
-                </h4>
-                <div class="text-muted mb-2 small">
-                    {{ .Date.Format "January 2, 2006" }} • {{ .Section | title }}
-                    {{ if .Params.author }} • by {{ .Params.author }}{{ end }}
+        </div>
+    </div>
+    {{ end }}
+
+    <h3 class="mb-4">Sections</h3>
+    <div class="row g-4 mb-5">
+        {{ $sections := slice "writeups" "life" "tech" "family" }}
+        {{ range $sections }}
+        {{ $section := . }}
+        {{ $sectionPosts := where (where site.RegularPages "Type" $section) "Params.status" "ne" "draft" }}
+        {{ $latestInSection := index (first 1 $sectionPosts.ByDate.Reverse) 0 }}
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-capitalize mb-3">
+                        <a href="/{{ $section }}/" class="text-decoration-none">{{ $section }}</a>
+                    </h5>
+                    {{ if $latestInSection }}
+                    <div class="latest-in-section">
+                        <h6 class="mb-2">
+                            <a href="{{ $latestInSection.RelPermalink }}" class="text-decoration-none">{{ $latestInSection.Title }}</a>
+                        </h6>
+                        <div class="text-muted small mb-2">
+                            {{ $latestInSection.Date.Format "January 2, 2006" }}
+                        </div>
+                        {{ if $latestInSection.Description }}
+                        <p class="text-muted small mb-0">{{ $latestInSection.Description | truncate 100 }}</p>
+                        {{ else if $latestInSection.Summary }}
+                        <p class="text-muted small mb-0">{{ $latestInSection.Summary | truncate 100 }}</p>
+                        {{ end }}
+                    </div>
+                    {{ else }}
+                    <p class="text-muted">No posts yet</p>
+                    {{ end }}
                 </div>
-                {{ if .Description }}
-                <p class="mb-0 text-muted">{{ .Description }}</p>
-                {{ else if .Summary }}
-                <p class="mb-0 text-muted">{{ .Summary | truncate 200 }}</p>
-                {{ end }}
             </div>
         </div>
         {{ end }}

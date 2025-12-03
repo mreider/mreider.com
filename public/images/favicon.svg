@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" fill="#ffffff"/>
+  <g fill="#2c3e50">
+    <!-- Pen nib (bottom point) -->
+    <path d="M 256 460 L 220 410 L 292 410 Z"/>
+    
+    <!-- Pen body (main shaft) -->
+    <path d="M 220 410 L 292 410 L 310 90 L 202 90 Z"/>
+    
+    <!-- Pen clip -->
+    <rect x="310" y="130" width="35" height="90" rx="5"/>
+    
+    <!-- Pen cap (top) -->
+    <ellipse cx="256" cy="90" rx="54" ry="30"/>
+    
+    <!-- Body highlight/detail -->
+    <path d="M 230 300 L 282 300 L 285 250 L 227 250 Z" fill="#34495e" opacity="0.3"/>
+  </g>
+</svg>
