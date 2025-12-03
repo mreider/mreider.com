@@ -219,8 +219,8 @@
  &lt;td class="activity-icon"&gt;&lt;i class="fas fa-apple-alt"&gt;&lt;/i&gt;&lt;/td&gt;
  &lt;td class="day-cell"&gt;
  &lt;div class="day-boxes"&gt;
- &lt;div class="day-box"&gt;&lt;/div&gt;
- &lt;div class="day-box"&gt;&lt;/div&gt;
+ &lt;div class="day-box active"&gt;&lt;/div&gt;
+ &lt;div class="day-box active"&gt;&lt;/div&gt;
  &lt;/div&gt;
  &lt;/td&gt;
  &lt;td class="day-cell"&gt;
