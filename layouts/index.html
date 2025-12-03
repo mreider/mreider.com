@@ -9,9 +9,7 @@
     <div class="card shadow-sm mb-5">
         <div class="card-body">
             <div class="home-hero d-flex align-items-center">
-                {{ if .Params.image }}
-                <img src="{{ .Params.image }}" class="rounded me-4" style="width: 150px; height: 150px; object-fit: cover;" alt="Matt Reider">
-                {{ end }}
+                <img src="/images/matt/matt-ali-maine.png" class="rounded me-4" style="width: 150px; height: 150px; object-fit: cover;" alt="Matt Reider">
                 <div>
                     <h3 class="mb-2">👋 Hi. I'm Matt</h3>
                     <p class="text-muted mb-0">An American living in Vienna. Husband. Father. Lagotto owner. Friend.</p>
@@ -20,15 +18,26 @@
         </div>
     </div>
 
+    <div class="card shadow-sm mb-5">
+        <div class="card-body">
+            <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a href="/writeups/" class="text-decoration-none">Writeups</a> ↪ on podcasts etc.</li>
+                <li class="mb-2"><a href="/tech/" class="text-decoration-none">Tech</a> ↪ and product mgmnt</li>
+                <li class="mb-2"><a href="/life/" class="text-decoration-none">Life</a> ↪ travel and Austrian life</li>
+                <li class="mb-0"><a href="/about/" class="text-decoration-none">About</a> ↪ my family and stuff</li>
+            </ul>
+        </div>
+    </div>
+
     {{ $latestPost := index (first 1 (where (where site.RegularPages "Type" "in" (slice "writeups" "tech" "life" "family")) "Params.status" "ne" "draft").ByDate.Reverse) 0 }}
     {{ if $latestPost }}
     <div class="featured-post mb-5">
         <h3 class="mb-3">Latest Post</h3>
-        <div class="card shadow-sm">
+        <div class="card shadow-sm" style="position: relative; overflow: hidden; min-height: 200px;">
             {{ if $latestPost.Params.image }}
-            <img src="{{ $latestPost.Params.image }}" class="card-img-top" alt="{{ $latestPost.Title }}" style="height: 200px; object-fit: cover;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('{{ $latestPost.Params.image }}'); background-size: cover; background-position: center; opacity: 0.15; z-index: 0;"></div>
             {{ end }}
-            <div class="card-body">
+            <div class="card-body" style="position: relative; z-index: 1;">
                 <h4 class="card-title">
                     <a href="{{ $latestPost.RelPermalink }}" class="text-decoration-none">{{ $latestPost.Title }}</a>
                 </h4>
@@ -71,18 +80,23 @@
                             <p class="text-muted small mb-0">Stories and memories</p>
                         </div>
                         {{ range $latestThree }}
-                        <div class="mb-3 pb-3 border-bottom">
-                            <h6 class="mb-1">
-                                <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
-                            </h6>
-                            <div class="text-muted small mb-1">
-                                {{ .Date.Format "January 2, 2006" }}
-                            </div>
-                            {{ if .Description }}
-                            <p class="text-muted small mb-0">{{ .Description | truncate 80 }}</p>
-                            {{ else if .Summary }}
-                            <p class="text-muted small mb-0">{{ .Summary | truncate 80 }}</p>
+                        <div class="mb-3 pb-3 border-bottom" style="position: relative; overflow: hidden; min-height: 60px;">
+                            {{ if .Params.image }}
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('{{ .Params.image }}'); background-size: cover; background-position: center; opacity: 0.1; z-index: 0;"></div>
                             {{ end }}
+                            <div style="position: relative; z-index: 1;">
+                                <h6 class="mb-1">
+                                    <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
+                                </h6>
+                                <div class="text-muted small mb-1">
+                                    {{ .Date.Format "January 2, 2006" }}
+                                </div>
+                                {{ if .Description }}
+                                <p class="text-muted small mb-0">{{ .Description | truncate 80 }}</p>
+                                {{ else if .Summary }}
+                                <p class="text-muted small mb-0">{{ .Summary | truncate 80 }}</p>
+                                {{ end }}
+                            </div>
                         </div>
                         {{ end }}
                     </div>
@@ -90,18 +104,23 @@
                     {{ if $latestThree }}
                     <div class="latest-in-section">
                         {{ range $latestThree }}
-                        <div class="mb-3 pb-3 border-bottom">
-                            <h6 class="mb-1">
-                                <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
-                            </h6>
-                            <div class="text-muted small mb-1">
-                                {{ .Date.Format "January 2, 2006" }}
-                            </div>
-                            {{ if .Description }}
-                            <p class="text-muted small mb-0">{{ .Description | truncate 80 }}</p>
-                            {{ else if .Summary }}
-                            <p class="text-muted small mb-0">{{ .Summary | truncate 80 }}</p>
+                        <div class="mb-3 pb-3 border-bottom" style="position: relative; overflow: hidden; min-height: 60px;">
+                            {{ if .Params.image }}
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('{{ .Params.image }}'); background-size: cover; background-position: center; opacity: 0.1; z-index: 0;"></div>
                             {{ end }}
+                            <div style="position: relative; z-index: 1;">
+                                <h6 class="mb-1">
+                                    <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
+                                </h6>
+                                <div class="text-muted small mb-1">
+                                    {{ .Date.Format "January 2, 2006" }}
+                                </div>
+                                {{ if .Description }}
+                                <p class="text-muted small mb-0">{{ .Description | truncate 80 }}</p>
+                                {{ else if .Summary }}
+                                <p class="text-muted small mb-0">{{ .Summary | truncate 80 }}</p>
+                                {{ end }}
+                            </div>
                         </div>
                         {{ end }}
                     </div>
