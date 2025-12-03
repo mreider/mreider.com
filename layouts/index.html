@@ -6,13 +6,17 @@
         <p class="p-note">American expat in Vienna, husband, father, Lagotto owner, friend</p>
     </div>
 
-    <div class="home-hero d-flex align-items-center mb-5">
-        {{ if .Params.image }}
-        <img src="{{ .Params.image }}" class="rounded me-4" style="width: 150px; height: 150px; object-fit: cover;" alt="Matt Reider">
-        {{ end }}
-        <div>
-            <h3 class="mb-2">Hi. I'm Matt</h3>
-            <p class="text-muted mb-0">An American living in Vienna, Austria. Husband. Father. Lagotto owner. Friend.</p>
+    <div class="card shadow-sm mb-5">
+        <div class="card-body">
+            <div class="home-hero d-flex align-items-center">
+                {{ if .Params.image }}
+                <img src="{{ .Params.image }}" class="rounded me-4" style="width: 150px; height: 150px; object-fit: cover;" alt="Matt Reider">
+                {{ end }}
+                <div>
+                    <h3 class="mb-2">👋 Hi. I'm Matt</h3>
+                    <p class="text-muted mb-0">An American living in Vienna. Husband. Father. Lagotto owner. Friend.</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -42,20 +46,47 @@
     </div>
     {{ end }}
 
-    <h3 class="mb-4">Sections</h3>
     <div class="row g-4 mb-5">
         {{ $sections := slice "writeups" "life" "tech" "family" }}
+        {{ $sectionIcons := dict "writeups" "fas fa-pen-nib" "life" "fas fa-leaf" "tech" "fas fa-laptop-code" "family" "fas fa-heart" }}
         {{ range $sections }}
         {{ $section := . }}
         {{ $sectionPosts := where (where site.RegularPages "Type" $section) "Params.status" "ne" "draft" }}
         {{ $latestThree := first 3 $sectionPosts.ByDate.Reverse }}
+        {{ $icon := index $sectionIcons $section }}
         <div class="col-md-6">
             <div class="card h-100 shadow-sm">
                 <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h5 class="card-title text-capitalize mb-0">{{ $section }}</h5>
-                        <a href="/{{ $section }}/" class="btn btn-sm btn-outline-secondary">View all →</a>
+                    <a href="/{{ $section }}/" class="section-header-link text-decoration-none">
+                        <h5 class="card-title text-capitalize mb-3">
+                            <i class="{{ $icon }}"></i> {{ $section }}
+                        </h5>
+                    </a>
+                    {{ if eq $section "family" }}
+                    <div class="latest-in-section">
+                        <div class="mb-3 pb-3 border-bottom">
+                            <h6 class="mb-1">
+                                <a href="/{{ $section }}/" class="text-decoration-none">Family Home</a>
+                            </h6>
+                            <p class="text-muted small mb-0">Stories and memories</p>
+                        </div>
+                        {{ range $latestThree }}
+                        <div class="mb-3 pb-3 border-bottom">
+                            <h6 class="mb-1">
+                                <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
+                            </h6>
+                            <div class="text-muted small mb-1">
+                                {{ .Date.Format "January 2, 2006" }}
+                            </div>
+                            {{ if .Description }}
+                            <p class="text-muted small mb-0">{{ .Description | truncate 80 }}</p>
+                            {{ else if .Summary }}
+                            <p class="text-muted small mb-0">{{ .Summary | truncate 80 }}</p>
+                            {{ end }}
+                        </div>
+                        {{ end }}
                     </div>
+                    {{ else }}
                     {{ if $latestThree }}
                     <div class="latest-in-section">
                         {{ range $latestThree }}
@@ -76,6 +107,7 @@
                     </div>
                     {{ else }}
                     <p class="text-muted">No posts yet</p>
+                    {{ end }}
                     {{ end }}
                 </div>
             </div>

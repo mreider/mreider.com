@@ -6,7 +6,14 @@
 
 	
     {{ if .Title }}
-    <h3 class="display-6 mb-4">{{ .Title }}</h3>
+    {{ $sectionIcons := dict "writeups" "fas fa-pen-nib" "life" "fas fa-leaf" "tech" "fas fa-laptop-code" "family" "fas fa-heart" "Pete Reider" "fas fa-user" }}
+    {{ $icon := index $sectionIcons .Title }}
+    {{ if not $icon }}
+        {{ $icon = index $sectionIcons .Section }}
+    {{ end }}
+    <h3 class="display-6 mb-4">
+        {{ if $icon }}<i class="{{ $icon }}"></i> {{ end }}{{ .Title }}
+    </h3>
     {{ end }}
 
     
