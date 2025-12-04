@@ -5,7 +5,7 @@ date: "2025-02-16"
 image: "/images/matt/gh-krems.png"
 ---
 
-A couple of months ago we visited a little town named Krems about an hour West of Vienna. In that little town is a University where my son would apply, though now that he’s been accepted to a few schools in Scotland he likely won’t attend. After we returned to Vienna I thought about writing a short blog about our visit there, but to my horror my blog was nolonger loading properly.
+A couple of months ago we visited a little town named Krems about an hour West of Vienna. In that little town is a University where my son would apply, though now that he's been accepted to a few schools in Scotland he likely won't attend. After we returned to Vienna I thought about writing a short blog about our visit there, but to my horror my blog was no longer loading properly.
 
 Instead of adjusting my hugo templates for the 1,000th time, I decided to write my own static blog generator for Github Pages. I named it Krems after the cute little town we visited.
 

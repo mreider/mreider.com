@@ -7,7 +7,7 @@ image: "/images/matt/1_WbN2xQeq8ianZrJjuSXl-g@2x.jpeg"
 
 I can’t understand a word these people are saying. But I do understand them on other levels.
 
-They stack wood like it's an art form. I'd probably do the same if I had wood to stack. Their toilets have a little shelf so they can examine their poop. I get it, I've been known to have similar interests. They're highly attuned to mustard, my favorite condiment (and maybe even my favorite food). Anyone who's lived with me knows I put it on everything. They're also unashamed, especially when it comes to their bodies. Changing into a bathing suit in full view of others? No problem. I felt liberated slipping on my swim trunks alongside them.
+They stack wood like it's an art form. I'd probably do the same if I had wood to stack. Their toilets have a little shelf so they can examine their poop. I get it. I've been known to have similar interests. They're highly attuned to mustard, my favorite condiment (and maybe even my favorite food). Anyone who's lived with me knows I put it on everything. They're also unashamed, especially when it comes to their bodies. Changing into a bathing suit in full view of others? No problem. I felt liberated slipping on my swim trunks alongside them.
 
 What I’m trying to say is that I get these people. I just don’t understand a single word they’re saying.
 

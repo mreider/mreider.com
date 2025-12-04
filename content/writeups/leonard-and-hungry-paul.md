@@ -7,7 +7,7 @@ image: "/images/writeups/leonard-hungry.jpg"
 status: "published"
 ---
 
-[Leonard and Hungry Paul](https://www.audible.com/pd/Leonard-and-Hungry-Paul-Audiobook/) by Ronan Hession is a fun, dry, wholesome, and satisfyiing story about some normal people just sort of going through life together.
+[Leonard and Hungry Paul](https://www.audible.com/pd/Leonard-and-Hungry-Paul-Audiobook/) by Ronan Hession is a fun, dry, wholesome, and satisfying story about some normal people just sort of going through life together.
 
 Early in the story we meet Leonard and Hungry Paul, two simple and straightforward men who schedule regular gaming nights to play things like Yahtzee, Monopoly, Connect Four, or checkers. 
 

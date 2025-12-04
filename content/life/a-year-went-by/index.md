@@ -9,11 +9,11 @@ I stopped writing over a year ago. I'm not sure why. Maybe I just wasn't feeling
 
 But today, I'll give you a quick update.
 
-We've had some new experiences. We went skiing on a couple of glaciers. We got a hyperactive dog named Leo. We visited friends and family in America, then went scuba diving in Costa Rica. In the autumn, we explored Belgium and climbed the Eiffel Tower. Winter came, and we traveled to Florence with my niece, sister, mom, and her husband. We kicked off 2022 with schnapps and skiing in East Tirol.
+We've had some new experiences. We went skiing on a couple of glaciers. We got a hyperactive dog named Leo. We visited friends and family in America, then went scuba diving in Costa Rica. In the autumn, we explored Belgium and climbed the Eiffel Tower. Winter came, and we traveled to Florence with my niece, sister, mom, and my mom's husband. We kicked off 2022 with schnapps and skiing in East Tirol.
 
 Now you're mostly caught up.
 
-Some big news: we moved from Linz to Vienna in August. The city gives us more options for art, culture, and food, not to mention a proper international airport with flights to anywhere. But the move was really about the kids, they now attend a fantastic international school and have made lots of new friends.
+Some big news: we moved from Linz to Vienna in August. The city gives us more options for art, culture, and food, not to mention a proper international airport with flights to anywhere. But the move was really about the kids. They now attend a fantastic international school and have made lots of new friends.
 
 And now it's March. Unfortunately, most of our attention is on Ukraine, which is just a six-hour drive from Vienna through Slovakia. Many of our coworkers are from Ukraine, and it’s unimaginable what they’re going through. The whole situation is awful. While I’ve always enjoyed discussing politics and history, I don’t have much more to say about this one.
 

@@ -53,7 +53,7 @@ Then there’s sentence structure. German loves to put the second verb at the ve
 
 It's like a slow reveal. You know it's about dinner, but the action isn't clear until the very last word. Eat dinner? Cook dinner? Regurgitate dinner? Oh, join! You want us to *join* you for dinner. Sorry, we can't. 
 
-For now, the slow reveal isn't too overwhelming because our vocabulary is still limited. But as we learn more words, I imagine it'll feel like the flipped numbers, a brief pause to figure things out, and the rest of the sentence is lost.
+For now, the slow reveal isn't too overwhelming because our vocabulary is still limited. But as we learn more words, I imagine it'll feel like the flipped numbers: a brief pause to figure things out, and the rest of the sentence is lost.
 
 The word for “repeat” is *wiederholen*. It feels appropriate.
 

@@ -20,6 +20,6 @@ Ferdinand was terribly excited. He wanted to call someone but was afraid the eve
 
 Ferdinand's mouth fell open. He was so amazed he was almost speechless. Recovering as quickly as possible he managed to gasp, "But that is what I was going to say to you. I went out and called, and the same thing, several times it returned."
 
-They burst out laughting then; Ferdinand was convulsed. It was the best joke in ten years. "So you and I are nightingales," he managed between gasps and tears.
+They burst out laughing then; Ferdinand was convulsed. It was the best joke in ten years. "So you and I are nightingales," he managed between gasps and tears.
 
-And when Ferdinand would lametn, "For whom am I alive?" - asking in his self-effacing way for a friendly boost - George would remind him of his Franciscan gift.
+And when Ferdinand would lament, "For whom am I alive?" - asking in his self-effacing way for a friendly boost - George would remind him of his Franciscan gift.
