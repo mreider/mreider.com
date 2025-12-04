@@ -22,25 +22,25 @@
     {{ if $latestPost }}
     <div class="featured-post mb-5">
         <h3 class="mb-3">Latest Post</h3>
-        <div class="card shadow-sm" style="position: relative; overflow: hidden; min-height: 200px;">
-            {{ if $latestPost.Params.image }}
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('{{ $latestPost.Params.image }}'); background-size: cover; background-position: center; opacity: 0.15; z-index: 0;"></div>
-            {{ end }}
-            <div class="card-body" style="position: relative; z-index: 1;">
-                <h4 class="card-title">
-                    <a href="{{ $latestPost.RelPermalink }}" class="text-decoration-none">{{ $latestPost.Title }}</a>
-                </h4>
-                <div class="text-muted mb-3 small">
-                    {{ $latestPost.Date.Format "January 2, 2006" }} • {{ $latestPost.Section | title }}
-                    {{ if $latestPost.Params.author }} • by {{ $latestPost.Params.author }}{{ end }}
-                </div>
-                {{ if $latestPost.Description }}
-                <p class="card-text text-muted">{{ $latestPost.Description }}</p>
-                {{ else if $latestPost.Summary }}
-                <p class="card-text text-muted">{{ $latestPost.Summary | truncate 200 }}</p>
+        <a href="{{ $latestPost.RelPermalink }}" class="text-decoration-none text-reset d-block">
+            <div class="card shadow-sm" style="position: relative; overflow: hidden; min-height: 200px; transition: transform 0.2s; border-radius: 8px;">
+                {{ if $latestPost.Params.image }}
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('{{ $latestPost.Params.image }}'); background-size: cover; background-position: center; opacity: 0.15; z-index: 0;"></div>
                 {{ end }}
+                <div class="card-body" style="position: relative; z-index: 1;">
+                    <h4 class="card-title">{{ $latestPost.Title }}</h4>
+                    <div class="text-muted mb-3 small">
+                        {{ $latestPost.Date.Format "January 2, 2006" }} • {{ $latestPost.Section | title }}
+                        {{ if $latestPost.Params.author }} • by {{ $latestPost.Params.author }}{{ end }}
+                    </div>
+                    {{ if $latestPost.Description }}
+                    <p class="card-text text-muted">{{ $latestPost.Description }}</p>
+                    {{ else if $latestPost.Summary }}
+                    <p class="card-text text-muted">{{ $latestPost.Summary | truncate 200 }}</p>
+                    {{ end }}
+                </div>
             </div>
-        </div>
+        </a>
     </div>
     {{ end }}
 
@@ -61,56 +61,33 @@
                         </h5>
                     </a>
                     {{ if eq $section "family" }}
-                    <div class="latest-in-section">
-                        <div class="mb-3 pb-3 border-bottom">
-                            <h6 class="mb-1">
-                                <a href="/{{ $section }}/" class="text-decoration-none">Family Home</a>
-                            </h6>
-                            <p class="text-muted small mb-0">Stories and memories</p>
+                    <a href="/{{ $section }}/" class="text-decoration-none text-reset d-block">
+                        <div style="position: relative; overflow: hidden; min-height: 120px; padding: 24px; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; transition: transform 0.2s; background-color: #f8f9fa; display: flex; align-items: center; justify-content: center; text-align: center;">
+                            <p class="mb-0" style="font-size: 1.1rem; color: #454545;">About my family, my dad's obit, and some stories he wrote</p>
                         </div>
-                        {{ range $latestThree }}
-                        <div class="mb-3 pb-3 border-bottom" style="position: relative; overflow: hidden; min-height: 60px; padding: 12px; border: 1px solid rgba(0,0,0,0.08); border-radius: 4px;">
-                            {{ if .Params.image }}
-                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('{{ .Params.image }}'); background-size: cover; background-position: center; opacity: 0.1; z-index: 0;"></div>
-                            {{ end }}
-                            <div style="position: relative; z-index: 1;">
-                                <h6 class="mb-1">
-                                    <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
-                                </h6>
-                                <div class="text-muted small mb-1">
-                                    {{ .Date.Format "January 2, 2006" }}
-                                </div>
-                                {{ if .Description }}
-                                <p class="text-muted small mb-0">{{ .Description | truncate 80 }}</p>
-                                {{ else if .Summary }}
-                                <p class="text-muted small mb-0">{{ .Summary | truncate 80 }}</p>
-                                {{ end }}
-                            </div>
-                        </div>
-                        {{ end }}
-                    </div>
+                    </a>
                     {{ else }}
                     {{ if $latestThree }}
                     <div class="latest-in-section">
                         {{ range $latestThree }}
-                        <div class="mb-3 pb-3 border-bottom" style="position: relative; overflow: hidden; min-height: 60px; padding: 12px; border: 1px solid rgba(0,0,0,0.08); border-radius: 4px;">
-                            {{ if .Params.image }}
-                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('{{ .Params.image }}'); background-size: cover; background-position: center; opacity: 0.1; z-index: 0;"></div>
-                            {{ end }}
-                            <div style="position: relative; z-index: 1;">
-                                <h6 class="mb-1">
-                                    <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
-                                </h6>
-                                <div class="text-muted small mb-1">
-                                    {{ .Date.Format "January 2, 2006" }}
-                                </div>
-                                {{ if .Description }}
-                                <p class="text-muted small mb-0">{{ .Description | truncate 80 }}</p>
-                                {{ else if .Summary }}
-                                <p class="text-muted small mb-0">{{ .Summary | truncate 80 }}</p>
+                        <a href="{{ .RelPermalink }}" class="text-decoration-none text-reset d-block">
+                            <div class="mb-3 pb-3 border-bottom" style="position: relative; overflow: hidden; min-height: 60px; padding: 12px; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; transition: transform 0.2s;">
+                                {{ if .Params.image }}
+                                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('{{ .Params.image }}'); background-size: cover; background-position: center; opacity: 0.1; z-index: 0;"></div>
                                 {{ end }}
+                                <div style="position: relative; z-index: 1;">
+                                    <h6 class="mb-1">{{ .Title }}</h6>
+                                    <div class="text-muted small mb-1">
+                                        {{ .Date.Format "January 2, 2006" }}
+                                    </div>
+                                    {{ if .Description }}
+                                    <p class="text-muted small mb-0">{{ .Description | truncate 80 }}</p>
+                                    {{ else if .Summary }}
+                                    <p class="text-muted small mb-0">{{ .Summary | truncate 80 }}</p>
+                                    {{ end }}
+                                </div>
                             </div>
-                        </div>
+                        </a>
                         {{ end }}
                     </div>
                     {{ else }}
