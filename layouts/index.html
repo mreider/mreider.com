@@ -44,7 +44,7 @@
     </div>
     {{ end }}
 
-    <div class="row g-4 mb-5">
+    <div class="mb-5">
         {{ $sections := slice "writeups" "life" "tech" "family" }}
         {{ $sectionIcons := dict "writeups" "fas fa-pen-nib" "life" "fas fa-leaf" "tech" "fas fa-laptop-code" "family" "fas fa-heart" }}
         {{ range $sections }}
@@ -52,49 +52,37 @@
         {{ $sectionPosts := where (where site.RegularPages "Type" $section) "Params.status" "ne" "draft" }}
         {{ $latestThree := first 3 $sectionPosts.ByDate.Reverse }}
         {{ $icon := index $sectionIcons $section }}
-        <div class="col-md-6">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                    <a href="/{{ $section }}/" class="section-header-link text-decoration-none">
-                        <h5 class="card-title text-capitalize mb-3">
-                            <i class="{{ $icon }}"></i> {{ $section }}
-                        </h5>
-                    </a>
-                    {{ if eq $section "family" }}
-                    <a href="/{{ $section }}/" class="text-decoration-none text-reset d-block">
-                        <div style="position: relative; overflow: hidden; min-height: 120px; padding: 24px; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; transition: transform 0.2s; background-color: #f8f9fa; display: flex; align-items: center; justify-content: center; text-align: center;">
-                            <p class="mb-0" style="font-size: 1.1rem; color: #454545;">About my family, my dad's obit, and some stories he wrote</p>
+        <div class="card shadow-sm mb-3">
+            <div class="card-body py-3">
+                <a href="/{{ $section }}/" class="section-header-link text-decoration-none">
+                    <h5 class="card-title text-capitalize mb-2">
+                        <i class="{{ $icon }}"></i> {{ $section }}
+                    </h5>
+                </a>
+                {{ if eq $section "family" }}
+                <a href="/{{ $section }}/" class="text-decoration-none text-reset d-block">
+                    <div style="padding: 12px; border: 1px solid rgba(0,0,0,0.08); border-radius: 6px; background-color: #f8f9fa;">
+                        <p class="mb-0 small text-muted">About my family, my dad's obit, and some stories he wrote</p>
+                    </div>
+                </a>
+                {{ else }}
+                {{ if $latestThree }}
+                <div class="latest-in-section">
+                    {{ range $latestThree }}
+                    <a href="{{ .RelPermalink }}" class="text-decoration-none text-reset d-block">
+                        <div class="mb-2" style="padding: 8px; border: 1px solid rgba(0,0,0,0.08); border-radius: 6px; transition: transform 0.2s;">
+                            <h6 class="mb-1 small">{{ .Title }}</h6>
+                            <div class="text-muted" style="font-size: 0.75rem;">
+                                {{ .Date.Format "January 2, 2006" }}
+                            </div>
                         </div>
                     </a>
-                    {{ else }}
-                    {{ if $latestThree }}
-                    <div class="latest-in-section">
-                        {{ range $latestThree }}
-                        <a href="{{ .RelPermalink }}" class="text-decoration-none text-reset d-block">
-                            <div class="mb-3 pb-3 border-bottom" style="position: relative; overflow: hidden; min-height: 60px; padding: 12px; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; transition: transform 0.2s;">
-                                {{ if .Params.image }}
-                                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('{{ .Params.image }}'); background-size: cover; background-position: center; opacity: 0.1; z-index: 0;"></div>
-                                {{ end }}
-                                <div style="position: relative; z-index: 1;">
-                                    <h6 class="mb-1">{{ .Title }}</h6>
-                                    <div class="text-muted small mb-1">
-                                        {{ .Date.Format "January 2, 2006" }}
-                                    </div>
-                                    {{ if .Description }}
-                                    <p class="text-muted small mb-0">{{ .Description | truncate 80 }}</p>
-                                    {{ else if .Summary }}
-                                    <p class="text-muted small mb-0">{{ .Summary | truncate 80 }}</p>
-                                    {{ end }}
-                                </div>
-                            </div>
-                        </a>
-                        {{ end }}
-                    </div>
-                    {{ else }}
-                    <p class="text-muted">No posts yet</p>
-                    {{ end }}
                     {{ end }}
                 </div>
+                {{ else }}
+                <p class="text-muted small mb-0">No posts yet</p>
+                {{ end }}
+                {{ end }}
             </div>
         </div>
         {{ end }}

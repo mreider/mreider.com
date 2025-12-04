@@ -12,7 +12,7 @@ There are no spoilers in this writeup.
 
 ## Thoughts
 
-It reminded me of This American Life (no coincidence, as Ira Glass is one of the producers) in how it tells a story by interviewing the people involved and reflecting on their conflicting views to show that there isn't one way of looking at the story. It also places some suspicion on people's motives and leaves you wondering about people's intentions and truthfulness (some likely not even conscious to them) along the way.
+Each episode of The Good Whale reminded me of This American Life (no coincidence, as Ira Glass is one of the producers) in how it tells a story by interviewing the people involved and reflecting on their conflicting views to show that there isn't one way of looking at the story. It also places some suspicion on people's motives and leaves you wondering about people's intentions and truthfulness (some likely not even conscious to them) along the way.
 
 In this case, the differences in people's motives are about how and why this effort originated, and why so much time and money was spent trying to re-wild an orca that was so dependent on humans. Keiko was captured at such a young age that it was incredibly difficult to reintegrate him into a pod. There are other orcas that would have been much better suited for success with less effort, money, and fewer roadblocks that were hard on both the people and the animal.
 
