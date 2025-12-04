@@ -28,9 +28,9 @@ Not a single “Do I have to?”
 
 Predictable. But also brilliant. It reminded me of a long-ago, expensive, and somewhat questionable master’s degree in education. Most schoolwork lacks relevance in students’ lives. But this? This was relevant, interesting, and important.
 
-Another big difference was their teamwork. Sure, they work together at home, but it’s usually fleeting -quickly devolving into raised voices, impatience, and selfishness.
+Another big difference was their teamwork. Sure, they work together at home, but it's usually fleeting, quickly devolving into raised voices, impatience, and selfishness.
 
-But during the dives, it was different. They had to do buddy checks -inspecting each other’s equipment, staying close underwater, and looking out for one another. Chris emphasized, strongly, how critical these habits are for survival. The kids lived up to the responsibility.
+But during the dives, it was different. They had to do buddy checks, inspecting each other's equipment, staying close underwater, and looking out for one another. Chris emphasized, strongly, how critical these habits are for survival. The kids lived up to the responsibility.
 
 Walking onto the beach after a dive was exhausting. Wet suits, tanks, and regulators weighed heavily on our backs. The sharp rocks were painful under bare feet. But then I looked up and saw my kids helping each other. They were holding hands, finding their sandals on the shore.
 

@@ -9,7 +9,7 @@ I'm trying to write a novel - a character-driven thriller. I use ChatGPT here an
 
 However, ChatGPT is too general-purpose for writers and often resorts to "corporate-speak." This led me to try [Sudowrite](https://sudowrite.com), which is built on language models like GPT but designed for aspiring authors.
 
-Sudowrite blends AI with structured writing tools and an interface similar to [Scrivener](https://www.literatureandlatte.com/scrivener/overview). It understands different forms of writing -from short stories to full-length novels -and supports a handful of genres.
+Sudowrite blends AI with structured writing tools and an interface similar to [Scrivener](https://www.literatureandlatte.com/scrivener/overview). It understands different forms of writing, from short stories to full-length novels, and supports a handful of genres.
 
 I didn't buy it, but I was impressed.
 

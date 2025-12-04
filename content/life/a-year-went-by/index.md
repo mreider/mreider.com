@@ -5,7 +5,7 @@ date: "2022-03-10"
 image: "/images/matt/94797BC5-3A6A-4043-87CC-280B876F7D93_1_105_c.jpeg"
 ---
 
-I stopped writing over a year ago. I'm not sure why -maybe I just wasn't feeling it.
+I stopped writing over a year ago. I'm not sure why. Maybe I just wasn't feeling it.
 
 But today, I'll give you a quick update.
 
@@ -13,7 +13,7 @@ We've had some new experiences. We went skiing on a couple of glaciers. We got a
 
 Now you're mostly caught up.
 
-Some big news: we moved from Linz to Vienna in August. The city gives us more options for art, culture, and food, not to mention a proper international airport with flights to anywhere. But the move was really about the kids -they now attend a fantastic international school and have made lots of new friends.
+Some big news: we moved from Linz to Vienna in August. The city gives us more options for art, culture, and food, not to mention a proper international airport with flights to anywhere. But the move was really about the kids, they now attend a fantastic international school and have made lots of new friends.
 
 And now it's March. Unfortunately, most of our attention is on Ukraine, which is just a six-hour drive from Vienna through Slovakia. Many of our coworkers are from Ukraine, and it’s unimaginable what they’re going through. The whole situation is awful. While I’ve always enjoyed discussing politics and history, I don’t have much more to say about this one.
 

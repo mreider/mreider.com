@@ -134,7 +134,7 @@ I enjoy the finer things without hedging toward materialism.
 
 ** He **
 
-Wait a sec. No implication of materialism here. Not at all. You might want a little something now and then  -perfume, a negligee, a scarf. Not a bribe or a pay-off. To know I care, right? That I appreciate who you are.
+Wait a sec. No implication of materialism here. Not at all. You might want a little something now and then: perfume, a negligee, a scarf. Not a bribe or a pay-off. To know I care, right? That I appreciate who you are.
 
 ** She **
 

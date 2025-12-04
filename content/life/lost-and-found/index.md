@@ -17,7 +17,7 @@ After waiting a couple of days, we started searching. One item seemed promising.
 
 ![lost and found listing](/images/matt/listing.png)
 
-I went to the Zentrales Fundservice, just a few stops from my office. Unfortunately, the clerk had bad news -the item had already been collected. Worse, he said, it couldn’t have been Max’s bag because it also contained a passport.
+I went to the Zentrales Fundservice, just a few stops from my office. Unfortunately, the clerk had bad news: the item had already been collected. Worse, he said, it couldn't have been Max's bag because it also contained a passport.
 
 “Okay,” I said, “I’ll keep searching the website.”
 
@@ -61,7 +61,7 @@ The *Meldezettel* is required for many things in Austria, including:
 
 In Austria, it’s nearly impossible to “fly under the radar.” You can’t hide behind a PO Box or file taxes under someone else’s address. The government knows where you are. In Max’s case, that system worked beautifully.
 
-Back in the U.S., this might seem like the ultimate overreach -like killing a bald eagle with a hammer. “Government is evil,” we say in America.
+Back in the U.S., this might seem like the ultimate overreach, like killing a bald eagle with a hammer. "Government is evil," we say in America.
 
 But here in Europe, aside from the ultra-right fascists and ultra-left anarchists (a small but growing minority), people don’t think like that. It’s just not a thing.
 

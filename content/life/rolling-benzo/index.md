@@ -4,11 +4,11 @@ author: "Matt Reider"
 date: "2019-09-06"
 ---
 
-Lots of rap lyrics mention benzos. Mercedes Benzos. Fancy cars. I just rented my second one from the Hertz in downtown Linz. It was a triple upgrade from a Ford Fiesta, but the rate stayed the same -just €32 a day. That’s how we roll. I rolled it all the way home.
+Lots of rap lyrics mention benzos. Mercedes Benzos. Fancy cars. I just rented my second one from the Hertz in downtown Linz. It was a triple upgrade from a Ford Fiesta, but the rate stayed the same, just €32 a day. That's how we roll. I rolled it all the way home.
 
-We rent cars for hauling stuff we can’t carry and for getting out of town. Driving around Austria is pretty easy. The road signs are different, of course, and there are no yellow lines -only white ones. But the real surprise is the radio. The stations are amazing. 
+We rent cars for hauling stuff we can't carry and for getting out of town. Driving around Austria is pretty easy. The road signs are different, of course, and there are no yellow lines, only white ones. But the real surprise is the radio. The stations are amazing. 
 
-Last weekend, I stumbled across a German Bing Crosby-style song -a delightful call-and-response between a married couple (or so it sounded to me). There’s also plenty of classical music. But my favorite stations are the eclectic ones.
+Last weekend, I stumbled across a German Bing Crosby-style song, a delightful call-and-response between a married couple (or so it sounded to me). There's also plenty of classical music. But my favorite stations are the eclectic ones.
 
 ---
 
@@ -33,7 +33,7 @@ Here’s the sequence that played on 95.2 FM ([Radio Oberösterreich](https://tu
    This one’s been stuck in my head all morning. It’s the kind of song you’d sing with a friend, drunk, at karaoke. Everyone groans when it starts but ends up singing along.
 
 5. **Rocky Mountain Music** by Eddie Rabbit ([link](https://www.youtube.com/watch?v=Hut3MsZk93E))  
-   The final track sealed the deal. The most eclectic set of songs I’ve ever heard -at least for the next 24 hours. I noticed some similarities between Eddie and Nena’s haircuts, but that’s about it.
+   The final track sealed the deal. The most eclectic set of songs I've ever heard, at least for the next 24 hours. I noticed some similarities between Eddie and Nena's haircuts, but that's about it.
 
 ---
 
