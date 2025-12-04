@@ -70,10 +70,15 @@
                 <div class="latest-in-section">
                     {{ range $latestThree }}
                     <a href="{{ .RelPermalink }}" class="text-decoration-none text-reset d-block">
-                        <div class="mb-2" style="padding: 8px; border: 1px solid rgba(0,0,0,0.08); border-radius: 6px; transition: transform 0.2s;">
-                            <h6 class="mb-1 small">{{ .Title }}</h6>
-                            <div class="text-muted" style="font-size: 0.75rem;">
-                                {{ .Date.Format "January 2, 2006" }}
+                        <div class="mb-2" style="position: relative; overflow: hidden; padding: 8px; border: 1px solid rgba(0,0,0,0.08); border-radius: 6px; transition: transform 0.2s; min-height: 60px;">
+                            {{ if .Params.image }}
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('{{ .Params.image }}'); background-size: cover; background-position: center; opacity: 0.15; z-index: 0;"></div>
+                            {{ end }}
+                            <div style="position: relative; z-index: 1;">
+                                <h6 class="mb-1 small">{{ .Title }}</h6>
+                                <div class="text-muted" style="font-size: 0.75rem;">
+                                    {{ .Date.Format "January 2, 2006" }}
+                                </div>
                             </div>
                         </div>
                     </a>
