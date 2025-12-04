@@ -667,6 +667,17 @@ p.small {
     color: #841212;
 }
 
+/* Clickable post card styling */
+a.text-reset:hover .card,
+a.text-reset:hover > div {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+}
+
+a.text-reset {
+    cursor: pointer;
+}
+
 /* Print styles */
 @media print {
     body {
