@@ -312,6 +312,19 @@ def generate_html(data: Dict[str, Any]) -> str:
             margin-bottom: 0pt;
         }}
 
+        .education-certifications-section {{
+            page-break-before: always;
+            margin-top: 32pt;
+        }}
+
+        .skills-section {{
+            margin-bottom: 28pt;
+        }}
+
+        .work-experience-section {{
+            margin-bottom: 24pt;
+        }}
+
         .section-title {{
             color: #000000;
             font-family: 'Crimson Text', serif;
@@ -688,18 +701,18 @@ def generate_html(data: Dict[str, Any]) -> str:
                 </p>
             </section>
 
-            <section>
+            <section class="work-experience-section">
                 <h2 class="section-title">Work Experience</h2>
 
 {jobs_html}            </section>
 
-            <section>
+            <section class="skills-section">
                 <h2 class="section-title">Core Competencies</h2>
                 <div class="skills-grid">
 {skills_html}                </div>
             </section>
 
-            <section>
+            <section class="education-certifications-section">
                 <h2 class="section-title">Education & Certifications</h2>
 {edu_html}
 {cert_html}            </section>
