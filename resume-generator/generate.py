@@ -856,15 +856,25 @@ def main():
         # Copy files to Hugo static directory
         print("Copying files to Hugo static/resume directory...")
         os.makedirs(hugo_static_resume, exist_ok=True)
-        
+
+        # Copy index.html as standalone.html to avoid conflict with Hugo-generated /resume/ page
+        # The standalone version is used for PDF generation only
+        src = os.path.join(script_dir, 'index.html')
+        if os.path.exists(src):
+            dst = os.path.join(hugo_static_resume, 'standalone.html')
+            shutil.copy2(src, dst)
+            print(f"  ✓ Copied index.html as standalone.html (for PDF generation)")
+        else:
+            print(f"  ⚠ Warning: index.html not found")
+
+        # Copy other files normally
         files_to_copy = [
-            'index.html',
             'resume.pdf',
             'matt-profile-image.jpeg',
             'acrobat-logo.png',
             'linkedin-logo.png'
         ]
-        
+
         for filename in files_to_copy:
             src = os.path.join(script_dir, filename)
             if os.path.exists(src):

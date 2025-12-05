@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <title>Email Subscriptions from Static Blogs - MR</title>
     <meta name="description" content="Matthew Reider&#39;s personal website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <meta property="og:image" content="https://mreider.com/images/matt/emails-everywhere.png" />
+    <meta property="og:image" content="http://localhost:1313/images/matt/emails-everywhere.png" />
     
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     
     <meta name="twitter:card" content="summary_large_image" />
     
-    <meta name="twitter:image" content="https://mreider.com/images/matt/emails-everywhere.png" />
+    <meta name="twitter:image" content="http://localhost:1313/images/matt/emails-everywhere.png" />
     
     
     <meta property="og:site_name" content="MR">
@@ -88,14 +88,12 @@
 	
 	<div class="text-muted mb-2">February 17, 2025</div>
 	
-    
-    
 
     
         <div class="mb-5">
             <p>In my <a href="krems_static_site_generator.md">last blog entry</a>, I introduced Krems, a project I built for generating static blogs. One of the challenges with static blogs is their inability to run server-side code or databases, which makes storing email addresses for blog subscriptions impossible. To work around this, you can either use a paid service like <a href="https://rssfeedpulse.com">rssfeedpulse.com</a> to scrape your RSS feed and email new posts to subscribers, or you can encourage readers to follow your blog using an RSS reader.</p>
-<p>A few months ago, I decided to build my own alternative to RSSFeedPulse using Python with <a href="Building_Quacker.md">some help from ChatGPT</a>.his week, I took it a step further and rewrote the entire application in Golang. So far, it&rsquo;s been running smoothly. I named it Quacker, and you can check it out at <a href="https://quacker.eu">quacker.eu</a>. However, access is restricted — you&rsquo;ll need me to add your GitHub username to the approved list before you can log in.</p>
-<p>Last night, after publishing a new blog post, Quacker did exactly what it was designed to do — it sent me an email notification.</p>
+<p>A few months ago, I decided to build my own alternative to RSSFeedPulse using Python with <a href="Building_Quacker.md">some help from ChatGPT</a>. This week, I took it a step further and rewrote the entire application in Golang. So far, it&rsquo;s been running smoothly. I named it Quacker, and you can check it out at <a href="https://quacker.eu">quacker.eu</a>. However, access is restricted  - you&rsquo;ll need me to add your GitHub username to the approved list before you can log in.</p>
+<p>Last night, after publishing a new blog post, Quacker did exactly what it was designed to do  - it sent me an email notification.</p>
 <p><img src="/images/matt/email-from-quacker.png" alt="screenshot of a quacker email"></p>
 <h1 id="how-it-works">How it works</h1>
 <p>Every few minutes, Quacker fetches the RSS feeds of every blog in its database and emails new posts to subscribed users. To add a blog to the database, simply log in and create a new entry like this:</p>
@@ -123,12 +121,12 @@
         <div class="d-flex justify-content-between gap-3">
             <div>
                 
-                <a href="https://mreider.com/tech/krems-static-site-generator/" class="btn btn-sm btn-outline-secondary">← Previous: Krems static blog generator</a>
+                <a href="http://localhost:1313/tech/krems-static-site-generator/" class="btn btn-sm btn-outline-secondary">← Previous: Krems static blog generator</a>
                 
             </div>
             <div>
                 
-                <a href="https://mreider.com/tech/ai-hype/" class="btn btn-sm btn-outline-secondary">Next: Why AI won&#39;t take control →</a>
+                <a href="http://localhost:1313/tech/linked-in-refuge/" class="btn btn-sm btn-outline-secondary">Next: LinkedIn, Geopolitics, and Silence →</a>
                 
             </div>
         </div>
