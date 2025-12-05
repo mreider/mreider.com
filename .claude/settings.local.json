@@ -22,7 +22,8 @@
       "Bash(bash:*)",
       "Bash(cat:*)",
       "Bash(ls:*)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "Bash(python3:*)"
     ],
     "deny": [],
     "ask": []
