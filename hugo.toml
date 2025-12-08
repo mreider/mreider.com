@@ -35,3 +35,7 @@ title = 'MR'
     name = "About"
     url = "/about/"
     weight = 5
+  [[menu.main]]
+    name = "Deutsch"
+    url = "/deutsch/"
+    weight = 6
