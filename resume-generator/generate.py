@@ -1,13 +1,52 @@
 #!/usr/bin/env python3
 """
 Resume Generator Script
-Converts resume.txt to styled HTML resume and PDF
+Converts resume text files to styled HTML resumes and PDFs
+Supports multiple people: matt, max, alison
 """
 
 import re
 import subprocess
 import sys
+import os
+import shutil
+import argparse
 from typing import List, Dict, Any
+
+# Person-specific configurations
+PERSON_CONFIGS = {
+    'matt': {
+        'input_file': 'matt_resume.txt',
+        'profile_image': 'matt-profile-image.jpeg',
+        'linkedin_url': 'https://linkedin.com/in/mreider',
+        'output_dir': 'matt',
+        'resume_type': 'professional',  # professional resume with skills grid
+        'show_skills_grid': True,
+        'show_certifications': True,
+        'show_personal': True,
+    },
+    'max': {
+        'input_file': 'max_resume.txt',
+        'profile_image': 'max-profile-image.jpeg',
+        'linkedin_url': None,  # No LinkedIn for Max
+        'output_dir': 'max',
+        'resume_type': 'student_twocol',  # two-column student resume format
+        'show_skills_grid': False,
+        'show_certifications': False,
+        'show_personal': False,
+    },
+    'alison': {
+        'input_file': 'alison_resume.txt',
+        'profile_image': 'alison.jpeg',
+        'linkedin_url': 'https://www.linkedin.com/in/alison-cohen-4229681a7',
+        'output_dir': 'alison',
+        'resume_type': 'professional',  # professional resume
+        'show_skills_grid': False,
+        'show_certifications': False,
+        'show_personal': False,
+    },
+}
+
 
 def parse_resume_data(filename: str) -> Dict[str, Any]:
     """Parse the resume data from text file"""
@@ -23,17 +62,13 @@ def parse_resume_data(filename: str) -> Dict[str, Any]:
     data['location'] = re.search(r'LOCATION: (.+)', content).group(1)
 
     # Parse summary
-    summary_match = re.search(r'SUMMARY:\n(.+?)(?=\n[A-Z])', content, re.DOTALL)
-    data['summary'] = summary_match.group(1).strip()
-
-    # Parse transition note
-    transition_match = re.search(r'TRANSITION NOTE:\n(.+)', content)
-    data['transition'] = transition_match.group(1) if transition_match else ""
+    summary_match = re.search(r'SUMMARY:\n(.+?)(?=\n\n|\nJOB TITLE|\nEDUCATION|\nLEADERSHIP)', content, re.DOTALL)
+    data['summary'] = summary_match.group(1).strip() if summary_match else ""
 
     # Parse jobs
     data['jobs'] = []
 
-    # Pattern for jobs with bullets (HR roles)
+    # Pattern for jobs with bullets
     job_with_bullets_pattern = r'JOB TITLE: (.+?)\nCOMPANY: (.+?)\nDATES: (.+?)\n((?:- .+\n?)+)'
     for match in re.finditer(job_with_bullets_pattern, content):
         title, company, dates, bullets = match.groups()
@@ -45,8 +80,8 @@ def parse_resume_data(filename: str) -> Dict[str, Any]:
             'bullets': bullet_list
         })
 
-    # Pattern for jobs without bullets (counseling roles)
-    job_without_bullets_pattern = r'JOB TITLE: (.+?)\nCOMPANY: (.+?)\nDATES: (.+?)(?=\n\n|\nJOB TITLE|\nMATERNITY|\nEARLY|\nCORE|\nEDUCATION|\nPERSONAL|$)'
+    # Pattern for jobs without bullets
+    job_without_bullets_pattern = r'JOB TITLE: (.+?)\nCOMPANY: (.*?)\nDATES: (.+?)(?=\n\n|\nJOB TITLE|\nEDUCATION|\nACTIVITIES|\nSKILLS|\nLANGUAGES|$)'
     for match in re.finditer(job_without_bullets_pattern, content):
         title, company, dates = match.groups()
         # Skip if this job was already found with bullets
@@ -59,27 +94,16 @@ def parse_resume_data(filename: str) -> Dict[str, Any]:
                 'bullets': []
             })
 
-
-
-    # Parse competencies
-    comp_match = re.search(r'CORE COMPETENCIES:\n(.+?)(?=\n[A-Z])', content, re.DOTALL)
-    if comp_match:
-        comp_text = comp_match.group(1).strip()
-        data['competencies'] = [line.strip('• ').strip() for line in comp_text.split('\n') if line.strip().startswith('•')]
-    else:
-        data['competencies'] = []
-
-    # Parse education from text file
+    # Parse education
     data['education'] = []
-    edu_match = re.search(r'EDUCATION:\n\n(.+?)(?=\n[A-Z][A-Z\s&]+:|$)', content, re.DOTALL)
+    edu_match = re.search(r'EDUCATION:\n\n(.+?)(?=\nLICENSES|\nLEADERSHIP|\nACTIVITIES|\nSKILLS|\nPERSONAL|$)', content, re.DOTALL)
     if edu_match:
         edu_text = edu_match.group(1).strip()
         lines = edu_text.split('\n')
         i = 0
         while i < len(lines):
             line = lines[i].strip()
-            # New format: degree comes first
-            if line and not line.startswith('Graduated') and not line.startswith('Pupil Personnel'):
+            if line and not line.startswith('Graduated') and not line.startswith('Pupil Personnel') and not line.startswith('High Level') and not line.startswith('An interdisciplinary'):
                 degree = line
                 school = ""
                 date = ""
@@ -90,14 +114,22 @@ def parse_resume_data(filename: str) -> Dict[str, Any]:
                     school = lines[i + 1].strip()
 
                 # Get graduation date from next line
-                if i + 2 < len(lines) and lines[i + 2].strip().startswith('Graduated'):
-                    date = lines[i + 2].strip().replace('Graduated ', '')
-                    i += 1  # Skip the date line
+                if i + 2 < len(lines):
+                    next_line = lines[i + 2].strip()
+                    if next_line.startswith('Graduated'):
+                        date = next_line.replace('Graduated ', '')
+                        i += 1
+                    elif re.match(r'^[A-Z][a-z]+ \d{4}', next_line):
+                        # Date format like "September 2025 - Present"
+                        date = next_line
+                        i += 1
 
-                # Check for additional details (like credentials)
-                if i + 2 < len(lines) and lines[i + 2].strip() and not lines[i + 2].strip().startswith('Bachelor') and not lines[i + 2].strip().startswith('Master'):
-                    details = lines[i + 2].strip()
-                    i += 1  # Skip the details line
+                # Check for additional details
+                if i + 2 < len(lines):
+                    detail_line = lines[i + 2].strip()
+                    if detail_line and not re.match(r'^[A-Z][a-z]+ of|^Bachelor|^Master|^International', detail_line):
+                        details = detail_line
+                        i += 1
 
                 data['education'].append({
                     'degree': degree,
@@ -105,30 +137,104 @@ def parse_resume_data(filename: str) -> Dict[str, Any]:
                     'date': date,
                     'details': details if details else None
                 })
-                i += 2  # Skip school line
+                i += 2
             else:
                 i += 1
 
+    # Parse leadership training (for Max's resume)
+    data['leadership'] = []
+    leadership_match = re.search(r'LEADERSHIP TRAINING:\n\n(.+?)(?=\nACTIVITIES|$)', content, re.DOTALL)
+    if leadership_match:
+        # Use the job parser for leadership section too
+        leadership_content = leadership_match.group(1)
+        job_pattern = r'JOB TITLE: (.+?)\nCOMPANY: (.+?)\nDATES: (.+?)\n((?:- .+\n?)+)'
+        for match in re.finditer(job_pattern, leadership_content):
+            title, company, dates, bullets = match.groups()
+            bullet_list = [line.strip('- ').strip() for line in bullets.split('\n') if line.strip().startswith('-')]
+            data['leadership'].append({
+                'title': title,
+                'company': company,
+                'dates': dates,
+                'bullets': bullet_list
+            })
+
+    # Parse activities (for Max's resume)
+    data['activities'] = []
+    activities_match = re.search(r'ACTIVITIES:\n\n(.+?)(?=\nWORK EXPERIENCE|\nSKILLS|$)', content, re.DOTALL)
+    if activities_match:
+        activities_text = activities_match.group(1).strip()
+        # Split by double newlines or activity headers
+        blocks = re.split(r'\n\n+', activities_text)
+        for block in blocks:
+            lines = [l.strip() for l in block.split('\n') if l.strip()]
+            if lines:
+                activity_name = lines[0]
+                activity_bullets = [l.strip('- ').strip() for l in lines[1:] if l.strip().startswith('-')]
+                data['activities'].append({
+                    'name': activity_name,
+                    'bullets': activity_bullets
+                })
+
+    # Parse work experience (for student resumes)
+    data['work_experience'] = []
+    work_match = re.search(r'WORK EXPERIENCE:\n\n(.+?)(?=\nSKILLS|$)', content, re.DOTALL)
+    if work_match:
+        work_content = work_match.group(1)
+        job_pattern = r'JOB TITLE: (.+?)\nCOMPANY: (.+?)\nDATES: (.+?)\n((?:- .+\n?)*)'
+        for match in re.finditer(job_pattern, work_content):
+            title, company, dates, bullets = match.groups()
+            bullet_list = [line.strip('- ').strip() for line in bullets.split('\n') if line.strip().startswith('-')]
+            data['work_experience'].append({
+                'title': title,
+                'company': company,
+                'dates': dates,
+                'bullets': bullet_list
+            })
+
+    # Parse skills (simple list for Max)
+    data['skills'] = []
+    skills_match = re.search(r'SKILLS:\n((?:- .+\n?)+)', content)
+    if skills_match:
+        skills_text = skills_match.group(1)
+        data['skills'] = [line.strip('- ').strip() for line in skills_text.split('\n') if line.strip().startswith('-')]
+
+    # Parse languages
+    languages_match = re.search(r'LANGUAGES:\n(.+?)(?=\n\n|$)', content, re.DOTALL)
+    data['languages'] = languages_match.group(1).strip() if languages_match else ""
+
+    # Parse interests
+    interests_match = re.search(r'INTERESTS:\n(.+?)(?=\n\n|$)', content, re.DOTALL)
+    data['interests'] = interests_match.group(1).strip() if interests_match else ""
+
+    # Parse references
+    references_match = re.search(r'REFERENCES:\n(.+?)(?=\n\n|$)', content, re.DOTALL)
+    data['references'] = references_match.group(1).strip() if references_match else ""
+
+    # Parse competencies (for Matt's resume)
+    comp_match = re.search(r'CORE COMPETENCIES:\n(.+?)(?=\nEDUCATION)', content, re.DOTALL)
+    if comp_match:
+        comp_text = comp_match.group(1).strip()
+        data['competencies'] = [line.strip('• ').strip() for line in comp_text.split('\n') if line.strip().startswith('•')]
+    else:
+        data['competencies'] = []
+
     # Parse licenses & certifications
     data['certifications'] = []
-    cert_match = re.search(r'LICENSES & CERTIFICATIONS:\n\n(.+?)(?=\n[A-Z][A-Z\s&]+:|$)', content, re.DOTALL)
+    cert_match = re.search(r'LICENSES & CERTIFICATIONS:\n\n(.+?)(?=\nPERSONAL|$)', content, re.DOTALL)
     if cert_match:
         cert_text = cert_match.group(1).strip()
         lines = cert_text.split('\n')
         i = 0
         while i < len(lines):
             line = lines[i].strip()
-            # New format: certification name comes first
             if line and not line.startswith('Issued'):
                 cert_name = line
                 organization = ""
                 date = ""
 
-                # Get organization from next line
                 if i + 1 < len(lines):
                     organization = lines[i + 1].strip()
 
-                # Get issue date from next line
                 if i + 2 < len(lines) and lines[i + 2].strip().startswith('Issued'):
                     date = lines[i + 2].strip().replace('Issued ', '')
 
@@ -137,7 +243,7 @@ def parse_resume_data(filename: str) -> Dict[str, Any]:
                     'organization': organization,
                     'date': date
                 })
-                i += 3  # Skip organization and date lines
+                i += 3
             else:
                 i += 1
 
@@ -147,14 +253,450 @@ def parse_resume_data(filename: str) -> Dict[str, Any]:
 
     return data
 
-def generate_html(data: Dict[str, Any]) -> str:
+
+def generate_student_twocol_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
+    """Generate two-column HTML for student resume (like Max's original PDF)"""
+
+    # Build skills as comma-separated text
+    skills_text = ", ".join(data.get('skills', []))
+
+    # Build education HTML for left column
+    edu_html = ""
+    for edu in data['education']:
+        details = edu.get('details', '')
+        if details:
+            details_html = f'<p class="edu-description">{details}</p>'
+        else:
+            details_html = ''
+        edu_html += f"""
+                <div class="edu-item">
+                    <div class="edu-school">{edu['school']}</div>
+                    <div class="edu-degree">{edu['degree']}</div>
+                    <div class="edu-date">{edu['date']}</div>
+                    {details_html}
+                </div>"""
+
+    # Build leadership HTML
+    leadership_html = ""
+    if data.get('leadership'):
+        for item in data['leadership']:
+            bullets_text = " ".join(item['bullets'])
+            leadership_html += f"""
+                <div class="leadership-item">
+                    <div class="leadership-org">{item['company']}</div>
+                    <div class="leadership-title">{item['title']}</div>
+                    <div class="leadership-date">{item['dates']}</div>
+                    <p class="leadership-description">{bullets_text}</p>
+                </div>"""
+
+    # Build activities HTML
+    activities_html = ""
+    if data.get('activities'):
+        for activity in data['activities']:
+            if activity['bullets']:
+                desc = " ".join(activity['bullets'])
+            else:
+                desc = ""
+            activities_html += f"""
+                <div class="activity-item">
+                    <div class="activity-name">{activity['name']}</div>
+                    <p class="activity-description">{desc}</p>
+                </div>"""
+
+    # Build work experience HTML
+    work_html = ""
+    if data.get('work_experience'):
+        for job in data['work_experience']:
+            bullets_text = " ".join(job['bullets']) if job['bullets'] else ""
+            work_html += f"""
+                <div class="work-item">
+                    <div class="work-title">{job['title']}</div>
+                    <div class="work-company">{job['company']}</div>
+                    <div class="work-date">{job['dates']}</div>
+                    <p class="work-description">{bullets_text}</p>
+                </div>"""
+
+    # Action icons
+    action_icons_html = """
+        <div class="action-icons">
+            <a href="resume.pdf" title="Download PDF" target="_blank">
+                <img src="acrobat-logo.png" alt="Download PDF">
+            </a>
+        </div>"""
+
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{data['name']} - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        * {{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }}
+
+        @page {{
+            size: letter;
+            margin: 0;
+        }}
+
+        body {{
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 9pt;
+            line-height: 1.4;
+            color: #333;
+            background: #fff;
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            margin: 0 auto;
+            padding: 0.4in;
+            overflow: hidden;
+        }}
+
+        .container {{
+            display: grid;
+            grid-template-columns: 1fr 220px;
+            gap: 30px;
+            height: 100%;
+            position: relative;
+        }}
+
+        .action-icons {{
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            gap: 8px;
+            z-index: 1000;
+        }}
+
+        .action-icons a {{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 5px;
+        }}
+
+        .action-icons img {{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }}
+
+        /* Left Column */
+        .left-column {{
+            display: flex;
+            flex-direction: column;
+        }}
+
+        /* Header */
+        .header {{
+            margin-bottom: 16px;
+        }}
+
+        .header h1 {{
+            font-size: 28pt;
+            font-weight: 700;
+            color: #1a1a1a;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }}
+
+        .header .tagline {{
+            font-size: 9.5pt;
+            color: #555;
+            line-height: 1.5;
+        }}
+
+        /* Section Titles */
+        .section-title {{
+            font-size: 12pt;
+            font-weight: 600;
+            color: #2b7de9;
+            margin-bottom: 10px;
+            margin-top: 14px;
+        }}
+
+        .section-title:first-of-type {{
+            margin-top: 0;
+        }}
+
+        /* Education */
+        .edu-item {{
+            margin-bottom: 12px;
+        }}
+
+        .edu-school {{
+            font-size: 10pt;
+            font-weight: 600;
+            color: #1a1a1a;
+        }}
+
+        .edu-degree {{
+            font-size: 9pt;
+            font-weight: 500;
+            color: #444;
+        }}
+
+        .edu-date {{
+            font-size: 8.5pt;
+            color: #666;
+            margin-bottom: 4px;
+        }}
+
+        .edu-description {{
+            font-size: 8.5pt;
+            color: #555;
+            line-height: 1.45;
+        }}
+
+        /* Leadership */
+        .leadership-item {{
+            margin-bottom: 10px;
+        }}
+
+        .leadership-org {{
+            font-size: 10pt;
+            font-weight: 600;
+            color: #1a1a1a;
+        }}
+
+        .leadership-title {{
+            font-size: 9pt;
+            font-weight: 500;
+            color: #444;
+        }}
+
+        .leadership-date {{
+            font-size: 8.5pt;
+            color: #666;
+            margin-bottom: 4px;
+        }}
+
+        .leadership-description {{
+            font-size: 8.5pt;
+            color: #555;
+            line-height: 1.45;
+        }}
+
+        /* Activities */
+        .activity-item {{
+            margin-bottom: 10px;
+        }}
+
+        .activity-name {{
+            font-size: 10pt;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 2px;
+        }}
+
+        .activity-description {{
+            font-size: 8.5pt;
+            color: #555;
+            line-height: 1.45;
+        }}
+
+        /* Work Experience */
+        .work-item {{
+            margin-bottom: 10px;
+        }}
+
+        .work-title {{
+            font-size: 10pt;
+            font-weight: 600;
+            color: #1a1a1a;
+        }}
+
+        .work-company {{
+            font-size: 9pt;
+            font-weight: 500;
+            color: #444;
+        }}
+
+        .work-date {{
+            font-size: 8.5pt;
+            color: #666;
+            margin-bottom: 4px;
+        }}
+
+        .work-description {{
+            font-size: 8.5pt;
+            color: #555;
+            line-height: 1.45;
+        }}
+
+        /* Right Column */
+        .right-column {{
+            padding-top: 0;
+        }}
+
+        .contact-block {{
+            margin-bottom: 20px;
+            text-align: right;
+        }}
+
+        .contact-block .location {{
+            font-size: 9pt;
+            color: #333;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }}
+
+        .contact-block .phone,
+        .contact-block .email {{
+            font-size: 9pt;
+            color: #333;
+        }}
+
+        .right-section {{
+            margin-bottom: 20px;
+        }}
+
+        .right-section-title {{
+            font-size: 11pt;
+            font-weight: 600;
+            color: #2b7de9;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }}
+
+        .right-section p {{
+            font-size: 8.5pt;
+            color: #555;
+            line-height: 1.5;
+        }}
+
+        .profile-image {{
+            width: 100%;
+            max-width: 180px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            float: right;
+        }}
+
+        @media print {{
+            body {{
+                padding: 0.4in;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }}
+            .action-icons {{
+                display: none !important;
+            }}
+        }}
+
+        @media screen and (max-width: 768px) {{
+            body {{
+                width: 100%;
+                min-height: auto;
+                max-height: none;
+                padding: 20px;
+            }}
+            .container {{
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }}
+            .right-column {{
+                order: -1;
+            }}
+            .contact-block {{
+                text-align: left;
+            }}
+            .profile-image {{
+                float: none;
+                margin: 0 auto 16px auto;
+                display: block;
+            }}
+        }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        {action_icons_html}
+
+        <!-- Left Column: Main Content -->
+        <div class="left-column">
+            <div class="header">
+                <h1>{data['name'].upper()}</h1>
+                <p class="tagline">{data['summary']}</p>
+            </div>
+
+            <h2 class="section-title">Education</h2>
+            {edu_html}
+
+            <h2 class="section-title">Leadership Training</h2>
+            {leadership_html}
+
+            <h2 class="section-title">Activities</h2>
+            {activities_html}
+
+            <h2 class="section-title">Work Experience</h2>
+            {work_html}
+        </div>
+
+        <!-- Right Column: Contact & Skills -->
+        <div class="right-column">
+            <img src="{config.get('profile_image', '')}" alt="{data['name']}" class="profile-image">
+
+            <div class="contact-block">
+                <div class="location">{data['location'].replace(' | ', '<br>')}</div>
+                <div class="phone">{data['phone']}</div>
+                <div class="email">{data['email']}</div>
+            </div>
+
+            <div class="right-section">
+                <h3 class="right-section-title">Objective</h3>
+                <p>{data['summary']}</p>
+            </div>
+
+            <div class="right-section">
+                <h3 class="right-section-title">Skills</h3>
+                <p>{skills_text}</p>
+            </div>
+
+            <div class="right-section">
+                <h3 class="right-section-title">Languages</h3>
+                <p>{data.get('languages', '')}</p>
+            </div>
+
+            <div class="right-section">
+                <h3 class="right-section-title">Interests</h3>
+                <p>{data.get('interests', '')}</p>
+            </div>
+
+            <div class="right-section">
+                <h3 class="right-section-title">References</h3>
+                <p>{data.get('references', '')}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>"""
+
+    return html
+
+
+def generate_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
     """Generate HTML from parsed data"""
 
     # Generate jobs HTML
     jobs_html = ""
     for job in data['jobs']:
         bullets_html = ""
-        if job['bullets']:  # Only add bullets if they exist
+        if job['bullets']:
             for bullet in job['bullets']:
                 bullets_html += f"                        <li>{bullet}</li>\n"
             bullets_section = f"""                    <ul class="achievements">
@@ -162,11 +704,13 @@ def generate_html(data: Dict[str, Any]) -> str:
         else:
             bullets_section = ""
 
+        company_html = f'<span class="company">{job["company"]}</span>' if job['company'] else ""
+
         jobs_html += f"""            <div class="job">
                 <div class="job-header">
                     <div>
                         <span class="job-title">{job['title']}</span>
-                        <span class="company">{job['company']}</span>
+                        {company_html}
                     </div>
                     <span class="job-duration">{job['dates']}</span>
                 </div>
@@ -175,51 +719,232 @@ def generate_html(data: Dict[str, Any]) -> str:
 
 """
 
-    # Generate skills HTML in grid format
-    skills_html = ""
-    skills_categories = {
-        "Product Management": ["Roadmap development", "Requirement gathering", "KPI definition", "Competitive analysis", "Go-to-market strategy"],
-        "Platform Experience": ["Multi-tenant SaaS platforms", "API strategy", "Developer ecosystems", "Enterprise integrations"],
-        "Leadership": ["Engineering collaboration", "UX partnership", "Stakeholder management", "Executive communication"],
-        "Technical Skills": ["Jira, Aha!, Confluence", "API design", "AWS, GCP, Azure", "SQL & data analytics"]
-    }
+    # Generate education HTML
+    edu_html = ""
+    for edu in data['education']:
+        details_html = ""
+        if edu.get('details'):
+            details_html = f'<div class="edu-details">{edu["details"]}</div>'
 
-    for category, skills in skills_categories.items():
-        skills_list = ""
-        for skill in skills:
-            skills_list += f"                            <li>{skill}</li>\n"
-        skills_html += f"""                    <div class="skill-category">
+        edu_html += f"""                <div class="education-item">
+                    <div class="degree">{edu['degree']}</div>
+                    <div class="school">{edu['school']}</div>
+                    <div class="location">{edu['date']}</div>
+                    {details_html}
+                </div>
+"""
+
+    # Generate leadership HTML (for Max)
+    leadership_html = ""
+    if data.get('leadership'):
+        for item in data['leadership']:
+            bullets_html = ""
+            for bullet in item['bullets']:
+                bullets_html += f"                        <li>{bullet}</li>\n"
+            leadership_html += f"""            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">{item['title']}</span>
+                        <span class="company">{item['company']}</span>
+                    </div>
+                    <span class="job-duration">{item['dates']}</span>
+                </div>
+                    <ul class="achievements">
+{bullets_html}                    </ul>
+            </div>
+
+"""
+
+    # Generate activities HTML (for Max)
+    activities_html = ""
+    if data.get('activities'):
+        for activity in data['activities']:
+            bullets_html = ""
+            for bullet in activity['bullets']:
+                bullets_html += f"                        <li>{bullet}</li>\n"
+            if bullets_html:
+                activities_html += f"""            <div class="activity">
+                <div class="activity-name">{activity['name']}</div>
+                    <ul class="achievements">
+{bullets_html}                    </ul>
+            </div>
+
+"""
+            else:
+                activities_html += f"""            <div class="activity">
+                <div class="activity-name">{activity['name']}</div>
+            </div>
+
+"""
+
+    # Generate skills HTML (simple list for Max, grid for Matt)
+    skills_html = ""
+    if config.get('show_skills_grid') and data.get('competencies'):
+        # Matt's skills grid
+        skills_categories = {
+            "Product Management": ["Roadmap development", "Requirement gathering", "KPI definition", "Competitive analysis", "Go-to-market strategy"],
+            "Platform Experience": ["Multi-tenant SaaS platforms", "API strategy", "Developer ecosystems", "Enterprise integrations"],
+            "Leadership": ["Engineering collaboration", "UX partnership", "Stakeholder management", "Executive communication"],
+            "Technical Skills": ["Jira, Aha!, Confluence", "API design", "AWS, GCP, Azure", "SQL & data analytics"]
+        }
+        for category, skills in skills_categories.items():
+            skills_list = ""
+            for skill in skills:
+                skills_list += f"                            <li>{skill}</li>\n"
+            skills_html += f"""                    <div class="skill-category">
                         <h4>{category}</h4>
                         <ul>
 {skills_list}                        </ul>
                     </div>
 """
-
-    # Generate education HTML
-    edu_html = ""
-    for edu in data['education']:
-        location_date = f"{edu['date']}"
-        edu_html += f"""                <div class="education-item">
-                    <div class="degree">{edu['degree']}</div>
-                    <div class="school">{edu['school']}</div>
-                    <div class="location">{location_date}</div>
-                </div>
-"""
+    elif data.get('skills'):
+        # Max's simple skills list
+        for skill in data['skills']:
+            skills_html += f"                <li>{skill}</li>\n"
 
     # Generate certifications HTML
     cert_html = ""
-    for cert in data['certifications']:
-        cert_html += f"""                <div class="cert-item">
+    if config.get('show_certifications') and data.get('certifications'):
+        for cert in data['certifications']:
+            cert_html += f"""                <div class="cert-item">
                     <div class="cert-name">{cert['name']}</div>
                     <div class="cert-org">{cert['organization']}</div>
                     <div class="cert-date">{cert['date']}</div>
                 </div>
 """
 
-    # Process personal section to replace newlines with <br>
-    personal_html = data['personal'].replace('\n', '<br>\n                    ')
+    # Generate personal section
+    personal_html = ""
+    if config.get('show_personal') and data.get('personal'):
+        personal_html = data['personal'].replace('\n', '<br>\n                    ')
 
-    # Complete HTML template with styling adapted from alison.red
+    # Build header with optional profile image
+    if config.get('profile_image'):
+        header_content = f"""            <div class="header-content">
+                <img src="{config['profile_image']}" alt="{data['name']}">
+                <div class="header-text">
+                    <h1>{data['name']}</h1>
+                    <div class="contact-info">
+                        <span>{data['location']}</span>
+                        <span>{data['email']}</span>
+                        <span>{data['phone']}</span>
+                    </div>
+                </div>
+            </div>"""
+    else:
+        header_content = f"""            <div class="header-text" style="text-align: center; width: 100%;">
+                <h1>{data['name']}</h1>
+                <div class="contact-info" style="justify-content: center;">
+                    <span>{data['location']}</span>
+                    <span>{data['email']}</span>
+                    <span>{data['phone']}</span>
+                </div>
+            </div>"""
+
+    # Build action icons
+    action_icons = ""
+    icons_list = []
+    icons_list.append("""            <a href="resume.pdf" title="Download PDF" target="_blank">
+                <img src="acrobat-logo.png" alt="Download PDF">
+            </a>""")
+    if config.get('linkedin_url'):
+        icons_list.append(f"""            <a href="{config['linkedin_url']}" title="LinkedIn Profile" target="_blank">
+                <img src="linkedin-logo.png" alt="LinkedIn">
+            </a>""")
+    action_icons = "\n".join(icons_list)
+
+    # Build sections based on resume type
+    sections_html = ""
+
+    # Summary section (all resumes)
+    if data.get('summary'):
+        sections_html += f"""            <section class="summary">
+                <h2 class="section-title">Professional Summary</h2>
+                <p>{data['summary']}</p>
+            </section>
+
+"""
+
+    # Education section (student resumes show this prominently)
+    if config['resume_type'] == 'student':
+        sections_html += f"""            <section class="education-section">
+                <h2 class="section-title">Education</h2>
+{edu_html}            </section>
+
+"""
+
+    # Leadership Training (for Max)
+    if data.get('leadership'):
+        sections_html += f"""            <section class="leadership-section">
+                <h2 class="section-title">Leadership Training</h2>
+{leadership_html}            </section>
+
+"""
+
+    # Work Experience (professional resumes)
+    if data.get('jobs') and config['resume_type'] == 'professional':
+        sections_html += f"""            <section class="work-experience-section">
+                <h2 class="section-title">Work Experience</h2>
+{jobs_html}            </section>
+
+"""
+
+    # Skills section
+    if config.get('show_skills_grid') and skills_html:
+        sections_html += f"""            <section class="skills-section">
+                <h2 class="section-title">Core Competencies</h2>
+                <div class="skills-grid">
+{skills_html}                </div>
+            </section>
+
+"""
+    elif data.get('skills'):
+        sections_html += f"""            <section class="skills-section">
+                <h2 class="section-title">Skills</h2>
+                <ul class="skills-list">
+{skills_html}                </ul>
+            </section>
+
+"""
+
+    # Activities (for Max)
+    if data.get('activities'):
+        sections_html += f"""            <section class="activities-section">
+                <h2 class="section-title">Activities</h2>
+{activities_html}            </section>
+
+"""
+
+    # Languages (for Max)
+    if data.get('languages'):
+        sections_html += f"""            <section class="languages-section">
+                <h2 class="section-title">Languages</h2>
+                <p>{data['languages']}</p>
+            </section>
+
+"""
+
+    # Education & Certifications (professional resumes)
+    if config['resume_type'] == 'professional':
+        cert_section = ""
+        if cert_html:
+            cert_section = f"\n{cert_html}"
+        sections_html += f"""            <section class="education-certifications-section">
+                <h2 class="section-title">Education{' & Certifications' if cert_html else ''}</h2>
+{edu_html}{cert_section}            </section>
+
+"""
+
+    # Personal section
+    if personal_html:
+        sections_html += f"""            <section>
+                <div class="personal">
+                    {personal_html}
+                </div>
+            </section>
+"""
+
+    # Complete HTML template
     html_template = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -313,8 +1038,8 @@ def generate_html(data: Dict[str, Any]) -> str:
         }}
 
         .education-certifications-section {{
-            page-break-before: always;
-            margin-top: 32pt;
+            page-break-before: auto;
+            margin-top: 16pt;
         }}
 
         .skills-section {{
@@ -445,6 +1170,13 @@ def generate_html(data: Dict[str, Any]) -> str:
             font-weight: 600;
         }}
 
+        .edu-details {{
+            color: #555555;
+            font-size: 9pt;
+            margin-top: 5pt;
+            font-style: italic;
+        }}
+
         .cert-item {{
             margin-bottom: 6pt;
             padding: 10pt 12pt;
@@ -511,6 +1243,35 @@ def generate_html(data: Dict[str, Any]) -> str:
             font-size: 9.5pt;
         }}
 
+        .skills-list {{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8pt;
+        }}
+
+        .skills-list li {{
+            background: #f7f7f7;
+            padding: 6pt 12pt;
+            border: 1pt solid #cccccc;
+            border-left: 3pt solid #000000;
+            font-size: 10pt;
+        }}
+
+        .activity {{
+            margin-bottom: 12pt;
+        }}
+
+        .activity-name {{
+            font-weight: 600;
+            color: #000000;
+            font-size: 11pt;
+            font-family: 'Crimson Text', serif;
+            margin-bottom: 6pt;
+        }}
+
         .personal {{
             background: #f7f7f7;
             padding: 14pt 16pt;
@@ -529,10 +1290,48 @@ def generate_html(data: Dict[str, Any]) -> str:
             clear: both;
         }}
 
+        .action-icons {{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 12px;
+            z-index: 1000;
+        }}
+
+        .action-icons a {{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.2s ease;
+            text-decoration: none;
+            padding: 6px;
+        }}
+
+        .action-icons a:hover {{
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }}
+
+        .action-icons img {{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }}
+
         @media print {{
             body {{
                 background: white;
                 padding: 0;
+            }}
+            .action-icons {{
+                display: none !important;
             }}
         }}
 
@@ -679,214 +1478,257 @@ def generate_html(data: Dict[str, Any]) -> str:
 </head>
 <body>
     <div class="container">
+        <div class="action-icons">
+{action_icons}
+        </div>
         <div class="header">
-            <div class="header-content">
-                <img src="matt-profile-image.jpeg" alt="{data['name']}">
-                <div class="header-text">
-                    <h1>{data['name']}</h1>
-                    <div class="contact-info">
-                        <span>{data['location']}</span>
-                        <span>{data['email']}</span>
-                        <span>{data['phone']}</span>
-                    </div>
-                </div>
-            </div>
+{header_content}
         </div>
 
         <div class="content">
-            <section class="summary">
-                <h2 class="section-title">Professional Summary</h2>
-                <p>
-                    {data['summary']}
-                </p>
-            </section>
-
-            <section class="work-experience-section">
-                <h2 class="section-title">Work Experience</h2>
-
-{jobs_html}            </section>
-
-            <section class="skills-section">
-                <h2 class="section-title">Core Competencies</h2>
-                <div class="skills-grid">
-{skills_html}                </div>
-            </section>
-
-            <section class="education-certifications-section">
-                <h2 class="section-title">Education & Certifications</h2>
-{edu_html}
-{cert_html}            </section>
-
-            <section>
-                <div class="personal">
-                    {personal_html}
-                </div>
-            </section>
-        </div>
+{sections_html}        </div>
     </div>
 </body>
 </html>"""
 
     return html_template
 
-def generate_pdf():
-    """Generate PDF from HTML using various methods"""
+
+def generate_pdf(output_dir: str):
+    """Generate PDF from HTML using Chrome headless"""
+    html_path = os.path.join(output_dir, 'index.html')
+    pdf_path = os.path.join(output_dir, 'resume.pdf')
 
     methods = [
-        # Try Chrome/Chromium headless first - macOS path
-        ['/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', '--headless', '--disable-gpu', '--print-to-pdf=resume.pdf', '--no-margins', '--no-pdf-header-footer', 'index.html'],
-        # Try standard PATH locations
-        ['google-chrome', '--headless', '--disable-gpu', '--print-to-pdf=resume.pdf', '--no-margins', '--no-pdf-header-footer', 'index.html'],
-        ['chromium-browser', '--headless', '--disable-gpu', '--print-to-pdf=resume.pdf', '--no-margins', '--no-pdf-header-footer', 'index.html'],
-        ['chrome', '--headless', '--disable-gpu', '--print-to-pdf=resume.pdf', '--no-margins', '--no-pdf-header-footer', 'index.html'],
+        ['/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', '--headless', '--disable-gpu', f'--print-to-pdf={pdf_path}', '--no-margins', '--no-pdf-header-footer', html_path],
+        ['google-chrome', '--headless', '--disable-gpu', f'--print-to-pdf={pdf_path}', '--no-margins', '--no-pdf-header-footer', html_path],
+        ['chromium-browser', '--headless', '--disable-gpu', f'--print-to-pdf={pdf_path}', '--no-margins', '--no-pdf-header-footer', html_path],
     ]
 
     for method in methods:
         try:
             result = subprocess.run(method, capture_output=True, text=True)
             if result.returncode == 0:
-                print(f"✓ PDF generated using {method[0]}")
+                print(f"  PDF generated using {method[0]}")
                 return True
         except FileNotFoundError:
             continue
 
-    print("⚠️  Could not generate PDF automatically.")
-    print("   Please print index.html to PDF manually:")
-    print("   1. Open index.html in Chrome/Safari/Firefox")
-    print("   2. Press Ctrl+P (or Cmd+P)")
-    print("   3. Choose 'Save as PDF'")
-    print("   4. Save as 'resume.pdf'")
+    print(f"  Could not generate PDF automatically for {output_dir}")
     return False
 
-def main():
-    """Main function to generate resume"""
-    import os
-    import shutil
-    
-    try:
-        # Determine paths
-        script_dir = os.path.dirname(os.path.abspath(__file__))
-        hugo_static_resume = os.path.join(script_dir, '..', 'static', 'resume')
-        
-        print("Reading resume data...")
-        data = parse_resume_data('matt_resume.txt')
 
-        print("Generating HTML...")
-        html = generate_html(data)
+def generate_index_page(script_dir: str, hugo_static_resume: str):
+    """Generate the main index page for /resume/"""
+    index_html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reider Family Resumes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap');
 
-        # Add action icons to HTML
-        html = html.replace(
-            '<body>\n    <div class="container">\n        <div class="header">',
-            '''<body>
-    <div class="container">
-        <div class="action-icons">
-            <a href="resume.pdf" title="Download PDF" target="_blank">
-                <img src="acrobat-logo.png" alt="Download PDF">
-            </a>
-            <a href="https://linkedin.com/in/mreider" title="LinkedIn Profile" target="_blank">
-                <img src="linkedin-logo.png" alt="LinkedIn">
-            </a>
-        </div>
-        <div class="header">'''
-        )
-        
-        # Add action icons CSS before .content
-        action_icons_css = '''
-        .action-icons {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            gap: 12px;
-            z-index: 1000;
-        }
-
-        .action-icons a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #000000;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
             background: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-family: 'Crimson Text', serif;
+            font-size: 28pt;
+            font-weight: 700;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #000000;
+            letter-spacing: -0.5pt;
+        }
+
+        .resume-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .resume-item {
+            margin-bottom: 20px;
+            padding: 20px 25px;
+            background: #f7f7f7;
+            border: 1px solid #cccccc;
+            border-left: 4px solid #000000;
             transition: all 0.2s ease;
+        }
+
+        .resume-item:hover {
+            background: #f0f0f0;
+            transform: translateX(5px);
+        }
+
+        .resume-item a {
             text-decoration: none;
-            padding: 6px;
+            color: inherit;
+            display: block;
         }
 
-        .action-icons a:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        .resume-name {
+            font-family: 'Crimson Text', serif;
+            font-size: 16pt;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 5px;
         }
 
-        .action-icons img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
+        .resume-title {
+            font-size: 11pt;
+            color: #555555;
         }
 
-        .content {'''
-        
-        html = html.replace('        .content {', action_icons_css)
-        
-        # Update print media query to hide action icons
-        html = html.replace(
-            '        @media print {\n            body {\n                background: white;\n                padding: 0;\n            }',
-            '''        @media print {
-            body {
-                background: white;
-                padding: 0;
-            }
-            .action-icons {
-                display: none !important;
-            }'''
-        )
+        .resume-links {
+            margin-top: 10px;
+            display: flex;
+            gap: 15px;
+        }
 
-        print("Writing index.html...")
-        with open('index.html', 'w', encoding='utf-8') as f:
-            f.write(html)
+        .resume-links a {
+            font-size: 10pt;
+            color: #0066cc;
+            text-decoration: none;
+        }
 
-        print("✓ HTML resume generated successfully!")
+        .resume-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reider Family Resumes</h1>
+    <ul class="resume-list">
+        <li class="resume-item">
+            <a href="matt/">
+                <div class="resume-name">Matthew Reider</div>
+                <div class="resume-title">Principal Product Manager</div>
+            </a>
+            <div class="resume-links">
+                <a href="matt/">View Resume</a>
+                <a href="matt/resume.pdf">Download PDF</a>
+            </div>
+        </li>
+        <li class="resume-item">
+            <a href="alison/">
+                <div class="resume-name">Alison S. Cohen</div>
+                <div class="resume-title">Senior People Experience Business Partner</div>
+            </a>
+            <div class="resume-links">
+                <a href="alison/">View Resume</a>
+                <a href="alison/resume.pdf">Download PDF</a>
+            </div>
+        </li>
+        <li class="resume-item">
+            <a href="max/">
+                <div class="resume-name">Max Reider</div>
+                <div class="resume-title">University Student - Business Management & Psychology</div>
+            </a>
+            <div class="resume-links">
+                <a href="max/">View Resume</a>
+                <a href="max/resume.pdf">Download PDF</a>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>"""
 
-        print("Generating PDF...")
-        generate_pdf()
+    index_path = os.path.join(hugo_static_resume, 'index.html')
+    with open(index_path, 'w', encoding='utf-8') as f:
+        f.write(index_html)
+    print(f"Index page created at: {index_path}")
 
-        # Copy files to Hugo static directory
-        print("Copying files to Hugo static/resume directory...")
-        os.makedirs(hugo_static_resume, exist_ok=True)
 
-        # Copy index.html as standalone.html to avoid conflict with Hugo-generated /resume/ page
-        # The standalone version is used for PDF generation only
-        src = os.path.join(script_dir, 'index.html')
+def generate_resume(person: str, script_dir: str, hugo_static_resume: str):
+    """Generate resume for a specific person"""
+    config = PERSON_CONFIGS[person]
+    input_file = os.path.join(script_dir, config['input_file'])
+    output_subdir = os.path.join(hugo_static_resume, config['output_dir'])
+
+    print(f"\n{'='*50}")
+    print(f"Generating resume for: {person.upper()}")
+    print(f"{'='*50}")
+
+    # Create output directory
+    os.makedirs(output_subdir, exist_ok=True)
+
+    # Parse resume data
+    print(f"  Reading {config['input_file']}...")
+    data = parse_resume_data(input_file)
+
+    # Generate HTML based on resume type
+    print("  Generating HTML...")
+    if config['resume_type'] == 'student_twocol':
+        html = generate_student_twocol_html(data, config)
+    else:
+        html = generate_html(data, config)
+
+    # Write index.html
+    html_path = os.path.join(output_subdir, 'index.html')
+    with open(html_path, 'w', encoding='utf-8') as f:
+        f.write(html)
+    print(f"  HTML written to: {html_path}")
+
+    # Copy assets
+    assets = ['acrobat-logo.png', 'linkedin-logo.png']
+    if config.get('profile_image'):
+        assets.append(config['profile_image'])
+
+    for asset in assets:
+        src = os.path.join(script_dir, asset)
         if os.path.exists(src):
-            dst = os.path.join(hugo_static_resume, 'standalone.html')
+            dst = os.path.join(output_subdir, asset)
             shutil.copy2(src, dst)
-            print(f"  ✓ Copied index.html as standalone.html (for PDF generation)")
+            print(f"  Copied: {asset}")
+
+    # Generate PDF
+    print("  Generating PDF...")
+    generate_pdf(output_subdir)
+
+    print(f"  Resume generated for {person}")
+
+
+def main():
+    """Main function to generate all resumes"""
+    parser = argparse.ArgumentParser(description='Generate resumes for the Reider family')
+    parser.add_argument('--person', choices=['matt', 'max', 'alison', 'all'], default='all',
+                        help='Which person to generate resume for (default: all)')
+    args = parser.parse_args()
+
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    hugo_static_resume = os.path.join(script_dir, '..', 'static', 'resume')
+
+    # Create main resume directory
+    os.makedirs(hugo_static_resume, exist_ok=True)
+
+    try:
+        if args.person == 'all':
+            # Generate all resumes
+            for person in PERSON_CONFIGS.keys():
+                generate_resume(person, script_dir, hugo_static_resume)
+
+            # Generate index page
+            print(f"\n{'='*50}")
+            print("Generating index page...")
+            print(f"{'='*50}")
+            generate_index_page(script_dir, hugo_static_resume)
         else:
-            print(f"  ⚠ Warning: index.html not found")
+            # Generate single resume
+            generate_resume(args.person, script_dir, hugo_static_resume)
 
-        # Copy other files normally
-        files_to_copy = [
-            'resume.pdf',
-            'matt-profile-image.jpeg',
-            'acrobat-logo.png',
-            'linkedin-logo.png'
-        ]
-
-        for filename in files_to_copy:
-            src = os.path.join(script_dir, filename)
-            if os.path.exists(src):
-                dst = os.path.join(hugo_static_resume, filename)
-                shutil.copy2(src, dst)
-                print(f"  ✓ Copied {filename}")
-            else:
-                print(f"  ⚠ Warning: {filename} not found")
-
-        print("✓ Resume generation complete!")
-        print(f"Files created in: {script_dir}")
-        print(f"Files copied to: {hugo_static_resume}")
+        print(f"\n{'='*50}")
+        print("Resume generation complete!")
+        print(f"Output directory: {hugo_static_resume}")
+        print(f"{'='*50}")
 
     except Exception as e:
         print(f"Error: {e}")
@@ -895,6 +1737,7 @@ def main():
         return 1
 
     return 0
+
 
 if __name__ == "__main__":
     exit(main())

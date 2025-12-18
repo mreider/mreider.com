@@ -2,695 +2,134 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap');
 
-    .resume-wrapper {
+    .resume-index-wrapper {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-        line-height: 1.45;
+        line-height: 1.6;
         color: #000000;
-        font-weight: 400;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
         background: #ffffff;
-        font-size: 11pt;
     }
 
-    .resume-container {
-        background: #ffffff;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .resume-header {
-        padding: 18pt 32pt 14pt 32pt;
-        background: #ffffff;
-        color: #000000;
-        position: relative;
-        border-bottom: 1.5pt solid #000000;
-        margin-bottom: 14pt;
-    }
-
-    .resume-header-content {
-        display: flex;
-        align-items: center;
-        gap: 24pt;
-    }
-
-    .resume-header img {
-        width: 100pt;
-        height: 100pt;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2pt solid #cccccc;
-    }
-
-    .resume-header-text {
-        flex: 1;
-    }
-
-    .resume-header h1 {
-        margin: 0 0 10pt 0;
-        color: #000000;
+    .resume-index-wrapper h1 {
         font-family: 'Crimson Text', serif;
-        font-size: 22pt;
+        font-size: 28pt;
         font-weight: 700;
-        letter-spacing: -0.8pt;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #000000;
+        letter-spacing: -0.5pt;
     }
 
-    .resume-contact-info {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 18pt;
-        margin-top: 8pt;
-    }
-
-    .resume-contact-info span {
-        color: #555555;
-        font-size: 11pt;
-        font-weight: 500;
-        display: flex;
-        align-items: center;
-        gap: 5pt;
-        padding: 3pt 0;
-    }
-
-    .resume-action-icons {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        display: flex;
-        gap: 12px;
-        z-index: 1000;
-    }
-
-    .resume-action-icons a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        background: #ffffff;
-        border: 1px solid #e2e8f0;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        transition: all 0.2s ease;
-        text-decoration: none;
-        padding: 6px;
-    }
-
-    .resume-action-icons a:hover {
-        transform: translateY(-1px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-
-    .resume-action-icons img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-
-    .resume-content {
-        padding: 0pt 32pt 0pt 32pt;
-    }
-
-    .resume-section {
-        margin-bottom: 18pt;
-    }
-
-    .resume-section:last-child {
-        margin-bottom: 0pt;
-    }
-
-    .resume-education-certifications-section {
-        margin-top: 32pt;
-    }
-
-    .resume-skills-section {
-        margin-bottom: 28pt;
-    }
-
-    .resume-work-experience-section {
-        margin-bottom: 24pt;
-    }
-
-    .resume-section-title {
-        color: #000000;
-        font-family: 'Crimson Text', serif;
-        font-size: 14pt;
-        font-weight: 700;
-        margin: 16pt 0 10pt 0;
-        padding-bottom: 5pt;
-        border-bottom: 1.5pt solid #000000;
-        letter-spacing: -0.3pt;
-        position: relative;
-    }
-
-    .resume-section-title:first-child {
-        margin-top: 0;
-    }
-
-    .resume-summary {
-        background: #f7f7f7;
-        padding: 14pt 16pt;
-        margin-bottom: 18pt;
-        border-left: 4pt solid #000000;
-        border-top: 0.75pt solid #cccccc;
-        border-bottom: 0.75pt solid #cccccc;
-    }
-
-    .resume-summary p {
-        margin: 0;
-        font-size: 10.5pt;
-        line-height: 1.5;
-        color: #222222;
-        font-weight: 400;
-        font-style: italic;
-    }
-
-    .resume-job {
-        margin-bottom: 14pt;
-        padding: 0;
-        background: #ffffff;
-    }
-
-    .resume-job-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        flex-wrap: wrap;
-        margin-bottom: 9pt;
-    }
-
-    .resume-job-title {
-        font-weight: 600;
-        color: #000000;
-        font-size: 12pt;
-        font-family: 'Crimson Text', serif;
-        line-height: 1.2;
-    }
-
-    .resume-company {
-        color: #555555;
-        font-weight: 500;
-        padding-left: 10pt;
-        font-size: 10pt;
-    }
-
-    .resume-job-duration {
-        color: #555555;
-        font-size: 10pt;
-        font-weight: 500;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .resume-achievements {
-        margin: 0 0 8pt 0;
-        padding-left: 20pt;
-        list-style: disc;
-    }
-
-    .resume-achievements li {
-        margin-bottom: 5pt;
-        line-height: 1.5;
-        color: #333333;
-        font-size: 10pt;
-        font-weight: 400;
-    }
-
-    .resume-education-item {
-        margin-bottom: 6pt;
-        padding: 10pt 12pt;
-        background: #f7f7f7;
-        border: 1pt solid #cccccc;
-        border-left: 4pt solid #000000;
-    }
-
-    .resume-education-item:last-child {
-        margin-bottom: 10pt;
-    }
-
-    .resume-degree {
-        font-weight: 600;
-        color: #000000;
-        font-size: 11pt;
-        font-family: 'Crimson Text', serif;
-        margin-bottom: 4pt;
-        line-height: 1.2;
-    }
-
-    .resume-school {
-        color: #555555;
-        font-weight: 600;
-        margin-bottom: 3pt;
-        text-transform: uppercase;
-        font-size: 8.5pt;
-        letter-spacing: 0.8pt;
-    }
-
-    .resume-location {
-        color: #000000;
-        font-size: 8.5pt;
-        font-weight: 600;
-    }
-
-    .resume-cert-item {
-        margin-bottom: 6pt;
-        padding: 10pt 12pt;
-        background: #f7f7f7;
-        border: 1pt solid #cccccc;
-        border-left: 4pt solid #000000;
-    }
-
-    .resume-cert-item:last-child {
-        margin-bottom: 0pt;
-    }
-
-    .resume-cert-name {
-        font-weight: 600;
-        color: #000000;
-        font-size: 11pt;
-        font-family: 'Crimson Text', serif;
-        margin-bottom: 4pt;
-    }
-
-    .resume-cert-org {
-        color: #555555;
-        font-weight: 500;
-        font-size: 9.5pt;
-        margin-bottom: 2pt;
-    }
-
-    .resume-cert-date {
-        color: #000000;
-        font-size: 8.5pt;
-        font-weight: 600;
-    }
-
-    .resume-skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 10pt;
-    }
-
-    .resume-skill-category {
-        background: #f7f7f7;
-        padding: 10pt 12pt;
-        border: 1pt solid #cccccc;
-        border-left: 4pt solid #000000;
-    }
-
-    .resume-skill-category h4 {
-        color: #000000;
-        margin-bottom: 6pt;
-        font-size: 10.5pt;
-        font-family: 'Crimson Text', serif;
-        font-weight: 600;
-    }
-
-    .resume-skill-category ul {
+    .resume-list {
         list-style: none;
         padding: 0;
         margin: 0;
     }
 
-    .resume-skill-category li {
-        padding: 2pt 0;
-        color: #333333;
-        font-size: 9.5pt;
-    }
-
-    .resume-personal {
+    .resume-item {
+        margin-bottom: 20px;
+        padding: 20px 25px;
         background: #f7f7f7;
-        padding: 14pt 16pt;
-        border-left: 4pt solid #000000;
-        border-top: 0.75pt solid #cccccc;
-        border-bottom: 0.75pt solid #cccccc;
-        font-style: italic;
-        color: #222222;
-        font-size: 10.5pt;
-        line-height: 1.8;
+        border: 1px solid #cccccc;
+        border-left: 4px solid #000000;
+        transition: all 0.2s ease;
     }
 
-    .resume-personal::after {
-        content: '';
-        display: table;
-        clear: both;
+    .resume-item:hover {
+        background: #f0f0f0;
+        transform: translateX(5px);
+    }
+
+    .resume-item a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    .resume-name {
+        font-family: 'Crimson Text', serif;
+        font-size: 16pt;
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 5px;
+    }
+
+    .resume-title {
+        font-size: 11pt;
+        color: #555555;
+    }
+
+    .resume-links {
+        margin-top: 10px;
+        display: flex;
+        gap: 15px;
+    }
+
+    .resume-links a {
+        font-size: 10pt;
+        color: #0066cc;
+        text-decoration: none;
+    }
+
+    .resume-links a:hover {
+        text-decoration: underline;
     }
 
     @media screen and (max-width: 768px) {
-        .resume-wrapper {
-            font-size: 10pt;
+        .resume-index-wrapper {
+            padding: 20px 15px;
         }
 
-        .resume-header {
-            padding: 12pt 16pt 10pt 16pt;
+        .resume-index-wrapper h1 {
+            font-size: 22pt;
         }
 
-        .resume-header-content {
-            flex-direction: column;
-            text-align: center;
-            gap: 12pt;
+        .resume-item {
+            padding: 15px 18px;
         }
 
-        .resume-header img {
-            width: 80pt;
-            height: 80pt;
-            align-self: center;
-        }
-
-        .resume-header h1 {
-            font-size: 20pt;
-            text-align: center;
-        }
-
-        .resume-contact-info {
-            justify-content: center;
-            gap: 12pt;
-        }
-
-        .resume-contact-info span {
-            font-size: 10pt;
-        }
-
-        .resume-content {
-            padding: 0pt 16pt;
-        }
-
-        .resume-section-title {
-            font-size: 13pt;
-        }
-
-        .resume-summary {
-            padding: 12pt 14pt;
-            margin-bottom: 16pt;
-        }
-
-        .resume-summary p {
-            font-size: 10pt;
-        }
-
-        .resume-job-header {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 4pt;
-        }
-
-        .resume-job-title {
-            font-size: 11pt;
-        }
-
-        .resume-company {
-            font-size: 9pt;
-            padding-left: 0;
-        }
-
-        .resume-job-duration {
-            font-size: 9pt;
-            color: #666666;
-            font-weight: 600;
-        }
-
-        .resume-achievements li {
-            font-size: 9pt;
-            margin-bottom: 4pt;
-        }
-
-        .resume-education-item {
-            padding: 10pt 12pt;
-        }
-
-        .resume-degree {
-            font-size: 11pt;
-        }
-
-        .resume-school {
-            font-size: 8pt;
-        }
-    }
-
-    @media screen and (max-width: 480px) {
-        .resume-wrapper {
-            font-size: 9pt;
-        }
-
-        .resume-header {
-            padding: 10pt 12pt 8pt 12pt;
-        }
-
-        .resume-header h1 {
-            font-size: 18pt;
-        }
-
-        .resume-contact-info {
-            flex-direction: column;
-            gap: 8pt;
-        }
-
-        .resume-content {
-            padding: 0pt 12pt;
-        }
-
-        .resume-section-title {
-            font-size: 12pt;
-        }
-
-        .resume-job-title {
-            font-size: 10pt;
-        }
-
-        .resume-company {
-            font-size: 8pt;
-        }
-
-        .resume-job-duration {
-            font-size: 8pt;
-        }
-
-        .resume-achievements li {
-            font-size: 8pt;
-        }
-
-        .resume-degree {
-            font-size: 10pt;
+        .resume-name {
+            font-size: 14pt;
         }
     }
 </style>
 
-<div class="resume-wrapper">
-    <div class="resume-container">
-        <div class="resume-action-icons">
-            <a href="/resume/resume.pdf" title="Download PDF" target="_blank">
-                <img src="/resume/acrobat-logo.png" alt="Download PDF">
+<div class="resume-index-wrapper">
+    <h1>Reider Family Resumes</h1>
+    <ul class="resume-list">
+        <li class="resume-item">
+            <a href="/resume/matt/">
+                <div class="resume-name">Matthew Reider</div>
+                <div class="resume-title">Principal Product Manager</div>
             </a>
-            <a href="https://linkedin.com/in/mreider" title="LinkedIn Profile" target="_blank">
-                <img src="/resume/linkedin-logo.png" alt="LinkedIn">
+            <div class="resume-links">
+                <a href="/resume/matt/">View Resume</a>
+                <a href="/resume/matt/resume.pdf">Download PDF</a>
+            </div>
+        </li>
+        <li class="resume-item">
+            <a href="/resume/alison/">
+                <div class="resume-name">Alison S. Cohen</div>
+                <div class="resume-title">Senior People Experience Business Partner</div>
             </a>
-        </div>
-        <div class="resume-header">
-            <div class="resume-header-content">
-                <img src="/resume/matt-profile-image.jpeg" alt="Matthew Reider">
-                <div class="resume-header-text">
-                    <h1>Matthew Reider</h1>
-                    <div class="resume-contact-info">
-                        <span>Vienna, Austria</span>
-                        <span>matt@mreider.com</span>
-                        <span>+43 677 629 00590</span>
-                    </div>
-                </div>
+            <div class="resume-links">
+                <a href="/resume/alison/">View Resume</a>
+                <a href="/resume/alison/resume.pdf">Download PDF</a>
             </div>
-        </div>
-
-        <div class="resume-content">
-            <section class="resume-summary">
-                <h2 class="resume-section-title">Professional Summary</h2>
-                <p>
-                    Strategic software product leader with 15+ years driving platform-based solutions, observability, and developer ecosystems.
-                </p>
-            </section>
-
-            <section class="resume-work-experience-section">
-                <h2 class="resume-section-title">Work Experience</h2>
-
-            <div class="resume-job">
-                <div class="resume-job-header">
-                    <div>
-                        <span class="resume-job-title">Principal Product Manager</span>
-                        <span class="resume-company">Dynatrace</span>
-                    </div>
-                    <span class="resume-job-duration">2019 - Present</span>
-                </div>
-                    <ul class="resume-achievements">
-                        <li>Presented product vision and roadmaps to C-level executives</li>
-                        <li>Drove OpenTelemetry adoption across enterprise customers, resulting in 40% increase in platform integration velocity</li>
-                        <li>Developed Kubernetes monitoring capabilities supporting customers managing 10,000+ nodes</li>
-                        <li>Enhanced developer portal experience, improving onboarding time by 35%</li>
-                    </ul>
+        </li>
+        <li class="resume-item">
+            <a href="/resume/max/">
+                <div class="resume-name">Max Reider</div>
+                <div class="resume-title">University Student - Business Management & Psychology</div>
+            </a>
+            <div class="resume-links">
+                <a href="/resume/max/">View Resume</a>
+                <a href="/resume/max/resume.pdf">Download PDF</a>
             </div>
-
-            <div class="resume-job">
-                <div class="resume-job-header">
-                    <div>
-                        <span class="resume-job-title">Lead Product Manager</span>
-                        <span class="resume-company">Checkr</span>
-                    </div>
-                    <span class="resume-job-duration">2016 - 2019</span>
-                </div>
-                    <ul class="resume-achievements">
-                        <li>Pioneered AI-powered compliance tools improving criminal record accuracy by 25% while reducing manual review time by 60%</li>
-                        <li>Established partnerships with 200+ data providers, creating unified API layer</li>
-                        <li>Developed custom integration solutions for Uber, Lyft, and DoorDash</li>
-                        <li>Led team of product managers through complex prioritization decisions</li>
-                    </ul>
-            </div>
-
-            <div class="resume-job">
-                <div class="resume-job-header">
-                    <div>
-                        <span class="resume-job-title">Director of Product Management</span>
-                        <span class="resume-company">VMware Tanzu (Pivotal)</span>
-                    </div>
-                    <span class="resume-job-duration">2011 - 2016</span>
-                </div>
-                    <ul class="resume-achievements">
-                        <li>Led strategic transition from hosted service to self-managed enterprise offering, generating $200M+ in new revenue</li>
-                        <li>Delivered platform supporting 1M+ application deployments and 6,000+ developer users</li>
-                        <li>Managed relationships with Ford, Home Depot, and Comcast</li>
-                    </ul>
-            </div>
-
-            <div class="resume-job">
-                <div class="resume-job-header">
-                    <div>
-                        <span class="resume-job-title">Senior Program Manager</span>
-                        <span class="resume-company">Engine Yard</span>
-                    </div>
-                    <span class="resume-job-duration">2009 - 2011</span>
-                </div>
-                    <ul class="resume-achievements">
-                        <li>Managed product initiatives for Zendesk, GitHub, and Groupon during rapid scaling phases</li>
-                        <li>Orchestrated customer migrations to AWS, reducing infrastructure costs by 40%</li>
-                        <li>Achieved 95% customer retention rate</li>
-                    </ul>
-            </div>
-
-            <div class="resume-job">
-                <div class="resume-job-header">
-                    <div>
-                        <span class="resume-job-title">Lead Product Manager</span>
-                        <span class="resume-company">Visible Measures</span>
-                    </div>
-                    <span class="resume-job-duration">2007 - 2009</span>
-                </div>
-                    <ul class="resume-achievements">
-                        <li>Built video measurement suite tracking 100M+ video views monthly</li>
-                        <li>Developed partner integration framework for YouTube, Facebook, and other platforms</li>
-                        <li>Created self-service analytics dashboard for real-time campaign performance</li>
-                    </ul>
-            </div>
-
-            <div class="resume-job">
-                <div class="resume-job-header">
-                    <div>
-                        <span class="resume-job-title">Technical Instructor (ILT)</span>
-                        <span class="resume-company">Wily Technology • Oracle • Macromedia</span>
-                    </div>
-                    <span class="resume-job-duration">1998 - 2007</span>
-                </div>
-                    <ul class="resume-achievements">
-                        <li>Developed technical training programs for enterprise software platforms</li>
-                        <li>Trained 400+ developers and system administrators globally</li>
-                        <li>Authored technical guides and best practices documentation</li>
-                    </ul>
-            </div>
-
-            <div class="resume-job">
-                <div class="resume-job-header">
-                    <div>
-                        <span class="resume-job-title">Solutions Engineer</span>
-                        <span class="resume-company">Macromedia (Allaire) • Sybase (Powersoft)</span>
-                    </div>
-                    <span class="resume-job-duration">1995 - 1998</span>
-                </div>
-                    <ul class="resume-achievements">
-                        <li>Led technical implementations for Fortune 500 corporations</li>
-                        <li>Conducted proof-of-concept implementations contributing to $10M+ in software sales</li>
-                    </ul>
-            </div>
-
-            </section>
-
-            <section class="resume-skills-section">
-                <h2 class="resume-section-title">Core Competencies</h2>
-                <div class="resume-skills-grid">
-                    <div class="resume-skill-category">
-                        <h4>Product Management</h4>
-                        <ul>
-                            <li>Roadmap development</li>
-                            <li>Requirement gathering</li>
-                            <li>KPI definition</li>
-                            <li>Competitive analysis</li>
-                            <li>Go-to-market strategy</li>
-                        </ul>
-                    </div>
-                    <div class="resume-skill-category">
-                        <h4>Platform Experience</h4>
-                        <ul>
-                            <li>Multi-tenant SaaS platforms</li>
-                            <li>API strategy</li>
-                            <li>Developer ecosystems</li>
-                            <li>Enterprise integrations</li>
-                        </ul>
-                    </div>
-                    <div class="resume-skill-category">
-                        <h4>Leadership</h4>
-                        <ul>
-                            <li>Engineering collaboration</li>
-                            <li>UX partnership</li>
-                            <li>Stakeholder management</li>
-                            <li>Executive communication</li>
-                        </ul>
-                    </div>
-                    <div class="resume-skill-category">
-                        <h4>Technical Skills</h4>
-                        <ul>
-                            <li>Jira, Aha!, Confluence</li>
-                            <li>API design</li>
-                            <li>AWS, GCP, Azure</li>
-                            <li>SQL & data analytics</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="resume-education-certifications-section">
-                <h2 class="resume-section-title">Education & Certifications</h2>
-                <div class="resume-education-item">
-                    <div class="resume-degree">BS, Economics</div>
-                    <div class="resume-school">University of Vermont</div>
-                    <div class="resume-location">1992</div>
-                </div>
-
-                <div class="resume-cert-item">
-                    <div class="resume-cert-name">Certified Product Owner</div>
-                    <div class="resume-cert-org">Scrum Alliance</div>
-                    <div class="resume-cert-date">2011</div>
-                </div>
-                <div class="resume-cert-item">
-                    <div class="resume-cert-name">Certified Scrum Master</div>
-                    <div class="resume-cert-org">Scrum Alliance</div>
-                    <div class="resume-cert-date">2013</div>
-                </div>
-                <div class="resume-cert-item">
-                    <div class="resume-cert-name">Agile Alliance Member</div>
-                    <div class="resume-cert-org">Agile Alliance</div>
-                    <div class="resume-cert-date">2011</div>
-                </div>
-            </section>
-
-            <section>
-                <div class="resume-personal">
-                    Loving father, devoted husband, loyal friend<br>
-                    American Sailing Association (bareboat license)
-                </div>
-            </section>
-        </div>
-    </div>
+        </li>
+    </ul>
 </div>
 
 {{ end }}

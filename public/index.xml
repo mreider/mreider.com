@@ -2,402 +2,402 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MR</title>
-    <link>http://localhost:1313/</link>
+    <link>https://mreider.com/</link>
     <description>Recent content on MR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mreider.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Personalpronomen</title>
-      <link>http://localhost:1313/deutsch/pronomen/</link>
+      <link>https://mreider.com/deutsch/pronomen/</link>
       <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/deutsch/pronomen/</guid>
+      <guid>https://mreider.com/deutsch/pronomen/</guid>
       <description> Personalpronomen German Personal Pronouns NOMINATIV AKKUSATIV DATIV Used when the pronoun is the subject (doing the action). Du lernst Deutsch. Sie liest ein Buch. Used when the pronoun is the direct object (receiving the action). Er sieht dich. Sie ruft mich an. Used when the pronoun is the indirect object (to/for whom). Ich helfe dir. Wir danken euch. NOMINATIV AKKUSATIV DATIV Singular ich I mich me mir me du you dich you dir you er he, it ihn him, it ihm him, it sie she, it sie her, it ihr her, it es it es it ihm it Plural wir we uns us uns us ihr you euch you euch you sie they sie them ihnen them </description>
     </item>
     <item>
       <title>The Fifth Step</title>
-      <link>http://localhost:1313/writeups/the-fifth-step/</link>
+      <link>https://mreider.com/writeups/the-fifth-step/</link>
       <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/writeups/the-fifth-step/</guid>
+      <guid>https://mreider.com/writeups/the-fifth-step/</guid>
       <description>Last night my wife invited me out to see The Fifth Step, a Scottish stage play that has been recorded for movie goers and streamers. It stars Jack Lowden, who I know from the show Slow Horses, and Martin Freeman who&amp;rsquo;s been in a bunch of stuff. My favorite role of his is the sociopathic weakling midwestern used car dealer Lester Nygaard in the TV series Fargo.&#xA;The play is done in-the-round, meaning the audience completely surrounds the stage, which in this case is actually a square.</description>
     </item>
     <item>
       <title>Leonard and Hungry Paul</title>
-      <link>http://localhost:1313/writeups/leonard-and-hungry-paul/</link>
+      <link>https://mreider.com/writeups/leonard-and-hungry-paul/</link>
       <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/writeups/leonard-and-hungry-paul/</guid>
+      <guid>https://mreider.com/writeups/leonard-and-hungry-paul/</guid>
       <description>Leonard and Hungry Paul by Ronan Hession is a fun, dry, wholesome, and satisfying story about some normal people just sort of going through life together.&#xA;Early in the story we meet Leonard and Hungry Paul, two simple and straightforward men who schedule regular gaming nights to play things like Yahtzee, Monopoly, Connect Four, or checkers.&#xA;The storyline is about transition. Hungry Paul&amp;rsquo;s sister is getting married, which symbolizes her separation from her parents (whom Paul lives with), from Paul himself, and signals a new phase of all of their lives.</description>
     </item>
     <item>
       <title>The Good Whale</title>
-      <link>http://localhost:1313/writeups/the-good-whale/</link>
+      <link>https://mreider.com/writeups/the-good-whale/</link>
       <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/writeups/the-good-whale/</guid>
+      <guid>https://mreider.com/writeups/the-good-whale/</guid>
       <description>The Good Whale is an engaging and emotional Serial podcast series about the 10+ year effort to reintroduce Keiko, the killer whale that starred in Free Willy, into the open ocean.&#xA;Each episode of The Good Whale reminded me of This American Life (no coincidence, as Ira Glass is one of the producers). The show tells a story by interviewing the people involved and reflecting on their conflicting views to show that there isn&amp;rsquo;t one way of looking at the story.</description>
     </item>
     <item>
       <title>Why AI won&#39;t take control</title>
-      <link>http://localhost:1313/tech/ai-hype/</link>
+      <link>https://mreider.com/tech/ai-hype/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/ai-hype/</guid>
+      <guid>https://mreider.com/tech/ai-hype/</guid>
       <description>AI went from a niche tech topic to a mainstream obsession in just the last 24 months. Unlike other hyped technologies that promised future revolutions, AI delivers immediate value anyone can experience. People can jump onto ChatGPT and use it to write a poem, draft an email, or provide information that previously required a Google search. This immediate utility has transformed AI from industry jargon into a household term.&#xA;Let&amp;rsquo;s clarify what we&amp;rsquo;re discussing: Autonomous AI operates independently without human oversight.</description>
     </item>
     <item>
       <title>LinkedIn, Geopolitics, and Silence</title>
-      <link>http://localhost:1313/tech/linked-in-refuge/</link>
+      <link>https://mreider.com/tech/linked-in-refuge/</link>
       <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/linked-in-refuge/</guid>
+      <guid>https://mreider.com/tech/linked-in-refuge/</guid>
       <description>Note: I no longer believe that LinkedIn should be a refuge from political news, as I said in the post the following week.&#xA;My office in the Dynatrace Vienna Tower shares space with various companies and organizations, including the embassies of Norway, Australia, and New Zealand. Today, these three embassies organized a brief moment of silence outside our building to honor those who have suffered and lost their lives as a result of the Russian war of aggression in Ukraine.</description>
     </item>
     <item>
       <title>Email Subscriptions from Static Blogs</title>
-      <link>http://localhost:1313/tech/email-subscriptions-from-static-blogs/</link>
+      <link>https://mreider.com/tech/email-subscriptions-from-static-blogs/</link>
       <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/email-subscriptions-from-static-blogs/</guid>
+      <guid>https://mreider.com/tech/email-subscriptions-from-static-blogs/</guid>
       <description>In my last blog entry, I introduced Krems, a project I built for generating static blogs. One of the challenges with static blogs is their inability to run server-side code or databases, which makes storing email addresses for blog subscriptions impossible. To work around this, you can either use a paid service like rssfeedpulse.com to scrape your RSS feed and email new posts to subscribers, or you can encourage readers to follow your blog using an RSS reader.</description>
     </item>
     <item>
       <title>Krems static blog generator</title>
-      <link>http://localhost:1313/tech/krems-static-site-generator/</link>
+      <link>https://mreider.com/tech/krems-static-site-generator/</link>
       <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/krems-static-site-generator/</guid>
+      <guid>https://mreider.com/tech/krems-static-site-generator/</guid>
       <description>A couple of months ago we visited a little town named Krems about an hour West of Vienna. In that little town is a University where my son would apply, though now that he&amp;rsquo;s been accepted to a few schools in Scotland he likely won&amp;rsquo;t attend. After we returned to Vienna I thought about writing a short blog about our visit there, but to my horror my blog was no longer loading properly.</description>
     </item>
     <item>
       <title>Sudowrite, ChatGPT, and AI Slop</title>
-      <link>http://localhost:1313/tech/sudowrite-chatgpt-and-ai-slop/</link>
+      <link>https://mreider.com/tech/sudowrite-chatgpt-and-ai-slop/</link>
       <pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/sudowrite-chatgpt-and-ai-slop/</guid>
+      <guid>https://mreider.com/tech/sudowrite-chatgpt-and-ai-slop/</guid>
       <description>I&amp;rsquo;m trying to write a novel - a character-driven thriller. I use ChatGPT here and there, but I try to use it lightly. It&amp;rsquo;s a time-saver for small changes and touch-ups.&#xA;However, ChatGPT is too general-purpose for writers and often resorts to &amp;ldquo;corporate-speak.&amp;rdquo; This led me to try Sudowrite, which is built on language models like GPT but designed for aspiring authors.&#xA;Sudowrite blends AI with structured writing tools and an interface similar to Scrivener.</description>
     </item>
     <item>
       <title>Great Strategy Starts with Sacrifice</title>
-      <link>http://localhost:1313/tech/trade-off-as-strategy/</link>
+      <link>https://mreider.com/tech/trade-off-as-strategy/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/trade-off-as-strategy/</guid>
+      <guid>https://mreider.com/tech/trade-off-as-strategy/</guid>
       <description>Before I get started, I&amp;rsquo;ll explain why I&amp;rsquo;m blogging. I began offering pro-bono product advice, hoping to charge a fee someday. Balancing a full-time job, family, and personal interests didn&amp;rsquo;t work out well. What did work out was writing about other people&amp;rsquo;s challenges. It&amp;rsquo;s freeing since the problems aren&amp;rsquo;t tied to my workplace.&#xA;Today I&amp;rsquo;m thinking about the importance of sacrifice in product strategy.&#xA;In 2017, a young CEO I worked for explained that certain features would open up a new market segment.</description>
     </item>
     <item>
       <title>Bluesky is almost like 2012 Twitter</title>
-      <link>http://localhost:1313/tech/blue-sky/</link>
+      <link>https://mreider.com/tech/blue-sky/</link>
       <pubDate>Tue, 17 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/blue-sky/</guid>
+      <guid>https://mreider.com/tech/blue-sky/</guid>
       <description>Bluesky is going ok so far. I don&amp;rsquo;t have many followers yet, and I&amp;rsquo;m still figuring out who to follow, but it&amp;rsquo;s the closest thing we&amp;rsquo;ve had in years to 2012 Twitter. The one where tech folks could have fun, feel connected, and not drown in nonsense.&#xA;Back then we wondered how Twitter would make money. Bluesky is in the same place. But unlike Twitter, which grew organically from a quirky SMS tool, Bluesky isn&amp;rsquo;t organic.</description>
     </item>
     <item>
       <title>Certainty, Ambivalence, and Product Leadership</title>
-      <link>http://localhost:1313/tech/on-ambivalence/</link>
+      <link>https://mreider.com/tech/on-ambivalence/</link>
       <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/on-ambivalence/</guid>
+      <guid>https://mreider.com/tech/on-ambivalence/</guid>
       <description>Every night at 9:00 PM, I walk my dog, Leo, while listening to podcasts. I&amp;rsquo;ve been listening to Hidden Brain with Shankar Vedantam. In a recent episode, Naomi Rothman talked about how society values leaders who project certainty over ambivalence - often favoring confidence even when it&amp;rsquo;s based on incomplete or inaccurate information.&#xA;Rothman cited a study where CEOs who admitted uncertainty during earnings calls were judged more harshly and seen as less competent, even though they were being honest.</description>
     </item>
     <item>
       <title>Doing It for Yourself</title>
-      <link>http://localhost:1313/tech/doing-it-for-yourself/</link>
+      <link>https://mreider.com/tech/doing-it-for-yourself/</link>
       <pubDate>Fri, 29 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/doing-it-for-yourself/</guid>
+      <guid>https://mreider.com/tech/doing-it-for-yourself/</guid>
       <description>I recently had a conversation with a product manager from another company that left me thinking. Every time he referred to an initiative, he called it &amp;ldquo;mine.&amp;rdquo; Deadlines and priorities were framed as &amp;ldquo;important for me&amp;rdquo; - not for the team, not for the users, but for himself.&#xA;On one level, this is human nature. We all bring some degree of self-interest to the work we do. But when a product manager frames everything this way, it stops feeling like a team effort and starts looking like a personal project tied to their ego.</description>
     </item>
     <item>
       <title>VMware, Pivotal, and the Rise of Kubernetes</title>
-      <link>http://localhost:1313/tech/pivotal-and-the-rise-of-cloud-foundry/</link>
+      <link>https://mreider.com/tech/pivotal-and-the-rise-of-cloud-foundry/</link>
       <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/pivotal-and-the-rise-of-cloud-foundry/</guid>
+      <guid>https://mreider.com/tech/pivotal-and-the-rise-of-cloud-foundry/</guid>
       <description>When I left Engine Yard (see my earlier post), I joined VMware to work on the Cloud Foundry team. The idea was ambitious: create a PaaS (Platform as a Service) that allowed developers to write and deploy applications without worrying about infrastructure. It wasn&amp;rsquo;t revolutionary. Heroku and Engine Yard had similar goals, but it offered something enterprises hadn&amp;rsquo;t seen before.&#xA;The secret weapon was BOSH, a powerful orchestration tool that deployed Cloud Foundry on private or public clouds in a declarative, repeatable way.</description>
     </item>
     <item>
       <title>Building Quacker: A Weekend Project with ChatGPT</title>
-      <link>http://localhost:1313/tech/building-quacker/</link>
+      <link>https://mreider.com/tech/building-quacker/</link>
       <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/building-quacker/</guid>
+      <guid>https://mreider.com/tech/building-quacker/</guid>
       <description>Last weekend, I built Quacker, a Python app that lets static blogs send newsletters. Static blogs are simple, fast, and reliable - but they don&amp;rsquo;t have built-in features like email subscriptions or post notifications. I could&amp;rsquo;ve used something like Ghost, but I spent the weekend reinventing the wheel.&#xA;Quacker does what I need: it adds a subscription form to my blog, stores emails, checks the RSS feed for updates, and sends subscribers an email when there&amp;rsquo;s a new post.</description>
     </item>
     <item>
       <title>Founders Don’t Need a Strategist as the First PM</title>
-      <link>http://localhost:1313/tech/henchman-or-hero/</link>
+      <link>https://mreider.com/tech/henchman-or-hero/</link>
       <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/henchman-or-hero/</guid>
+      <guid>https://mreider.com/tech/henchman-or-hero/</guid>
       <description>I recently spoke with the CEO of a small, profitable startup. Let&amp;rsquo;s call him Mike. His company pulls in a few million dollars a year with a lean team. They&amp;rsquo;ve made it past the survival stage, but now they&amp;rsquo;re grappling with the next big question: how to grow.&#xA;Mike&amp;rsquo;s team is stuck on a familiar startup dilemma: which user to prioritize. Mike wants to focus on buyers, adding features like loyalty programs, promotions, and customer acquisition tools.</description>
     </item>
     <item>
       <title>Engine Yard and the Cost of Venture Capital</title>
-      <link>http://localhost:1313/tech/tales-from-engineyard/</link>
+      <link>https://mreider.com/tech/tales-from-engineyard/</link>
       <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/tales-from-engineyard/</guid>
+      <guid>https://mreider.com/tech/tales-from-engineyard/</guid>
       <description>Back in the early days of cloud computing, before &amp;ldquo;cloud&amp;rdquo; meant what it does today, we were one of the original cloud vendors. Our infrastructure ran on custom-patched Gentoo servers, nicknamed &amp;ldquo;pizza boxes,&amp;rdquo; housed in two data centers on opposite coasts. Scaling wasn&amp;rsquo;t automated. It was manual, requiring real humans to intervene. As our head of support jokingly put it, we were a &amp;ldquo;meat cloud.&amp;rdquo;&#xA;Still, we were ahead of the curve, offering a platform as a service (PaaS) for Ruby on Rails apps, MongoDB, and MySQL databases.</description>
     </item>
     <item>
       <title>Lost and Found</title>
-      <link>http://localhost:1313/life/lost-and-found/</link>
+      <link>https://mreider.com/life/lost-and-found/</link>
       <pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/lost-and-found/</guid>
+      <guid>https://mreider.com/life/lost-and-found/</guid>
       <description>Don’t you hate it when you do something stupid?&#xA;For my son Max, this happened two weeks ago when he left his gym bag on the 26 Strassbahn. He didn’t realize his mistake until hours later.&#xA;He asked if there was a Lost and Found for Wiener Linien, Vienna’s world-class transportation system. I browsed the web and found out about fundamt.gv.at, an incredible nationwide lost-and-found system. It’s an amazing site. Every single item is meticulously categorized.</description>
     </item>
     <item>
       <title>H₂Oh No</title>
-      <link>http://localhost:1313/life/h20no/</link>
+      <link>https://mreider.com/life/h20no/</link>
       <pubDate>Sat, 02 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/h20no/</guid>
+      <guid>https://mreider.com/life/h20no/</guid>
       <description>Today, I&amp;rsquo;m writing, again, about water.&#xA;Vienna’s water supply is famously clean. It comes straight from the Alps, requiring no treatment whatsoever. No chlorine, no filtration.&#xA;Yes, I read municipal water reports. Don’t judge.&#xA;Unfortunately, our house isn&amp;rsquo;t connected to the local water system. Instead, we rely on a well. Why? It&amp;rsquo;s a mystery, just one of the &amp;ldquo;charms&amp;rdquo; of our rental. The well water is fine for cooking and brushing teeth, but not for drinking.</description>
     </item>
     <item>
       <title>Going Viral</title>
-      <link>http://localhost:1313/life/going-viral/</link>
+      <link>https://mreider.com/life/going-viral/</link>
       <pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/going-viral/</guid>
+      <guid>https://mreider.com/life/going-viral/</guid>
       <description>Our summer vacation was a three-part trip. First, we celebrated Marty’s 80th birthday on Long Island. Then we headed to Vermont for Rosie and Zach’s wedding. Finally, we wrapped things up in Portugal with the #friends4life Schwartzberg clan.&#xA;Coronavirus made things tricky. The guest list for Marty’s birthday ended up shorter than planned. Alison, an especially important guest, tested positive and spent the week feeling lousy at the Stony Brook Holiday Inn Express.</description>
     </item>
     <item>
       <title>More than 20 Questions</title>
-      <link>http://localhost:1313/life/more-than-20-questions/</link>
+      <link>https://mreider.com/life/more-than-20-questions/</link>
       <pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/more-than-20-questions/</guid>
+      <guid>https://mreider.com/life/more-than-20-questions/</guid>
       <description>Last week, we took an American-style road trip (🚙) through the Czech Republic. Originally, we were considering Holland or Norway, but we procrastinated, and airfares shot up. So, we decided to drive north instead.&#xA;On the Road As with other vacations, this one began by dropping Leo (🐶) at his second home, a beautiful kennel ranch outside of Linz.&#xA;Nice place, right? Leo agrees. He waltzes in there with confidence, like the mayor of Dogville.</description>
     </item>
     <item>
       <title>A Year Went By</title>
-      <link>http://localhost:1313/life/a-year-went-by/</link>
+      <link>https://mreider.com/life/a-year-went-by/</link>
       <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/a-year-went-by/</guid>
+      <guid>https://mreider.com/life/a-year-went-by/</guid>
       <description>I stopped writing over a year ago. I&amp;rsquo;m not sure why. Maybe I just wasn&amp;rsquo;t feeling it.&#xA;But today, I&amp;rsquo;ll give you a quick update.&#xA;We&amp;rsquo;ve had some new experiences. We went skiing on a couple of glaciers. We got a hyperactive dog named Leo. We visited friends and family in America, then went scuba diving in Costa Rica. In the autumn, we explored Belgium and climbed the Eiffel Tower. Winter came, and we traveled to Florence with my niece, sister, mom, and my mom&amp;rsquo;s husband.</description>
     </item>
     <item>
       <title>Teamwork in Corfu</title>
-      <link>http://localhost:1313/life/teamwork-in-corfu/</link>
+      <link>https://mreider.com/life/teamwork-in-corfu/</link>
       <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/teamwork-in-corfu/</guid>
+      <guid>https://mreider.com/life/teamwork-in-corfu/</guid>
       <description>I learned some important things during our vacation in Corfu: wasps don’t like smoke, Google Maps can make you drive in circles, and Jacques Cousteau invented scuba diving.&#xA;The scuba diving bit came up on this boat in the town of Nisaki, on Corfu’s northeast side. If you look closely, you’ll see Chris, the owner of Apollo Dive, sitting with my wife and kids.&#xA;Chris and his wife Maria led us on five dives in total.</description>
     </item>
     <item>
       <title>Wasser, Acqua, Voda</title>
-      <link>http://localhost:1313/life/wasser/</link>
+      <link>https://mreider.com/life/wasser/</link>
       <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/wasser/</guid>
+      <guid>https://mreider.com/life/wasser/</guid>
       <description>The Danube flows less than a mile from our house. One hot day, I biked there, took off my shirt, and jumped in. The current was strong, pulling me eastward toward Vienna. Thankfully, I made it back home in time for dinner.&#xA;A few weeks later, we drove to a bigger body of water, the Adriatic. Specifically, Venice, home to St. Mark&amp;rsquo;s corpse, Peggy Guggenheim&amp;rsquo;s dog cemetery, tagliatelle, and gondoliers. In Venice, it&amp;rsquo;s legal for a 14-year-old to operate a motorboat.</description>
     </item>
     <item>
       <title>Ode to Kine Fahrrad</title>
-      <link>http://localhost:1313/life/ode-to-king-fahrrad/</link>
+      <link>https://mreider.com/life/ode-to-king-fahrrad/</link>
       <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/ode-to-king-fahrrad/</guid>
+      <guid>https://mreider.com/life/ode-to-king-fahrrad/</guid>
       <description>The word “Fahrrad” reminds me of King Fahd of Saudi Arabia. But no, it’s not about that. Ein Fahrrad just means “a bicycle.” And this long-overdue blog post is about my bicycle and what it’s like to use it around town. Whoa. Calm down. You’re too excited.&#xA;Last fall, I bought a used bicycle for €170 from B7 Cycling Center, a shop that hires former inmates and trains them as mechanics.</description>
     </item>
     <item>
       <title>It&#39;s Snowing</title>
-      <link>http://localhost:1313/life/its-snowing/</link>
+      <link>https://mreider.com/life/its-snowing/</link>
       <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/its-snowing/</guid>
+      <guid>https://mreider.com/life/its-snowing/</guid>
       <description>Snow is falling in Linz today, which makes the kids very happy. I put on some ski gear and rode my bike to work, alongside dozens of other people doing the same.&#xA;The snow fits the scenery perfectly. Linz is fully decked out for Christmas. Lights are strung above the streets: clear lights, globes, stars, and multi-colored spirals.&#xA;Linz boasts three different Christmas markets within a half-mile radius. The market at Main Square has tasty Glühwein.</description>
     </item>
     <item>
       <title>Infinite Tunnels</title>
-      <link>http://localhost:1313/life/infinite-tunnels/</link>
+      <link>https://mreider.com/life/infinite-tunnels/</link>
       <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/infinite-tunnels/</guid>
+      <guid>https://mreider.com/life/infinite-tunnels/</guid>
       <description>We bought Max and Zoe smartphones in June. This was a big deal for us. The plan was to wait until Max started high school. But we caved. An obvious bribe, compensation for the chaos that followed.&#xA;Of course, the phones are incredibly useful, especially for translation and texting. Maps are a lifesaver too. I can see when they&amp;rsquo;re at school, at home, or on a tram.&#xA;The current map looks like this:</description>
     </item>
     <item>
       <title>Trader Joe&#39;s Bros</title>
-      <link>http://localhost:1313/life/trader-joes-bros/</link>
+      <link>https://mreider.com/life/trader-joes-bros/</link>
       <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/trader-joes-bros/</guid>
+      <guid>https://mreider.com/life/trader-joes-bros/</guid>
       <description>There are three supermarkets within a five-minute bike ride of our flat: Merkur Markt, Hofer, and Billa.&#xA;Merkur Markt Merkur Markt has the most variety. You can find veggie dogs, sushi rolls, and lots of fresh produce. They even have giant homemade gummy bears, which I’m a big fan of.&#xA;Billa Billa isn&amp;rsquo;t as nice as Merkur, but it does the job. The location near my office sells tuna sandwiches for €2.</description>
     </item>
     <item>
       <title>Urfahraner Market</title>
-      <link>http://localhost:1313/life/urfahraner-market/</link>
+      <link>https://mreider.com/life/urfahraner-market/</link>
       <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/urfahraner-market/</guid>
+      <guid>https://mreider.com/life/urfahraner-market/</guid>
       <description>We visited the Urfahraner Market on Saturday. A market it isn&amp;rsquo;t, more like a county fair. We were joined by new friends (thank God Alison is good at making them). Without her, we&amp;rsquo;d be very bored. And thank goodness these befriended friends are fun. Incriminating evidence to follow.&#xA;These friends came with kid-friends too. Fun was had by all: grown-up bunny-ear fun and kid fun on the Autodrom (bumper cars). But this wasn&amp;rsquo;t your ordinary Autodrom.</description>
     </item>
     <item>
       <title>Memories of Vermont</title>
-      <link>http://localhost:1313/life/memories-of-vermont/</link>
+      <link>https://mreider.com/life/memories-of-vermont/</link>
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/memories-of-vermont/</guid>
+      <guid>https://mreider.com/life/memories-of-vermont/</guid>
       <description>I&amp;rsquo;m on a work trip this week. Four of us are visiting a satellite office in Klagenfurt to meet the team and join some planning sessions. We took a five-hour train ride through the Alps. It was mostly dark and foggy, but whenever the fog lifted, I found myself comparing the countryside to places in America. The mountains look like the Rockies, big peaks and spires, but the grass and trees are a vivid, perfect green, just like Vermont.</description>
     </item>
     <item>
       <title>The Everything Animal</title>
-      <link>http://localhost:1313/life/everything-animal/</link>
+      <link>https://mreider.com/life/everything-animal/</link>
       <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/everything-animal/</guid>
+      <guid>https://mreider.com/life/everything-animal/</guid>
       <description>We’re ahead of ourselves. We want it to be April 2020, not September 2019. By April, the kids will take the tram on their own. They’ll have strong friendships. Alison and I will understand the healthcare system and know enough German to order a sandwich without having to point.&#xA;But it’s still September. We have to wait for the sun and moon to come and go 150 times.&#xA;I wish there were a magical way to fast-forward.</description>
     </item>
     <item>
       <title>Rolling in my Benzo</title>
-      <link>http://localhost:1313/life/rolling-benzo/</link>
+      <link>https://mreider.com/life/rolling-benzo/</link>
       <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/rolling-benzo/</guid>
+      <guid>https://mreider.com/life/rolling-benzo/</guid>
       <description>Lots of rap lyrics mention benzos. Mercedes Benzos. Fancy cars. I just rented my second one from the Hertz in downtown Linz. It was a triple upgrade from a Ford Fiesta, but the rate stayed the same, just €32 a day. That&amp;rsquo;s how we roll. I rolled it all the way home.&#xA;We rent cars for hauling stuff we can&amp;rsquo;t carry and for getting out of town. Driving around Austria is pretty easy.</description>
     </item>
     <item>
       <title>No Comprendo</title>
-      <link>http://localhost:1313/life/no-comprendo/</link>
+      <link>https://mreider.com/life/no-comprendo/</link>
       <pubDate>Sat, 31 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/no-comprendo/</guid>
+      <guid>https://mreider.com/life/no-comprendo/</guid>
       <description>I can’t understand a word these people are saying. But I do understand them on other levels.&#xA;They stack wood like it&amp;rsquo;s an art form. I&amp;rsquo;d probably do the same if I had wood to stack. Their toilets have a little shelf so they can examine their poop. I get it. I&amp;rsquo;ve been known to have similar interests. They&amp;rsquo;re highly attuned to mustard, my favorite condiment (and maybe even my favorite food).</description>
     </item>
     <item>
       <title>Week 2</title>
-      <link>http://localhost:1313/life/week-2/</link>
+      <link>https://mreider.com/life/week-2/</link>
       <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/week-2/</guid>
+      <guid>https://mreider.com/life/week-2/</guid>
       <description>The basics are finally in place. The kids have beds and bed frames. We do too. Everyone has somewhere to put their clothes. There’s a dining room table now, along with some temporary folding chairs. Zoe has a desk in her room, and we’ve added some bedside tables.&#xA;The bathroom now houses a new washer and dryer, wedged snugly between the sink and the shower. They&amp;rsquo;re supposed to stack, but they don&amp;rsquo;t stack very well.</description>
     </item>
     <item>
       <title>Phones</title>
-      <link>http://localhost:1313/life/phones/</link>
+      <link>https://mreider.com/life/phones/</link>
       <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/phones/</guid>
+      <guid>https://mreider.com/life/phones/</guid>
       <description>We swapped our SIM cards for new ones from Hofer Telecom. Yes, Hofer is both a grocery store and a cell phone company. The plan costs $10 a month for 15 gigs of data and unlimited calls. I&amp;rsquo;m not sure which felt better, firing AT&amp;amp;T or Comcast. For reference, cable internet here is $39 a month for 100 gigabits.&#xA;Now we have these strange (to us) phone numbers that start with +43, the Austrian country code.</description>
     </item>
     <item>
       <title>Österreich</title>
-      <link>http://localhost:1313/life/osterreich/</link>
+      <link>https://mreider.com/life/osterreich/</link>
       <pubDate>Mon, 26 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life/osterreich/</guid>
+      <guid>https://mreider.com/life/osterreich/</guid>
       <description>Warning: These posts are never proofread. They will have plenty of misspellings and grammatical errors. Verklagen Sie mich (sue me)!&#xA;Tomorrow marks one week since we arrived in Linz, Austria. We’re living in an apartment on Spazenhofstraße, a quiet street along the Postlingberg Tram line. The building has five ground-level apartments, each with two floors, and five balcony apartments on the top level. The balcony apartment above us is occupied by Herig and Inga, who looked down from their balcony and waved as we arrived.</description>
     </item>
     <item>
       <title>Arthur Elliott (Pete) Reider - Obituary</title>
-      <link>http://localhost:1313/family/pete-reider/obituary/</link>
+      <link>https://mreider.com/family/pete-reider/obituary/</link>
       <pubDate>Mon, 17 Aug 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/pete-reider/obituary/</guid>
+      <guid>https://mreider.com/family/pete-reider/obituary/</guid>
       <description>This obituary was originally published in the San Francisco Chronicle and Legacy.com, but I&amp;rsquo;ve put it here for posterity.&#xA;Arthur Elliott (Pete) Reider November 1, 1936 - August 13th, 2015&#xA;Arthur Elliott (Pete) Reider, MD, died peacefully at home in San Francisco of lymphoma on Thursday August 13th 2015. He was 78, born in November of 1936. Janet Sampson Reider, his wife of 57 years, and all three of his children were by his side.</description>
     </item>
     <item>
       <title>Time Warp</title>
-      <link>http://localhost:1313/family/pete-reider/time-warp/</link>
+      <link>https://mreider.com/family/pete-reider/time-warp/</link>
       <pubDate>Sat, 02 Mar 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/pete-reider/time-warp/</guid>
+      <guid>https://mreider.com/family/pete-reider/time-warp/</guid>
       <description>An elderly Asian servant sweeps the doorstep proteceted by a surgical mask.&#xA;Not a particle of the past transcends the warp of that shallow chalice tipped up to the mouth.&#xA;The cement for these houses was poureed about 1930.&#xA;Nothing substantial - no wine - no wafer - crosses the lip of 83 years.&#xA;&amp;hellip; no getting ourselves back to the garden.&#xA;There is just the sound of Joni Mitchell&amp;rsquo;s voice.</description>
     </item>
     <item>
       <title>Am I Blue</title>
-      <link>http://localhost:1313/family/pete-reider/am-i-blue/</link>
+      <link>https://mreider.com/family/pete-reider/am-i-blue/</link>
       <pubDate>Tue, 07 Feb 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/pete-reider/am-i-blue/</guid>
+      <guid>https://mreider.com/family/pete-reider/am-i-blue/</guid>
       <description>The sun bouncing off the windows downtown keeps getting more and more golden. It is sundown and the houses below-looking down Lake Street-are darkening fast. But the day doesn&amp;rsquo;t want to give up. The light from the west leaps across the hollow beneath me and catches the windows of the buildings on the hills to the east. Now it&amp;rsquo;s fading just like I knew it would a few moments ago. But it was good while it lasted.</description>
     </item>
     <item>
       <title>One Hundred and Four</title>
-      <link>http://localhost:1313/family/pete-reider/one-hundred-and-four/</link>
+      <link>https://mreider.com/family/pete-reider/one-hundred-and-four/</link>
       <pubDate>Tue, 12 Jul 2011 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/pete-reider/one-hundred-and-four/</guid>
+      <guid>https://mreider.com/family/pete-reider/one-hundred-and-four/</guid>
       <description>My father, who would have been 104 on July 3, 2011, was a great guy- little impatient and a bit on the frugal side-but a terrific guy. He liked to keep words economical. In an anglophile fever pitch his immigrant Jewish parents named him Norman. He changed that to Norm, then to Nor, shortened that to No and finally decided to be called Nnnnn.&#xA;His impatience was not completely unprovoked. My mother (Louise) dawdled whenever they went walking.</description>
     </item>
     <item>
       <title>An Afternoon at the Health Club</title>
-      <link>http://localhost:1313/family/pete-reider/an-afternoon-at-the-healthclub/</link>
+      <link>https://mreider.com/family/pete-reider/an-afternoon-at-the-healthclub/</link>
       <pubDate>Thu, 28 Apr 2011 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/pete-reider/an-afternoon-at-the-healthclub/</guid>
+      <guid>https://mreider.com/family/pete-reider/an-afternoon-at-the-healthclub/</guid>
       <description>Characters&#xA;DOLORES 35, a swimmer at the Puritan Health Club.&#xA;PHILIP 44, also a swimmer at the Puritan Health Club.&#xA;MR. BOUSH (BOOsh) 56, the owner and manager of the Puritan Health Club.&#xA;ELANA 21, MR. BOUCH&amp;rsquo;s assistant.&#xA;SCENE&#xA;A garishly furnished office in downtown Boston. It is dominated by a huge desk behind which sits Mr. Boush smoking a large cigar. He is hefty and wears his dark hair slicked back.</description>
     </item>
     <item>
       <title>Basketball in the Catskills</title>
-      <link>http://localhost:1313/family/pete-reider/basketball-in-the-catskills/</link>
+      <link>https://mreider.com/family/pete-reider/basketball-in-the-catskills/</link>
       <pubDate>Fri, 06 Aug 2010 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/pete-reider/basketball-in-the-catskills/</guid>
+      <guid>https://mreider.com/family/pete-reider/basketball-in-the-catskills/</guid>
       <description>Barbara knocked on the frame of the open door. A woman in green track suit answered, &amp;ldquo;Whadya want?&amp;rdquo;&#xA;&amp;ldquo;Is this the Bernfield residence?&amp;rdquo;&#xA;&amp;ldquo;No.&amp;rdquo; She paused. She was smoking a cigarette. No filter. Her iridescent green track suit had seen better days. &amp;ldquo;This is the Bernstein residence.&amp;rdquo;&#xA;&amp;ldquo;Oh,&amp;rdquo; said Barbara, trying to sound upbeat, as if she had heard good news. &amp;ldquo;Well, I thought it was the Bernfield residence&amp;hellip;.&amp;rdquo;&#xA;&amp;ldquo;It&amp;rsquo;s not,&amp;rdquo; said Mrs.</description>
     </item>
     <item>
       <title>Max and Zoe</title>
-      <link>http://localhost:1313/family/pete-reider/max-and-zoe/</link>
+      <link>https://mreider.com/family/pete-reider/max-and-zoe/</link>
       <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/pete-reider/max-and-zoe/</guid>
+      <guid>https://mreider.com/family/pete-reider/max-and-zoe/</guid>
       <description>Day 1&#xA;Today is Max&amp;rsquo;s birthday. He&amp;rsquo;s three. Max has a sister-Zoe. She&amp;rsquo;s not so old. Zoe is about one and a half. They live on a steep hill with trees in Oakland, California. Max likes to do stuff on his own and in his own way. He doesn&amp;rsquo;t like it when people pet his hair. His hair is light brown and arranges itself in a curve like a lovable sleeping kitten.</description>
     </item>
     <item>
       <title>An Exodus</title>
-      <link>http://localhost:1313/family/pete-reider/an-exodus/</link>
+      <link>https://mreider.com/family/pete-reider/an-exodus/</link>
       <pubDate>Thu, 08 Nov 2007 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/pete-reider/an-exodus/</guid>
+      <guid>https://mreider.com/family/pete-reider/an-exodus/</guid>
       <description>The chilling northeasterly wind hit me full in the face as I came out of Gosman. I buttoned my Navy P jacket - a souvenir of World War II - thinking what amazing warmth that single layer of wool afforded. I had just come from Carol Shedd&amp;rsquo;s class on The Old Testament. While sitting there, immersed in reading to myself, the ancient words from Exodus had jumped out at me across time: If thou at all take thy neighbor&amp;rsquo;s garment to pledge, thou shalt restore it unto him by that the sun goeth down for that is his only covering, it is his garment for his skin; wherein shall he sleep?</description>
     </item>
     <item>
       <title>Personals</title>
-      <link>http://localhost:1313/family/pete-reider/personals/</link>
+      <link>https://mreider.com/family/pete-reider/personals/</link>
       <pubDate>Fri, 11 May 2007 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/pete-reider/personals/</guid>
+      <guid>https://mreider.com/family/pete-reider/personals/</guid>
       <description>** He **&#xA;So&amp;hellip; I&amp;rsquo;m feeling a little uptight about this - I guess I mean more than a little [forcing a laugh] because I don&amp;rsquo;t do this [a briefer nervous laugh] all the time. Well, no one does this really all the time. It&amp;rsquo;s just that&amp;hellip; I don&amp;rsquo;t know what I&amp;rsquo;m doing. [He looks at her expectantly]&#xA;** She **&#xA;[almost a monotone] I enjoy hiking, cooking and yoga.</description>
     </item>
     <item>
       <title>Aunt Ethel</title>
-      <link>http://localhost:1313/family/pete-reider/aunt-ethel/</link>
+      <link>https://mreider.com/family/pete-reider/aunt-ethel/</link>
       <pubDate>Fri, 02 Dec 2005 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/pete-reider/aunt-ethel/</guid>
+      <guid>https://mreider.com/family/pete-reider/aunt-ethel/</guid>
       <description>Scarcely had I caught my breath after the second grade in Lebanon, Missouri, when I was face to face with an entirely new cast of characters in a totally new venue, New York City. Queen of the players on dazzling stage was a willowy woman with weightless flaxen hair who moved in sudden nervous starts but once in motion floated effortlessly, creating for me the image of a grand, highly visible, Tinker Bell.</description>
     </item>
     <item>
       <title>The Kitchen Virus</title>
-      <link>http://localhost:1313/family/pete-reider/kitchen-virus/</link>
+      <link>https://mreider.com/family/pete-reider/kitchen-virus/</link>
       <pubDate>Sat, 23 Jul 2005 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/pete-reider/kitchen-virus/</guid>
+      <guid>https://mreider.com/family/pete-reider/kitchen-virus/</guid>
       <description>After the West Nile virus came the Kitchen virus. My wife&amp;rsquo;s friend, Myrna Slotkin, got it first. Then it spread to Vera Popovsky. Soon it infected the eleven other members of her Wednesday morning book club. Convoys of trucks delivering colossal metal stoves and gigantic refrigerators - all of them stainless steel (colors are out) - converged on suburban Newton creating massive potholes the blame for which fell upon the mayor, nearly costing him reelection.</description>
     </item>
     <item>
       <title>Nightingales</title>
-      <link>http://localhost:1313/family/pete-reider/nightingales/</link>
+      <link>https://mreider.com/family/pete-reider/nightingales/</link>
       <pubDate>Sun, 01 Nov 1998 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/pete-reider/nightingales/</guid>
+      <guid>https://mreider.com/family/pete-reider/nightingales/</guid>
       <description>Ferdinand Blumer in his 82nd year was a believer in life&amp;rsquo;s small pleasures. His admiration for his late wife, Margarite, had been huge. Warm and gregarious, she created comfort with people wherever they went - making up for his lifelong shyness.&#xA;One day in an adventurous mood he went out into his back yard. He was intent on attracting a particular bird whose call he had memorized precisely but who remained aloof to his overtures.</description>
     </item>
     <item>
       <title>Grandmother</title>
-      <link>http://localhost:1313/family/pete-reider/grandmother/</link>
+      <link>https://mreider.com/family/pete-reider/grandmother/</link>
       <pubDate>Tue, 18 Aug 1998 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/pete-reider/grandmother/</guid>
+      <guid>https://mreider.com/family/pete-reider/grandmother/</guid>
       <description>Just before the sign pointing to the beach I turned away from the tar topped road onto the sand in the salt marsh. The tide was out. The sinuous sandy trail soon led around a dune banked with thatch - still wet - and wisps of green plants holding on mightily.&#xA;I thought I was all alone but as I rounded the turn my grandmother, Rena, was running. It amazed me how her short squat body, her thin legs coming out from her ballooning black silken running shorts, could move so well, so tirelessly as her feet sunk into the bottom of the wet sandy estuary.</description>
     </item>
     <item>
       <title>Charlotte Reider-Smith</title>
-      <link>http://localhost:1313/family/charlotte/</link>
+      <link>https://mreider.com/family/charlotte/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/charlotte/</guid>
+      <guid>https://mreider.com/family/charlotte/</guid>
       <description>My inspiration comes from the many layers of my life and the people around me. My work is sourced from photographs taken by me and my partner (both film photographers) of our lives together.&#xA;There&amp;rsquo;s a lot more information about my work at charlottereidersmith.com.</description>
     </item>
     <item>
       <title>Deborah Green</title>
-      <link>http://localhost:1313/family/deb/</link>
+      <link>https://mreider.com/family/deb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/deb/</guid>
+      <guid>https://mreider.com/family/deb/</guid>
       <description>Deborah is my Aunt. She lives in Seattle.&#xA;Deb wrote a One Boy about raising her son, Caleb (my cousin), after the passing of her husband and Caleb&amp;rsquo;s father. This is the illustration on the front cover that Caleb created when he was a young boy.&#xA;Here&amp;rsquo;s what she wrote on the back cover:&#xA;I consult about and edit early stages of books, as a developmental editor. I did this for faculty at the University of Washington Medical School, and other books, including Aaron Dixon&amp;rsquo;s account of his experience as a leader with the Black Panther Party, and a book by Jerry Mander of San Francisco.</description>
     </item>
     <item>
       <title>Fitness</title>
-      <link>http://localhost:1313/fitness/</link>
+      <link>https://mreider.com/fitness/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fitness/</guid>
+      <guid>https://mreider.com/fitness/</guid>
       <description> Week Sun Mon Tue Wed Thu Fri Sat 2 Dec 8 Dec 9 Dec 10 Dec 11 Dec 12 Dec 13 Dec 14 1 Dec 1 Dec 2 Dec 3 Dec 4 Dec 5 Dec 6 Dec 7 </description>
     </item>
     <item>
       <title>Janet Reider</title>
-      <link>http://localhost:1313/family/janet/</link>
+      <link>https://mreider.com/family/janet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/janet/</guid>
+      <guid>https://mreider.com/family/janet/</guid>
       <description>Digital has replaced film. The Hasselblad snoozes on a closet shelf. I am more apt to capture aspects of people - young mothers in rapt conversation while their children argue over a plastic toy, the focused energy of men on a park bench talking politics, and the dedication of a sunbather on a bridge.&#xA;There&amp;rsquo;s a lot more information about my work at janetreider.com.</description>
     </item>
     <item>
       <title>Jenny Sampson</title>
-      <link>http://localhost:1313/family/jenny/</link>
+      <link>https://mreider.com/family/jenny/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/family/jenny/</guid>
+      <guid>https://mreider.com/family/jenny/</guid>
       <description>My focus is with wet plate collodion (tintypes), traditional black and white photography, and commissioned portraiture. She is a member of the Rolls and Tubes Collective and acting Board President of the East Bay Photo Collective.&#xA;There&amp;rsquo;s a lot more information about my work at jennysampson.com.</description>
     </item>
     <item>
       <title>Projects</title>
-      <link>http://localhost:1313/projects/</link>
+      <link>https://mreider.com/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
+      <guid>https://mreider.com/projects/</guid>
       <description>Krems A static site generator written in Go for publishing websites to GitHub more easily than Hugo or Jekyll.&#xA;Github Repository&#xA;Mattato A macOS menu bar Pomodoro timer that keeps track of your work sessions.&#xA;Download&#xA;Documentation&#xA;Github Repository&#xA;PM415 A backlog management tool for product managers.&#xA;Documentation&#xA;Github Repository&#xA;Agile Markdown Backlog management in markdown via a CLI.&#xA;Documentation&#xA;Github Repository&#xA;Fritter Prioritize product backlogs via poker chip scarcity</description>
     </item>
     <item>
       <title>Resume</title>
-      <link>http://localhost:1313/resume/</link>
+      <link>https://mreider.com/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resume/</guid>
+      <guid>https://mreider.com/resume/</guid>
       <description></description>
     </item>
   </channel>
