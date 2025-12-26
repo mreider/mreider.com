@@ -1,55 +1,33 @@
 {{ define "main" }}
-    
-    {{ if .Params.image }}
-    <img src="{{ .Params.image }}" style="max-width:400px;width:100%;height:auto;" class="img-fluid mb-3 rounded" alt="featured image">
-    {{ end }}
 
-	
-    {{ if .Title }}
-    {{ $sectionIcons := dict "writeups" "fas fa-pen-nib" "life" "fas fa-leaf" "tech" "fas fa-laptop-code" "family" "fas fa-heart" "Pete Reider" "fas fa-user" }}
-    {{ $icon := index $sectionIcons .Title }}
-    {{ if not $icon }}
-        {{ $icon = index $sectionIcons .Section }}
-    {{ end }}
-    <h3 class="display-6 mb-4">
-        {{ if $icon }}<i class="{{ $icon }}"></i> {{ end }}{{ .Title }}
-    </h3>
-    {{ end }}
+<h1>{{ .Title }}</h1>
 
-    
-        <div class="mb-5">
-            {{ .Content }}
-        </div>
-    
+{{ if .Content }}
+<div class="section-description mb-4">
+    {{ .Content }}
+</div>
+{{ end }}
 
-    {{ if .Pages }}
-    <div class="mb-5">
-        {{ $icons := slice "fas fa-book" "fas fa-pen-nib" "fas fa-dove" "fas fa-feather" "fas fa-scroll" "fas fa-bookmark" "fas fa-leaf" "fas fa-heart" "fas fa-star" "fas fa-lightbulb" }}
-        {{ range $index, $page := .Pages.ByDate.Reverse }}
-        <div class="mb-4 d-flex align-items-start">
-            <div class="thumbnail-container me-3 flex-shrink-0">
-                {{ if $page.Params.image }}
-                <div class="post-thumbnail" style="background-image: url('{{ $page.Params.image }}');"></div>
-                {{ else }}
-                {{ $iconIndex := mod $index (len $icons) }}
-                {{ $icon := index $icons $iconIndex }}
-                <div class="post-thumbnail icon-thumbnail">
-                    <i class="{{ $icon }}"></i>
-                </div>
-                {{ end }}
-            </div>
-            <div class="flex-grow-1">
-                <h4 class="mb-2"><a href="{{ $page.RelPermalink }}" class="text-decoration-none">{{ $page.Title }}</a></h4>
-                {{ if $page.Date }}
-                <div class="text-muted mb-2 small">{{ $page.Date.Format "January 2, 2006" }}</div>
-                {{ end }}
-                {{ if $page.Description }}
-                <p class="mb-0 text-muted">{{ $page.Description }}</p>
-                {{ end }}
-            </div>
-        </div>
+{{ $posts := where .Pages "Params.status" "ne" "draft" }}
+{{ $posts = $posts.ByDate.Reverse }}
+
+{{ if $posts }}
+<ol class="post-list">
+    {{ range $posts }}
+    <li class="post-list-item">
+        <span class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+        {{ if .Description }}
+        <p class="post-description">{{ .Description }}</p>
         {{ end }}
-    </div>
+        <div class="post-meta">
+            {{ .Date.Format "Jan 2, 2006" }}
+            {{ if .Params.author }} · {{ .Params.author }}{{ end }}
+        </div>
+    </li>
     {{ end }}
+</ol>
+{{ else }}
+<p class="text-muted">No posts yet.</p>
+{{ end }}
 
 {{ end }}

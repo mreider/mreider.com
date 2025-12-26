@@ -1,14 +1,6 @@
 {{ define "main" }}
 
-<div class="h-card" style="display: none;">
-    <a class="p-name u-url" href="https://mreider.com">Matt Reider</a>
-    <img class="u-photo" src="https://mreider.com/images/matt/matt-ali-maine.png" alt="Matt Reider">
-    <p class="p-note">American expat in Vienna, husband, father, Lagotto owner, friend</p>
-</div>
-
-<div class="home-intro">
-    <p>Hi, I'm Matt. An American living in Vienna. Husband, father, Lagotto owner, friend.</p>
-</div>
+<h1>{{ .Title }}</h1>
 
 {{ $allPosts := where site.RegularPages "Type" "in" (slice "life" "tech" "writeups" "family" "reflections" "fitness" "deutsch") }}
 {{ $allPosts = where $allPosts "Params.status" "ne" "draft" }}
@@ -30,6 +22,8 @@
     </li>
     {{ end }}
 </ol>
+{{ else }}
+<p class="text-muted">No posts yet.</p>
 {{ end }}
 
 {{ end }}

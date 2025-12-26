@@ -20,22 +20,26 @@ title = 'MR'
     url = "/"
     weight = 1
   [[menu.main]]
+    name = "All Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
     name = "Writeups"
     url = "/writeups/"
-    weight = 2
+    weight = 3
   [[menu.main]]
     name = "Life"
     url = "/life/"
-    weight = 3
+    weight = 4
   [[menu.main]]
     name = "Tech"
     url = "/tech/"
-    weight = 4
+    weight = 5
   [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 5
+    weight = 6
   [[menu.main]]
     name = "Deutsch"
     url = "/deutsch/"
-    weight = 6
+    weight = 7

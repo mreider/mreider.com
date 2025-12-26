@@ -25,7 +25,8 @@
       "Bash(mv:*)",
       "Bash(python3:*)",
       "Bash(mkdir:*)",
-      "Bash(hugo:*)"
+      "Bash(hugo:*)",
+      "WebFetch(domain:boehs.org)"
     ],
     "deny": [],
     "ask": []

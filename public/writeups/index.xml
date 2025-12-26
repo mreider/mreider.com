@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Writeups on MR</title>
-    <link>https://mreider.com/writeups/</link>
+    <link>http://localhost:1313/writeups/</link>
     <description>Recent content in Writeups on MR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mreider.com/writeups/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/writeups/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Fifth Step</title>
-      <link>https://mreider.com/writeups/the-fifth-step/</link>
+      <link>http://localhost:1313/writeups/the-fifth-step/</link>
       <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://mreider.com/writeups/the-fifth-step/</guid>
+      <guid>http://localhost:1313/writeups/the-fifth-step/</guid>
       <description>Last night my wife invited me out to see The Fifth Step, a Scottish stage play that has been recorded for movie goers and streamers. It stars Jack Lowden, who I know from the show Slow Horses, and Martin Freeman who&amp;rsquo;s been in a bunch of stuff. My favorite role of his is the sociopathic weakling midwestern used car dealer Lester Nygaard in the TV series Fargo.&#xA;The play is done in-the-round, meaning the audience completely surrounds the stage, which in this case is actually a square.</description>
     </item>
     <item>
       <title>Leonard and Hungry Paul</title>
-      <link>https://mreider.com/writeups/leonard-and-hungry-paul/</link>
+      <link>http://localhost:1313/writeups/leonard-and-hungry-paul/</link>
       <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://mreider.com/writeups/leonard-and-hungry-paul/</guid>
+      <guid>http://localhost:1313/writeups/leonard-and-hungry-paul/</guid>
       <description>Leonard and Hungry Paul by Ronan Hession is a fun, dry, wholesome, and satisfying story about some normal people just sort of going through life together.&#xA;Early in the story we meet Leonard and Hungry Paul, two simple and straightforward men who schedule regular gaming nights to play things like Yahtzee, Monopoly, Connect Four, or checkers.&#xA;The storyline is about transition. Hungry Paul&amp;rsquo;s sister is getting married, which symbolizes her separation from her parents (whom Paul lives with), from Paul himself, and signals a new phase of all of their lives.</description>
     </item>
     <item>
       <title>The Good Whale</title>
-      <link>https://mreider.com/writeups/the-good-whale/</link>
+      <link>http://localhost:1313/writeups/the-good-whale/</link>
       <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://mreider.com/writeups/the-good-whale/</guid>
+      <guid>http://localhost:1313/writeups/the-good-whale/</guid>
       <description>The Good Whale is an engaging and emotional Serial podcast series about the 10+ year effort to reintroduce Keiko, the killer whale that starred in Free Willy, into the open ocean.&#xA;Each episode of The Good Whale reminded me of This American Life (no coincidence, as Ira Glass is one of the producers). The show tells a story by interviewing the people involved and reflecting on their conflicting views to show that there isn&amp;rsquo;t one way of looking at the story.</description>
     </item>
   </channel>

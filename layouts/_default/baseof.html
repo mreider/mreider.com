@@ -5,7 +5,7 @@
     <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     {{ if .Params.image }}
     <meta property="og:image" content="{{ .Site.BaseURL }}{{ strings.TrimPrefix "/" .Params.image }}" />
     {{ else }}
@@ -13,16 +13,16 @@
     {{ end }}
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    
+
     <meta name="twitter:card" content="summary_large_image" />
     {{ if .Params.image }}
     <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ strings.TrimPrefix "/" .Params.image }}" />
     {{ else }}
     <meta name="twitter:image" content="{{ .Site.BaseURL }}images/matt/matt-ali-maine.png" />
     {{ end }}
-    
+
     <meta property="og:site_name" content="{{ .Site.Title }}">
-    
+
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -30,56 +30,44 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="shortcut icon" href="/images/favicon.ico">
-    
+
     <link rel="me" href="https://github.com/mreider">
 
-
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/custom.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
 </head>
 <body>
 
+<div class="container-lg mt-5">
+    <!-- Site Title -->
+    <header class="masthead">
+        <h3 class="masthead-title">
+            <a href="/" title="Home">{{ .Site.Title }}</a>
+        </h3>
+    </header>
 
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+    <!-- Top Navigation - Categories -->
+    <nav class="top-nav">
+        {{ $currentSection := .Section }}
+        {{ $isHome := .IsHome }}
+        <span class="nav-item"><a href="/" {{ if $isHome }}class="active"{{ end }}>Home</a></span>
+        <span class="nav-item"><a href="/life/" {{ if eq $currentSection "life" }}class="active"{{ end }}>Life</a></span>
+        <span class="nav-item"><a href="/tech/" {{ if eq $currentSection "tech" }}class="active"{{ end }}>Tech</a></span>
+        <span class="nav-item"><a href="/writeups/" {{ if eq $currentSection "writeups" }}class="active"{{ end }}>Writeups</a></span>
+        <span class="nav-item"><a href="/family/" {{ if eq $currentSection "family" }}class="active"{{ end }}>Family</a></span>
+        <span class="nav-item"><a href="/about/" {{ if eq $currentSection "about" }}class="active"{{ end }}>About</a></span>
+    </nav>
 
+    <!-- Main Content -->
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
 
-<div class="sidebar" id="sidebar">
-  <nav class="sidebar-nav">
-    {{ range .Site.Menus.main }}
-    <a class="sidebar-nav-item" href="{{ .URL }}">{{ .Name }}</a>
-    {{ end }}
-  </nav>
-</div>
-
-
-<div class="wrap">
-  
-  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
-  
-  <div class="masthead">
-    <div class="container">
-      <h3 class="masthead-title">
-        <a href="/" title="Home">{{ .Site.Title }}</a>
-        <small></small>
-      </h3>
-    </div>
-  </div>
-
-
-<div class="container-lg mt-5 mb-5">
-    {{ block "main" . }}{{ end }}
-
-    <footer class="text-center mt-5">
-        Generated with <a href="https://gohugo.io">Hugo</a>
+    <!-- Footer -->
+    <footer class="site-footer text-center">
+        {{ partial "webring.html" . }}
+        <p>Made with <a href="https://gohugo.io">Hugo</a></p>
     </footer>
-  </div>
 </div>
-
-
-<script src="/js/bootstrap.js"></script>
 
 </body>
 </html>
