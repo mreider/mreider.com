@@ -21,7 +21,7 @@ PERSON_CONFIGS = {
         'linkedin_url': 'https://linkedin.com/in/mreider',
         'output_dir': 'matt',
         'resume_type': 'professional',  # professional resume with skills grid
-        'show_skills_grid': True,
+        'show_skills_grid': False,
         'show_certifications': True,
         'show_personal': True,
     },
@@ -255,7 +255,7 @@ def parse_resume_data(filename: str) -> Dict[str, Any]:
 
 
 def generate_student_twocol_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
-    """Generate two-column HTML for student resume (like Max's original PDF)"""
+    """Generate two-column HTML for student resume - Awesome-CV inspired styling"""
 
     # Build skills as comma-separated text
     skills_text = ", ".join(data.get('skills', []))
@@ -330,8 +330,19 @@ def generate_student_twocol_html(data: Dict[str, Any], config: Dict[str, Any]) -
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{data['name']} - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+        :root {{
+            --accent-color: #00A388;
+            --accent-dark: #008872;
+            --text-primary: #212121;
+            --text-secondary: #666666;
+            --text-light: #999999;
+            --border-color: #e0e0e0;
+            --bg-light: #f5f5f5;
+        }}
 
         * {{
             margin: 0;
@@ -345,10 +356,10 @@ def generate_student_twocol_html(data: Dict[str, Any], config: Dict[str, Any]) -
         }}
 
         body {{
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Source Sans Pro', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
             font-size: 9pt;
             line-height: 1.4;
-            color: #333;
+            color: var(--text-primary);
             background: #fff;
             width: 8.5in;
             min-height: 11in;
@@ -360,8 +371,8 @@ def generate_student_twocol_html(data: Dict[str, Any], config: Dict[str, Any]) -
 
         .container {{
             display: grid;
-            grid-template-columns: 1fr 220px;
-            gap: 30px;
+            grid-template-columns: 1fr 200px;
+            gap: 25px;
             height: 100%;
             position: relative;
         }}
@@ -382,10 +393,16 @@ def generate_student_twocol_html(data: Dict[str, Any], config: Dict[str, Any]) -
             width: 32px;
             height: 32px;
             background: #fff;
-            border: 1px solid #e2e8f0;
+            border: 1px solid var(--border-color);
             border-radius: 6px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
             padding: 5px;
+            transition: all 0.2s ease;
+        }}
+
+        .action-icons a:hover {{
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
         }}
 
         .action-icons img {{
@@ -402,30 +419,39 @@ def generate_student_twocol_html(data: Dict[str, Any], config: Dict[str, Any]) -
 
         /* Header */
         .header {{
-            margin-bottom: 16px;
+            margin-bottom: 14px;
+            padding-bottom: 12px;
+            border-bottom: 2pt solid var(--accent-color);
         }}
 
         .header h1 {{
-            font-size: 28pt;
+            font-family: 'Roboto', sans-serif;
+            font-size: 26pt;
             font-weight: 700;
-            color: #1a1a1a;
-            letter-spacing: -0.5px;
+            color: var(--text-primary);
+            letter-spacing: 2pt;
+            text-transform: uppercase;
             margin-bottom: 6px;
         }}
 
         .header .tagline {{
-            font-size: 9.5pt;
-            color: #555;
+            font-size: 9pt;
+            color: var(--text-secondary);
             line-height: 1.5;
         }}
 
         /* Section Titles */
         .section-title {{
-            font-size: 12pt;
-            font-weight: 600;
-            color: #2b7de9;
-            margin-bottom: 10px;
-            margin-top: 14px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 11pt;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1pt;
+            margin-bottom: 8px;
+            margin-top: 12px;
+            padding-bottom: 3pt;
+            border-bottom: 1pt solid var(--border-color);
         }}
 
         .section-title:first-of-type {{
@@ -434,157 +460,182 @@ def generate_student_twocol_html(data: Dict[str, Any], config: Dict[str, Any]) -
 
         /* Education */
         .edu-item {{
-            margin-bottom: 12px;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            border-left: 2pt solid var(--accent-color);
         }}
 
         .edu-school {{
+            font-family: 'Roboto', sans-serif;
             font-size: 10pt;
-            font-weight: 600;
-            color: #1a1a1a;
+            font-weight: 700;
+            color: var(--text-primary);
         }}
 
         .edu-degree {{
             font-size: 9pt;
-            font-weight: 500;
-            color: #444;
+            font-weight: 600;
+            color: var(--accent-color);
         }}
 
         .edu-date {{
-            font-size: 8.5pt;
-            color: #666;
-            margin-bottom: 4px;
+            font-size: 8pt;
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 3px;
         }}
 
         .edu-description {{
-            font-size: 8.5pt;
-            color: #555;
-            line-height: 1.45;
+            font-size: 8pt;
+            color: var(--text-secondary);
+            line-height: 1.4;
         }}
 
         /* Leadership */
         .leadership-item {{
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            padding-left: 10px;
+            border-left: 2pt solid var(--accent-color);
         }}
 
         .leadership-org {{
-            font-size: 10pt;
-            font-weight: 600;
-            color: #1a1a1a;
+            font-family: 'Roboto', sans-serif;
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: var(--text-primary);
         }}
 
         .leadership-title {{
-            font-size: 9pt;
-            font-weight: 500;
-            color: #444;
+            font-size: 8.5pt;
+            font-weight: 600;
+            color: var(--accent-color);
         }}
 
         .leadership-date {{
-            font-size: 8.5pt;
-            color: #666;
-            margin-bottom: 4px;
+            font-size: 8pt;
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 2px;
         }}
 
         .leadership-description {{
-            font-size: 8.5pt;
-            color: #555;
-            line-height: 1.45;
+            font-size: 8pt;
+            color: var(--text-secondary);
+            line-height: 1.4;
         }}
 
         /* Activities */
         .activity-item {{
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            padding-left: 10px;
+            border-left: 2pt solid var(--accent-color);
         }}
 
         .activity-name {{
-            font-size: 10pt;
-            font-weight: 600;
-            color: #1a1a1a;
+            font-family: 'Roboto', sans-serif;
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: var(--text-primary);
             margin-bottom: 2px;
         }}
 
         .activity-description {{
-            font-size: 8.5pt;
-            color: #555;
-            line-height: 1.45;
+            font-size: 8pt;
+            color: var(--text-secondary);
+            line-height: 1.4;
         }}
 
         /* Work Experience */
         .work-item {{
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            padding-left: 10px;
+            border-left: 2pt solid var(--accent-color);
         }}
 
         .work-title {{
-            font-size: 10pt;
-            font-weight: 600;
-            color: #1a1a1a;
+            font-family: 'Roboto', sans-serif;
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: var(--text-primary);
         }}
 
         .work-company {{
-            font-size: 9pt;
-            font-weight: 500;
-            color: #444;
+            font-size: 8.5pt;
+            font-weight: 600;
+            color: var(--accent-color);
         }}
 
         .work-date {{
-            font-size: 8.5pt;
-            color: #666;
-            margin-bottom: 4px;
+            font-size: 8pt;
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 2px;
         }}
 
         .work-description {{
-            font-size: 8.5pt;
-            color: #555;
-            line-height: 1.45;
+            font-size: 8pt;
+            color: var(--text-secondary);
+            line-height: 1.4;
         }}
 
         /* Right Column */
         .right-column {{
-            padding-top: 0;
-        }}
-
-        .contact-block {{
-            margin-bottom: 20px;
-            text-align: right;
-        }}
-
-        .contact-block .location {{
-            font-size: 9pt;
-            color: #333;
-            line-height: 1.5;
-            margin-bottom: 8px;
-        }}
-
-        .contact-block .phone,
-        .contact-block .email {{
-            font-size: 9pt;
-            color: #333;
-        }}
-
-        .right-section {{
-            margin-bottom: 20px;
-        }}
-
-        .right-section-title {{
-            font-size: 11pt;
-            font-weight: 600;
-            color: #2b7de9;
-            margin-bottom: 8px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }}
-
-        .right-section p {{
-            font-size: 8.5pt;
-            color: #555;
-            line-height: 1.5;
+            background: var(--bg-light);
+            padding: 12px;
+            border-radius: 6px;
+            border-top: 3pt solid var(--accent-color);
         }}
 
         .profile-image {{
             width: 100%;
-            max-width: 180px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-            float: right;
+            max-width: 160px;
+            border-radius: 50%;
+            margin: 0 auto 12px auto;
+            display: block;
+            border: 3pt solid var(--accent-color);
+        }}
+
+        .contact-block {{
+            margin-bottom: 14px;
+            text-align: center;
+        }}
+
+        .contact-item {{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            font-size: 8pt;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }}
+
+        .contact-item i {{
+            color: var(--accent-color);
+            font-size: 9pt;
+            width: 12pt;
+        }}
+
+        .right-section {{
+            margin-bottom: 12px;
+        }}
+
+        .right-section-title {{
+            font-family: 'Roboto', sans-serif;
+            font-size: 9pt;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5pt;
+            padding-bottom: 3pt;
+            border-bottom: 1pt solid var(--border-color);
+        }}
+
+        .right-section p {{
+            font-size: 8pt;
+            color: var(--text-secondary);
+            line-height: 1.4;
         }}
 
         @media print {{
@@ -612,13 +663,8 @@ def generate_student_twocol_html(data: Dict[str, Any], config: Dict[str, Any]) -
             .right-column {{
                 order: -1;
             }}
-            .contact-block {{
-                text-align: left;
-            }}
             .profile-image {{
-                float: none;
-                margin: 0 auto 16px auto;
-                display: block;
+                max-width: 120px;
             }}
         }}
     </style>
@@ -630,7 +676,7 @@ def generate_student_twocol_html(data: Dict[str, Any], config: Dict[str, Any]) -
         <!-- Left Column: Main Content -->
         <div class="left-column">
             <div class="header">
-                <h1>{data['name'].upper()}</h1>
+                <h1>{data['name']}</h1>
                 <p class="tagline">{data['summary']}</p>
             </div>
 
@@ -652,9 +698,18 @@ def generate_student_twocol_html(data: Dict[str, Any], config: Dict[str, Any]) -
             <img src="{config.get('profile_image', '')}" alt="{data['name']}" class="profile-image">
 
             <div class="contact-block">
-                <div class="location">{data['location'].replace(' | ', '<br>')}</div>
-                <div class="phone">{data['phone']}</div>
-                <div class="email">{data['email']}</div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>{data['location'].replace(' | ', '</span></div><div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>')}</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>{data['phone']}</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>{data['email']}</span>
+                </div>
             </div>
 
             <div class="right-section">
@@ -690,7 +745,7 @@ def generate_student_twocol_html(data: Dict[str, Any], config: Dict[str, Any]) -
 
 
 def generate_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
-    """Generate HTML from parsed data"""
+    """Generate HTML from parsed data - Awesome-CV inspired styling"""
 
     # Generate jobs HTML
     jobs_html = ""
@@ -698,17 +753,17 @@ def generate_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
         bullets_html = ""
         if job['bullets']:
             for bullet in job['bullets']:
-                bullets_html += f"                        <li>{bullet}</li>\n"
-            bullets_section = f"""                    <ul class="achievements">
-{bullets_html}                    </ul>"""
+                bullets_html += f"                    <li>{bullet}</li>\n"
+            bullets_section = f"""                <ul class="job-achievements">
+{bullets_html}                </ul>"""
         else:
             bullets_section = ""
 
-        company_html = f'<span class="company">{job["company"]}</span>' if job['company'] else ""
+        company_html = f'<span class="job-company">{job["company"]}</span>' if job['company'] else ""
 
         jobs_html += f"""            <div class="job">
                 <div class="job-header">
-                    <div>
+                    <div class="job-title-company">
                         <span class="job-title">{job['title']}</span>
                         {company_html}
                     </div>
@@ -719,19 +774,21 @@ def generate_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
 
 """
 
-    # Generate education HTML
+    # Generate education HTML - Awesome-CV style
     edu_html = ""
     for edu in data['education']:
         details_html = ""
         if edu.get('details'):
             details_html = f'<div class="edu-details">{edu["details"]}</div>'
 
-        edu_html += f"""                <div class="education-item">
+        edu_html += f"""            <div class="education-item">
+                <div class="education-info">
                     <div class="degree">{edu['degree']}</div>
                     <div class="school">{edu['school']}</div>
-                    <div class="location">{edu['date']}</div>
                     {details_html}
                 </div>
+                <div class="edu-date">{edu['date']}</div>
+            </div>
 """
 
     # Generate leadership HTML (for Max)
@@ -802,15 +859,17 @@ def generate_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
         for skill in data['skills']:
             skills_html += f"                <li>{skill}</li>\n"
 
-    # Generate certifications HTML
+    # Generate certifications HTML - Awesome-CV style
     cert_html = ""
     if config.get('show_certifications') and data.get('certifications'):
         for cert in data['certifications']:
-            cert_html += f"""                <div class="cert-item">
+            cert_html += f"""            <div class="cert-item">
+                <div class="cert-info">
                     <div class="cert-name">{cert['name']}</div>
                     <div class="cert-org">{cert['organization']}</div>
-                    <div class="cert-date">{cert['date']}</div>
                 </div>
+                <div class="cert-date">{cert['date']}</div>
+            </div>
 """
 
     # Generate personal section
@@ -818,28 +877,72 @@ def generate_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
     if config.get('show_personal') and data.get('personal'):
         personal_html = data['personal'].replace('\n', '<br>\n                    ')
 
-    # Build header with optional profile image
-    if config.get('profile_image'):
-        header_content = f"""            <div class="header-content">
-                <img src="{config['profile_image']}" alt="{data['name']}">
-                <div class="header-text">
-                    <h1>{data['name']}</h1>
-                    <div class="contact-info">
-                        <span>{data['location']}</span>
-                        <span>{data['email']}</span>
-                        <span>{data['phone']}</span>
+    # Build header with optional profile image - Awesome-CV style with dual locations/phones
+    # Parse locations and phones (support | separator for dual values)
+    locations = [loc.strip() for loc in data['location'].split('|')]
+    phones = [ph.strip() for ph in data['phone'].split('|')]
+
+    # Build contact items
+    # Build location column
+    location_items = ""
+    for loc in locations:
+        location_items += f"""                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>{loc}</span>
                     </div>
+"""
+
+    # Build phone column
+    phone_items = ""
+    for phone in phones:
+        phone_items += f"""                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>{phone}</span>
+                    </div>
+"""
+
+    # Build links column
+    link_items = f"""                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:{data['email']}">{data['email']}</a>
+                    </div>
+"""
+    if config.get('linkedin_url'):
+        linkedin_short = config['linkedin_url'].replace('https://', '').replace('http://', '').replace('www.', '')
+        link_items += f"""                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="{config['linkedin_url']}" target="_blank">{linkedin_short}</a>
+                    </div>
+"""
+
+    # Combine into columns
+    contact_items = f"""                <div class="contact-column">
+{location_items}                </div>
+                <div class="contact-column">
+{phone_items}                </div>
+                <div class="contact-column">
+{link_items}                </div>
+"""
+
+    if config.get('profile_image'):
+        header_content = f"""            <div class="header-top">
+                <img src="{config['profile_image']}" alt="{data['name']}" class="profile-photo">
+                <div>
+                    <h1>{data['name']}</h1>
+                    <div class="subtitle">Principal Product Manager</div>
                 </div>
-            </div>"""
+            </div>
+            <div class="contact-info">
+{contact_items}            </div>"""
     else:
-        header_content = f"""            <div class="header-text" style="text-align: center; width: 100%;">
-                <h1>{data['name']}</h1>
-                <div class="contact-info" style="justify-content: center;">
-                    <span>{data['location']}</span>
-                    <span>{data['email']}</span>
-                    <span>{data['phone']}</span>
+        header_content = f"""            <div class="header-top">
+                <div>
+                    <h1>{data['name']}</h1>
+                    <div class="subtitle">Product Manager</div>
                 </div>
-            </div>"""
+            </div>
+            <div class="contact-info">
+{contact_items}            </div>"""
 
     # Build action icons
     action_icons = ""
@@ -856,12 +959,12 @@ def generate_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
     # Build sections based on resume type
     sections_html = ""
 
-    # Summary section (all resumes)
+    # Summary section (all resumes) - Awesome-CV style
     if data.get('summary'):
-        sections_html += f"""            <section class="summary">
-                <h2 class="section-title">Professional Summary</h2>
-                <p>{data['summary']}</p>
-            </section>
+        sections_html += f"""        <section class="section summary">
+            <h2 class="section-title">Summary</h2>
+            <p>{data['summary']}</p>
+        </section>
 
 """
 
@@ -881,29 +984,29 @@ def generate_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
 
 """
 
-    # Work Experience (professional resumes)
+    # Work Experience (professional resumes) - Awesome-CV style
     if data.get('jobs') and config['resume_type'] == 'professional':
-        sections_html += f"""            <section class="work-experience-section">
-                <h2 class="section-title">Work Experience</h2>
-{jobs_html}            </section>
+        sections_html += f"""        <section class="section">
+            <h2 class="section-title">Experience</h2>
+{jobs_html}        </section>
 
 """
 
-    # Skills section
+    # Skills section - Awesome-CV style
     if config.get('show_skills_grid') and skills_html:
-        sections_html += f"""            <section class="skills-section">
-                <h2 class="section-title">Core Competencies</h2>
-                <div class="skills-grid">
-{skills_html}                </div>
-            </section>
+        sections_html += f"""        <section class="section">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="skills-grid">
+{skills_html}            </div>
+        </section>
 
 """
     elif data.get('skills'):
-        sections_html += f"""            <section class="skills-section">
-                <h2 class="section-title">Skills</h2>
-                <ul class="skills-list">
-{skills_html}                </ul>
-            </section>
+        sections_html += f"""        <section class="section">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skills-list">
+{skills_html}            </ul>
+        </section>
 
 """
 
@@ -924,14 +1027,17 @@ def generate_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
 
 """
 
-    # Education & Certifications (professional resumes)
+    # Education & Certifications (professional resumes) - Awesome-CV style
     if config['resume_type'] == 'professional':
-        cert_section = ""
+        sections_html += f"""        <section class="section">
+            <h2 class="section-title">Education</h2>
+{edu_html}        </section>
+
+"""
         if cert_html:
-            cert_section = f"\n{cert_html}"
-        sections_html += f"""            <section class="education-certifications-section">
-                <h2 class="section-title">Education{' & Certifications' if cert_html else ''}</h2>
-{edu_html}{cert_section}            </section>
+            sections_html += f"""        <section class="section">
+            <h2 class="section-title">Certifications</h2>
+{cert_html}        </section>
 
 """
 
@@ -944,358 +1050,55 @@ def generate_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
             </section>
 """
 
-    # Complete HTML template
+    # Complete HTML template - Awesome-CV inspired styling
     html_template = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{data['name']} - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+        :root {{
+            --accent-color: #00A388;
+            --accent-dark: #008872;
+            --text-primary: #212121;
+            --text-secondary: #666666;
+            --text-light: #999999;
+            --border-color: #e0e0e0;
+            --bg-light: #f5f5f5;
+        }}
+
+        * {{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }}
 
         body {{
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            line-height: 1.45;
-            color: #000000;
+            font-family: 'Source Sans Pro', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.5;
+            color: var(--text-primary);
             font-weight: 400;
             max-width: 8.5in;
             margin: 0 auto;
-            padding: 0.4in 0.5in 0.2in 0.5in;
+            padding: 0.35in;
             background: #ffffff;
-            font-size: 11pt;
+            font-size: 10pt;
         }}
 
         .container {{
-            background: #ffffff;
-            overflow: hidden;
             position: relative;
-        }}
-
-        .header {{
-            padding: 18pt 32pt 14pt 32pt;
-            background: #ffffff;
-            color: #000000;
-            position: relative;
-            border-bottom: 1.5pt solid #000000;
-            margin-bottom: 14pt;
-        }}
-
-        .header-content {{
-            display: flex;
-            align-items: center;
-            gap: 24pt;
-        }}
-
-        .header img {{
-            width: 100pt;
-            height: 100pt;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2pt solid #cccccc;
-        }}
-
-        .header-text {{
-            flex: 1;
-        }}
-
-        .header h1 {{
-            margin: 0 0 10pt 0;
-            color: #000000;
-            font-family: 'Crimson Text', serif;
-            font-size: 22pt;
-            font-weight: 700;
-            letter-spacing: -0.8pt;
-        }}
-
-        .contact-info {{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 18pt;
-            margin-top: 8pt;
-        }}
-
-        .contact-info span {{
-            color: #555555;
-            font-size: 11pt;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 5pt;
-            padding: 3pt 0;
-        }}
-
-        .content {{
-            padding: 0pt 32pt 0pt 32pt;
-        }}
-
-        .section {{
-            margin-bottom: 18pt;
-        }}
-
-        .section:last-child {{
-            margin-bottom: 0pt;
-        }}
-
-        .education-certifications-section {{
-            page-break-before: auto;
-            margin-top: 16pt;
-        }}
-
-        .skills-section {{
-            margin-bottom: 28pt;
-        }}
-
-        .work-experience-section {{
-            margin-bottom: 24pt;
-        }}
-
-        .section-title {{
-            color: #000000;
-            font-family: 'Crimson Text', serif;
-            font-size: 14pt;
-            font-weight: 700;
-            margin: 16pt 0 10pt 0;
-            padding-bottom: 5pt;
-            border-bottom: 1.5pt solid #000000;
-            letter-spacing: -0.3pt;
-            position: relative;
-        }}
-
-        .section-title:first-child {{
-            margin-top: 0;
-        }}
-
-        .summary {{
-            background: #f7f7f7;
-            padding: 14pt 16pt;
-            margin-bottom: 18pt;
-            border-left: 4pt solid #000000;
-            border-top: 0.75pt solid #cccccc;
-            border-bottom: 0.75pt solid #cccccc;
-        }}
-
-        .summary p {{
-            margin: 0;
-            font-size: 10.5pt;
-            line-height: 1.5;
-            color: #222222;
-            font-weight: 400;
-            font-style: italic;
-        }}
-
-        .job {{
-            margin-bottom: 14pt;
-            padding: 0;
-            background: #ffffff;
-        }}
-
-        .job-header {{
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-            margin-bottom: 9pt;
-        }}
-
-        .job-title {{
-            font-weight: 600;
-            color: #000000;
-            font-size: 12pt;
-            font-family: 'Crimson Text', serif;
-            line-height: 1.2;
-        }}
-
-        .company {{
-            color: #555555;
-            font-weight: 500;
-            padding-left: 10pt;
-            font-size: 10pt;
-        }}
-
-        .job-duration {{
-            color: #555555;
-            font-size: 10pt;
-            font-weight: 500;
-            font-family: 'Inter', sans-serif;
-        }}
-
-        .achievements {{
-            margin: 0 0 8pt 0;
-            padding-left: 20pt;
-            list-style: disc;
-        }}
-
-        .achievements li {{
-            margin-bottom: 5pt;
-            line-height: 1.5;
-            color: #333333;
-            font-size: 10pt;
-            font-weight: 400;
-        }}
-
-        .education-item {{
-            margin-bottom: 6pt;
-            padding: 10pt 12pt;
-            background: #f7f7f7;
-            border: 1pt solid #cccccc;
-            border-left: 4pt solid #000000;
-        }}
-
-        .education-item:last-child {{
-            margin-bottom: 10pt;
-        }}
-
-        .degree {{
-            font-weight: 600;
-            color: #000000;
-            font-size: 11pt;
-            font-family: 'Crimson Text', serif;
-            margin-bottom: 4pt;
-            line-height: 1.2;
-        }}
-
-        .school {{
-            color: #555555;
-            font-weight: 600;
-            margin-bottom: 3pt;
-            text-transform: uppercase;
-            font-size: 8.5pt;
-            letter-spacing: 0.8pt;
-        }}
-
-        .location {{
-            color: #000000;
-            font-size: 8.5pt;
-            font-weight: 600;
-        }}
-
-        .edu-details {{
-            color: #555555;
-            font-size: 9pt;
-            margin-top: 5pt;
-            font-style: italic;
-        }}
-
-        .cert-item {{
-            margin-bottom: 6pt;
-            padding: 10pt 12pt;
-            background: #f7f7f7;
-            border: 1pt solid #cccccc;
-            border-left: 4pt solid #000000;
-        }}
-
-        .cert-item:last-child {{
-            margin-bottom: 0pt;
-        }}
-
-        .cert-name {{
-            font-weight: 600;
-            color: #000000;
-            font-size: 11pt;
-            font-family: 'Crimson Text', serif;
-            margin-bottom: 4pt;
-        }}
-
-        .cert-org {{
-            color: #555555;
-            font-weight: 500;
-            font-size: 9.5pt;
-            margin-bottom: 2pt;
-        }}
-
-        .cert-date {{
-            color: #000000;
-            font-size: 8.5pt;
-            font-weight: 600;
-        }}
-
-        .skills-grid {{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10pt;
-        }}
-
-        .skill-category {{
-            background: #f7f7f7;
-            padding: 10pt 12pt;
-            border: 1pt solid #cccccc;
-            border-left: 4pt solid #000000;
-        }}
-
-        .skill-category h4 {{
-            color: #000000;
-            margin-bottom: 6pt;
-            font-size: 10.5pt;
-            font-family: 'Crimson Text', serif;
-            font-weight: 600;
-        }}
-
-        .skill-category ul {{
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }}
-
-        .skill-category li {{
-            padding: 2pt 0;
-            color: #333333;
-            font-size: 9.5pt;
-        }}
-
-        .skills-list {{
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8pt;
-        }}
-
-        .skills-list li {{
-            background: #f7f7f7;
-            padding: 6pt 12pt;
-            border: 1pt solid #cccccc;
-            border-left: 3pt solid #000000;
-            font-size: 10pt;
-        }}
-
-        .activity {{
-            margin-bottom: 12pt;
-        }}
-
-        .activity-name {{
-            font-weight: 600;
-            color: #000000;
-            font-size: 11pt;
-            font-family: 'Crimson Text', serif;
-            margin-bottom: 6pt;
-        }}
-
-        .personal {{
-            background: #f7f7f7;
-            padding: 14pt 16pt;
-            border-left: 4pt solid #000000;
-            border-top: 0.75pt solid #cccccc;
-            border-bottom: 0.75pt solid #cccccc;
-            font-style: italic;
-            color: #222222;
-            font-size: 10.5pt;
-            line-height: 1.8;
-        }}
-
-        .personal::after {{
-            content: '';
-            display: table;
-            clear: both;
         }}
 
         .action-icons {{
             position: absolute;
-            top: 20px;
-            right: 20px;
+            top: 0;
+            right: 0;
             display: flex;
-            gap: 12px;
+            gap: 10px;
             z-index: 1000;
         }}
 
@@ -1303,20 +1106,21 @@ def generate_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
             background: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
             transition: all 0.2s ease;
             text-decoration: none;
             padding: 6px;
         }}
 
         .action-icons a:hover {{
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            border-color: var(--accent-color);
         }}
 
         .action-icons img {{
@@ -1325,153 +1129,373 @@ def generate_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
             object-fit: contain;
         }}
 
+        .header {{
+            text-align: center;
+            padding-bottom: 12pt;
+            margin-bottom: 10pt;
+            border-bottom: 2pt solid var(--accent-color);
+            page-break-inside: avoid;
+            page-break-after: avoid;
+        }}
+
+        .header-top {{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20pt;
+            margin-bottom: 12pt;
+        }}
+
+        .profile-photo {{
+            width: 75pt;
+            height: 75pt;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3pt solid var(--accent-color);
+        }}
+
+        .header h1 {{
+            font-family: 'Roboto', sans-serif;
+            font-size: 28pt;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: 2pt;
+            text-transform: uppercase;
+            margin-bottom: 4pt;
+        }}
+
+        .header .subtitle {{
+            font-size: 12pt;
+            font-weight: 400;
+            color: var(--accent-color);
+            letter-spacing: 1pt;
+            text-transform: uppercase;
+            margin-bottom: 14pt;
+        }}
+
+        .contact-info {{
+            display: flex;
+            justify-content: center;
+            gap: 0;
+        }}
+
+        .contact-column {{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 16pt;
+            border-right: 1pt solid var(--border-color);
+        }}
+
+        .contact-column:last-child {{
+            border-right: none;
+        }}
+
+        .contact-item {{
+            display: flex;
+            align-items: center;
+            gap: 6pt;
+            color: var(--text-secondary);
+            font-size: 9pt;
+            font-weight: 400;
+            margin-bottom: 2pt;
+        }}
+
+        .contact-item:last-child {{
+            margin-bottom: 0;
+        }}
+
+        .contact-item i {{
+            color: var(--accent-color);
+            font-size: 9pt;
+            width: 12pt;
+            text-align: center;
+        }}
+
+        .contact-item a {{
+            color: var(--text-secondary);
+            text-decoration: none;
+        }}
+
+        .contact-item a:hover {{
+            color: var(--accent-color);
+        }}
+
+        .section {{
+            margin-bottom: 14pt;
+        }}
+
+        .section-title {{
+            font-family: 'Roboto', sans-serif;
+            font-size: 12pt;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1.5pt;
+            margin-bottom: 10pt;
+            padding-bottom: 4pt;
+            border-bottom: 1pt solid var(--border-color);
+        }}
+
+        .summary {{
+            margin-bottom: 12pt;
+            page-break-after: avoid;
+        }}
+
+        .summary p {{
+            font-size: 10pt;
+            line-height: 1.5;
+            color: var(--text-secondary);
+            text-align: justify;
+            padding: 6pt 0;
+        }}
+
+        .job {{
+            margin-bottom: 10pt;
+            page-break-inside: avoid;
+        }}
+
+        .job:last-child {{
+            margin-bottom: 0;
+        }}
+
+        .job-header {{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 4pt;
+        }}
+
+        .job-title-company {{
+            display: flex;
+            align-items: baseline;
+            gap: 8pt;
+            flex-wrap: wrap;
+        }}
+
+        .job-title {{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 11pt;
+            color: var(--text-primary);
+        }}
+
+        .job-company {{
+            font-weight: 600;
+            font-size: 10pt;
+            color: var(--accent-color);
+        }}
+
+        .job-duration {{
+            font-size: 9pt;
+            font-weight: 400;
+            color: var(--text-light);
+            font-style: italic;
+        }}
+
+        .job-achievements {{
+            margin: 6pt 0 0 0;
+            padding-left: 16pt;
+            list-style: none;
+        }}
+
+        .job-achievements li {{
+            position: relative;
+            margin-bottom: 4pt;
+            font-size: 9.5pt;
+            line-height: 1.5;
+            color: var(--text-secondary);
+        }}
+
+        .job-achievements li::before {{
+            content: "\\f054";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            font-size: 6pt;
+            color: var(--accent-color);
+            position: absolute;
+            left: -14pt;
+            top: 4pt;
+        }}
+
+        .skills-list {{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8pt;
+            list-style: none;
+        }}
+
+        .skills-list li {{
+            background: var(--bg-light);
+            border: 1pt solid var(--border-color);
+            border-left: 3pt solid var(--accent-color);
+            padding: 5pt 12pt;
+            font-size: 9pt;
+            font-weight: 500;
+            color: var(--text-secondary);
+            border-radius: 0 4pt 4pt 0;
+        }}
+
+        .education-item {{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8pt;
+            padding: 8pt 12pt;
+            background: var(--bg-light);
+            border-left: 3pt solid var(--accent-color);
+        }}
+
+        .education-info {{
+            flex: 1;
+        }}
+
+        .degree {{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 10.5pt;
+            color: var(--text-primary);
+        }}
+
+        .school {{
+            font-size: 9.5pt;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-top: 2pt;
+        }}
+
+        .edu-date {{
+            font-size: 9pt;
+            font-weight: 400;
+            color: var(--text-light);
+            font-style: italic;
+        }}
+
+        .edu-details {{
+            font-size: 9pt;
+            color: var(--text-secondary);
+            margin-top: 4pt;
+            font-style: italic;
+        }}
+
+        .cert-item {{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8pt;
+            padding: 8pt 12pt;
+            background: var(--bg-light);
+            border-left: 3pt solid var(--accent-color);
+        }}
+
+        .cert-info {{
+            flex: 1;
+        }}
+
+        .cert-name {{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 10.5pt;
+            color: var(--text-primary);
+        }}
+
+        .cert-org {{
+            font-size: 9.5pt;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-top: 2pt;
+        }}
+
+        .cert-date {{
+            font-size: 9pt;
+            font-weight: 400;
+            color: var(--text-light);
+            font-style: italic;
+        }}
+
+        .personal {{
+            background: var(--bg-light);
+            padding: 12pt 14pt;
+            border-left: 3pt solid var(--accent-color);
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 10pt;
+            line-height: 1.6;
+        }}
+
         @media print {{
             body {{
-                background: white;
                 padding: 0;
+                background: white;
             }}
             .action-icons {{
                 display: none !important;
+            }}
+            .section {{
+                page-break-inside: avoid;
             }}
         }}
 
         @media screen and (max-width: 768px) {{
             body {{
-                padding: 0.2in 0.3in;
-                font-size: 10pt;
+                padding: 20px;
+                font-size: 9pt;
             }}
-
-            .header {{
-                padding: 12pt 16pt 10pt 16pt;
-            }}
-
-            .header-content {{
-                flex-direction: column;
-                text-align: center;
-                gap: 12pt;
-            }}
-
-            .header img {{
-                width: 80pt;
-                height: 80pt;
-                align-self: center;
-            }}
-
             .header h1 {{
-                font-size: 20pt;
-                text-align: center;
+                font-size: 24pt;
+                letter-spacing: 1pt;
             }}
-
-            .contact-info {{
-                justify-content: center;
+            .header .subtitle {{
+                font-size: 10pt;
+            }}
+            .header-top {{
+                flex-direction: column;
                 gap: 12pt;
             }}
-
-            .contact-info span {{
-                font-size: 10pt;
+            .profile-photo {{
+                width: 70pt;
+                height: 70pt;
             }}
-
-            .content {{
-                padding: 0pt 16pt;
+            .contact-info {{
+                flex-direction: column;
+                gap: 8pt;
             }}
-
-            .section-title {{
-                font-size: 13pt;
+            .contact-column {{
+                border-right: none;
+                border-bottom: 1pt solid var(--border-color);
+                padding: 6pt 0;
             }}
-
-            .summary {{
-                padding: 12pt 14pt;
-                margin-bottom: 16pt;
+            .contact-column:last-child {{
+                border-bottom: none;
             }}
-
-            .summary p {{
-                font-size: 10pt;
-            }}
-
             .job-header {{
                 flex-direction: column;
-                align-items: flex-start;
                 gap: 4pt;
             }}
-
-            .job-title {{
-                font-size: 11pt;
-            }}
-
-            .company {{
-                font-size: 9pt;
-                padding-left: 0;
-            }}
-
-            .job-duration {{
-                font-size: 9pt;
-                color: #666666;
-                font-weight: 600;
-            }}
-
-            .achievements li {{
-                font-size: 9pt;
-                margin-bottom: 4pt;
-            }}
-
-            .education-item {{
-                padding: 10pt 12pt;
-            }}
-
-            .degree {{
-                font-size: 11pt;
-            }}
-
-            .school {{
-                font-size: 8pt;
+            .education-item, .cert-item {{
+                flex-direction: column;
+                gap: 4pt;
             }}
         }}
 
         @media screen and (max-width: 480px) {{
             body {{
-                padding: 0.15in 0.2in;
-                font-size: 9pt;
+                padding: 15px;
+                font-size: 8.5pt;
             }}
-
-            .header {{
-                padding: 10pt 12pt 8pt 12pt;
-            }}
-
             .header h1 {{
-                font-size: 18pt;
+                font-size: 20pt;
             }}
-
-            .contact-info {{
-                flex-direction: column;
-                gap: 8pt;
-            }}
-
-            .content {{
-                padding: 0pt 12pt;
-            }}
-
             .section-title {{
-                font-size: 12pt;
+                font-size: 11pt;
             }}
-
-            .job-title {{
-                font-size: 10pt;
+            .skills-list {{
+                gap: 6pt;
             }}
-
-            .company {{
+            .skills-list li {{
+                padding: 4pt 8pt;
                 font-size: 8pt;
-            }}
-
-            .job-duration {{
-                font-size: 8pt;
-            }}
-
-            .achievements li {{
-                font-size: 8pt;
-            }}
-
-            .degree {{
-                font-size: 10pt;
             }}
         }}
     </style>
@@ -1481,9 +1505,9 @@ def generate_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
         <div class="action-icons">
 {action_icons}
         </div>
-        <div class="header">
+        <header class="header">
 {header_content}
-        </div>
+        </header>
 
         <div class="content">
 {sections_html}        </div>

@@ -26,7 +26,19 @@
       "Bash(python3:*)",
       "Bash(mkdir:*)",
       "Bash(hugo:*)",
-      "WebFetch(domain:boehs.org)"
+      "WebFetch(domain:boehs.org)",
+      "WebFetch(domain:github.com)",
+      "Bash(chmod:*)",
+      "Bash(claude mcp add:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(/Applications/Google\\\\ Chrome.app/Contents/MacOS/Google\\\\ Chrome:*)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --print-to-pdf=\"/Users/matthew.reider/Downloads/matt-reider-resume-digitalocean.pdf\" --no-pdf-header-footer \"/Users/matthew.reider/Downloads/matt-reider-resume-digitalocean.html\")",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --print-to-pdf=\"/Users/matthew.reider/Downloads/matt-reider-cover-letter-digitalocean.pdf\" --no-pdf-header-footer \"/Users/matthew.reider/Downloads/matt-reider-cover-letter-digitalocean.html\")",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --print-to-pdf=\"/Users/matthew.reider/Downloads/matt-reider-resume-digitalocean.pdf\" --no-pdf-header-footer \"file:///Users/matthew.reider/Downloads/matt-reider-resume-digitalocean.html\")",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --print-to-pdf=\"/Users/matthew.reider/Downloads/matt-reider-cover-letter-digitalocean.pdf\" --no-pdf-header-footer \"file:///Users/matthew.reider/Downloads/matt-reider-cover-letter-digitalocean.html\")",
+      "Bash(python generate.py:*)",
+      "WebFetch(domain:ieji.de)",
+      "WebFetch(domain:pjvogt.substack.com)"
     ],
     "deny": [],
     "ask": []

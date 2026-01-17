@@ -1,81 +1,70 @@
 NAME: Matthew Reider
-PHONE: +43 677 629 00590
+PHONE: +43 677 629 00590 | +1 415 990 3740
 EMAIL: matt@mreider.com
-LOCATION: Vienna, Austria
+LOCATION: Vienna, Austria | San Ramon, CA
 
 SUMMARY:
-Strategic software product leader with 15+ years driving platform-based solutions, observability, and developer ecosystems.
+Product executive with 15+ years leading teams that ship observability, developer, and enterprise SaaS platforms. Early career as a Solutions Engineer and Technical Instructor (MEd).
 
 JOB TITLE: Principal Product Manager
 COMPANY: Dynatrace
 DATES: 2019 - Present
-- Presented product vision and roadmaps to C-level executives
-- Drove OpenTelemetry adoption across enterprise customers, resulting in 40% increase in platform integration velocity
-- Developed Kubernetes monitoring capabilities supporting customers managing 10,000+ nodes
-- Enhanced developer portal experience, improving onboarding time by 35%
+- Led three product teams defining strategy for Dynatrace's OpenTelemetry, Kubernetes, and Observability platform
+- Drove OpenTelemetry adoption across enterprise customers, increasing platform integration velocity by 40%
+- Delivered Kubernetes monitoring capabilities supporting 10,000+ node deployments for Fortune 100 customers
+- Led hands-on customer training workshops with virtual lab environments at annual Perform user conference
 
 JOB TITLE: Lead Product Manager
 COMPANY: Checkr
 DATES: 2016 - 2019
-- Pioneered AI-powered compliance tools improving criminal record accuracy by 25% while reducing manual review time by 60%
-- Established partnerships with 200+ data providers, creating unified API layer
-- Developed custom integration solutions for Uber, Lyft, and DoorDash
-- Led team of product managers through complex prioritization decisions
+- Led team of 4 product managers building background check platform processing 10M+ checks annually
+- Pioneered AI-powered compliance tools improving accuracy by 25% while reducing manual review time by 60%
+- Established partnerships with 200+ data providers; built custom integrations for Uber, Lyft, and DoorDash
 
 JOB TITLE: Director of Product Management
 COMPANY: VMware Tanzu (Pivotal)
 DATES: 2011 - 2016
-- Led strategic transition from hosted service to self-managed enterprise offering, generating $200M+ in new revenue
-- Delivered platform supporting 1M+ application deployments and 6,000+ developer users
-- Managed relationships with Ford, Home Depot, and Comcast
+- Built and led 15-person product organization through acquisition by VMware
+- Led strategic transition from hosted service to enterprise offering, generating $200M+ in new revenue
+- Delivered platform supporting 1M+ application deployments for Ford, Home Depot, and Comcast
 
 JOB TITLE: Senior Program Manager
 COMPANY: Engine Yard
 DATES: 2009 - 2011
-- Managed product initiatives for Zendesk, GitHub, and Groupon during rapid scaling phases
+- Managed platform initiatives for Zendesk, GitHub, and Groupon during rapid scaling phases
 - Orchestrated customer migrations to AWS, reducing infrastructure costs by 40%
-- Achieved 95% customer retention rate
 
 JOB TITLE: Lead Product Manager
 COMPANY: Visible Measures
 DATES: 2007 - 2009
-- Built video measurement suite tracking 100M+ video views monthly
-- Developed partner integration framework for YouTube, Facebook, and other platforms
-- Created self-service analytics dashboard for real-time campaign performance
+- Built video analytics platform tracking 100M+ views monthly with integrations for YouTube and Facebook
 
-JOB TITLE: Technical Instructor (ILT)
-COMPANY: Wily Technology • Oracle • Macromedia
+JOB TITLE: Technical Instructor
+COMPANY: Wily Technology, Oracle, Macromedia
 DATES: 1998 - 2007
-- Developed technical training programs for enterprise software platforms
-- Trained 400+ developers and system administrators globally
-- Authored technical guides and best practices documentation
+- Trained 400+ developers globally on enterprise software platforms across North America, Europe, and Asia
 
 JOB TITLE: Solutions Engineer
-COMPANY: Macromedia (Allaire) • Sybase (Powersoft)
+COMPANY: Macromedia (Allaire), Sybase (Powersoft)
 DATES: 1995 - 1998
-- Led technical implementations for Fortune 500 corporations
-- Conducted proof-of-concept implementations contributing to $10M+ in software sales
+- Led technical implementations for Fortune 500 clients contributing to $10M+ in software sales
 
-CORE COMPETENCIES:
-• Roadmap development
-• Requirement gathering
-• KPI definition
-• Competitive analysis
-• Go-to-market strategy
-• Multi-tenant SaaS platforms
-• API strategy
-• Developer ecosystems
-• Enterprise integrations
-• Engineering collaboration
-• UX partnership
-• Stakeholder management
-• Executive communication
-• Jira, Aha!, Confluence
-• API design
-• AWS, GCP, Azure
-• SQL & data analytics
+SKILLS:
+- Product Strategy
+- Team Leadership
+- Go-to-Market
+- Developer Ecosystems
+- Observability Platforms
+- Cloud (AWS, GCP, Azure)
+- Executive Communication
+- Technical Training & Enablement
+- Learning Program Development
 
 EDUCATION:
+
+MEd, Education (Curriculum & Instruction)
+Northeastern University
+Graduated 2003
 
 BS, Economics
 University of Vermont
@@ -83,18 +72,6 @@ Graduated 1992
 
 LICENSES & CERTIFICATIONS:
 
-Certified Product Owner
-Scrum Alliance
-Issued 2011
-
 Certified Scrum Master
 Scrum Alliance
 Issued 2013
-
-Agile Alliance Member
-Agile Alliance
-Issued 2011
-
-PERSONAL:
-Loving father, devoted husband, loyal friend
-American Sailing Association (bareboat license)
