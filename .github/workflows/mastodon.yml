@@ -1,0 +1,37 @@
+name: Post to Mastodon
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'content/**'
+
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (test without posting)'
+        type: boolean
+        default: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Post to Mastodon
+        uses: mreider/mastopub@v1
+        with:
+          mastodon_instance: 'https://ieji.de'
+          mastodon_token: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          blog_url: 'https://mreider.com'
+          dry_run: ${{ inputs.dry_run || 'false' }}
+
+      - name: Commit tracking file
+        run: |
+          git config user.name "Matt Reider"
+          git config user.email "mreider@gmail.com"
+          git add .github/mastodon-published.json
+          git diff --staged --quiet || git commit -m "Track published Mastodon posts"
+          git push
