@@ -3,6 +3,8 @@ title:  "Lost and Found"
 author: "Matt Reider"
 date: "2024-05-31"
 image: "/images/matt/lost-and-found1.jpg"
+mastodon: true
+mastodon_thread: true
 ---
 
 Don’t you hate it when you do something stupid?
