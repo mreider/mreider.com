@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Max Reider - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+        :root {
+            --accent-color: #00A388;
+            --accent-dark: #008872;
+            --text-primary: #212121;
+            --text-secondary: #666666;
+            --text-light: #999999;
+            --border-color: #e0e0e0;
+            --bg-light: #f5f5f5;
+        }
 
         * {
             margin: 0;
@@ -19,21 +30,23 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Source Sans Pro', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
             font-size: 9pt;
             line-height: 1.4;
-            color: #333;
+            color: var(--text-primary);
             background: #fff;
             width: 8.5in;
             min-height: 11in;
+            max-height: 11in;
             margin: 0 auto;
             padding: 0.4in;
+            overflow: hidden;
         }
 
         .container {
             display: grid;
-            grid-template-columns: 1fr 220px;
-            gap: 30px;
+            grid-template-columns: 1fr 200px;
+            gap: 25px;
             height: 100%;
             position: relative;
         }
@@ -54,10 +67,16 @@
             width: 32px;
             height: 32px;
             background: #fff;
-            border: 1px solid #e2e8f0;
+            border: 1px solid var(--border-color);
             border-radius: 6px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
             padding: 5px;
+            transition: all 0.2s ease;
+        }
+
+        .action-icons a:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
         }
 
         .action-icons img {
@@ -74,30 +93,39 @@
 
         /* Header */
         .header {
-            margin-bottom: 16px;
+            margin-bottom: 14px;
+            padding-bottom: 12px;
+            border-bottom: 2pt solid var(--accent-color);
         }
 
         .header h1 {
-            font-size: 28pt;
+            font-family: 'Roboto', sans-serif;
+            font-size: 26pt;
             font-weight: 700;
-            color: #1a1a1a;
-            letter-spacing: -0.5px;
+            color: var(--text-primary);
+            letter-spacing: 2pt;
+            text-transform: uppercase;
             margin-bottom: 6px;
         }
 
         .header .tagline {
-            font-size: 9.5pt;
-            color: #555;
+            font-size: 9pt;
+            color: var(--text-secondary);
             line-height: 1.5;
         }
 
         /* Section Titles */
         .section-title {
-            font-size: 12pt;
-            font-weight: 600;
-            color: #2b7de9;
-            margin-bottom: 10px;
-            margin-top: 14px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 11pt;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1pt;
+            margin-bottom: 8px;
+            margin-top: 12px;
+            padding-bottom: 3pt;
+            border-bottom: 1pt solid var(--border-color);
         }
 
         .section-title:first-of-type {
@@ -106,157 +134,182 @@
 
         /* Education */
         .edu-item {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            border-left: 2pt solid var(--accent-color);
         }
 
         .edu-school {
+            font-family: 'Roboto', sans-serif;
             font-size: 10pt;
-            font-weight: 600;
-            color: #1a1a1a;
+            font-weight: 700;
+            color: var(--text-primary);
         }
 
         .edu-degree {
             font-size: 9pt;
-            font-weight: 500;
-            color: #444;
+            font-weight: 600;
+            color: var(--accent-color);
         }
 
         .edu-date {
-            font-size: 8.5pt;
-            color: #666;
-            margin-bottom: 4px;
+            font-size: 8pt;
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 3px;
         }
 
         .edu-description {
-            font-size: 8.5pt;
-            color: #555;
-            line-height: 1.45;
+            font-size: 8pt;
+            color: var(--text-secondary);
+            line-height: 1.4;
         }
 
         /* Leadership */
         .leadership-item {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            padding-left: 10px;
+            border-left: 2pt solid var(--accent-color);
         }
 
         .leadership-org {
-            font-size: 10pt;
-            font-weight: 600;
-            color: #1a1a1a;
+            font-family: 'Roboto', sans-serif;
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: var(--text-primary);
         }
 
         .leadership-title {
-            font-size: 9pt;
-            font-weight: 500;
-            color: #444;
+            font-size: 8.5pt;
+            font-weight: 600;
+            color: var(--accent-color);
         }
 
         .leadership-date {
-            font-size: 8.5pt;
-            color: #666;
-            margin-bottom: 4px;
+            font-size: 8pt;
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 2px;
         }
 
         .leadership-description {
-            font-size: 8.5pt;
-            color: #555;
-            line-height: 1.45;
+            font-size: 8pt;
+            color: var(--text-secondary);
+            line-height: 1.4;
         }
 
         /* Activities */
         .activity-item {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            padding-left: 10px;
+            border-left: 2pt solid var(--accent-color);
         }
 
         .activity-name {
-            font-size: 10pt;
-            font-weight: 600;
-            color: #1a1a1a;
+            font-family: 'Roboto', sans-serif;
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: var(--text-primary);
             margin-bottom: 2px;
         }
 
         .activity-description {
-            font-size: 8.5pt;
-            color: #555;
-            line-height: 1.45;
+            font-size: 8pt;
+            color: var(--text-secondary);
+            line-height: 1.4;
         }
 
         /* Work Experience */
         .work-item {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            padding-left: 10px;
+            border-left: 2pt solid var(--accent-color);
         }
 
         .work-title {
-            font-size: 10pt;
-            font-weight: 600;
-            color: #1a1a1a;
+            font-family: 'Roboto', sans-serif;
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: var(--text-primary);
         }
 
         .work-company {
-            font-size: 9pt;
-            font-weight: 500;
-            color: #444;
+            font-size: 8.5pt;
+            font-weight: 600;
+            color: var(--accent-color);
         }
 
         .work-date {
-            font-size: 8.5pt;
-            color: #666;
-            margin-bottom: 4px;
+            font-size: 8pt;
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 2px;
         }
 
         .work-description {
-            font-size: 8.5pt;
-            color: #555;
-            line-height: 1.45;
+            font-size: 8pt;
+            color: var(--text-secondary);
+            line-height: 1.4;
         }
 
         /* Right Column */
         .right-column {
-            padding-top: 0;
-        }
-
-        .contact-block {
-            margin-bottom: 20px;
-            text-align: right;
-        }
-
-        .contact-block .location {
-            font-size: 9pt;
-            color: #333;
-            line-height: 1.5;
-            margin-bottom: 8px;
-        }
-
-        .contact-block .phone,
-        .contact-block .email {
-            font-size: 9pt;
-            color: #333;
-        }
-
-        .right-section {
-            margin-bottom: 20px;
-        }
-
-        .right-section-title {
-            font-size: 11pt;
-            font-weight: 600;
-            color: #2b7de9;
-            margin-bottom: 8px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .right-section p {
-            font-size: 8.5pt;
-            color: #555;
-            line-height: 1.5;
+            background: var(--bg-light);
+            padding: 12px;
+            border-radius: 6px;
+            border-top: 3pt solid var(--accent-color);
         }
 
         .profile-image {
             width: 100%;
-            max-width: 180px;
-            border-radius: 8px;
-            margin-bottom: 16px;
-            float: right;
+            max-width: 160px;
+            border-radius: 50%;
+            margin: 0 auto 12px auto;
+            display: block;
+            border: 3pt solid var(--accent-color);
+        }
+
+        .contact-block {
+            margin-bottom: 14px;
+            text-align: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            font-size: 8pt;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+
+        .contact-item i {
+            color: var(--accent-color);
+            font-size: 9pt;
+            width: 12pt;
+        }
+
+        .right-section {
+            margin-bottom: 12px;
+        }
+
+        .right-section-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 9pt;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5pt;
+            padding-bottom: 3pt;
+            border-bottom: 1pt solid var(--border-color);
+        }
+
+        .right-section p {
+            font-size: 8pt;
+            color: var(--text-secondary);
+            line-height: 1.4;
         }
 
         @media print {
@@ -284,13 +337,8 @@
             .right-column {
                 order: -1;
             }
-            .contact-block {
-                text-align: left;
-            }
             .profile-image {
-                float: none;
-                margin: 0 auto 16px auto;
-                display: block;
+                max-width: 120px;
             }
         }
     </style>
@@ -307,7 +355,7 @@
         <!-- Left Column: Main Content -->
         <div class="left-column">
             <div class="header">
-                <h1>MAX REIDER</h1>
+                <h1>Max Reider</h1>
                 <p class="tagline">Motivated first-year university student seeking a paid internship that utilizes technical and communication skills to gain business experience. Strong international background with proven leadership and adaptability.</p>
             </div>
 
@@ -367,9 +415,18 @@
             <img src="max-profile-image.jpeg" alt="Max Reider" class="profile-image">
 
             <div class="contact-block">
-                <div class="location">Aberdeen, Scotland<br>Vienna, Austria</div>
-                <div class="phone">+44 755 2251011</div>
-                <div class="email">maxnreider@gmail.com</div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Aberdeen, Scotland</span></div><div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Vienna, Austria</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+44 755 2251011</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>maxnreider@gmail.com</span>
+                </div>
             </div>
 
             <div class="right-section">
