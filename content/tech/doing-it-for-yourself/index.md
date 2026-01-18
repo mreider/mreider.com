@@ -10,10 +10,6 @@ I recently had a conversation with a product manager from another company that l
 
 On one level, this is human nature. We all bring some degree of self-interest to the work we do. But when a product manager frames everything this way, it stops feeling like a team effort and starts looking like a personal project tied to their ego.
 
----
-
-## Why It’s a Problem
-
 There are two bigger issues with this kind of thinking.
 
 ### 1. Decision-Making Suffers
