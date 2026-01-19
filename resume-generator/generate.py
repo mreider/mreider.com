@@ -567,11 +567,6 @@ def main():
             for person in PERSON_CONFIGS.keys():
                 generate_resume(person, script_dir, hugo_static_resume)
 
-            # Generate index page
-            print(f"\n{'='*50}")
-            print("Generating index page...")
-            print(f"{'='*50}")
-            generate_index_page(script_dir, hugo_static_resume)
         else:
             # Generate single resume
             generate_resume(args.person, script_dir, hugo_static_resume)

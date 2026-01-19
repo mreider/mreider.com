@@ -17,15 +17,8 @@ If you'd like to get in touch you can email me at [mreider@gmail.com](mailto:mre
 
 I'm also here:
 
-- [Resume](/resume/)
+- [Resume](/resume/matt/)
 - [Linkedin](https://linkedin.com/in/mreider)
-- [Mastodon](https://fosstodon.org/@mdr)
-- [BlueSky](https://bsky.app/profile/mreider.com)
-- [Github](https://github.com/mreider)
-
-## My Projects
-
-[View all my GitHub projects](/projects/)
 
 ## Fitness
 
