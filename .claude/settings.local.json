@@ -38,7 +38,8 @@
       "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --print-to-pdf=\"/Users/matthew.reider/Downloads/matt-reider-cover-letter-digitalocean.pdf\" --no-pdf-header-footer \"file:///Users/matthew.reider/Downloads/matt-reider-cover-letter-digitalocean.html\")",
       "Bash(python generate.py:*)",
       "WebFetch(domain:ieji.de)",
-      "WebFetch(domain:pjvogt.substack.com)"
+      "WebFetch(domain:pjvogt.substack.com)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []

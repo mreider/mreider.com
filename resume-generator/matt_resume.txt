@@ -4,50 +4,64 @@ EMAIL: matt@mreider.com
 LOCATION: Vienna, Austria | San Ramon, CA
 
 SUMMARY:
-Product executive with 15+ years leading teams that ship observability, developer, and enterprise SaaS platforms. Early career as a Solutions Engineer and Technical Instructor (MEd).
+Product leader with 15+ years shipping enterprise SaaS platforms. Track record of driving revenue growth, reducing costs, and scaling products from startup to acquisition. Background in technical training (MEd) and solutions engineering.
 
 JOB TITLE: Principal Product Manager
 COMPANY: Dynatrace
 DATES: 2019 - Present
-- Led three product teams defining strategy for Dynatrace's OpenTelemetry, Kubernetes, and Observability platform
-- Drove OpenTelemetry adoption across enterprise customers, increasing platform integration velocity by 40%
-- Delivered Kubernetes monitoring capabilities supporting 10,000+ node deployments for Fortune 100 customers
-- Led hands-on customer training workshops with virtual lab environments at annual Perform user conference
+- Owned application observability product line during 4x company revenue growth ($430M to $1.7B)
+- Shipped core platform features adopted across 3,000+ enterprise accounts
+- Led architecture migration to cloud-native, cutting query latency 60% for Fortune 500 customers
+- Delivered serverless and container monitoring used in 50,000+ K8s deployments
 
 JOB TITLE: Lead Product Manager
 COMPANY: Checkr
 DATES: 2016 - 2019
-- Led team of 4 product managers building background check platform processing 10M+ checks annually
-- Pioneered AI-powered compliance tools improving accuracy by 25% while reducing manual review time by 60%
-- Established partnerships with 200+ data providers; built custom integrations for Uber, Lyft, and DoorDash
+- Grew platform revenue from $20M to $100M ARR, scaling to 10M+ background checks annually
+- Cut manual review costs 60% with AI-powered compliance tools while improving accuracy 25%
+- Secured $50M+ in enterprise contracts with Uber, Lyft, and DoorDash integrations
 
 JOB TITLE: Director of Product Management
 COMPANY: VMware Tanzu (Pivotal)
 DATES: 2011 - 2016
-- Built and led 15-person product organization through acquisition by VMware
-- Led strategic transition from hosted service to enterprise offering, generating $200M+ in new revenue
-- Delivered platform supporting 1M+ application deployments for Ford, Home Depot, and Comcast
+- Generated $200M+ in new revenue by pivoting from hosted service to enterprise licensing
+- Scaled product team from 3 to 15 through IPO filing and VMware acquisition
 
 JOB TITLE: Senior Program Manager
 COMPANY: Engine Yard
 DATES: 2009 - 2011
-- Managed platform initiatives for Zendesk, GitHub, and Groupon during rapid scaling phases
-- Orchestrated customer migrations to AWS, reducing infrastructure costs by 40%
+- Reduced infrastructure costs 40% for key accounts by leading migration to AWS
+- Managed platform engineers and TAMs, scaling customers through high-traffic events
 
 JOB TITLE: Lead Product Manager
 COMPANY: Visible Measures
 DATES: 2007 - 2009
-- Built video analytics platform tracking 100M+ views monthly with integrations for YouTube and Facebook
+- Built video analytics platform tracking 100M+ monthly views for major brand advertisers
+- Signed Sony Pictures, Publicis, and Razorfish; pioneered box office prediction from trailers
 
 JOB TITLE: Technical Instructor
-COMPANY: Wily Technology, Oracle, Macromedia
-DATES: 1998 - 2007
-- Trained 400+ developers globally on enterprise software platforms across North America, Europe, and Asia
+COMPANY: Wily Technology (acq. CA)
+DATES: 2004 - 2007
+- Created J2EE performance monitoring curriculum and delivered classes across the USA
+- Launched triage and diagnosis course for common performance patterns; fed insights to product
+
+JOB TITLE: Technical Instructor
+COMPANY: Macromedia (acq. Adobe)
+DATES: 1998 - 2004
+- Built and maintained Advanced ColdFusion curriculum; rated 4.7/5 across dozens of classes
+- Delivered onsite training for Dell, US Navy, Toys R Us; drove renewals through instruction
 
 JOB TITLE: Solutions Engineer
-COMPANY: Macromedia (Allaire), Sybase (Powersoft)
-DATES: 1995 - 1998
-- Led technical implementations for Fortune 500 clients contributing to $10M+ in software sales
+COMPANY: Allaire
+DATES: 1997 - 1998
+- Won Federal Reserve Bank and Visa through technical demos and POC implementations
+- Hosted Demo Days at roadshows with hundreds of attendees; partnered with AEs on deals
+
+JOB TITLE: Solutions Engineer
+COMPANY: Sybase (Powersoft)
+DATES: 1995 - 1997
+- Closed deals with Intel, Bank of America, and Foster Farms through custom demos and evals
+- Led technical sales for PowerBuilder and SQL Anywhere across enterprise accounts
 
 SKILLS:
 - Product Strategy

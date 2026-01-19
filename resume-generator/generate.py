@@ -25,26 +25,6 @@ PERSON_CONFIGS = {
         'show_certifications': True,
         'show_personal': True,
     },
-    'max': {
-        'input_file': 'max_resume.txt',
-        'profile_image': 'max-profile-image.jpeg',
-        'linkedin_url': None,  # No LinkedIn for Max
-        'output_dir': 'max',
-        'resume_type': 'student_twocol',  # two-column student resume format
-        'show_skills_grid': False,
-        'show_certifications': False,
-        'show_personal': False,
-    },
-    'alison': {
-        'input_file': 'alison_resume.txt',
-        'profile_image': 'alison.jpeg',
-        'linkedin_url': 'https://www.linkedin.com/in/alison-cohen-4229681a7',
-        'output_dir': 'alison',
-        'resume_type': 'professional',  # professional resume
-        'show_skills_grid': False,
-        'show_certifications': False,
-        'show_personal': False,
-    },
 }
 
 
@@ -254,1264 +234,146 @@ def parse_resume_data(filename: str) -> Dict[str, Any]:
     return data
 
 
-def generate_student_twocol_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
-    """Generate two-column HTML for student resume - Awesome-CV inspired styling"""
-
-    # Build skills as comma-separated text
-    skills_text = ", ".join(data.get('skills', []))
-
-    # Build education HTML for left column
-    edu_html = ""
-    for edu in data['education']:
-        details = edu.get('details', '')
-        if details:
-            details_html = f'<p class="edu-description">{details}</p>'
-        else:
-            details_html = ''
-        edu_html += f"""
-                <div class="edu-item">
-                    <div class="edu-school">{edu['school']}</div>
-                    <div class="edu-degree">{edu['degree']}</div>
-                    <div class="edu-date">{edu['date']}</div>
-                    {details_html}
-                </div>"""
-
-    # Build leadership HTML
-    leadership_html = ""
-    if data.get('leadership'):
-        for item in data['leadership']:
-            bullets_text = " ".join(item['bullets'])
-            leadership_html += f"""
-                <div class="leadership-item">
-                    <div class="leadership-org">{item['company']}</div>
-                    <div class="leadership-title">{item['title']}</div>
-                    <div class="leadership-date">{item['dates']}</div>
-                    <p class="leadership-description">{bullets_text}</p>
-                </div>"""
-
-    # Build activities HTML
-    activities_html = ""
-    if data.get('activities'):
-        for activity in data['activities']:
-            if activity['bullets']:
-                desc = " ".join(activity['bullets'])
-            else:
-                desc = ""
-            activities_html += f"""
-                <div class="activity-item">
-                    <div class="activity-name">{activity['name']}</div>
-                    <p class="activity-description">{desc}</p>
-                </div>"""
-
-    # Build work experience HTML
-    work_html = ""
-    if data.get('work_experience'):
-        for job in data['work_experience']:
-            bullets_text = " ".join(job['bullets']) if job['bullets'] else ""
-            work_html += f"""
-                <div class="work-item">
-                    <div class="work-title">{job['title']}</div>
-                    <div class="work-company">{job['company']}</div>
-                    <div class="work-date">{job['dates']}</div>
-                    <p class="work-description">{bullets_text}</p>
-                </div>"""
-
-    # Action icons
-    action_icons_html = """
-        <div class="action-icons">
-            <a href="resume.pdf" title="Download PDF" target="_blank">
-                <img src="acrobat-logo.png" alt="Download PDF">
-            </a>
-        </div>"""
-
-    html = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{data['name']} - Resume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
-
-        :root {{
-            --accent-color: #00A388;
-            --accent-dark: #008872;
-            --text-primary: #212121;
-            --text-secondary: #666666;
-            --text-light: #999999;
-            --border-color: #e0e0e0;
-            --bg-light: #f5f5f5;
-        }}
-
-        * {{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }}
-
-        @page {{
-            size: letter;
-            margin: 0;
-        }}
-
-        body {{
-            font-family: 'Source Sans Pro', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
-            font-size: 9pt;
-            line-height: 1.4;
-            color: var(--text-primary);
-            background: #fff;
-            width: 8.5in;
-            min-height: 11in;
-            max-height: 11in;
-            margin: 0 auto;
-            padding: 0.4in;
-            overflow: hidden;
-        }}
-
-        .container {{
-            display: grid;
-            grid-template-columns: 1fr 200px;
-            gap: 25px;
-            height: 100%;
-            position: relative;
-        }}
-
-        .action-icons {{
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: flex;
-            gap: 8px;
-            z-index: 1000;
-        }}
-
-        .action-icons a {{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 32px;
-            height: 32px;
-            background: #fff;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            padding: 5px;
-            transition: all 0.2s ease;
-        }}
-
-        .action-icons a:hover {{
-            border-color: var(--accent-color);
-            transform: translateY(-2px);
-        }}
-
-        .action-icons img {{
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }}
-
-        /* Left Column */
-        .left-column {{
-            display: flex;
-            flex-direction: column;
-        }}
-
-        /* Header */
-        .header {{
-            margin-bottom: 14px;
-            padding-bottom: 12px;
-            border-bottom: 2pt solid var(--accent-color);
-        }}
-
-        .header h1 {{
-            font-family: 'Roboto', sans-serif;
-            font-size: 26pt;
-            font-weight: 700;
-            color: var(--text-primary);
-            letter-spacing: 2pt;
-            text-transform: uppercase;
-            margin-bottom: 6px;
-        }}
-
-        .header .tagline {{
-            font-size: 9pt;
-            color: var(--text-secondary);
-            line-height: 1.5;
-        }}
-
-        /* Section Titles */
-        .section-title {{
-            font-family: 'Roboto', sans-serif;
-            font-size: 11pt;
-            font-weight: 700;
-            color: var(--accent-color);
-            text-transform: uppercase;
-            letter-spacing: 1pt;
-            margin-bottom: 8px;
-            margin-top: 12px;
-            padding-bottom: 3pt;
-            border-bottom: 1pt solid var(--border-color);
-        }}
-
-        .section-title:first-of-type {{
-            margin-top: 0;
-        }}
-
-        /* Education */
-        .edu-item {{
-            margin-bottom: 10px;
-            padding-left: 10px;
-            border-left: 2pt solid var(--accent-color);
-        }}
-
-        .edu-school {{
-            font-family: 'Roboto', sans-serif;
-            font-size: 10pt;
-            font-weight: 700;
-            color: var(--text-primary);
-        }}
-
-        .edu-degree {{
-            font-size: 9pt;
-            font-weight: 600;
-            color: var(--accent-color);
-        }}
-
-        .edu-date {{
-            font-size: 8pt;
-            color: var(--text-light);
-            font-style: italic;
-            margin-bottom: 3px;
-        }}
-
-        .edu-description {{
-            font-size: 8pt;
-            color: var(--text-secondary);
-            line-height: 1.4;
-        }}
-
-        /* Leadership */
-        .leadership-item {{
-            margin-bottom: 8px;
-            padding-left: 10px;
-            border-left: 2pt solid var(--accent-color);
-        }}
-
-        .leadership-org {{
-            font-family: 'Roboto', sans-serif;
-            font-size: 9.5pt;
-            font-weight: 700;
-            color: var(--text-primary);
-        }}
-
-        .leadership-title {{
-            font-size: 8.5pt;
-            font-weight: 600;
-            color: var(--accent-color);
-        }}
-
-        .leadership-date {{
-            font-size: 8pt;
-            color: var(--text-light);
-            font-style: italic;
-            margin-bottom: 2px;
-        }}
-
-        .leadership-description {{
-            font-size: 8pt;
-            color: var(--text-secondary);
-            line-height: 1.4;
-        }}
-
-        /* Activities */
-        .activity-item {{
-            margin-bottom: 8px;
-            padding-left: 10px;
-            border-left: 2pt solid var(--accent-color);
-        }}
-
-        .activity-name {{
-            font-family: 'Roboto', sans-serif;
-            font-size: 9.5pt;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 2px;
-        }}
-
-        .activity-description {{
-            font-size: 8pt;
-            color: var(--text-secondary);
-            line-height: 1.4;
-        }}
-
-        /* Work Experience */
-        .work-item {{
-            margin-bottom: 8px;
-            padding-left: 10px;
-            border-left: 2pt solid var(--accent-color);
-        }}
-
-        .work-title {{
-            font-family: 'Roboto', sans-serif;
-            font-size: 9.5pt;
-            font-weight: 700;
-            color: var(--text-primary);
-        }}
-
-        .work-company {{
-            font-size: 8.5pt;
-            font-weight: 600;
-            color: var(--accent-color);
-        }}
-
-        .work-date {{
-            font-size: 8pt;
-            color: var(--text-light);
-            font-style: italic;
-            margin-bottom: 2px;
-        }}
-
-        .work-description {{
-            font-size: 8pt;
-            color: var(--text-secondary);
-            line-height: 1.4;
-        }}
-
-        /* Right Column */
-        .right-column {{
-            background: var(--bg-light);
-            padding: 12px;
-            border-radius: 6px;
-            border-top: 3pt solid var(--accent-color);
-        }}
-
-        .profile-image {{
-            width: 100%;
-            max-width: 160px;
-            border-radius: 50%;
-            margin: 0 auto 12px auto;
-            display: block;
-            border: 3pt solid var(--accent-color);
-        }}
-
-        .contact-block {{
-            margin-bottom: 14px;
-            text-align: center;
-        }}
-
-        .contact-item {{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-            font-size: 8pt;
-            color: var(--text-secondary);
-            margin-bottom: 4px;
-        }}
-
-        .contact-item i {{
-            color: var(--accent-color);
-            font-size: 9pt;
-            width: 12pt;
-        }}
-
-        .right-section {{
-            margin-bottom: 12px;
-        }}
-
-        .right-section-title {{
-            font-family: 'Roboto', sans-serif;
-            font-size: 9pt;
-            font-weight: 700;
-            color: var(--accent-color);
-            margin-bottom: 6px;
-            text-transform: uppercase;
-            letter-spacing: 0.5pt;
-            padding-bottom: 3pt;
-            border-bottom: 1pt solid var(--border-color);
-        }}
-
-        .right-section p {{
-            font-size: 8pt;
-            color: var(--text-secondary);
-            line-height: 1.4;
-        }}
-
-        @media print {{
-            body {{
-                padding: 0.4in;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }}
-            .action-icons {{
-                display: none !important;
-            }}
-        }}
-
-        @media screen and (max-width: 768px) {{
-            body {{
-                width: 100%;
-                min-height: auto;
-                max-height: none;
-                padding: 20px;
-            }}
-            .container {{
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }}
-            .right-column {{
-                order: -1;
-            }}
-            .profile-image {{
-                max-width: 120px;
-            }}
-        }}
-    </style>
-</head>
-<body>
-    <div class="container">
-        {action_icons_html}
-
-        <!-- Left Column: Main Content -->
-        <div class="left-column">
-            <div class="header">
-                <h1>{data['name']}</h1>
-                <p class="tagline">{data['summary']}</p>
-            </div>
-
-            <h2 class="section-title">Education</h2>
-            {edu_html}
-
-            <h2 class="section-title">Leadership Training</h2>
-            {leadership_html}
-
-            <h2 class="section-title">Activities</h2>
-            {activities_html}
-
-            <h2 class="section-title">Work Experience</h2>
-            {work_html}
-        </div>
-
-        <!-- Right Column: Contact & Skills -->
-        <div class="right-column">
-            <img src="{config.get('profile_image', '')}" alt="{data['name']}" class="profile-image">
-
-            <div class="contact-block">
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>{data['location'].replace(' | ', '</span></div><div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>')}</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>{data['phone']}</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>{data['email']}</span>
-                </div>
-            </div>
-
-            <div class="right-section">
-                <h3 class="right-section-title">Objective</h3>
-                <p>{data['summary']}</p>
-            </div>
-
-            <div class="right-section">
-                <h3 class="right-section-title">Skills</h3>
-                <p>{skills_text}</p>
-            </div>
-
-            <div class="right-section">
-                <h3 class="right-section-title">Languages</h3>
-                <p>{data.get('languages', '')}</p>
-            </div>
-
-            <div class="right-section">
-                <h3 class="right-section-title">Interests</h3>
-                <p>{data.get('interests', '')}</p>
-            </div>
-
-            <div class="right-section">
-                <h3 class="right-section-title">References</h3>
-                <p>{data.get('references', '')}</p>
-            </div>
-        </div>
-    </div>
-</body>
-</html>"""
-
-    return html
-
-
 def generate_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
-    """Generate HTML from parsed data - Awesome-CV inspired styling"""
+    """Generate simple ATS-friendly HTML resume - single column, no fancy formatting"""
 
-    # Generate jobs HTML
+    # Build jobs HTML
     jobs_html = ""
     for job in data['jobs']:
         bullets_html = ""
-        if job['bullets']:
-            for bullet in job['bullets']:
-                bullets_html += f"                    <li>{bullet}</li>\n"
-            bullets_section = f"""                <ul class="job-achievements">
-{bullets_html}                </ul>"""
-        else:
-            bullets_section = ""
+        for bullet in job.get('bullets', []):
+            bullets_html += f"<li>{bullet}</li>\n"
 
-        company_html = f'<span class="job-company">{job["company"]}</span>' if job['company'] else ""
-
-        jobs_html += f"""            <div class="job">
-                <div class="job-header">
-                    <div class="job-title-company">
-                        <span class="job-title">{job['title']}</span>
-                        {company_html}
-                    </div>
-                    <span class="job-duration">{job['dates']}</span>
-                </div>
-{bullets_section}
+        company_line = f" - {job['company']}" if job['company'] else ""
+        jobs_html += f"""
+        <div class="job">
+            <div class="job-header">
+                <strong>{job['title']}{company_line}</strong>
+                <span class="dates">{job['dates']}</span>
             </div>
-
+            <ul>
+{bullets_html}            </ul>
+        </div>
 """
+        # Add page break after Macromedia
+        if 'Macromedia' in job.get('company', ''):
+            jobs_html += '        <div class="page-break"></div>\n'
 
-    # Generate education HTML - Awesome-CV style
+    # Build education HTML
     edu_html = ""
     for edu in data['education']:
-        details_html = ""
-        if edu.get('details'):
-            details_html = f'<div class="edu-details">{edu["details"]}</div>'
-
-        edu_html += f"""            <div class="education-item">
-                <div class="education-info">
-                    <div class="degree">{edu['degree']}</div>
-                    <div class="school">{edu['school']}</div>
-                    {details_html}
-                </div>
-                <div class="edu-date">{edu['date']}</div>
-            </div>
+        edu_html += f"""
+        <div class="education">
+            <strong>{edu['degree']}</strong> - {edu['school']}, {edu['date']}
+        </div>
 """
 
-    # Generate leadership HTML (for Max)
-    leadership_html = ""
-    if data.get('leadership'):
-        for item in data['leadership']:
-            bullets_html = ""
-            for bullet in item['bullets']:
-                bullets_html += f"                        <li>{bullet}</li>\n"
-            leadership_html += f"""            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <span class="job-title">{item['title']}</span>
-                        <span class="company">{item['company']}</span>
-                    </div>
-                    <span class="job-duration">{item['dates']}</span>
-                </div>
-                    <ul class="achievements">
-{bullets_html}                    </ul>
-            </div>
-
-"""
-
-    # Generate activities HTML (for Max)
-    activities_html = ""
-    if data.get('activities'):
-        for activity in data['activities']:
-            bullets_html = ""
-            for bullet in activity['bullets']:
-                bullets_html += f"                        <li>{bullet}</li>\n"
-            if bullets_html:
-                activities_html += f"""            <div class="activity">
-                <div class="activity-name">{activity['name']}</div>
-                    <ul class="achievements">
-{bullets_html}                    </ul>
-            </div>
-
-"""
-            else:
-                activities_html += f"""            <div class="activity">
-                <div class="activity-name">{activity['name']}</div>
-            </div>
-
-"""
-
-    # Generate skills HTML (simple list for Max, grid for Matt)
-    skills_html = ""
-    if config.get('show_skills_grid') and data.get('competencies'):
-        # Matt's skills grid
-        skills_categories = {
-            "Product Management": ["Roadmap development", "Requirement gathering", "KPI definition", "Competitive analysis", "Go-to-market strategy"],
-            "Platform Experience": ["Multi-tenant SaaS platforms", "API strategy", "Developer ecosystems", "Enterprise integrations"],
-            "Leadership": ["Engineering collaboration", "UX partnership", "Stakeholder management", "Executive communication"],
-            "Technical Skills": ["Jira, Aha!, Confluence", "API design", "AWS, GCP, Azure", "SQL & data analytics"]
-        }
-        for category, skills in skills_categories.items():
-            skills_list = ""
-            for skill in skills:
-                skills_list += f"                            <li>{skill}</li>\n"
-            skills_html += f"""                    <div class="skill-category">
-                        <h4>{category}</h4>
-                        <ul>
-{skills_list}                        </ul>
-                    </div>
-"""
-    elif data.get('skills'):
-        # Max's simple skills list
-        for skill in data['skills']:
-            skills_html += f"                <li>{skill}</li>\n"
-
-    # Generate certifications HTML - Awesome-CV style
+    # Build certifications HTML
     cert_html = ""
     if config.get('show_certifications') and data.get('certifications'):
         for cert in data['certifications']:
-            cert_html += f"""            <div class="cert-item">
-                <div class="cert-info">
-                    <div class="cert-name">{cert['name']}</div>
-                    <div class="cert-org">{cert['organization']}</div>
-                </div>
-                <div class="cert-date">{cert['date']}</div>
-            </div>
+            cert_html += f"""
+        <div class="cert">
+            <strong>{cert['name']}</strong> - {cert['organization']}, {cert['date']}
+        </div>
 """
 
-    # Generate personal section
-    personal_html = ""
-    if config.get('show_personal') and data.get('personal'):
-        personal_html = data['personal'].replace('\n', '<br>\n                    ')
+    # Build skills HTML
+    skills_html = ", ".join(data.get('skills', []))
 
-    # Build header with optional profile image - Awesome-CV style with dual locations/phones
-    # Parse locations and phones (support | separator for dual values)
-    locations = [loc.strip() for loc in data['location'].split('|')]
-    phones = [ph.strip() for ph in data['phone'].split('|')]
-
-    # Build contact items
-    # Build location column
-    location_items = ""
-    for loc in locations:
-        location_items += f"""                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>{loc}</span>
-                    </div>
-"""
-
-    # Build phone column
-    phone_items = ""
-    for phone in phones:
-        phone_items += f"""                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>{phone}</span>
-                    </div>
-"""
-
-    # Build links column
-    link_items = f"""                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:{data['email']}">{data['email']}</a>
-                    </div>
-"""
-    if config.get('linkedin_url'):
-        linkedin_short = config['linkedin_url'].replace('https://', '').replace('http://', '').replace('www.', '')
-        link_items += f"""                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <a href="{config['linkedin_url']}" target="_blank">{linkedin_short}</a>
-                    </div>
-"""
-
-    # Combine into columns
-    contact_items = f"""                <div class="contact-column">
-{location_items}                </div>
-                <div class="contact-column">
-{phone_items}                </div>
-                <div class="contact-column">
-{link_items}                </div>
-"""
-
-    if config.get('profile_image'):
-        header_content = f"""            <div class="header-top">
-                <img src="{config['profile_image']}" alt="{data['name']}" class="profile-photo">
-                <div>
-                    <h1>{data['name']}</h1>
-                    <div class="subtitle">Principal Product Manager</div>
-                </div>
-            </div>
-            <div class="contact-info">
-{contact_items}            </div>"""
-    else:
-        header_content = f"""            <div class="header-top">
-                <div>
-                    <h1>{data['name']}</h1>
-                    <div class="subtitle">Product Manager</div>
-                </div>
-            </div>
-            <div class="contact-info">
-{contact_items}            </div>"""
-
-    # Build action icons
-    action_icons = ""
-    icons_list = []
-    icons_list.append("""            <a href="resume.pdf" title="Download PDF" target="_blank">
-                <img src="acrobat-logo.png" alt="Download PDF">
-            </a>""")
-    if config.get('linkedin_url'):
-        icons_list.append(f"""            <a href="{config['linkedin_url']}" title="LinkedIn Profile" target="_blank">
-                <img src="linkedin-logo.png" alt="LinkedIn">
-            </a>""")
-    action_icons = "\n".join(icons_list)
-
-    # Build sections based on resume type
-    sections_html = ""
-
-    # Summary section (all resumes) - Awesome-CV style
-    if data.get('summary'):
-        sections_html += f"""        <section class="section summary">
-            <h2 class="section-title">Summary</h2>
-            <p>{data['summary']}</p>
-        </section>
-
-"""
-
-    # Education section (student resumes show this prominently)
-    if config['resume_type'] == 'student':
-        sections_html += f"""            <section class="education-section">
-                <h2 class="section-title">Education</h2>
-{edu_html}            </section>
-
-"""
-
-    # Leadership Training (for Max)
-    if data.get('leadership'):
-        sections_html += f"""            <section class="leadership-section">
-                <h2 class="section-title">Leadership Training</h2>
-{leadership_html}            </section>
-
-"""
-
-    # Work Experience (professional resumes) - Awesome-CV style
-    if data.get('jobs') and config['resume_type'] == 'professional':
-        sections_html += f"""        <section class="section">
-            <h2 class="section-title">Experience</h2>
-{jobs_html}        </section>
-
-"""
-
-    # Skills section - Awesome-CV style
-    if config.get('show_skills_grid') and skills_html:
-        sections_html += f"""        <section class="section">
-            <h2 class="section-title">Core Competencies</h2>
-            <div class="skills-grid">
-{skills_html}            </div>
-        </section>
-
-"""
-    elif data.get('skills'):
-        sections_html += f"""        <section class="section">
-            <h2 class="section-title">Skills</h2>
-            <ul class="skills-list">
-{skills_html}            </ul>
-        </section>
-
-"""
-
-    # Activities (for Max)
-    if data.get('activities'):
-        sections_html += f"""            <section class="activities-section">
-                <h2 class="section-title">Activities</h2>
-{activities_html}            </section>
-
-"""
-
-    # Languages (for Max)
-    if data.get('languages'):
-        sections_html += f"""            <section class="languages-section">
-                <h2 class="section-title">Languages</h2>
-                <p>{data['languages']}</p>
-            </section>
-
-"""
-
-    # Education & Certifications (professional resumes) - Awesome-CV style
-    if config['resume_type'] == 'professional':
-        sections_html += f"""        <section class="section">
-            <h2 class="section-title">Education</h2>
-{edu_html}        </section>
-
-"""
-        if cert_html:
-            sections_html += f"""        <section class="section">
-            <h2 class="section-title">Certifications</h2>
-{cert_html}        </section>
-
-"""
-
-    # Personal section
-    if personal_html:
-        sections_html += f"""            <section>
-                <div class="personal">
-                    {personal_html}
-                </div>
-            </section>
-"""
-
-    # Complete HTML template - Awesome-CV inspired styling
+    # Simple ATS-friendly HTML template
     html_template = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{data['name']} - Resume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
-
-        :root {{
-            --accent-color: #00A388;
-            --accent-dark: #008872;
-            --text-primary: #212121;
-            --text-secondary: #666666;
-            --text-light: #999999;
-            --border-color: #e0e0e0;
-            --bg-light: #f5f5f5;
-        }}
-
-        * {{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }}
-
         body {{
-            font-family: 'Source Sans Pro', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.5;
-            color: var(--text-primary);
-            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #000000;
             max-width: 8.5in;
             margin: 0 auto;
-            padding: 0.35in;
+            padding: 0.5in;
             background: #ffffff;
+        }}
+        h1 {{
+            font-size: 18pt;
+            margin: 0 0 5px 0;
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+        }}
+        .contact {{
+            margin-bottom: 15px;
             font-size: 10pt;
         }}
-
-        .container {{
-            position: relative;
-        }}
-
-        .action-icons {{
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: flex;
-            gap: 10px;
-            z-index: 1000;
-        }}
-
-        .action-icons a {{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 36px;
-            height: 36px;
-            background: #ffffff;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-            transition: all 0.2s ease;
-            text-decoration: none;
-            padding: 6px;
-        }}
-
-        .action-icons a:hover {{
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-            border-color: var(--accent-color);
-        }}
-
-        .action-icons img {{
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }}
-
-        .header {{
-            text-align: center;
-            padding-bottom: 12pt;
-            margin-bottom: 10pt;
-            border-bottom: 2pt solid var(--accent-color);
-            page-break-inside: avoid;
-            page-break-after: avoid;
-        }}
-
-        .header-top {{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20pt;
-            margin-bottom: 12pt;
-        }}
-
-        .profile-photo {{
-            width: 75pt;
-            height: 75pt;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3pt solid var(--accent-color);
-        }}
-
-        .header h1 {{
-            font-family: 'Roboto', sans-serif;
-            font-size: 28pt;
-            font-weight: 700;
-            color: var(--text-primary);
-            letter-spacing: 2pt;
-            text-transform: uppercase;
-            margin-bottom: 4pt;
-        }}
-
-        .header .subtitle {{
+        h2 {{
             font-size: 12pt;
-            font-weight: 400;
-            color: var(--accent-color);
-            letter-spacing: 1pt;
+            margin: 18px 0 10px 0;
             text-transform: uppercase;
-            margin-bottom: 14pt;
+            border-bottom: 1px solid #666;
+            padding-bottom: 3px;
         }}
-
-        .contact-info {{
-            display: flex;
-            justify-content: center;
-            gap: 0;
-        }}
-
-        .contact-column {{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 0 16pt;
-            border-right: 1pt solid var(--border-color);
-        }}
-
-        .contact-column:last-child {{
-            border-right: none;
-        }}
-
-        .contact-item {{
-            display: flex;
-            align-items: center;
-            gap: 6pt;
-            color: var(--text-secondary);
-            font-size: 9pt;
-            font-weight: 400;
-            margin-bottom: 2pt;
-        }}
-
-        .contact-item:last-child {{
-            margin-bottom: 0;
-        }}
-
-        .contact-item i {{
-            color: var(--accent-color);
-            font-size: 9pt;
-            width: 12pt;
-            text-align: center;
-        }}
-
-        .contact-item a {{
-            color: var(--text-secondary);
-            text-decoration: none;
-        }}
-
-        .contact-item a:hover {{
-            color: var(--accent-color);
-        }}
-
-        .section {{
-            margin-bottom: 14pt;
-        }}
-
-        .section-title {{
-            font-family: 'Roboto', sans-serif;
-            font-size: 12pt;
-            font-weight: 700;
-            color: var(--accent-color);
-            text-transform: uppercase;
-            letter-spacing: 1.5pt;
-            margin-bottom: 10pt;
-            padding-bottom: 4pt;
-            border-bottom: 1pt solid var(--border-color);
-        }}
-
         .summary {{
-            margin-bottom: 12pt;
-            page-break-after: avoid;
+            margin-bottom: 18px;
         }}
-
-        .summary p {{
-            font-size: 10pt;
-            line-height: 1.5;
-            color: var(--text-secondary);
-            text-align: justify;
-            padding: 6pt 0;
-        }}
-
         .job {{
-            margin-bottom: 10pt;
+            margin-bottom: 16px;
             page-break-inside: avoid;
         }}
-
-        .job:last-child {{
-            margin-bottom: 0;
-        }}
-
         .job-header {{
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-            margin-bottom: 4pt;
+            margin-bottom: 3px;
         }}
-
-        .job-title-company {{
-            display: flex;
-            align-items: baseline;
-            gap: 8pt;
-            flex-wrap: wrap;
-        }}
-
-        .job-title {{
-            font-family: 'Roboto', sans-serif;
-            font-weight: 700;
-            font-size: 11pt;
-            color: var(--text-primary);
-        }}
-
-        .job-company {{
-            font-weight: 600;
-            font-size: 10pt;
-            color: var(--accent-color);
-        }}
-
-        .job-duration {{
-            font-size: 9pt;
-            font-weight: 400;
-            color: var(--text-light);
+        .dates {{
             font-style: italic;
+            color: #333;
         }}
-
-        .job-achievements {{
-            margin: 6pt 0 0 0;
-            padding-left: 16pt;
-            list-style: none;
+        ul {{
+            margin: 5px 0 0 20px;
+            padding: 0;
         }}
-
-        .job-achievements li {{
-            position: relative;
-            margin-bottom: 4pt;
-            font-size: 9.5pt;
-            line-height: 1.5;
-            color: var(--text-secondary);
+        li {{
+            margin-bottom: 4px;
         }}
-
-        .job-achievements li::before {{
-            content: "\\f054";
-            font-family: "Font Awesome 6 Free";
-            font-weight: 900;
-            font-size: 6pt;
-            color: var(--accent-color);
-            position: absolute;
-            left: -14pt;
-            top: 4pt;
+        .education, .cert {{
+            margin-bottom: 8px;
         }}
-
-        .skills-list {{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8pt;
-            list-style: none;
+        .skills {{
+            margin-top: 8px;
         }}
-
-        .skills-list li {{
-            background: var(--bg-light);
-            border: 1pt solid var(--border-color);
-            border-left: 3pt solid var(--accent-color);
-            padding: 5pt 12pt;
-            font-size: 9pt;
-            font-weight: 500;
-            color: var(--text-secondary);
-            border-radius: 0 4pt 4pt 0;
+        .page-break {{
+            page-break-before: always;
         }}
-
-        .education-item {{
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 8pt;
-            padding: 8pt 12pt;
-            background: var(--bg-light);
-            border-left: 3pt solid var(--accent-color);
-        }}
-
-        .education-info {{
-            flex: 1;
-        }}
-
-        .degree {{
-            font-family: 'Roboto', sans-serif;
-            font-weight: 700;
-            font-size: 10.5pt;
-            color: var(--text-primary);
-        }}
-
-        .school {{
-            font-size: 9.5pt;
-            font-weight: 600;
-            color: var(--accent-color);
-            margin-top: 2pt;
-        }}
-
-        .edu-date {{
-            font-size: 9pt;
-            font-weight: 400;
-            color: var(--text-light);
-            font-style: italic;
-        }}
-
-        .edu-details {{
-            font-size: 9pt;
-            color: var(--text-secondary);
-            margin-top: 4pt;
-            font-style: italic;
-        }}
-
-        .cert-item {{
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 8pt;
-            padding: 8pt 12pt;
-            background: var(--bg-light);
-            border-left: 3pt solid var(--accent-color);
-        }}
-
-        .cert-info {{
-            flex: 1;
-        }}
-
-        .cert-name {{
-            font-family: 'Roboto', sans-serif;
-            font-weight: 700;
-            font-size: 10.5pt;
-            color: var(--text-primary);
-        }}
-
-        .cert-org {{
-            font-size: 9.5pt;
-            font-weight: 600;
-            color: var(--accent-color);
-            margin-top: 2pt;
-        }}
-
-        .cert-date {{
-            font-size: 9pt;
-            font-weight: 400;
-            color: var(--text-light);
-            font-style: italic;
-        }}
-
-        .personal {{
-            background: var(--bg-light);
-            padding: 12pt 14pt;
-            border-left: 3pt solid var(--accent-color);
-            font-style: italic;
-            color: var(--text-secondary);
-            font-size: 10pt;
-            line-height: 1.6;
-        }}
-
         @media print {{
-            body {{
-                padding: 0;
-                background: white;
-            }}
-            .action-icons {{
-                display: none !important;
-            }}
-            .section {{
-                page-break-inside: avoid;
-            }}
-        }}
-
-        @media screen and (max-width: 768px) {{
-            body {{
-                padding: 20px;
-                font-size: 9pt;
-            }}
-            .header h1 {{
-                font-size: 24pt;
-                letter-spacing: 1pt;
-            }}
-            .header .subtitle {{
-                font-size: 10pt;
-            }}
-            .header-top {{
-                flex-direction: column;
-                gap: 12pt;
-            }}
-            .profile-photo {{
-                width: 70pt;
-                height: 70pt;
-            }}
-            .contact-info {{
-                flex-direction: column;
-                gap: 8pt;
-            }}
-            .contact-column {{
-                border-right: none;
-                border-bottom: 1pt solid var(--border-color);
-                padding: 6pt 0;
-            }}
-            .contact-column:last-child {{
-                border-bottom: none;
-            }}
-            .job-header {{
-                flex-direction: column;
-                gap: 4pt;
-            }}
-            .education-item, .cert-item {{
-                flex-direction: column;
-                gap: 4pt;
-            }}
-        }}
-
-        @media screen and (max-width: 480px) {{
-            body {{
-                padding: 15px;
-                font-size: 8.5pt;
-            }}
-            .header h1 {{
-                font-size: 20pt;
-            }}
-            .section-title {{
-                font-size: 11pt;
-            }}
-            .skills-list {{
-                gap: 6pt;
-            }}
-            .skills-list li {{
-                padding: 4pt 8pt;
-                font-size: 8pt;
-            }}
+            body {{ padding: 0.25in; }}
+            .page-break {{ page-break-before: always; }}
         }}
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="action-icons">
-{action_icons}
-        </div>
-        <header class="header">
-{header_content}
-        </header>
-
-        <div class="content">
-{sections_html}        </div>
+    <h1>{data['name']}</h1>
+    <div class="contact">
+        {data['email']}<br>
+        Vienna, Austria, +43 677 629 00590<br>
+        San Ramon, CA, +1 415 990 3740
     </div>
+
+    <h2>Summary</h2>
+    <div class="summary">{data['summary']}</div>
+
+    <h2>Experience</h2>
+{jobs_html}
+
+    <h2>Education</h2>
+{edu_html}
+
+    {"<h2>Certifications</h2>" + cert_html if cert_html else ""}
+
+    {"<h2>Skills</h2><div class='skills'>" + skills_html + "</div>" if skills_html else ""}
 </body>
 </html>"""
 
@@ -1549,7 +411,7 @@ def generate_index_page(script_dir: str, hugo_static_resume: str):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reider Family Resumes</title>
+    <title>Matthew Reider - Resume</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap');
 
@@ -1630,7 +492,7 @@ def generate_index_page(script_dir: str, hugo_static_resume: str):
     </style>
 </head>
 <body>
-    <h1>Reider Family Resumes</h1>
+    <h1>Resume</h1>
     <ul class="resume-list">
         <li class="resume-item">
             <a href="matt/">
@@ -1640,26 +502,6 @@ def generate_index_page(script_dir: str, hugo_static_resume: str):
             <div class="resume-links">
                 <a href="matt/">View Resume</a>
                 <a href="matt/resume.pdf">Download PDF</a>
-            </div>
-        </li>
-        <li class="resume-item">
-            <a href="alison/">
-                <div class="resume-name">Alison S. Cohen</div>
-                <div class="resume-title">Senior People Experience Business Partner</div>
-            </a>
-            <div class="resume-links">
-                <a href="alison/">View Resume</a>
-                <a href="alison/resume.pdf">Download PDF</a>
-            </div>
-        </li>
-        <li class="resume-item">
-            <a href="max/">
-                <div class="resume-name">Max Reider</div>
-                <div class="resume-title">University Student - Business Management & Psychology</div>
-            </a>
-            <div class="resume-links">
-                <a href="max/">View Resume</a>
-                <a href="max/resume.pdf">Download PDF</a>
             </div>
         </li>
     </ul>
@@ -1689,30 +531,15 @@ def generate_resume(person: str, script_dir: str, hugo_static_resume: str):
     print(f"  Reading {config['input_file']}...")
     data = parse_resume_data(input_file)
 
-    # Generate HTML based on resume type
+    # Generate HTML
     print("  Generating HTML...")
-    if config['resume_type'] == 'student_twocol':
-        html = generate_student_twocol_html(data, config)
-    else:
-        html = generate_html(data, config)
+    html = generate_html(data, config)
 
     # Write index.html
     html_path = os.path.join(output_subdir, 'index.html')
     with open(html_path, 'w', encoding='utf-8') as f:
         f.write(html)
     print(f"  HTML written to: {html_path}")
-
-    # Copy assets
-    assets = ['acrobat-logo.png', 'linkedin-logo.png']
-    if config.get('profile_image'):
-        assets.append(config['profile_image'])
-
-    for asset in assets:
-        src = os.path.join(script_dir, asset)
-        if os.path.exists(src):
-            dst = os.path.join(output_subdir, asset)
-            shutil.copy2(src, dst)
-            print(f"  Copied: {asset}")
 
     # Generate PDF
     print("  Generating PDF...")
@@ -1724,7 +551,7 @@ def generate_resume(person: str, script_dir: str, hugo_static_resume: str):
 def main():
     """Main function to generate all resumes"""
     parser = argparse.ArgumentParser(description='Generate resumes for the Reider family')
-    parser.add_argument('--person', choices=['matt', 'max', 'alison', 'all'], default='all',
+    parser.add_argument('--person', choices=['matt', 'all'], default='all',
                         help='Which person to generate resume for (default: all)')
     args = parser.parse_args()
 
