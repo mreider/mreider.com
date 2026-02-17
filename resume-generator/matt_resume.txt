@@ -10,7 +10,7 @@ JOB TITLE: Principal Product Manager
 COMPANY: Dynatrace
 DATES: 2019 - Present
 - Owned application observability product line during 4x company revenue growth ($430M to $1.7B)
-- Shipped core platform features adopted across 3,000+ enterprise accounts
+- Integrated Dynatrace AI for root cause analysis and correlation; launched MCP server enabling agentic workflows for automated problem resolution
 - Led architecture migration to cloud-native, cutting query latency 60% for Fortune 500 customers
 - Delivered serverless and container monitoring used in 50,000+ K8s deployments
 
@@ -18,7 +18,8 @@ JOB TITLE: Lead Product Manager
 COMPANY: Checkr
 DATES: 2016 - 2019
 - Grew platform revenue from $20M to $100M ARR, scaling to 10M+ background checks annually
-- Cut manual review costs 60% with AI-powered compliance tools while improving accuracy 25%
+- Built AI classification system using confusion matrices to validate applicant-to-record matches (FCRA compliance) and normalize court terminology across 3,500 jurisdictions for adjudication accuracy
+- Cut manual review costs 60% through automation while improving accuracy 25%
 - Secured $50M+ in enterprise contracts with Uber, Lyft, and DoorDash integrations
 
 JOB TITLE: Director of Product Management

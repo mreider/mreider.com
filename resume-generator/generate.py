@@ -12,6 +12,10 @@ import os
 import shutil
 import argparse
 from typing import List, Dict, Any
+from docx import Document
+from docx.shared import Pt, Inches
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.style import WD_STYLE_TYPE
 
 # Person-specific configurations
 PERSON_CONFIGS = {
@@ -20,10 +24,20 @@ PERSON_CONFIGS = {
         'profile_image': 'matt-profile-image.jpeg',
         'linkedin_url': 'https://linkedin.com/in/mreider',
         'output_dir': 'matt',
-        'resume_type': 'professional',  # professional resume with skills grid
+        'resume_type': 'professional',
         'show_skills_grid': False,
         'show_certifications': True,
         'show_personal': True,
+    },
+    'alison': {
+        'input_file': 'alison_resume.txt',
+        'profile_image': None,
+        'linkedin_url': None,
+        'output_dir': 'alison',
+        'resume_type': 'professional',
+        'show_skills_grid': False,
+        'show_certifications': False,
+        'show_personal': False,
     },
 }
 
@@ -37,8 +51,10 @@ def parse_resume_data(filename: str) -> Dict[str, Any]:
 
     # Parse basic info
     data['name'] = re.search(r'NAME: (.+)', content).group(1)
-    data['phone'] = re.search(r'PHONE: (.+)', content).group(1)
-    data['email'] = re.search(r'EMAIL: (.+)', content).group(1)
+    phone_match = re.search(r'PHONE: (.+)', content)
+    data['phone'] = phone_match.group(1).strip() if phone_match and phone_match.group(1).strip() else ""
+    email_match = re.search(r'EMAIL: (.+)', content)
+    data['email'] = email_match.group(1).strip() if email_match and email_match.group(1).strip() else ""
     data['location'] = re.search(r'LOCATION: (.+)', content).group(1)
 
     # Parse summary
@@ -281,6 +297,18 @@ def generate_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
     # Build skills HTML
     skills_html = ", ".join(data.get('skills', []))
 
+    # Build contact lines
+    contact_lines = []
+    if data.get('email'):
+        contact_lines.append(data['email'])
+    if data.get('phone'):
+        # Split multiple phone numbers on |
+        phones = [p.strip() for p in data['phone'].split('|')]
+        contact_lines.extend(phones)
+    if data.get('location'):
+        contact_lines.append(data['location'])
+    contact_html = "<br>\n        ".join(contact_lines)
+
     # Simple ATS-friendly HTML template
     html_template = f"""<!DOCTYPE html>
 <html lang="en">
@@ -357,9 +385,7 @@ def generate_html(data: Dict[str, Any], config: Dict[str, Any]) -> str:
 <body>
     <h1>{data['name']}</h1>
     <div class="contact">
-        {data['email']}<br>
-        Vienna, Austria, +43 677 629 00590<br>
-        San Ramon, CA, +1 415 990 3740
+        {contact_html}
     </div>
 
     <h2>Summary</h2>
@@ -402,6 +428,106 @@ def generate_pdf(output_dir: str):
 
     print(f"  Could not generate PDF automatically for {output_dir}")
     return False
+
+
+def generate_docx(data: Dict[str, Any], config: Dict[str, Any], output_dir: str):
+    """Generate Word document from resume data"""
+    doc = Document()
+
+    # Set narrow margins
+    for section in doc.sections:
+        section.top_margin = Inches(0.5)
+        section.bottom_margin = Inches(0.5)
+        section.left_margin = Inches(0.5)
+        section.right_margin = Inches(0.5)
+
+    # Name header
+    name_para = doc.add_paragraph()
+    name_run = name_para.add_run(data['name'])
+    name_run.bold = True
+    name_run.font.size = Pt(18)
+    name_para.alignment = WD_ALIGN_PARAGRAPH.LEFT
+
+    # Contact info
+    contact_para = doc.add_paragraph()
+    contact_lines = []
+    if data.get('email'):
+        contact_lines.append(data['email'])
+    if data.get('phone'):
+        phones = [p.strip() for p in data['phone'].split('|')]
+        contact_lines.extend(phones)
+    if data.get('location'):
+        contact_lines.append(data['location'])
+    contact_para.add_run("\n".join(contact_lines))
+    contact_para.paragraph_format.space_after = Pt(12)
+
+    # Summary section
+    summary_heading = doc.add_paragraph()
+    summary_run = summary_heading.add_run("SUMMARY")
+    summary_run.bold = True
+    summary_run.font.size = Pt(12)
+    summary_para = doc.add_paragraph(data['summary'])
+    summary_para.paragraph_format.space_after = Pt(12)
+
+    # Experience section
+    exp_heading = doc.add_paragraph()
+    exp_run = exp_heading.add_run("EXPERIENCE")
+    exp_run.bold = True
+    exp_run.font.size = Pt(12)
+
+    for job in data['jobs']:
+        job_para = doc.add_paragraph()
+        company_line = f" - {job['company']}" if job['company'] else ""
+        title_run = job_para.add_run(f"{job['title']}{company_line}")
+        title_run.bold = True
+        job_para.add_run(f"  |  {job['dates']}")
+        job_para.paragraph_format.space_after = Pt(2)
+
+        for bullet in job.get('bullets', []):
+            bullet_para = doc.add_paragraph(style='List Bullet')
+            bullet_para.add_run(bullet)
+            bullet_para.paragraph_format.space_after = Pt(2)
+
+    # Education section
+    edu_heading = doc.add_paragraph()
+    edu_run = edu_heading.add_run("EDUCATION")
+    edu_run.bold = True
+    edu_run.font.size = Pt(12)
+
+    for edu in data['education']:
+        edu_para = doc.add_paragraph()
+        edu_title = edu_para.add_run(f"{edu['degree']}")
+        edu_title.bold = True
+        edu_para.add_run(f" - {edu['school']}, {edu['date']}")
+        edu_para.paragraph_format.space_after = Pt(4)
+
+    # Certifications section
+    if config.get('show_certifications') and data.get('certifications'):
+        cert_heading = doc.add_paragraph()
+        cert_run = cert_heading.add_run("CERTIFICATIONS")
+        cert_run.bold = True
+        cert_run.font.size = Pt(12)
+
+        for cert in data['certifications']:
+            cert_para = doc.add_paragraph()
+            cert_title = cert_para.add_run(f"{cert['name']}")
+            cert_title.bold = True
+            cert_para.add_run(f" - {cert['organization']}, {cert['date']}")
+            cert_para.paragraph_format.space_after = Pt(4)
+
+    # Skills section
+    if data.get('skills'):
+        skills_heading = doc.add_paragraph()
+        skills_run = skills_heading.add_run("SKILLS")
+        skills_run.bold = True
+        skills_run.font.size = Pt(12)
+        skills_para = doc.add_paragraph(", ".join(data['skills']))
+
+    # Save the document
+    docx_path = os.path.join(output_dir, 'resume.docx')
+    doc.save(docx_path)
+    print(f"  Word document written to: {docx_path}")
+    return True
 
 
 def generate_index_page(script_dir: str, hugo_static_resume: str):
@@ -545,13 +671,17 @@ def generate_resume(person: str, script_dir: str, hugo_static_resume: str):
     print("  Generating PDF...")
     generate_pdf(output_subdir)
 
+    # Generate Word document
+    print("  Generating Word document...")
+    generate_docx(data, config, output_subdir)
+
     print(f"  Resume generated for {person}")
 
 
 def main():
     """Main function to generate all resumes"""
     parser = argparse.ArgumentParser(description='Generate resumes for the Reider family')
-    parser.add_argument('--person', choices=['matt', 'all'], default='all',
+    parser.add_argument('--person', choices=['matt', 'alison', 'all'], default='all',
                         help='Which person to generate resume for (default: all)')
     args = parser.parse_args()
 
