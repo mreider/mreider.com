@@ -17,7 +17,6 @@ If you'd like to get in touch you can email me at [mreider@gmail.com](mailto:mre
 
 I'm also here:
 
-- [Resume](/resume/matt/)
 - [Linkedin](https://linkedin.com/in/mreider)
 
 ## Fitness
