@@ -37,7 +37,7 @@ Once he was settled, I ran back to the double-parked car and started hunting for
 
 I shot a short time-lapse video of that walk back. The sidewalk, Mass Ave, the line out the door as I pass, and then my dad's face looking up from his menu. I was doing a lot of capturing that week. Little moments, just to keep them.
 
-<video autoplay loop muted playsinline style="max-width: 350px; display: block; margin: 0 auto;">
+<video autoplay loop muted playsinline width="100%">
   <source src="/images/matt/burger.mp4" type="video/mp4">
 </video>
 
