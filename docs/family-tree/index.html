@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Tree - MR</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="family-tree.css">
+</head>
+<body>
+<div class="tree-wrapper">
+  <header class="tree-header">
+    <a href="/family/" class="back-link">&larr; Family</a>
+    <h1>Sampson-Kahn Family Tree</h1>
+  </header>
+  <div class="explorer">
+    <div class="search-wrap">
+      <input type="text" id="search-input" class="search-box" placeholder="Search for a family member...">
+      <div id="search-results" class="search-results"></div>
+    </div>
+    <div id="person-view"></div>
+  </div>
+  <footer class="tree-footer">
+    <a href="/family/">Back to Family</a>
+    &middot;
+    <a href="sampson-kahn.ged" download>Download GEDCOM</a>
+  </footer>
+</div>
+<script src="family-data.js"></script>
+<script src="tree.js"></script>
+</body>
+</html>
