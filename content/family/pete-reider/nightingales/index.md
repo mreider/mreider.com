@@ -1,7 +1,6 @@
 ---
 title:  "Nightingales"
 author: "Pete Reider"
-date: "1998-11-01"
 ---
 
 Ferdinand Blumer in his 82nd year was a believer in life's small pleasures. His admiration for his late wife, Margarite, had been huge. Warm and gregarious, she created comfort with people wherever they went - making up for his lifelong shyness.

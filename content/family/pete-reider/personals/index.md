@@ -1,7 +1,6 @@
 ---
 title:  "Personals"
 author: "Pete Reider"
-date: "2007-05-11"
 ---
 
 ** He **

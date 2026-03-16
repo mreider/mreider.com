@@ -1,7 +1,6 @@
 ---
 title: "Aunt Ethel"
 author: "Pete Reider"
-date: "2005-12-02"
 ---
 
 Scarcely had I caught my breath after the second grade in Lebanon, Missouri, when I was face to face with an entirely new cast of characters in a totally new venue, New York City. Queen of the players on dazzling stage was a willowy woman with weightless flaxen hair who moved in sudden nervous starts but once in motion floated effortlessly, creating for me the image of a grand, highly visible, Tinker Bell. Driving in our 1939 Plymouth from Missouri to New York, my mother prepared me for Great Aunt Ethel in exalted prose; yet, in her own person, she was stunningly greater than my imagination's best productions. She spoke with a soft crooning voice, accenting syllables in a novel way, so that I often grasped the word only after a delay. Oh, she meant decent when she said *desant*. The word game added to the numerous pleasures of listening to her.

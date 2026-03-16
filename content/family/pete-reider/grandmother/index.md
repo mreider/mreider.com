@@ -1,7 +1,6 @@
 ---
 title: "Grandmother"
 author: "Pete Reider"
-date: "1998-08-18"
 ---
 
 Just before the sign pointing to the beach I turned away from the tar topped road onto the sand in the salt marsh. The tide was out. The sinuous sandy trail soon led around a dune banked with thatch - still wet - and wisps of green plants holding on mightily.

@@ -1,7 +1,6 @@
 ---
 title: "An Exodus"
 author: "Pete Reider"
-date: "2007-11-08"
 ---
 
 The chilling northeasterly wind hit me full in the face as I came out of Gosman. I buttoned my Navy P jacket - a souvenir of World War II - thinking what amazing warmth that single layer of wool afforded. I had just come from Carol Shedd's class on The Old Testament. While sitting there, immersed in reading to myself, the ancient words from Exodus had jumped out at me across time: *If thou at all take thy neighbor's garment to pledge, thou shalt restore it unto him by that the sun goeth down for that is his only covering, it is his garment for his skin; wherein shall he sleep?* Here I was at eighty four getting an education - late, but perhaps not too late.

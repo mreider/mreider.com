@@ -1,7 +1,6 @@
 ---
 title: "The Kitchen Virus"
 author: "Pete Reider"
-date: "2005-07-23"
 ---
 
 After the West Nile virus came the Kitchen virus. My wife's friend, Myrna Slotkin, got it first. Then it spread to Vera Popovsky. Soon it infected the eleven other members of her Wednesday morning book club. Convoys of trucks delivering colossal metal stoves and gigantic refrigerators - all of them stainless steel (colors are out) - converged on suburban Newton creating massive potholes the blame for which fell upon the mayor, nearly costing him reelection. 

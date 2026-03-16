@@ -1,7 +1,6 @@
 ---
 title:  "Max and Zoe"
 author: "Pete Reider"
-date: "2010-03-12"
 ---
 
 

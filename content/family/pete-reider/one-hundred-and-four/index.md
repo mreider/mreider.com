@@ -1,7 +1,6 @@
 ---
 title:  "One Hundred and Four"
 author: "Pete Reider"
-date: "2011-07-12"
 ---
 
 My father, who would have been 104 on July 3, 2011, was a great guy- little impatient and a bit on the frugal side-but a terrific guy. He liked to keep words economical. In an anglophile fever pitch his immigrant Jewish parents named him Norman. He changed that to Norm, then to Nor, shortened that to No and finally decided to be called *Nnnnn.*

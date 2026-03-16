@@ -1,7 +1,6 @@
 ---
 title: "An Afternoon at the Health Club"
 author: "Pete Reider"
-date: "2011-04-28"
 ---
 
 **Characters**

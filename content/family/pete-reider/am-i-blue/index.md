@@ -1,7 +1,6 @@
 ---
 title: "Am I Blue"
 author: "Pete Reider"
-date: "2012-02-07"
 ---
 
 The sun bouncing off the windows downtown keeps getting more and more golden. It is sundown and the houses below-looking down Lake Street-are darkening fast. But the day doesn't want to give up. The light from the west leaps across the hollow beneath me and catches the windows of the buildings on the hills to the east. Now it's fading just like I knew it would a few moments ago. But it was good while it lasted. 

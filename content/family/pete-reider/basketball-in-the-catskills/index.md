@@ -1,7 +1,6 @@
 ---
 title: "Basketball in the Catskills"
 author: "Pete Reider"
-date: "2010-08-06"
 ---
 
 

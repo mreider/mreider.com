@@ -2,12 +2,12 @@
 
 <h1>{{ .Title }}</h1>
 
-{{ $allPosts := where site.RegularPages "Type" "in" (slice "life" "tech" "writeups" "family" "reflections" "fitness" "deutsch") }}
+{{ $allPosts := where site.RegularPages "Type" "in" (slice "life" "tech" "writeups" "family" "reflections" "deutsch") }}
 {{ $allPosts = where $allPosts "Params.status" "ne" "draft" }}
 {{ $allPosts = $allPosts.ByDate.Reverse }}
 
 {{ if $allPosts }}
-<ol class="post-list">
+<ul class="post-list">
     {{ range $allPosts }}
     <li class="post-list-item">
         <span class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
@@ -16,12 +16,12 @@
         <p class="post-description">{{ .Description }}</p>
         {{ end }}
         <div class="post-meta">
-            {{ .Date.Format "Jan 2, 2006" }}
-            {{ if .Params.author }} · {{ .Params.author }}{{ end }}
+            {{ if not .Date.IsZero }}{{ .Date.Format "Jan 2, 2006" }}{{ end }}
+            {{ if .Params.author }}{{ if not .Date.IsZero }} · {{ end }}{{ .Params.author }}{{ end }}
         </div>
     </li>
     {{ end }}
-</ol>
+</ul>
 {{ else }}
 <p class="text-muted">No posts yet.</p>
 {{ end }}

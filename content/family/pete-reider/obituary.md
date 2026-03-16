@@ -1,7 +1,6 @@
 ---
 title: "Arthur Elliott (Pete) Reider - Obituary"
 author: "San Francisco Chronicle & Legacy.com"
-date: "2015-08-17"
 ---
 
 *This obituary was originally published in the San Francisco Chronicle and Legacy.com, but I've put it here for posterity.*

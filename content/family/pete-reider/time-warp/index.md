@@ -1,7 +1,6 @@
 ---
 title:  "Time Warp"
 author: "Pete Reider"
-date: "2013-03-02"
 ---
 
 An elderly Asian servant sweeps the doorstep proteceted by a surgical mask.

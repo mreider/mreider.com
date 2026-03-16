@@ -12,7 +12,7 @@
 {{ $posts = $posts.ByDate.Reverse }}
 
 {{ if $posts }}
-<ol class="post-list">
+<ul class="post-list">
     {{ range $posts }}
     <li class="post-list-item">
         <span class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
@@ -20,12 +20,12 @@
         <p class="post-description">{{ .Description }}</p>
         {{ end }}
         <div class="post-meta">
-            {{ .Date.Format "Jan 2, 2006" }}
-            {{ if .Params.author }} · {{ .Params.author }}{{ end }}
+            {{ if not .Date.IsZero }}{{ .Date.Format "Jan 2, 2006" }}{{ end }}
+            {{ if .Params.author }}{{ if not .Date.IsZero }} · {{ end }}{{ .Params.author }}{{ end }}
         </div>
     </li>
     {{ end }}
-</ol>
+</ul>
 {{ else }}
 <p class="text-muted">No posts yet.</p>
 {{ end }}
