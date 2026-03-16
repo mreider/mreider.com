@@ -49,7 +49,9 @@ After lunch we drove past his old dorm at Harvard, where he'd lived with a track
 
 The family tree.
 
-Knowing he was dying had made him feel personally responsible for passing on whatever he knew about his ancestry. His father, Norm, had grown up in Canton, Ohio. His parents had met at Case Western in Cleveland. He'd spoken to cousins, researched what he could, and written it all down in a frenzy. Pages of nearly illegible notes, as if he might lose his grip on the information before he could get it to someone else. He had time. He just didn't want it. But a week after we landed back in San Francisco, he drank enough morphine to stop his own heart while my sister played him classical music. His last words were *oh, that feels good.*
+Knowing he was dying had made him feel personally responsible for passing on whatever he knew about his ancestry. His father, Norm, had grown up in Canton, Ohio. His parents had met at Case Western in Cleveland. He'd spoken to cousins, researched what he could, and written it all down in a frenzy. Pages of nearly illegible notes, as if he might lose his grip on the information before he could get it to someone else. He had time. He just didn't want it.
+
+A week after we landed back in San Francisco, he drank enough morphine to stop his own heart while my sister played him classical music. His last words were *oh, that feels good.*
 
 But we weren't there yet.
 
