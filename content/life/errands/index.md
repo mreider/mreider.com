@@ -11,7 +11,7 @@ When the second or third person asked about it, I started wondering what I actua
 
 This goes back to 2015, the week before [my dad](/family/pete-reider/obituary/) died of lymphoma. Don't worry -- I'm not going to bury you in grief here. But there's this one day I keep thinking about.
 
-He was in Boston, in the house where I grew up in Newton. He'd bought a condo in San Francisco with my mom, but he loved the East Coast, and he wanted to say goodbye to it before heading back west. So I went out there, and we ran his errands together.
+He was in Boston, in the house where I grew up in Newton. He'd bought a condo in San Francisco with my mom, but he loved the East Coast, and he wanted to say goodbye to it before heading back west. So I flew out from San Francisco to spend a few days with him, and we ran his errands together.
 
 The first stop was his gym. The Boston Sports Club in Waltham. He said it would be his last visit. By this point he had lost a lot of weight and was very frail. We didn't talk about it. For a psychiatrist, someone in the business of talking, he didn't have much to say about this one. What was the point.
 
@@ -31,15 +31,17 @@ I jogged back to the car, drove to Marty's office, and pulled up just as the ses
 
 I asked if he wanted to drive through Harvard Square, maybe stop at Mr. Bartley's Burger Cottage, a place that had been on Mass Ave since the 1960s. He was up for it.
 
-To spare him the walk, I double-parked on Mass Ave -- not exactly a low-profile move in Harvard Square -- ran inside, cut the line, and told the staff my father was outside, too frail to stand, and needed to sit down. I'd been sprinting around Cambridge for two hours by then and probably looked half-wrecked myself. They took one look at my dad, compared him to the teens and twenty-somethings in line, and sat us down.
+To spare him the walk, I double-parked on Mass Ave -- not exactly a low-profile move in Harvard Square -- ran inside, cut the line that stretched out the door, and told the staff my father was outside, too frail to stand, and needed to sit down. I'd been sprinting around Cambridge for two hours by then and probably looked half-wrecked myself. They took one look at my dad, compared him to the teens and twenty-somethings in line, and sat us down.
 
 Once he was settled, I ran back to the double-parked car and started hunting for a spot. I found one close by and walked back fast so he wouldn't have to wait.
 
-I shot a short time-lapse video of that walk back. It's just the sidewalk, Mass Ave, the front door, and then my dad's face looking up from his menu. I was doing a lot of capturing that week. Little moments, just to keep them.
+I shot a short time-lapse video of that walk back. You can see the line out the door as I pass. Then the sidewalk, Mass Ave, the front door, and my dad's face looking up from his menu. I was doing a lot of capturing that week. Little moments, just to keep them.
 
 <video controls playsinline width="100%">
   <source src="/images/matt/burger.mp4" type="video/mp4">
 </video>
+
+<p></p>
 
 Why did I take him to a burger place? The cancer had been wrecking his digestion for months, which was its own kind of misery. Maybe he handled it fine. He didn't say.
 
