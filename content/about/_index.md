@@ -13,9 +13,4 @@ I've worked in software for almost 30 years. These days I focus on Kubernetes an
 
 I try to stay active. Enjoy hiking, walking, etc. I listen to late 90's Beastie Boys-type things, Radiohead-type things, and Yacht Rock from the 70's. I watch Louis C.K., Chris Rock, and Dave Chapelle-sorts of things. I've re-watched The Matrix at least twenty times, and enjoy any movie starring Tom Hanks.
 
-## Projects
-
-- [OpenTelemetry Koans](https://otel.mreider.com) — Interactive lessons on observability and OpenTelemetry
-- [Mental Math Koans](https://mental-math.mreider.com) — Practice mental math calculation tricks
-
 If you'd like to get in touch you can email me at [mreider@gmail.com](mailto:mreider@gmail.com)
