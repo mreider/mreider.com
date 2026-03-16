@@ -49,7 +49,7 @@ After lunch we drove past his old dorm at Harvard, where he'd lived with a track
 
 The family tree.
 
-Knowing he was dying had made him feel personally responsible for passing on whatever he knew about his ancestry. His father, Norm, had grown up in Canton, Ohio. His grandparents had met at what is now Case Western in Cleveland. He'd spoken to cousins, researched what he could, and written it all down in a frenzy. Pages of nearly illegible notes, as if he might lose his grip on the information before he could get it to someone else. He had time. He just didn't want it. But a week after we landed back in San Francisco, he drank enough morphine to stop his own heart while my sister played him classical music. His last words were *oh, that feels good.*
+Knowing he was dying had made him feel personally responsible for passing on whatever he knew about his ancestry. His father, Norm, had grown up in Canton, Ohio. His parents had met at Case Western in Cleveland. He'd spoken to cousins, researched what he could, and written it all down in a frenzy. Pages of nearly illegible notes, as if he might lose his grip on the information before he could get it to someone else. He had time. He just didn't want it. But a week after we landed back in San Francisco, he drank enough morphine to stop his own heart while my sister played him classical music. His last words were *oh, that feels good.*
 
 But we weren't there yet.
 
@@ -59,7 +59,7 @@ I knew that stretch of road, though for a different reason. There was no Staples
 
 ![Staples with the radio tower visible in the background](/images/matt/staples.jpeg)
 
-While my dad made his copies inside, I scrambled up the grassy slope next to the parking lot to look for the car. Almost thirty years later. The road we'd driven up was gone, buried under the parking lot. There was an overgrown patch of brush, a small homeless encampment with a tent and a fire ring, and a few flattened areas where high school kids probably still gathered to drink and get high, as we had at that age.
+While my dad made his copies inside, I scrambled up the grassy slope next to the parking lot to look for the car. He knew about the Chevelle. I'd bought it for seven hundred dollars, a price I settled on to spare myself the guilt of asking for more. They were price sensitive but apparently not safety sensitive. No seatbelts, a rusted gas tank that filled the cabin with fumes, and nobody ever thought to check. That was him. Almost thirty years later, still in his own world inside a Staples while I was up a hill he didn't know about. The road we'd driven up was gone, buried under the parking lot. There was an overgrown patch of brush, a small homeless encampment with a tent and a fire ring, and a few flattened areas where high school kids probably still gathered to drink and get high, as we had at that age.
 
 I jogged back down the hill as my dad came through the door, looking pleased. He was holding four envelopes. Each one labeled by hand: *Matt. Suzie. Jacob. John.* He handed mine over like it was a ceremony.
 
