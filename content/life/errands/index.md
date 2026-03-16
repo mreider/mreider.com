@@ -37,7 +37,7 @@ Once he was settled, I ran back to the double-parked car and started hunting for
 
 I shot a short time-lapse video of that walk back. The sidewalk, Mass Ave, the line out the door as I pass, and then my dad's face looking up from his menu. I was doing a lot of capturing that week. Little moments, just to keep them.
 
-<video autoplay loop muted playsinline width="100%">
+<video autoplay loop muted playsinline style="max-width: 350px; display: block; margin: 0 auto;">
   <source src="/images/matt/burger.mp4" type="video/mp4">
 </video>
 
@@ -59,7 +59,7 @@ I knew that stretch of road, though for a different reason. There was no Staples
 
 ![Staples with the radio tower visible in the background](/images/matt/staples.jpeg)
 
-While my dad made his copies inside, I scrambled up the grassy slope next to the parking lot to look for the car. He never knew we'd abandoned it up here. I'd bought it for seven hundred dollars, a price I settled on to spare myself the guilt of asking for more. My parents were price sensitive but apparently not safety sensitive. No seatbelts, a rusted gas tank that filled the cabin with fumes. He had no idea then, either. The road we'd driven up was gone, buried under the parking lot. There was an overgrown patch of brush, a small homeless encampment with a tent and a fire ring, and a few flattened areas where high school kids probably still gathered to drink and get high, as we had at that age.
+While my dad made his copies inside, I scrambled up the grassy slope next to the parking lot to look for the car. He never knew we'd abandoned it up here. I'd bought it for seven hundred dollars, a price I settled on to spare myself the guilt of asking for more. My parents never got in it. No seatbelts, a rusted gas tank that filled the cabin with fumes, and somehow I was trusted to sort that out myself. He had no idea then, either. The road we'd driven up was gone, buried under the parking lot. There was an overgrown patch of brush, a small homeless encampment with a tent and a fire ring, and a few flattened areas where high school kids probably still gathered to drink and get high, as we had at that age.
 
 I jogged back down the hill as my dad came through the door, looking pleased. He was holding four envelopes. Each one labeled by hand: *Matt. Suzie. Jacob. John.* He handed mine over like it was a ceremony.
 
