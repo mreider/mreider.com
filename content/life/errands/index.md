@@ -13,7 +13,7 @@ This goes back to 2015, the week before [my dad](/family/pete-reider/obituary/) 
 
 He was in Boston, in the house where I grew up in Newton. He'd bought a condo in San Francisco with my mom, but he loved the East Coast, and he wanted to say goodbye to it before heading back west. So I flew out from San Francisco to spend a few days with him, and we ran his errands together.
 
-The first stop was his gym. The Boston Sports Club in Waltham. He said it would be his last visit. By this point he had lost a lot of weight and was very frail. We didn't talk about it. For a psychiatrist, someone in the business of talking, he didn't have much to say about this one. What was the point.
+The first stop was his gym. The Boston Sports Club in Waltham. He said it would be his last visit. By this point he had lost a lot of weight and was very frail. For a psychiatrist, someone in the business of talking, he didn't have much to say about this one. What was the point.
 
 At the club, he went to the pool and did these gentle, bobbing exercises in the shallow end. Other people in the water looked pink and healthy. He just looked tired, his arms moving slowly back and forth like a tranquilized shorebird. There was no trace of the athlete he'd once been.
 
@@ -31,7 +31,7 @@ I jogged back to the car, drove to Marty's office, and pulled up just as the ses
 
 I asked if he wanted to drive through Harvard Square, maybe stop at Mr. Bartley's Burger Cottage, a place that had been on Mass Ave since the 1960s. He was up for it.
 
-To spare him the walk, I double-parked on Mass Ave -- not exactly a low-profile move in Harvard Square -- ran inside, cut the line that stretched out the door, and told the staff my father was outside, too frail to stand, and needed to sit down. I'd been sprinting around Cambridge for two hours by then and probably looked half-wrecked myself. They took one look at my dad, compared him to the teens and twenty-somethings in line, and sat us down.
+To spare him the walk, I double-parked on Mass Ave -- not exactly a low-profile move in Harvard Square -- ran inside, cut the line that stretched out the door, and told the staff my father was outside, too frail to stand. I'd been sprinting around Cambridge for two hours by then and probably looked half-wrecked myself. They took one look at my dad, compared him to the teens and twenty-somethings in line, and sat us down.
 
 Once he was settled, I ran back to the double-parked car and started hunting for a spot. I found one close by and walked back fast so he wouldn't have to wait.
 
@@ -59,8 +59,8 @@ I knew that stretch of road, though for a different reason. There was no Staples
 
 ![Staples with the radio tower visible in the background](/images/matt/staples.jpeg)
 
-While my dad made his copies inside, I scrambled up the grassy slope next to the parking lot to look for the car. Almost thirty years later. There was nothing. The road we'd driven up was gone, buried under the parking lot. There was an overgrown patch of brush, a small homeless encampment with a tent and a fire ring, and a few flattened areas where high school kids probably still gathered to drink and get high, as we had at that age.
+While my dad made his copies inside, I scrambled up the grassy slope next to the parking lot to look for the car. Almost thirty years later. The road we'd driven up was gone, buried under the parking lot. There was an overgrown patch of brush, a small homeless encampment with a tent and a fire ring, and a few flattened areas where high school kids probably still gathered to drink and get high, as we had at that age.
 
 I jogged back down the hill as my dad came through the door, looking pleased. He was holding four envelopes. Each one labeled by hand: *Matt. Suzie. Jacob. John.* He handed mine over like it was a ceremony.
 
-That was a big thing for him. His shoulders dropped about an inch. He got back into the passenger seat, closed his eyes, and said: *so now that's done.*
+His shoulders dropped about an inch. He got back into the passenger seat, closed his eyes, and said: *so now that's done.*
