@@ -19,11 +19,11 @@ At the club, he went to the pool and did these gentle, bobbing exercises in the 
 
 On the way out, he walked to the front desk and asked to speak to the manager about canceling his membership. The manager, doing his job, asked if there was a reason. "Sure, yes," my father said. "I am dying of cancer." The man got flustered and shuffled around for a form.
 
-The next errand was his final therapy appointment. Most shrinks see shrinks. It helps, and gives them something to argue about besides their own lives. My dad had been seeing his therapist, Marty, for many years. *Thank God for Marty*, my mother used to say, and I believe it. I suspect she sent him there with homework on more than one occasion.
+The next errand was his final therapy appointment. Most shrinks see shrinks. It's not just about working their own issues through, but also the practice of being a shrink - like talking shop. My dad had been seeing his therapist, Marty, for many years. *Thank God for Marty*, my mother used to say. I suspect she sent him there with homework on more than one occasion.
 
 While they were in their session, I drove my dad's Camry to Harvard Square to look around. I hadn't been there in over a decade. I'll pick you up when you're done, I told him. I parked, turned off the car, and reached for my keys. No keys. The fob wasn't with me. It was with my dad. The car had driven fine because it was already running. Now it wasn't. I was marooned.
 
-So I did the math. Walk back to Marty's office, get the fob, jog back to the car, drive back before the session ended. So much for poking around Harvard Square. I wasn't going to let my father stand alone on a sidewalk after his last therapy appointment. I picked up the pace.
+So I did the math. Walk back to Marty's office, get the fob, jog back to the car, drive back before the session ended. So much for poking around Harvard Square. I wasn't going to let my father stand alone on a sidewalk after his last therapy appointment.
 
 Back at Marty's, I knocked on the office door. He opened it, surprised. My dad was sitting in a chair just inside. I apologized, explained the situation, then stuck out my hand and said I'd heard a lot about him. I also mentioned, for reasons I still cannot fully explain, that I'd had a brief crush on his daughter, Emily, growing up. She'd lived in the neighborhood. Marty paused and told me she was happily married. My dad handed me the fob without comment.
 
@@ -31,7 +31,7 @@ I jogged back to the car, drove to Marty's office, and pulled up just as the ses
 
 I asked if he wanted to drive through Harvard Square, maybe stop at Mr. Bartley's Burger Cottage, a place that had been on Mass Ave since the 1960s. He was up for it.
 
-To spare him the walk, I double-parked on Mass Ave -- not exactly a low-profile move in Harvard Square -- ran inside, cut the line, and told the staff my father was outside, too frail to stand, and needed to sit down. I'd been sprinting around Cambridge for two hours by then and probably looked like I needed a hand myself. They took one look at my dad, compared him to the teens and twenty-somethings in line, and sat us down.
+To spare him the walk, I double-parked on Mass Ave -- not exactly a low-profile move in Harvard Square -- ran inside, cut the line, and told the staff my father was outside, too frail to stand, and needed to sit down. I'd been sprinting around Cambridge for two hours by then and probably looked half-wrecked myself. They took one look at my dad, compared him to the teens and twenty-somethings in line, and sat us down.
 
 Once he was settled, I ran back to the double-parked car and started hunting for a spot. I found one close by and walked back fast so he wouldn't have to wait.
 
@@ -41,13 +41,13 @@ I shot a short time-lapse video of that walk back. It's just the sidewalk, Mass 
   <source src="/images/matt/burger.mp4" type="video/mp4">
 </video>
 
-Why did I take him to a burger place? We had a good lunch. But the cancer had been wrecking his digestion for months, which was its own kind of misery. Maybe he handled it fine. He didn't say.
+Why did I take him to a burger place? The cancer had been wrecking his digestion for months, which was its own kind of misery. Maybe he handled it fine. He didn't say.
 
 After lunch we drove past his old dorm at Harvard, where he'd lived with a track buddy, Roger Perry, during his undergrad. Or maybe we drove past before lunch. I don't remember. But he had one more stop on his mind. Something he'd been fixating on for days.
 
 The family tree.
 
-Knowing he was dying had made him feel personally responsible for passing on whatever he knew about his ancestry. His father, Norm, had grown up in Canton, Ohio. His grandparents had met at what is now Case Western in Cleveland. He'd spoken to cousins, researched what he could, and written it all down in a frenzy -- pages of nearly illegible notes, as if he might lose his grip on the information before he could get it to someone else. He wasn't going to lose his grip for a few more weeks. He could have taken his time. But a week after we landed back in San Francisco, he drank enough morphine to stop his own heart while my sister played him classical music. His last words were *oh, that feels good.*
+Knowing he was dying had made him feel personally responsible for passing on whatever he knew about his ancestry. His father, Norm, had grown up in Canton, Ohio. His grandparents had met at what is now Case Western in Cleveland. He'd spoken to cousins, researched what he could, and written it all down in a frenzy -- pages of nearly illegible notes, as if he might lose his grip on the information before he could get it to someone else. He had time. He just didn't want it. But a week after we landed back in San Francisco, he drank enough morphine to stop his own heart while my sister played him classical music. His last words were *oh, that feels good.*
 
 But we weren't there yet.
 
