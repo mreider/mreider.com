@@ -57,7 +57,9 @@ I knew the area, though for a different reason. There was no Staples in 1988. Wh
 
 ![Staples with the radio tower visible in the background](/images/matt/staples.jpeg)
 
-While my dad made his copies inside, I scrambled up the grassy slope next to the parking lot to look for the car. He never knew we'd abandoned it up here. I'd bought it for seven hundred dollars. My parents had a way of making you ashamed of wanting too much and proud of getting by with less — even when less might get you killed. My parents never got in it, never asked about it, never seemed the least bit curious about whether a seventeen-year-old should be driving a car with no seatbelts and a rusted gas tank that filled the cabin with fumes. He didn't know I was up here now, either. The dirt road we'd driven up in 1988 was gone, buried under the parking lot. There was an overgrown patch of brush, a small homeless encampment with a tent and a fire ring, and a few flattened areas where high school kids probably still gathered to drink and get high, as we had at that age.
+While my dad made his copies inside, I scrambled up the grassy slope next to the parking lot to look for the car. He never knew we'd abandoned it up here. I'd bought it for seven hundred dollars. My parents had a way of making you proud of getting by with less, even when less might get you killed. They never got in the Chevelle, never asked about it, never seemed the least bit curious about whether a seventeen-year-old should be driving a car with no seatbelts and a rusted gas tank that filled the cabin with fumes.
+
+He didn't know I was up here now, either. The dirt road we'd driven up in 1988 was gone, buried under the parking lot. There was an overgrown patch of brush, a small homeless encampment with a tent and a fire ring, and a few flattened areas where high school kids probably still gathered to drink and get high, as we had at that age.
 
 I jogged back down the hill as my dad came through the door, looking pleased. He was holding four envelopes. Each one labeled by hand: *Matt. Suzie. Jacob. John.* He handed mine over like it was a ceremony.
 
