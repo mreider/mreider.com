@@ -65,7 +65,7 @@ I made it back down just as my dad came through the door, looking pleased. He wa
 
 His shoulders dropped about an inch. He got back into the passenger seat, closed his eyes, and said: *so now that's done.*
 
-A week later, back in San Francisco, he mixed morphine into a glass of grape Fanta, drank it, and lay down while my sister played him classical music. His last words were *oh, that feels good.*
+A week later, back in San Francisco, he mixed morphine into a glass of grape Fanta, drank it, and sat in a green chair while my sister played him classical music. He never got up. His last words were *oh, that feels good.*
 
 It took about eight hours. Every fifteen minutes or so his body would let out this reflexive moan, an agonal breath that surprised us each time it came. Then the intervals stretched, and it stopped.
 
