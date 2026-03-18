@@ -63,7 +63,7 @@ He didn't know I was up here now, either. The dirt road we'd driven up in 1988 w
 
 I made it back down just as my dad came through the door, looking pleased. He was holding four envelopes. Each one labeled by hand: *Matt. Suzie. Jacob. John.* He handed mine over like it was a ceremony.
 
-His shoulders dropped about an inch. He got back into the passenger seat, closed his eyes, and said: *so now that's done.*
+His shoulders dropped about an inch. He got back into the passenger seat, closed his eyes: *so now that's done.*
 
 A week later, back in San Francisco, he mixed morphine into a glass of grape Fanta, drank it, and sat in a green chair while my sister played him classical music. He never got up. His last words were *oh, that feels good.*
 
