@@ -86,10 +86,6 @@ function showPerson(name, skipHash) {
     card += '<div class="person-nicknames">' + person.nicknames.map(function(n) { return esc(n); }).join(', ') + '</div>';
   }
 
-  if (person.relation && person.relation !== 'self') {
-    card += '<div class="person-relation">' + esc(person.relation) + '</div>';
-  }
-
   card += '<div class="person-meta">';
   if (person.born || person.birthplace) {
     var bt = ''; if (person.born) bt += String(person.born); if (person.birthplace) bt += (bt ? ', ' : '') + person.birthplace;
@@ -153,7 +149,7 @@ searchInput.addEventListener('input', function() {
     var y = getYears(p);
     return '<div class="search-item" data-name="' + esc(p.name) + '"><span class="si-name">' + esc(p.name) + '</span>' +
       (y ? '<span class="si-detail"> ' + y + '</span>' : '') +
-      (p.relation ? '<br><span class="si-detail">' + esc(p.relation) + '</span>' : '') + '</div>';
+      '</div>';
   }).join('');
   searchResults.style.display = 'block';
 });
@@ -169,10 +165,10 @@ window.addEventListener('popstate', function() {
   if (name && byName[name] && name !== currentPerson) showPerson(name);
 });
 
-// On load: show person from hash, or default to Rose
+// On load: show person from hash, or default to Matt
 var initialHash = location.hash ? decodeURIComponent(location.hash.slice(1)) : null;
 if (initialHash && byName[initialHash]) {
   showPerson(initialHash);
 } else {
-  showPerson('Rose Etta Kahn Sampson');
+  showPerson('Matt Reider');
 }
