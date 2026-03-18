@@ -6,9 +6,6 @@
     <p class="p-note">American expat in Vienna, husband, father, Lagotto owner, friend</p>
 </div>
 
-<div class="home-intro">
-    <p>Hi, I'm Matt. An American living in Vienna. Husband, father, Lagotto owner, friend.</p>
-</div>
 
 {{ $allPosts := where site.RegularPages "Type" "in" (slice "life" "tech" "writeups" "reflections" "deutsch") }}
 {{ $allPosts = where $allPosts "Params.status" "ne" "draft" }}
