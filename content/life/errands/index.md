@@ -51,7 +51,7 @@ The family tree.
 
 Knowing he was dying had made him feel personally responsible for passing on whatever he knew about his ancestry. His father, Norm, had grown up in Canton, Ohio. Norm and his mother had met at Case Western in Cleveland. He'd spoken to cousins, researched what he could, and written it all down in a frenzy. Pages of nearly illegible notes, as if he might lose his grip on the information before he could get it to someone else.
 
-He needed to make four copies of the notes. One each for me, my sister, my brother, and his own brother John. So we drove to a Staples on Soldier Field Road.
+He needed to make four copies of the notes. One each for me, my sister, my brother, and his own brother Jon. So we drove to a Staples on Soldier Field Road.
 
 I knew the area, though for a different reason. There was no Staples in 1988. What there was, tucked behind a scrubby hill near a radio tower, was the final resting place of my 1971 Chevy Chevelle. I'd sold it to some kid, but when it broke down his father got it running somehow, drove it back to our house, threw the keys at me, and demanded the money back. I didn't want to pay for a junk yard, so my friends and I drove it up there and left it. The hill was known to us as Chevelle Hill after that. Among a handful of people who are now in their 50s.
 
@@ -61,14 +61,12 @@ While my dad made his copies inside, I scrambled up the grassy slope next to the
 
 He didn't know I was up here now, either. The dirt road we'd driven up in 1988 was gone, buried under the parking lot. There was an overgrown patch of brush, a small homeless encampment with a tent and a fire ring, and a few flattened areas where high school kids probably still gathered to drink and get high, as we had at that age.
 
-I made it back down just as my dad came through the door, looking pleased. He was holding four envelopes. Each one labeled by hand: *Matt. Suzie. Jacob. John.* He handed mine over like it was a ceremony.
+I made it back down just as my dad came through the door, looking pleased. He was holding four envelopes. Each one labeled by hand: *Matt. Suzie. Jacob. Jon.* He handed mine over like it was a ceremony.
 
 His shoulders dropped about an inch. He got back into the passenger seat, closed his eyes: *so now that's done.*
 
 A week later, back in San Francisco, he mixed morphine into a glass of grape Fanta, drank it, and sat in a green chair while my sister played him classical music. He never got up. His last words were *oh, that feels good.*
 
-It took about eight hours. Every fifteen minutes or so his body would let out this reflexive moan, an agonal breath that surprised us each time it came. Then the intervals stretched.
-
-And it stopped.
+It took about eight hours. Every fifteen minutes or so his body would let out this reflexive moan, an agonal breath that surprised us each time it came. Then the intervals grew longer, and then they stopped.
 
 ![Pete Reider](/images/matt/pete-stairs.jpg)
