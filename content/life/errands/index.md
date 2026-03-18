@@ -70,3 +70,5 @@ A week later, back in San Francisco, he mixed morphine into a glass of grape Fan
 It took about eight hours. Every fifteen minutes or so his body would let out this reflexive moan, an agonal breath that surprised us each time it came. Then the intervals stretched, and it stopped.
 
 He should have taken more.
+
+![Pete Reider](/images/matt/pete-stairs.jpg)
