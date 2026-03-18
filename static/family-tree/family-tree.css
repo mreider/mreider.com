@@ -21,13 +21,29 @@ a:hover { text-decoration: underline; }
 }
 
 /* Wrapper */
-.tree-wrapper { max-width: 680px; margin: 0 auto; padding: 0 1.5rem; }
+.tree-wrapper { max-width: 680px; margin: 0 auto; padding: 0 1.5rem; transition: max-width 0.2s; }
+.tree-wrapper.map-active { max-width: 960px; }
 
 /* Header */
 .tree-header { padding: 2rem 0 0; }
 .back-link { font-family: var(--sans); font-size: 0.85rem; color: var(--secondary); text-decoration: none; }
 .back-link:hover { color: var(--primary); text-decoration: none; }
 .tree-header h1 { font-family: var(--sans); font-size: 1.5rem; font-weight: 600; color: var(--dark); margin: 0.5rem 0 0; line-height: 1.3; }
+
+/* View toggle */
+.view-toggle { display: flex; gap: 0; margin-top: 0.8rem; }
+.toggle-btn { font-family: var(--sans); font-size: 0.8rem; padding: 0.35rem 1rem; border: 1px solid var(--border); background: var(--white); color: var(--secondary); cursor: pointer; transition: all 0.15s; }
+.toggle-btn:first-child { border-radius: var(--radius) 0 0 var(--radius); }
+.toggle-btn:last-child { border-radius: 0 var(--radius) var(--radius) 0; border-left: none; }
+.toggle-btn.active { background: var(--primary); color: var(--white); border-color: var(--primary); }
+.toggle-btn:hover:not(.active) { background: var(--bg); color: var(--dark); }
+
+/* Map view */
+#map-view { position: relative; }
+#map-canvas { width: 100%; height: 70vh; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); display: block; }
+.map-hint { text-align: center; font-family: var(--sans); font-size: 0.75rem; color: var(--muted); margin-top: 0.5rem; }
+.map-on-person { display: inline-block; font-family: var(--sans); font-size: 0.8rem; color: var(--primary); cursor: pointer; margin-top: 0.3rem; }
+.map-on-person:hover { text-decoration: underline; }
 
 /* Explorer */
 .explorer { padding: 1.5rem 0; }

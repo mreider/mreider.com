@@ -110,6 +110,7 @@ function showPerson(name, skipHash) {
   if (person.notes) {
     card += '<div class="person-notes">' + esc(person.notes) + '</div>';
   }
+  card += '<div style="margin-top:0.8rem;"><a class="map-on-person" data-name="' + esc(person.name) + '">View on Map</a></div>';
   card += '</div>';
 
   // Siblings
@@ -130,6 +131,7 @@ document.getElementById('person-view').addEventListener('click', function(e) {
   var node = e.target.closest('.fd-node'); if (node && !node.classList.contains('active')) { showPerson(node.dataset.name); return; }
   var pill = e.target.closest('.sib-pill'); if (pill) { showPerson(pill.dataset.name); return; }
   var link = e.target.closest('.spouse-link'); if (link) { showPerson(link.dataset.name); return; }
+  var mapLink = e.target.closest('.map-on-person'); if (mapLink) { switchToMap(mapLink.dataset.name); return; }
 });
 
 // Search
@@ -155,20 +157,87 @@ searchInput.addEventListener('input', function() {
 });
 searchResults.addEventListener('click', function(e) {
   var item = e.target.closest('.search-item');
-  if (item) { showPerson(item.dataset.name); searchInput.value = ''; searchResults.style.display = 'none'; }
+  if (!item) return;
+  var name = item.dataset.name;
+  searchInput.value = '';
+  searchResults.style.display = 'none';
+  if (activeView === 'map') {
+    if (window.mapCenterOn) window.mapCenterOn(name);
+  } else {
+    showPerson(name);
+  }
 });
 searchInput.addEventListener('blur', function() { setTimeout(function() { searchResults.style.display = 'none'; }, 200); });
 
-// Hash navigation
-window.addEventListener('popstate', function() {
-  var name = location.hash ? decodeURIComponent(location.hash.slice(1)) : null;
-  if (name && byName[name] && name !== currentPerson) showPerson(name);
-});
+// --- View toggle ---
+var activeView = 'detail';
+var btnDetail = document.getElementById('btn-detail');
+var btnMap = document.getElementById('btn-map');
+var personView = document.getElementById('person-view');
+var mapView = document.getElementById('map-view');
+var wrapper = document.querySelector('.tree-wrapper');
+var mapInited = false;
+
+function switchToDetail(name) {
+  activeView = 'detail';
+  btnDetail.classList.add('active');
+  btnMap.classList.remove('active');
+  personView.style.display = '';
+  mapView.style.display = 'none';
+  wrapper.classList.remove('map-active');
+  if (name) showPerson(name);
+}
+
+function switchToMap(name) {
+  activeView = 'map';
+  btnMap.classList.add('active');
+  btnDetail.classList.remove('active');
+  personView.style.display = 'none';
+  mapView.style.display = '';
+  wrapper.classList.add('map-active');
+  if (!mapInited) {
+    if (window.mapInit) window.mapInit();
+    mapInited = true;
+  }
+  if (name && window.mapCenterOn) {
+    setTimeout(function() { window.mapCenterOn(name); }, 50);
+  } else if (window.mapResize) {
+    window.mapResize();
+  }
+  history.replaceState(null, '', name ? '#map:' + encodeURIComponent(name) : '#map');
+}
+
+// Clicking a node on the map goes to detail view
+window.mapNavigateTo = function(name) {
+  switchToDetail(name);
+};
+
+btnDetail.addEventListener('click', function() { switchToDetail(currentPerson); });
+btnMap.addEventListener('click', function() { switchToMap(currentPerson); });
 
 // On load: show person from hash, or default to Matt
 var initialHash = location.hash ? decodeURIComponent(location.hash.slice(1)) : null;
-if (initialHash && byName[initialHash]) {
+if (initialHash === 'map') {
+  switchToMap('Matt Reider');
+} else if (initialHash && initialHash.indexOf('map:') === 0) {
+  var mapName = decodeURIComponent(initialHash.slice(4));
+  switchToMap(byName[mapName] ? mapName : 'Matt Reider');
+} else if (initialHash && byName[initialHash]) {
   showPerson(initialHash);
 } else {
   showPerson('Matt Reider');
 }
+
+// Hash navigation
+window.addEventListener('popstate', function() {
+  var h = location.hash ? decodeURIComponent(location.hash.slice(1)) : null;
+  if (!h) return;
+  if (h === 'map') {
+    if (activeView !== 'map') switchToMap(currentPerson);
+  } else if (h.indexOf('map:') === 0) {
+    var mn = decodeURIComponent(h.slice(4));
+    switchToMap(byName[mn] ? mn : currentPerson);
+  } else if (byName[h] && (activeView !== 'detail' || h !== currentPerson)) {
+    switchToDetail(h);
+  }
+});

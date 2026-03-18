@@ -15,6 +15,10 @@
   <header class="tree-header">
     <a href="/family/" class="back-link">&larr; Family</a>
     <h1>Sampson-Kahn Family Tree</h1>
+    <div class="view-toggle">
+      <button id="btn-detail" class="toggle-btn active">Detail</button>
+      <button id="btn-map" class="toggle-btn">Map</button>
+    </div>
   </header>
   <div class="explorer">
     <div class="search-wrap">
@@ -22,6 +26,10 @@
       <div id="search-results" class="search-results"></div>
     </div>
     <div id="person-view"></div>
+    <div id="map-view" style="display:none;">
+      <canvas id="map-canvas"></canvas>
+      <div class="map-hint">Scroll to zoom &middot; Drag to pan &middot; Click a name to view details</div>
+    </div>
   </div>
   <footer class="tree-footer">
     <a href="/family/">Back to Family</a>
@@ -31,5 +39,6 @@
 </div>
 <script src="family-data.js"></script>
 <script src="tree.js"></script>
+<script src="map.js"></script>
 </body>
 </html>
