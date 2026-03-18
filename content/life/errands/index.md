@@ -67,8 +67,8 @@ His shoulders dropped about an inch. He got back into the passenger seat, closed
 
 A week later, back in San Francisco, he mixed morphine into a glass of grape Fanta, drank it, and sat in a green chair while my sister played him classical music. He never got up. His last words were *oh, that feels good.*
 
-It took about eight hours. Every fifteen minutes or so his body would let out this reflexive moan, an agonal breath that surprised us each time it came. Then the intervals stretched, and it stopped.
+It took about eight hours. Every fifteen minutes or so his body would let out this reflexive moan, an agonal breath that surprised us each time it came. Then the intervals stretched.
 
-He should have taken more.
+And it stopped.
 
 ![Pete Reider](/images/matt/pete-stairs.jpg)
