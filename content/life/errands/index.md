@@ -13,17 +13,17 @@ This goes back to 2015, the week before [my dad](/family/pete-reider/obituary/) 
 
 He was in Boston, in the house where I grew up in Newton. He'd bought a condo in San Francisco with my mom, but he loved the East Coast, and he wanted to say goodbye to it before heading back west. So I flew out from San Francisco to spend a few days with him, and we ran his errands together.
 
-The first stop was his gym. The Boston Sports Club in Waltham. He said it would be his last visit. By this point he had lost a lot of weight and was very frail. For a psychiatrist, someone in the business of talking, he didn't have much to say about this one.
+The first stop was his gym. The Boston Sports Club in Waltham. He said it would be his last visit. By this point he had lost a lot of weight and was very frail. For a psychiatrist, someone in the business of talking, he didn't have much to say about it.
 
 At the club, he went to the pool and did these gentle, bobbing exercises in the shallow end. Other people in the water looked pink and healthy. He just looked tired, his arms moving slowly back and forth like a wading shorebird running out of season. There was no trace of the athlete he'd once been.
 
 On the way out, he walked to the front desk and asked to speak to the manager about canceling his membership. The manager, doing his job, asked if there was a reason. "Sure, yes," my father said. "I am dying of cancer." The man shuffled around for a form.
 
-The next errand was his final therapy appointment. Most shrinks see shrinks. It's not just about working their own issues through. It's also the practice of being a shrink. Talking shop. My dad had been seeing his therapist, Marty, for many years. *Thank God for Marty*, my mother used to say. She sent him there with homework on more than one occasion.
+The next errand was his final therapy appointment. Most shrinks see shrinks. It's not just about working their own issues through. It's also the practice of being a shrink. Talking shop. My dad had been seeing his therapist, Marty, for many years. *Thank God for Marty*, my mother used to say. She'd sent him there with homework before, and not always gently.
 
-While they were in their session, I drove my dad's Camry to Harvard Square to look around. I hadn't been there in over a decade. I'll pick you up when you're done, I told him. I parked and went to lock the car. No fob. It was with my dad. The car had driven fine because it was already running, but now I couldn't lock it or restart it. I was marooned.
+While they were in their session, I drove my dad's Camry to Harvard Square to look around. I hadn't been there in over a decade. I'll pick you up when you're done, I told him. I parked and tried to lock the car. No fob. It was with my dad. The car had driven fine because it was already running, but now I couldn't lock it or restart it. I was marooned.
 
-So I did the math. Walk back to Marty's office, get the fob, jog back to the car, drive back before the session ended. I wasn't going to let my father stand alone on a sidewalk after his last therapy appointment.
+So I did the math. Jog to Marty's office, get the fob, jog back to the car, drive back before the session ended. I wasn't going to let my father stand alone on a sidewalk after his last therapy appointment.
 
 Back at Marty's, I knocked on the office door. He opened it, surprised. My dad was sitting in a chair just inside. I apologized, explained the situation, then stuck out my hand and said I'd heard a lot about him. I also mentioned, for reasons I still cannot fully explain, that I'd had a brief crush on his daughter, Emily, growing up. She'd lived in the neighborhood. Marty paused and told me she was happily married. My dad handed me the fob without comment.
 
@@ -43,7 +43,7 @@ I shot a short time-lapse video of that walk back. The sidewalk, Mass Ave, the l
 
 <p></p>
 
-In hindsight, a burger place was not great judgment. The cancer had been wrecking his digestion for months, which was its own kind of misery. He didn't say anything about it.
+In hindsight, a burger place was not great judgment. The cancer had been wrecking his digestion for months, which was its own kind of misery. He kept that to himself, too.
 
 After lunch we drove past his old dorm at Harvard, where he'd lived with a track buddy, Roger Perry, during his undergrad. Or maybe we drove past before lunch. I don't remember. But he had one more stop on his mind. Something he'd been fixating on for days.
 
@@ -53,7 +53,7 @@ Knowing he was dying had made him feel personally responsible for passing on wha
 
 He needed to make four copies of the notes. One each for me, my sister, my brother, and his own brother John. So we drove to a Staples on Soldier Field Road.
 
-I knew the area, though for a different reason. There was no Staples in 1988. What there was, tucked behind a scrubby hill near a radio tower, was the final resting place of my 1971 Chevy Chevelle. I'd sold it to some kid, but when it broke down his father drove it back to our house, threw the keys at me, and demanded the money back. I didn't want to pay for a junk yard, so my friends and I drove it up there and left it. The hill was known to us as Chevelle Hill after that. Among a small group of people who are now in their 50s and don't think about it very often.
+I knew the area, though for a different reason. There was no Staples in 1988. What there was, tucked behind a scrubby hill near a radio tower, was the final resting place of my 1971 Chevy Chevelle. I'd sold it to some kid, but when it broke down his father got it running somehow, drove it back to our house, threw the keys at me, and demanded the money back. I didn't want to pay for a junk yard, so my friends and I drove it up there and left it. The hill was known to us as Chevelle Hill after that. Among a handful of people who are now in their 50s.
 
 ![Staples with the radio tower visible in the background](/images/matt/staples.jpeg)
 
@@ -61,8 +61,12 @@ While my dad made his copies inside, I scrambled up the grassy slope next to the
 
 He didn't know I was up here now, either. The dirt road we'd driven up in 1988 was gone, buried under the parking lot. There was an overgrown patch of brush, a small homeless encampment with a tent and a fire ring, and a few flattened areas where high school kids probably still gathered to drink and get high, as we had at that age.
 
-I jogged back down the hill as my dad came through the door, looking pleased. He was holding four envelopes. Each one labeled by hand: *Matt. Suzie. Jacob. John.* He handed mine over like it was a ceremony.
+I made it back down just as my dad came through the door, looking pleased. He was holding four envelopes. Each one labeled by hand: *Matt. Suzie. Jacob. John.* He handed mine over like it was a ceremony.
 
 His shoulders dropped about an inch. He got back into the passenger seat, closed his eyes, and said: *so now that's done.*
 
-A week later, back in San Francisco, he mixed morphine into a glass of ginger ale, drank it, and lay down while my sister played him classical music. His last words were *oh, that feels good.* It took about eight hours. Every fifteen minutes or so his body would let out this reflexive moan, an agonal breath that surprised us each time it came. Then the intervals stretched, and it stopped. He should have taken more.
+A week later, back in San Francisco, he mixed morphine into a glass of grape Fanta, drank it, and lay down while my sister played him classical music. His last words were *oh, that feels good.*
+
+It took about eight hours. Every fifteen minutes or so his body would let out this reflexive moan, an agonal breath that surprised us each time it came. Then the intervals stretched, and it stopped.
+
+He should have taken more.
