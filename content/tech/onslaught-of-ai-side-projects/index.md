@@ -33,7 +33,7 @@ That's a demotivating place to land, and not just for this project.
 
 Two things keep me at it anyway.
 
-The first is the writing itself. I genuinely like to write. Always have. A project I'm building and using gives me something to write about, and even if the audience for this kind of thing ends up being a few siblings and a couple of friends, that's fine. Code by itself doesn't tell you why a project exists. A blog can.
+The first is that the building isn't the whole thing. It's writing about it, thinking about it on dog walks, figuring out what's actually interesting enough to write about. In this case, that turned out to be the worry I just laid out: that the project isn't very special, and that I'm building it anyway. That's worth a blog post. Even if the audience for this kind of thing ends up being a few siblings and a couple of friends, that's fine. Code by itself doesn't tell you why a project exists. A blog can.
 
 The second is that I'm actually going to use yrdsl.app myself. Not as a demo. Not as a pretend customer. I have a couch, a vacuum, a kitchen table, and seven years of other things to sell in Vienna over the next few months, and the only way I'm going to find the rough edges is by hitting them myself.
 
