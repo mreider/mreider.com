@@ -34,4 +34,5 @@ jobs:
           git config user.email "mreider@gmail.com"
           git add .github/mastodon-published.json
           git diff --staged --quiet || git commit -m "Track published Mastodon posts"
+          git pull --rebase
           git push
