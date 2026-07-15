@@ -9,9 +9,6 @@ All posts by Matt Reider:
 - [The Good Whale](/writeups/the-good-whale/) - November 30, 2025
 
 ## Life
-- [On Ambivalence](/life/on-ambivalence/) - December 2, 2024
-- [Doing It for Yourself](/life/doing-it-for-yourself/) - November 29, 2024
-- [Henchman or Hero](/life/henchman-or-hero/) - November 26, 2024
 - [Lost and Found](/life/lost-and-found/) - May 31, 2024
 - [H2Oh No](/life/h20no/) - March 2, 2024
 - [Going Viral](/life/going-viral/) - August 24, 2022
@@ -32,15 +29,3 @@ All posts by Matt Reider:
 - [Phones](/life/phones/) - August 27, 2019
 - [Österreich](/life/osterreich/) - August 26, 2019
 
-## Tech
-- [Why AI Won't Take Control](/tech/ai-hype/) - May 10, 2025
-- [More Zelenskiy](/life/more-zelinskiy/) - March 2, 2025
-- [Email Subscriptions from Static Blogs](/tech/email-subscriptions-from-static-blogs/) - February 17, 2025
-- [LinkedIn Refuge](/life/linked-in-refuge/) - February 24, 2025
-- [Krems Static Site Generator](/tech/krems-static-site-generator/) - February 16, 2025
-- [SudoWrite, ChatGPT and AI Slop](/tech/sudowrite-chatgpt-and-ai-slop/) - January 6, 2025
-- [Trade-off as Strategy](/tech/trade-off-as-strategy/) - January 1, 2025
-- [BlueScope is Almost Like 2012 Twitter](/tech/blue-sky/) - December 17, 2024
-- [VMware, Pivotal, and the Rise of Kubernetes](/tech/pivotal-and-the-rise-of-cloud-foundry/) - November 28, 2024
-- [Building Quacker: A Weekend Project with ChatGPT](/tech/building-quacker/) - November 26, 2024
-- [Tales from Engine Yard](/tech/tales-from-engineyard/) - October 19, 2024

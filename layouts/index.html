@@ -7,7 +7,7 @@
 </div>
 
 
-{{ $allPosts := where site.RegularPages "Type" "in" (slice "life" "tech" "writeups" "reflections" "deutsch") }}
+{{ $allPosts := where site.RegularPages "Type" "in" (slice "life" "writeups" "reflections" "deutsch") }}
 {{ $allPosts = where $allPosts "Params.status" "ne" "draft" }}
 {{ $allPosts = $allPosts.ByDate.Reverse }}
 

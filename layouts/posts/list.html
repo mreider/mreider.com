@@ -2,7 +2,7 @@
 
 <h1>{{ .Title }}</h1>
 
-{{ $allPosts := where site.RegularPages "Type" "in" (slice "life" "tech" "writeups" "family" "reflections" "deutsch") }}
+{{ $allPosts := where site.RegularPages "Type" "in" (slice "life" "writeups" "family" "reflections" "deutsch") }}
 {{ $allPosts = where $allPosts "Params.status" "ne" "draft" }}
 {{ $allPosts = $allPosts.ByDate.Reverse }}
 

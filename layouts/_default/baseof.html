@@ -50,7 +50,6 @@
         {{ $isHome := .IsHome }}
         <span class="nav-item"><a href="/" {{ if $isHome }}class="active"{{ end }}>Home</a></span>
         <span class="nav-item"><a href="/life/" {{ if eq $currentSection "life" }}class="active"{{ end }}>Life</a></span>
-        <span class="nav-item"><a href="/tech/" {{ if eq $currentSection "tech" }}class="active"{{ end }}>Tech</a></span>
         <span class="nav-item"><a href="/writeups/" {{ if eq $currentSection "writeups" }}class="active"{{ end }}>Writeups</a></span>
         <span class="nav-item"><a href="/family/" {{ if eq $currentSection "family" }}class="active"{{ end }}>Family</a></span>
         <span class="nav-item"><a href="/about/" {{ if eq $currentSection "about" }}class="active"{{ end }}>About</a></span>

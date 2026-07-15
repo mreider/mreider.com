@@ -32,10 +32,6 @@ title = 'MR'
     url = "/life/"
     weight = 4
   [[menu.main]]
-    name = "Tech"
-    url = "/tech/"
-    weight = 5
-  [[menu.main]]
     name = "About"
     url = "/about/"
     weight = 6
