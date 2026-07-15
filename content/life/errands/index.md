@@ -5,7 +5,7 @@ date: "2026-03-15"
 image: "/images/matt/errands.jpeg"
 ---
 
-A couple of friends at work mentioned I hadn't posted anything in a while. I'd been writing in a newer category called [Writeups](https://mreider.com/writeups/) and dabbling in some Tech stuff, but the [Life](https://mreider.com/life/) writing, the travel posts that started when we moved to Austria, had gone quiet. Maybe because it's been almost seven years and this is just where we live now. Three of us, anyway. The fourth headed off to university last fall.
+A couple of friends at work mentioned I hadn't posted anything in a while. I'd been writing in a newer category called [Writeups](https://mreider.com/writeups/), but the [Life](https://mreider.com/life/) writing, the travel posts that started when we moved to Austria, had gone quiet. Maybe because it's been almost seven years and this is just where we live now. Three of us, anyway. The fourth headed off to university last fall.
 
 When the second or third person asked about it, I started wondering what I actually wanted to say. And what came up wasn't an update. More of a reflection.
 
