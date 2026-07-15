@@ -225,31 +225,20 @@ a:hover {
     margin-bottom: 3rem;
 }
 
-/* Post Lists - Numbered Style */
+/* Post Lists */
 .post-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    counter-reset: post-counter;
 }
 
 .post-list-item {
-    counter-increment: post-counter;
     padding: 1rem 0;
     border-bottom: 1px solid #eee;
 }
 
 .post-list-item:last-child {
     border-bottom: none;
-}
-
-.post-list-item::before {
-    content: counter(post-counter) ".";
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    color: #999;
-    margin-right: 0.75rem;
-    font-size: 0.9rem;
 }
 
 .post-title {
